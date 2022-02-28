@@ -6,17 +6,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Login</title>
+	<title>Login - Cal App</title>
 	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="styles.css?v=<?php echo time(); ?>">
 </head>
 <body>
 	<div class="log-header">
-		<h2>Login - Cal App</h2>
+		<h2>Login</h2>
 	</div>
 	<form method="post" action="login.php">
-
-		<!-- <?php echo display_error(); ?> -->
 
 		<div class="input-group">
 			<label>Username</label>
