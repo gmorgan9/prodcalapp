@@ -44,7 +44,7 @@ header {
     padding: 20px;
 }
 .nav-header{
-    width: 80%;
+    width: 60%;
     margin: 10px auto 0px;
     color: var(--light-text);
     background: var(--secondary-color);
