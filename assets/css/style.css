@@ -28,4 +28,5 @@ header h1 {
   .three {
     grid-column: 3/4;
     grid-row: 1;
+    text-align: center;
   }
