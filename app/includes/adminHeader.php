@@ -4,16 +4,12 @@
         Admin - Calendar App
         </h1>
     </div>
-    <div class="bottom_header">
-        <p class="one">
-            <a href="">Add Event</a>
-        </p>
-        <p class="two">
-            <b>Department:</b> Geography
-        </p>
-        <p class="three">
-            <a href="../index.php">Home</a><br />
-            <a href="">Logout</a>
-        </p>
+    <div class="nav-header">
+        <ul class="nav-list">
+            <li class="nav-list-item"><a class="nav-list-link" href="">Add Event</a></li>
+            <li class="nav-list-item"><b>Department:</b> Geography</li>
+            <li class="nav-list-item"><a class="nav-list-link" href="/admin/index.php">Admin Settings</a></li>
+            <li class="nav-list-item"><a class="nav-list-link" href="">Logout</a></li>
+        </ul>
     </div>
 </header>

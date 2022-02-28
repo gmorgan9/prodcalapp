@@ -5,11 +5,15 @@
         </h1>
     </div>
     <div class="bottom_header">
-        <ul class="nav">
-            <li><a href="">Add Event</a></li>
-            <li><b>Department:</b> Geography</li>
-            <li><a href="/admin/index.php">Admin Settings</a></li>
-            <li><a href="">Logout</a></li>
-        </ul>
+        <p class="one">
+            <a href="">Add Event</a>
+        </p>
+        <p class="two">
+            <b>Department:</b> Geography
+        </p>
+        <p class="three">
+            <a href="/admin/index.php">Admin Settings</a><br />
+            <a href="">Logout</a>
+        </p>
     </div>
 </header>
