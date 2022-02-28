@@ -29,9 +29,7 @@
             <b>Department:</b> Geography
         </p>
         <p class="three">
-            Admin Settings
-        </p>
-        <p class="four">
+            Admin Settings<br />
             Logout
         </p>
     </div>
