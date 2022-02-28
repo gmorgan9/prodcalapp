@@ -90,6 +90,29 @@ session_start();
             21
         </div>
     </div>
+    <div class="row_4">
+        <div class="box_1">
+            22
+        </div>
+        <div class="box_2">
+            23
+        </div>
+        <div class="box_3">
+            24
+        </div>
+        <div class="box_4">
+            25
+        </div>
+        <div class="box_5">
+            26
+        </div>
+        <div class="box_6">
+            27
+        </div>
+        <div class="box_7">
+            28
+        </div>
+    </div>
 </div>
     
 </body>

@@ -117,7 +117,9 @@ header h1 {
     grid-row: 1;
     border: 1px solid black;
 }
-.row_2, .row_3 {
+.row_2, 
+.row_3, 
+.row_4 {
     margin-left: 4%;
     margin-right: 6%;
     height: 100px;
