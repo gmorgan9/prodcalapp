@@ -13,6 +13,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+body,
+html {
+    font-family: "Lora", serif;
+}
 
 header h1 {
     text-align: center;
