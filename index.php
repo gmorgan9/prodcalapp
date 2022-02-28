@@ -17,6 +17,7 @@ session_start();
 <body>
 
 <?php include(ROOT_PATH . "/app/includes/header.php"); ?>
+<hr>
     
 </body>
 </html>
