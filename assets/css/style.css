@@ -117,3 +117,12 @@ header h1 {
     grid-row: 1;
     border: 1px solid black;
 }
+.row_2 {
+    margin-top: -2%;
+    margin-left: 4%;
+    margin-right: 6%;
+    height: 100px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-auto-rows: minmax(80px, auto);
+}
