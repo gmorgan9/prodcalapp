@@ -9,7 +9,7 @@
         <ul class="nav-list">
             <li class="nav-list-item"><a class="nav-list-link" href="">Add Event</a></li>
             
-            <li class="nav-list-item"><a class="nav-list-link" href="../index.php">Home</a></li>
+            <li class="nav-list-item"><a class="nav-list-link" href="../">Home</a></li>
             <li class="nav-list-item"><a class="nav-list-link" href="">Logout</a></li>
         </ul>
     </div>
