@@ -17,7 +17,7 @@ session_start();
 <body>
 
 <?php include(ROOT_PATH . "/app/includes/adminHeader.php"); ?>
-<hr>
+<hr style="width: 70%;">
 ADMIN PAGE update
 
     
