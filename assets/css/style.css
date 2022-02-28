@@ -8,5 +8,6 @@ header h1 {
     text-align: center;
 }
 header p {
-    display: inline;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
