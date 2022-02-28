@@ -6,14 +6,14 @@
     </div>
     <div class="bottom_header">
         <p class="one">
-            <a href=""><button>Add Event<button></a>
+            <a href="">Add Event</a>
         </p>
         <p class="two">
             <b>Department:</b> Geography
         </p>
         <p class="three">
-            <a href="#"><button>Admin Settings</button></a><br />
-            <a href=""><button>Logout</button></a>
+            <a href="#">Admin Settings</a><br />
+            <a href="">Logout</a>
         </p>
     </div>
 </header>
