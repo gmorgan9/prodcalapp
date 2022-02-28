@@ -24,11 +24,6 @@ header h1 {
 a {
     text-decoration: none;
 }
-.btn {
-    color: white;
-    font-size: 1.08em;
-    font-family: "Lora", serif;
-  }
 
 .one{
     grid-column: 1 / 3;
