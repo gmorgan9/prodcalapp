@@ -33,7 +33,7 @@ a {
     color: black;
 } */
 
-.header {
+header {
     width: 40%;
     margin: 50px auto 0px;
     color: var(--light-text);
