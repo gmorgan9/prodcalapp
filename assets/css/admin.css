@@ -42,7 +42,6 @@ header {
     border: 1px solid var(--primary-color);
     border-bottom: none;
     border-radius: 10px 10px 10px 10px;
-    padding: 8px;
 }
 .nav-header{
     margin: 10px auto 0px;
