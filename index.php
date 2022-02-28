@@ -19,6 +19,32 @@ session_start();
 <?php include(ROOT_PATH . "/app/includes/header.php"); ?>
 <hr>
 <?php include(ROOT_PATH . "/app/includes/week_days.php"); ?>
+
+<div class="cal_day">
+    <div class="row_1">
+        <div class="box_1">
+            1
+        </div>
+        <div class="box_2">
+            2
+        </div>
+        <div class="box_3">
+            3
+        </div>
+        <div class="box_4">
+            4
+        </div>
+        <div class="box_5">
+            5
+        </div>
+        <div class="box_6">
+            6
+        </div>
+        <div class="box_7">
+            7
+        </div>
+    </div>
+</div>
     
 </body>
 </html>
