@@ -17,7 +17,8 @@ session_start();
 <body>
 
 <?php 
-$month = date('mmm');
+echo 'Month' . date('m', strtotime($row['Date']));
+$month = date('m');
 
 echo $month;
 if($month == 12){
