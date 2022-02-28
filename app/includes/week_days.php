@@ -2,37 +2,37 @@
     <div class="week_day">
         <div class="sun">
             <h3>
-                Sunday
+                SUN
             </h3>
         </div>
         <div class="mon">
             <h3>
-                Monday
+                MON
             </h3>
         </div>
         <div class="tue">
             <h3>
-                Tuesday
+                TUE
             </h3>
         </div>
         <div class="wed">
             <h3>
-                Wednesday
+                WED
             </h3>
         </div>
         <div class="thu">
             <h3>
-                Thursday
+                THU
             </h3>
         </div>
         <div class="fri">
             <h3>
-                Friday
+                FRI
             </h3>
         </div>
         <div class="sat">
             <h3>
-                Saturday
+                SAT
             </h3>
         </div>
     </div>
