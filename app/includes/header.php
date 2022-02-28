@@ -1,7 +1,7 @@
 <header>
     <div class="top_header">
         <h1>
-        <?php echo date('F'); ?>
+        <?php echo date('F') +1 ; ?>
         </h1>
     </div>
     <div class="bottom_header">
