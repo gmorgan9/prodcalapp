@@ -18,7 +18,7 @@ session_start();
 
 <?php include(ROOT_PATH . "/app/includes/adminHeader.php"); ?>
 <hr>
-ADMIN PAGE
+ADMIN PAGE update
 
     
 </body>
