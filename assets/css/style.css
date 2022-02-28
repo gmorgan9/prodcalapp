@@ -8,6 +8,7 @@ header h1 {
     text-align: center;
 }
 .bottom_header {
+    margin-top: 1em;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
