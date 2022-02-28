@@ -11,7 +11,27 @@
 </head>
 <body>
 
-<h1>test</h1>
+<header>
+    <div class="top_header">
+        <h1>
+            February
+        </h1>
+    </div>
+    <div class="bottom_header">
+        <p>
+            + Add Event
+        </p>
+        <p>
+            <b>Department:</b> Geography
+        </p>
+        <p>
+            Admin Settings
+        </p>
+        <p>
+            Logout
+        </p>
+    </div>
+</header>
     
 </body>
 </html>
