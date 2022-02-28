@@ -34,3 +34,11 @@ header h1 {
     grid-row: 1;
     text-align: center;
   }
+
+/* Calendar */
+
+.cal {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-auto-rows: minmax(80px, auto);
+}
