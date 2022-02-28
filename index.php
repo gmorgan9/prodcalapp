@@ -12,7 +12,7 @@ session_start();
     <!-- Custom Styling -->
     <link rel="stylesheet" href="../../assets/css/style.css?v=<?php echo time(); ?>">
     
-    <title>Calendar App</title>
+    <title>Cal App</title>
 </head>
 <body>
 
