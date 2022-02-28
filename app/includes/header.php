@@ -12,7 +12,7 @@
             <b>Department:</b> Geography
         </p>
         <p class="three">
-            <a href="#">Admin Settings</a><br />
+            <a href="/admin/index.php">Admin Settings</a><br />
             <a href="">Logout</a>
         </p>
     </div>
