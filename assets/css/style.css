@@ -76,6 +76,7 @@ header h1 {
 .row_1 {
     margin-top: 1em;
     margin-left: 8%;
+    margin-right: 8%;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-auto-rows: minmax(80px, auto);
