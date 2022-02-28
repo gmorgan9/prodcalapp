@@ -16,11 +16,6 @@ session_start();
 </head>
 <body>
 
-<?php 
-
-echo date('F');
-?>
-
 <?php include(ROOT_PATH . "/app/includes/header.php"); ?>
 <hr>
 <?php include(ROOT_PATH . "/app/includes/week_days.php"); ?>
