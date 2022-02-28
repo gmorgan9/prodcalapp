@@ -18,6 +18,46 @@ session_start();
 
 <?php include(ROOT_PATH . "/app/includes/header.php"); ?>
 <hr>
+
+<div class="cal">
+    <div class="week_day">
+        <div class="sun">
+            <p>
+                Sunday
+            </p>
+        </div>
+        <div class="mon">
+            <p>
+                Monday
+            </p>
+        </div>
+        <div class="tue">
+            <p>
+                Tuesday
+            </p>
+        </div>
+        <div class="wed">
+            <p>
+                Wednesday
+            </p>
+        </div>
+        <div class="thu">
+            <p>
+                Thursday
+            </p>
+        </div>
+        <div class="fri">
+            <p>
+                Friday
+            </p>
+        </div>
+        <div class="sat">
+            <p>
+                Saturday
+            </p>
+        </div>
+    </div>
+</div>
     
 </body>
 </html>
