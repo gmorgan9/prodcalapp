@@ -6,7 +6,7 @@
     </div>
     <div class="bottom_header">
         <p class="one">
-            <a href="">+ Add Event</a>
+            <a href=""><button>Add Event<button></a>
         </p>
         <p class="two">
             <b>Department:</b> Geography
