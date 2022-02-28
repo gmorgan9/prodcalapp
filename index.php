@@ -44,7 +44,7 @@ session_start();
             7
         </div>
     </div>
-    <div class="row_1">
+    <div class="row_2">
         <div class="box_1">
             8
         </div>
@@ -67,7 +67,7 @@ session_start();
             14
         </div>
     </div>
-    <div class="row_1">
+    <div class="row_3">
         <div class="box_1">
             15
         </div>
