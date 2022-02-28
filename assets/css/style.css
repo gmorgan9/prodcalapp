@@ -37,7 +37,7 @@ header h1 {
 
 /* Calendar */
 
-.cal {
+.weekdays {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-auto-rows: minmax(80px, auto);
