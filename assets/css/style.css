@@ -32,6 +32,9 @@ header h1 {
     grid-row: 1;
     text-align: center;
   }
+  .admin {
+      margin-right: 1%;
+  }
 
 /* Calendar */
 
