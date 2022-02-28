@@ -7,12 +7,8 @@
     <div class="bottom_header">
         <p class="one">
             <a href="">Add Event</a>
-        </p>
-        <p class="two">
             <b>Department:</b> Geography
-        </p>
-        <p class="three">
-            <a href="/admin/index.php">Admin Settings</a><br />
+            <a href="/admin/index.php">Admin Settings</a>
             <a href="">Logout</a>
         </p>
     </div>
