@@ -16,6 +16,16 @@ session_start();
 </head>
 <body>
 
+<?php 
+$month = date('m');
+
+if($month == 12){
+   echo "<br />December is the month :)";
+} else {
+   echo "<br /> The month is probably not December";
+}
+?>
+
 <?php include(ROOT_PATH . "/app/includes/header.php"); ?>
 <hr>
 <?php include(ROOT_PATH . "/app/includes/week_days.php"); ?>
