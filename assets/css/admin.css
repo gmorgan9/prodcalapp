@@ -66,6 +66,16 @@ header {
     color:var(--light-text);
     text-decoration:none;
 }
+
+/* content */
+.content {
+    width: 70%;
+    margin: 0px auto;
+    padding: 20px;
+    border: 1px solid #B0C4DE;
+    background: white;
+    border-radius: 0px 0px 10px 10px;
+}
 /* 
 .one{
     grid-column: 1 / 3;

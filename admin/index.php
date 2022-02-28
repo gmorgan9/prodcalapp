@@ -17,8 +17,11 @@ session_start();
 <body>
 
 <?php include(ROOT_PATH . "/app/includes/adminHeader.php"); ?>
+<div class="content">
 
 ADMIN PAGE
+</div>
+
 
     
 </body>
