@@ -8,7 +8,7 @@
 <head>
 	<title>Login - Cal App</title>
 	<meta name="viewport" content="width=device-width">
-	<link rel="stylesheet" href="style.css?v=<?php echo time(); ?>">
+	<link rel="stylesheet" href="/assets/css/style.css?v=<?php echo time(); ?>">
 </head>
 <body>
 	<div class="log-header">
