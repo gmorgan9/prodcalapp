@@ -10,7 +10,7 @@
 
     <!-- Custom Styling -->
     <link rel="stylesheet" href="../../assets/css/style.css?v=<?php echo time(); ?>">
-
+    
     <title>Document</title>
 </head>
 <body>
@@ -22,10 +22,16 @@
         </h1>
     </div>
     <div class="bottom_header">
-        <p>
+        <p class="one">
             + Add Event
-            Department: Geography
+        </p>
+        <p class="two">
+            <b>Department:</b> Geography
+        </p>
+        <p class="three">
             Admin Settings
+        </p>
+        <p class="four">
             Logout
         </p>
     </div>
