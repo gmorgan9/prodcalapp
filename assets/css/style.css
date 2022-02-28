@@ -20,7 +20,7 @@ header h1 {
 }
 .btn {
     padding: 0.5rem 1rem;
-    background: var(--primary-color);
+    background: navy;
     color: white;
     border: 1px solid transparent;
     border-radius: 0.25rem;
