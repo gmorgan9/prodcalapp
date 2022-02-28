@@ -5,11 +5,11 @@
         </h1>
     </div>
     <div class="bottom_header">
-        <p class="one">
-            <a href="">Add Event</a>
-            <b>Department:</b> Geography
-            <a href="/admin/index.php">Admin Settings</a>
-            <a href="">Logout</a>
-        </p>
+        <ul>
+            <li><a href="">Add Event</a></li>
+            <li><b>Department:</b> Geography</li>
+            <li><a href="/admin/index.php">Admin Settings</a></li>
+            <li><a href="">Logout</a></li>
+        </ul>
     </div>
 </header>
