@@ -1,5 +1,5 @@
 <?php
-include("path.php");
+include("/../path.php");
 session_start();
 ?>
 <!DOCTYPE html>
@@ -12,7 +12,7 @@ session_start();
     <!-- Custom Styling -->
     <link rel="stylesheet" href="../../assets/css/style.css?v=<?php echo time(); ?>">
     
-    <title>Calendar App</title>
+    <title>Admin - Calendar App</title>
 </head>
 <body>
 
