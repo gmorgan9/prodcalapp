@@ -24,7 +24,7 @@
     <div class="bottom_header">
         <p>
             + Add Event
-            <b>Department:</b> Geography
+            Department: Geography
             Admin Settings
             Logout
         </p>
