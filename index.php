@@ -19,6 +19,7 @@ session_start();
 <?php 
 $month = date('m');
 
+echo $month;
 if($month == 12){
    echo "<br />December is the month :)";
 } else {
