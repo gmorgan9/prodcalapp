@@ -1,5 +1,5 @@
 <?php
-include("/../path.php");
+include("../path.php");
 session_start();
 ?>
 <!DOCTYPE html>
