@@ -14,7 +14,7 @@
     box-sizing: border-box;
 }
 
-/* header h1 {
+header h1 {
     text-align: center;
     margin-top: 1em;
 }
@@ -31,7 +31,7 @@
 a {
     text-decoration: none;
     color: black;
-} */
+}
 
 header {
     width: 40%;
