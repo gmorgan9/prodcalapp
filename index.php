@@ -22,39 +22,39 @@ session_start();
 <div class="cal">
     <div class="week_day">
         <div class="sun">
-            <p>
+            <h3>
                 Sunday
-            </p>
+            </h3>
         </div>
         <div class="mon">
-            <p>
+            <h3>
                 Monday
-            </p>
+            </h3>
         </div>
         <div class="tue">
-            <p>
+            <h3>
                 Tuesday
-            </p>
+            </h3>
         </div>
         <div class="wed">
-            <p>
+            <h3>
                 Wednesday
-            </p>
+            </h3>
         </div>
         <div class="thu">
-            <p>
+            <h3>
                 Thursday
-            </p>
+            </h3>
         </div>
         <div class="fri">
-            <p>
+            <h3>
                 Friday
-            </p>
+            </h3>
         </div>
         <div class="sat">
-            <p>
+            <h3>
                 Saturday
-            </p>
+            </h3>
         </div>
     </div>
 </div>
