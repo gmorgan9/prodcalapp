@@ -5,7 +5,7 @@
         </h1>
     </div>
     <div class="bottom_header">
-        <ul>
+        <ul class="nav">
             <li><a href="">Add Event</a></li>
             <li><b>Department:</b> Geography</li>
             <li><a href="/admin/index.php">Admin Settings</a></li>
