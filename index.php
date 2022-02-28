@@ -18,14 +18,7 @@ session_start();
 
 <?php 
 
-$month = date('F');
-
-echo $month;
-if($month == 12){
-   echo "<br />December is the month :)";
-} else {
-   echo "<br /> The month is probably not December";
-}
+echo date('F');
 ?>
 
 <?php include(ROOT_PATH . "/app/includes/header.php"); ?>
