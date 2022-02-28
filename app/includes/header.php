@@ -12,8 +12,8 @@
             <b>Department:</b> Geography
         </p>
         <p class="three">
-            <a href="#">Admin Settings</a><br />
-            <a href="">Logout</a>
+            <button><a href="#">Admin Settings</a></button><br />
+            <button><a href="">Logout</a><button>
         </p>
     </div>
 </header>
