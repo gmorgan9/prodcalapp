@@ -18,8 +18,7 @@ session_start();
 
 <?php include(ROOT_PATH . "/app/includes/header.php"); ?>
 <hr>
-<?php include(ROOT_PATH . "/app/includes/week_days.php"); ?>
-<?php include(ROOT_PATH . "/app/includes/cal_days.php"); ?>
+ADMIN PAGE
 
     
 </body>
