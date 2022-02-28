@@ -18,6 +18,9 @@ header h1 {
     margin-right: 2.5%;
     margin-bottom: -2%;
 }
+a {
+    text-decoration: none;
+}
 .btn {
     padding: 0.5rem 1rem;
     background: navy;
