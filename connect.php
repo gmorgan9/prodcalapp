@@ -1,6 +1,6 @@
 <?php
 
-$db_handle = pg_connect("host=localhost dbname=postgres user=postgres password=admin350PASS!");
+$db_handle = pg_connect("host=10.25.90.110 port=5432 dbname=calapp user=gmor password=gmorpass");
 
 if ($db_handle) {
 
