@@ -4,7 +4,7 @@ $db_handle = pg_connect("host=10.25.90.110 port=5432 dbname=calapp user=gmor pas
 
 if ($db_handle) {
 
-echo 'Connection attempt succeeded.';
+echo 'Connection attempt succeeded. I DID IT!!';
 
 } else {
 
