@@ -2,5 +2,5 @@
 
 $host= 'localhost';
 $db = 'postgres';
-$user = 'GARRETT';
-$password = 'garrettDATABASE!'; // change to your password
+$user = 'postgres';
+$password = 'postgres'; // change to your password
