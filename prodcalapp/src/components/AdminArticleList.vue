@@ -1,8 +1,8 @@
 <template>
   <div>
     <div v-if="loading">Loading articles....</div>
-    <router-link to="admin/add" tag="b-button" class="float-right"
-      >Add article</router-link
+    <!-- <router-link to="admin/add" tag="b-button" class="float-right" -->
+      <!-- >Add article</router-link -->
     >
     <br /><br />
     <b-table-simple hover small caption-top responsive>
