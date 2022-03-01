@@ -48,7 +48,7 @@
 import Api from "../api";
 import { setJwtToken } from "../auth";
 export default {
-  name: "Login",
+  name: "Login_page",
   data() {
     return {
       email: "",
@@ -67,7 +67,7 @@ export default {
           if (this.$route.params.nextUrl != null) {
             this.$router.push(this.$route.params.nextUrl);
           } else {
-            this.$router.push("/admin");
+            this.$router.push("/admin_page");
           }
         })
         .catch((error) => {
