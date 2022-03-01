@@ -17,4 +17,3 @@ try {
 		$pdo = null;
 	}
 }
-Co
