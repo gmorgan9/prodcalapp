@@ -5,6 +5,8 @@
 
   if ($db) {
       echo "success";
+  } else {
+      echo "nope";
   }
   
   pg_query("create table testing(id integer)");
