@@ -1,10 +1,20 @@
-<?php 
-$dbconn = pg_connect("host=localhost port=5432 dbname=postgres user=postgres password=admin350PASS!");  
-//connect to a database named "postgres" on the host "host" with a username and password  
-if (!$dbconn){  
-echo "<center><h1>Doesn't work =(</h1></center>";  
-}else  
- echo "<center><h1>Good connection</h1></center>";  
-pg_close($dbconn);
+<?php
 
-  ?>
+require_once 'config.php';
+
+try {
+	$dsn = "pgsql:host=$host;port=5432;dbname=$db;";
+	// make a database connection
+	$pdo = new PDO($dsn, $user, $password, [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
+
+	if ($pdo) {
+		echo "Connected to the $db database successfully!";
+	}
+} catch (PDOException $e) {
+	die($e->getMessage());
+} finally {
+	if ($pdo) {
+		$pdo = null;
+	}
+}
+Co
