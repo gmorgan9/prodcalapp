@@ -1,14 +1,14 @@
 <?php 
-  echo "My first PHP script!";
+  $host        = "host = 10.25.90.110";
+  $port        = "port = 5432";
+  $dbname      = "dbname = calapp";
+  $credentials = "user = gmor password=gmorpass";
 
-  $db = pg_connect("host=10.25.90.110/24 dbname=calapp user=gmor password=gmorpass");
-
-  if ($db) {
-      echo "success";
+  $db = pg_connect( "$host $port $dbname $credentials"  );
+  if(!$db) {
+     echo "Error : Unable to open database\n";
   } else {
-      echo "nope";
+     echo "Opened database successfully\n";
   }
   
-  pg_query("create table testing(id integer)");
-  
-  echo " script! Executed";
+  ?>
