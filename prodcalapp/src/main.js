@@ -3,7 +3,7 @@ import VueRouter from "vue-router";
 import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
 
 import App from "./App.vue";
-import Home from "./pages/Home_page";
+import Home from "./pages/Home";
 import Admin from "./pages/Admin_page";
 import Login from "./pages/Login_page";
 import Logout from "./pages/Logout_page";
