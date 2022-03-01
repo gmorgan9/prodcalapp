@@ -1,24 +1,8 @@
 <?php 
-  class Database {
-    // DB Params
-    private $host = '10.25.90.110';
-    private $db_name = 'calapp';
-    private $username = 'gmor';
-    private $password = 'gmorpass';
-    private $conn;
+  echo "My first PHP script!";
 
-    // DB Connect
-    public function connect() {
-      $this->conn = null;
-
-      try { 
-        $this->conn = new PDO('mysql:host=' . $this->host . ';dbname=' . $this->db_name, $this->username, $this->password);
-        $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        echo "it worked";
-      } catch(PDOException $e) {
-        echo 'Connection Error: ' . $e->getMessage();
-      }
-
-      return $this->conn;
-    }
-  }
+  pg_connect("host=10.25.90.110 dbname=calapp user=gmor password=gmorpass");
+  
+  pg_query("create table testing(id integer)");
+  
+  echo " script! Executed";
