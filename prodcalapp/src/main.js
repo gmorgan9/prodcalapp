@@ -1,6 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
+// import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
 
 import App from "./App.vue";
 import Home from "./pages/Home";
@@ -19,7 +19,7 @@ Vue.config.productionTip = false;
 // import "bootstrap-vue/dist/bootstrap-vue.css";
 import { getJwtToken } from "./auth";
 
-Vue.use(BootstrapVue);
+// Vue.use(BootstrapVue);
 Vue.use(IconsPlugin);
 Vue.use(VueRouter);
 
