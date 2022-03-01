@@ -2,7 +2,7 @@
   $host        = "host = locahost";
   $port        = "port = 5432";
   $dbname      = "dbname = CalendarApp";
-  $credentials = "user = postgre password = admin350PASS!";
+  $credentials = "user = postgres password = admin350PASS!";
 
   $db = pg_connect( "$host $port $dbname $credentials"  );
   if(!$db) {
