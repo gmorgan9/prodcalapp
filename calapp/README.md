@@ -1,4 +1,4 @@
-# vue-eventapp
+# calapp
 
 ## Project setup
 ```
