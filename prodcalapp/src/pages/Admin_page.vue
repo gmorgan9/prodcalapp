@@ -20,6 +20,6 @@
 
 <script>
 export default {
-  name: "Admin",
+  name: "Admin_page",
 };
 </script>
