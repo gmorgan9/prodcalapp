@@ -1,7 +1,11 @@
 <?php 
   echo "My first PHP script!";
 
-  pg_connect("host=10.25.90.110/24 dbname=calapp user=gmor password=gmorpass");
+  $db = pg_connect("host=10.25.90.110/24 dbname=calapp user=gmor password=gmorpass");
+
+  if ($db) {
+      echo "success";
+  }
   
   pg_query("create table testing(id integer)");
   
