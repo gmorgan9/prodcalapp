@@ -1,22 +1,17 @@
 <?php
 
-require_once 'config.php';
+$db_handle = pg_connect("host=localhost dbname=postgres user=postgres password=admin350PASS!");
 
-function connect(string $host, string $db, string $user, string $password): PDO
-{
-	try {
-		$dsn = "pgsql:host=$host;port=5432;dbname=$db;";
+if ($db_handle) {
 
-		// make a database connection
-		return new PDO(
-			$dsn,
-			$user,
-			$password,
-			[PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]
-		);
-	} catch (PDOException $e) {
-		die($e->getMessage());
-	}
+echo 'Connection attempt succeeded.';
+
+} else {
+
+echo 'Connection attempt failed.';
+
 }
 
-return connect($host, $db, $user, $password);
+pg_close($db_handle);
+
+?>
