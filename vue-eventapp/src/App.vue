@@ -17,27 +17,27 @@
     import Calendar from './components/Calendar.vue'
     import EventForm from './components/EventForm.vue'
     import Pusher from 'pusher-js';
+    
     export default {
       name: 'app',
       components: {
-        Calendar,
-        EventForm
+        ...
       },
       data(){
-        return {
-          events: [{
-            title     :  'event1',
-            start     : '2018-07-09',
-            cssClass  : 'blue',
-            YOUR_DATA : {}
-          },
-          {
-            title     : 'event2',
-            start     : '2018-07-10',
-            end       : '2018-07-13',
-            cssClass  : ['orange']
-          }] 
-        }
+        ...  
+      },
+      created(){
+        const pusher = new Pusher('PUSHER_KEY', {
+          cluster: 'PUSHER_CLUSTER',
+          encrypted: true,
+        });
+        const channel = pusher.subscribe('schedule');
+        channel.bind('new-event', (data) => {
+          this.events = [
+            ...this.events,
+            data
+          ];
+        })
       }
     }
     </script>
