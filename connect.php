@@ -1,6 +1,6 @@
 <?php 
 $hostname = "localhost";
-$dbname = "postgres";
+$dbname = "CalendarApp";
 $username = "postgres";
 $pass = "admin350PASS!";
 
