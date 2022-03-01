@@ -1,7 +1,7 @@
 <template>
   <div class="calendar">
     <h1>Calendar</h1>
-    <form @submit.prevent="handleSubmit">
+    <form >
         <div class="input-holder">
           <input type="text" placeholder="Event title" v-model="event.title"/>
         </div>
@@ -15,7 +15,6 @@
           <textarea placeholder="Event description" rows="4" v-model="event.data.description" ></textarea>
         </div>
         <div class="input-holder">
-          <color-picker @colorPicked="selectColor" :color="event.cssClass" />
         </div>
         <div class="input-holder">
           <button type="submit">Schedule</button>
