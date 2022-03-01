@@ -1,17 +1,16 @@
 <?php 
-try {
-	$dsn = "pgsql:host=localhost;port=5432;dbname=postgres;user=postgres;pass=admin350PASS!";
-	// make a database connection
-	$pdo = new PDO("pgsql:host=localhost;port=5432;dbname=postgres;user=postgres;pass=admin350PASS!", [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
+$hostname = "localhost";
+$dbname = "postgres";
+$username = "postgres";
+$pass = "admin350PASS!";
 
-	if ($pdo) {
-		echo "Connected to the $db database successfully!";
-	}
-} catch (PDOException $e) {
-	die($e->getMessage());
-} finally {
-	if ($pdo) {
-		$pdo = null;
-	}
+// Create connection
+$db_conn = pg_connect("host = $hostname dbname = $dbname user = $username password = $pass");
+
+if(!$db_conn) {
+    echo "no";
+} else {
+    echo "yes";
 }
+
   ?>
