@@ -1,14 +1,17 @@
 <?php 
-  $host        = "host = locahost";
-  $port        = "port = 5432";
-  $dbname      = "dbname = postgres";
-  $credentials = "user = postgres password = admin350PASS!";
+try {
+	$dsn = "pgsql:host=localhost;port=5432;dbname=postgres;";
+	// make a database connection
+	$pdo = new PDO($dsn, "postgres", "admin350PASS!", [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
 
-  $db = pg_connect( "$host $port $dbname $credentials"  );
-  if(!$db) {
-     echo "Error : Unable to open database\n";
-  } else {
-     echo "Opened database successfully\n";
-  }
-  
+	if ($pdo) {
+		echo "Connected to the $db database successfully!";
+	}
+} catch (PDOException $e) {
+	die($e->getMessage());
+} finally {
+	if ($pdo) {
+		$pdo = null;
+	}
+}
   ?>
