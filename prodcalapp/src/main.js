@@ -39,20 +39,20 @@ const checkAuth = function(to, _, next) {
 const router = new VueRouter({
   routes: [
     { path: "/", component: Home },
-    { path: "/article/:id", component: Article },
+    // { path: "/article/:id", component: Article },
     { path: "/login", component: Login },
-    { path: "/logout", component: Logout },
-    { path: "/register", component: Register },
-    {
-      path: "/admin",
-      component: Admin,
-      beforeEnter: checkAuth,
-      children: [
-        { path: "add", component: AdminArticleAdd },
-        { path: "edit/:id", component: AdminArticleEdit },
-        { path: "", component: AdminArticleList },
-      ],
-    },
+    // { path: "/logout", component: Logout },
+    // { path: "/register", component: Register },
+    // {
+    //   path: "/admin",
+    //   component: Admin,
+    //   beforeEnter: checkAuth,
+    //   children: [
+    //     { path: "add", component: AdminArticleAdd },
+    //     { path: "edit/:id", component: AdminArticleEdit },
+    //     { path: "", component: AdminArticleList },
+    //   ],
+    // },
   ],
 });
 
