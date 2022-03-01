@@ -18,7 +18,7 @@
 <script>
 import Api from "../api";
 export default {
-  name: "Home",
+  name: "Home_page",
   data: function () {
     return {
       loading: false,
