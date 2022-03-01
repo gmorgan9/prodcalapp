@@ -4,11 +4,11 @@ import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
 
 import App from "./App.vue";
 import Home from "./pages/Home";
-import Admin from "./pages/Admin_page";
-import Login from "./pages/Login_page";
-import Logout from "./pages/Logout_page";
-import Register from "./pages/Register_page";
-import Article from "./pages/Article_page";
+import Admin from "./pages/Admin";
+import Login from "./pages/Login";
+import Logout from "./pages/Logout";
+import Register from "./pages/Register";
+import Article from "./pages/Article";
 import AdminArticleAdd from "./components/AdminArticleAdd";
 import AdminArticleList from "./components/AdminArticleList";
 import AdminArticleEdit from "./components/AdminArticleEdit";
@@ -39,10 +39,10 @@ const checkAuth = function(to, _, next) {
 const router = new VueRouter({
   routes: [
     { path: "/", component: Home },
-    { path: "/article_page/:id", component: Article },
-    { path: "/login_page", component: Login },
-    { path: "/logout_page", component: Logout },
-    { path: "/register_page", component: Register },
+    { path: "/article/:id", component: Article },
+    { path: "/login", component: Login },
+    { path: "/logout", component: Logout },
+    { path: "/register", component: Register },
     {
       path: "/admin",
       component: Admin,
