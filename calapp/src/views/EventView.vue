@@ -55,10 +55,10 @@ export default {
 </script>
 <style>
 .cal_event {
-    border: 1px solid black;
     display: grid;
-    grid-template-columns: 60px 60px;
-    grid-auto-rows: minmax(100px, auto);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
 }
 .type {
     color: gray;
