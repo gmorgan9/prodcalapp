@@ -54,6 +54,7 @@ export default {
 <style>
 .cal_event {
     border: 1px solid black;
+    width: 50%;
     
 }
 .type {
