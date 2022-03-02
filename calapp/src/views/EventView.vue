@@ -11,6 +11,14 @@
             <h3>Time Of Day</h3>
             <p> {{ event.time }} </p>
         </div>
+        <div class="location_block">
+            <h3>Location</h3>
+            <p> {{ event.location }} </p>
+        </div>
+        <div class="reminder_block">
+            <h3>Reminder</h3>
+            <p> {{ reminder.alert_amt }} </p>
+        </div>
       <p>{{ event.type }}</p>
     </div>
   </div>
