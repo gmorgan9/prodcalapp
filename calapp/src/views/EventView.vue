@@ -115,13 +115,13 @@ display: grid;
     background: rgb(22, 105, 153);
     color: white;
     text-transform: uppercase;
-    width: 30%;
+    width: 27.5%;
     margin-right: 5%;
     padding-left: 2px;
 }
 .desc_block p {
-    width: 30%;
-    margin-right: 10%;
+    width: 27.5%;
+    margin-right: 5%;
     padding-left: 2px;
 }
 
