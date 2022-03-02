@@ -34,6 +34,14 @@
               class="form-control"
               name="password_hash"
             />
+            <div class="form-group">
+            <label for="dept_id">Department</label>
+            <input
+              v-model="dept_id"
+              type="text"
+              class="form-control"
+              name="dept_id"
+            />
           </div>
           <div class="form-group">
             <button class="btn btn-primary btn-block" :disabled="loading">
