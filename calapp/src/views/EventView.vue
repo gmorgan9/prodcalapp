@@ -2,6 +2,10 @@
   <div class="cal_event">
     <div v-if="loading">Loading events....</div>
     <div v-else>
+        <div class="date_block">
+            <h3>Date</h3>
+            {{ event.date }}
+        </div>
       <h1>{{ event.title }}</h1>
       <p>{{ event.type }}</p>
     </div>
@@ -31,4 +35,5 @@ export default {
 .cal_event {
     border: 1px solid black;
 }
+
 </style>
