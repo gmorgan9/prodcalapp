@@ -9,7 +9,7 @@ class Api {
 //   }
 
   event_view(event_id) {
-    return axios.get(API_URL + `/cal_events?event_id=eq.${event_id}`);
+    return axios.get(API_URL + `/event_view?event_title=eq.${event_name}`);
   }
 
 //   addArticle(article) {
