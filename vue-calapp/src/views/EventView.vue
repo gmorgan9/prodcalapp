@@ -1,10 +1,7 @@
 <template>
   <div>
-    <div v-if="loading">Loading article....</div>
-    <div v-else>
       <h1>{{ cal_events.event_title }}</h1>
       <p>{{ cal_events.event_type }}</p>
-    </div>
   </div>
 </template>
 
