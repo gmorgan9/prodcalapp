@@ -51,6 +51,7 @@ export default {
 }
 .type {
     color: gray;
+    margin-top: 0;
 }
 .date_block,
 .time_block,
