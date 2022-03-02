@@ -8,9 +8,9 @@ class Api {
 //     return axios.get(API_URL + "/users", {});
 //   }
 
-//   getArticleDetail(id) {
-//     return axios.get(API_URL + `/articles?articleid=eq.${id}`);
-//   }
+  event_view(event_id) {
+    return axios.get(API_URL + `/cal_events?event_id=eq.${event_id}`);
+  }
 
 //   addArticle(article) {
 //     return axios.post(

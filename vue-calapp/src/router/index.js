@@ -30,6 +30,11 @@ const routes = [
     path: '/admin',
     name: 'admin',
     component: () => import( '../views/Admin.vue')
+  },
+  {
+    path: '/event',
+    name: 'event',
+    component: () => import( '../views/EventView.vue')
   }
 ]
 const router = createRouter({
