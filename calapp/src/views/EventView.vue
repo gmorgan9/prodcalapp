@@ -53,8 +53,8 @@ export default {
     margin-left: 5%;
     padding-left: 2px;
 }
-.date_block h3,
-.time_block h3 {
+.date_block p,
+.time_block p {
     width: 20%;
     margin-left: 5%;
     padding-left: 2px;
