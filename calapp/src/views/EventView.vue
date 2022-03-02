@@ -58,6 +58,7 @@ export default {
     border: 1px solid black;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(100px, auto);
 }
 .type {
     color: gray;
