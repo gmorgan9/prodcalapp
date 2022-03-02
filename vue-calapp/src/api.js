@@ -56,7 +56,7 @@ class Api {
     return axios.post(API_URL + "/rpc/login", { user_name, password_hash });
   }
 
-  signup(user_name, user_email, password_hash) {
+  signup(user_name, user_email, password_hash, dept_id) {
     return axios.post(API_URL + "/rpc/signup", { user_name, user_email, password_hash, dept_id });
   }
 }
