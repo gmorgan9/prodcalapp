@@ -35,5 +35,8 @@ export default {
 .cal_event {
     border: 1px solid black;
 }
-
+.date_block {
+    text-align: left;
+    border: 1px solid black;
+}
 </style>
