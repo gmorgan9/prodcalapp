@@ -7,9 +7,9 @@
     <div v-if="loading">Loading articles....</div>
     <ul v-else>
       <li v-for="event in events" :key="event.id">
-        <router-link :to="`/event/${event.id}`">
-        {{ event.title }}
-        </router-link>
+        <router-link :to="`event/${event.id}`">{{
+          event.title
+        }}</router-link>
       </li>
     </ul>
   </div>
@@ -27,7 +27,7 @@ export default {
   },
   created: function () {
     this.loading = true;
-    Api.getEvent(this.$route.params.id).then((res) => {
+    Api.getEvent().then((res) => {
       this.events = res.data;
       this.loading = false;
     });
