@@ -22,6 +22,10 @@
             <p>NONE</p>
             <!-- <p> {{ reminder.alert_amt }} </p> -->
         </div>
+        <div class="desc_block">
+            <h3>Description</h3>
+            <p> {{ event.description }} </p>
+        </div>
     </div>
   </div>
 </template>
