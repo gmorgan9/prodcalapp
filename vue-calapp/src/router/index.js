@@ -15,6 +15,11 @@ const routes = [
     path: '/calendar',
     name: 'calendar',
     component: () => import( '../views/CalendarView.vue')
+  },
+  {
+    path: '/login',
+    name: 'login',
+    component: () => import( '../views/Login.vue')
   }
 ]
 const router = createRouter({
