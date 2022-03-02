@@ -96,7 +96,7 @@ display: grid;
     color: white;
     text-transform: uppercase;
     width: 30%;
-    margin-left: 30%;
+    margin-left: 50%;
     padding-left: 2px;
 }
 .date_block p,
