@@ -61,7 +61,7 @@ export default {
     background: gray;
     color: white;
     text-transform: uppercase;
-    width: 20%;
+    width: 15%;
     margin-left: 30%;
     padding-left: 2px;
 }
@@ -69,7 +69,7 @@ export default {
 .time_block p,
 .location_block p,
 .reminder_block p {
-    width: 20%;
+    width: 15%;
     margin-left: 30%;
     padding-left: 2px;
 }
