@@ -48,11 +48,15 @@ export default {
     border: 1px solid black;
 }
 .date_block,
-.time_block {
+.time_block,
+.location_block,
+.reminder_block {
     text-align: left;
 }
 .date_block h3,
-.time_block h3 {
+.time_block h3,
+.location_block h3,
+.reminder_block h3 {
     /* border: 1px solid black; */
     background: gray;
     color: white;
@@ -62,7 +66,9 @@ export default {
     padding-left: 2px;
 }
 .date_block p,
-.time_block p {
+.time_block p,
+.location_block p,
+.reminder_block p {
     width: 20%;
     margin-left: 5%;
     padding-left: 2px;
