@@ -39,7 +39,10 @@ export default {
     text-align: left;
 }
 .date_block h3 {
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    background: gray;
+    color: white;
+    text-transform: uppercase;
     width: 20%;
 }
 </style>
