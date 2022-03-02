@@ -3,6 +3,7 @@
     <div v-if="loading">Loading events....</div>
     <div v-else>
         <h1>{{ event.title }}</h1>
+        <p class="type">{{ event.type }}</p>
         <div class="date_block">
             <h3>Date</h3>
            <p> {{ event.date }} </p>
@@ -21,7 +22,6 @@
             <p>NONE</p>
             <!-- <p> {{ reminder.alert_amt }} </p> -->
         </div>
-      <p>{{ event.type }}</p>
     </div>
   </div>
 </template>
@@ -48,6 +48,9 @@ export default {
 <style>
 .cal_event {
     border: 1px solid black;
+}
+.type {
+    color: gray;
 }
 .date_block,
 .time_block,
