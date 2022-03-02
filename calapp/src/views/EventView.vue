@@ -73,9 +73,17 @@ display: grid;
     grid-column: 1 / 2;
     grid-row: 1;
 }
-.date_block {
+.time_block {
     grid-column: 1 / 2;
     grid-row: 2;
+}
+.location_block {
+    grid-column: 1 / 2;
+    grid-row: 3;
+}
+.reminder_block {
+    grid-column: 1 / 2;
+    grid-row: 4;
 }
 /* .date_block,
 .time_block,
