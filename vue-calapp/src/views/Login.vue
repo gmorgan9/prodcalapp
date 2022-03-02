@@ -8,7 +8,7 @@
       />
       <form name="form" @submit.prevent="handleLogin">
         <div class="form-group">
-          <label for="email">Username</label>
+          <label for="user_name">Username</label>
           <input
             v-model="user_name"
             type="text"
@@ -17,7 +17,7 @@
           />
         </div>
         <div class="form-group">
-          <label for="password">Password</label>
+          <label for="password_hash">Password</label>
           <input
             v-model="password_hash"
             type="password"
