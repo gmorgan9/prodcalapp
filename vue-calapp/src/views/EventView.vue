@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="eventview">
       <h1>Event Title: {{ cal_events.event_title }}</h1>
       <p>{{ cal_events.event_type }}</p>
   </div>
@@ -24,5 +24,8 @@ export default {
   },
 };
 </script>
-© 2022 GitHub, Inc.
-Terms
+<style>
+.eventview {
+    border: 2px solid black;
+}
+</style>
