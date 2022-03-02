@@ -41,8 +41,8 @@
               type="text"
               class="form-control"
               name="dept_id"
-            />
-          </div>
+                />
+            </div>
           <div class="form-group">
             <button class="btn btn-primary btn-block" :disabled="loading">
               <span
