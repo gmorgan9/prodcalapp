@@ -4,6 +4,7 @@
     <div v-else>
         <h1>{{ event.title }}</h1>
         <h3 class="type">{{ event.type }}</h3>
+        <div class="left-side">
         <div class="date_block">
             <h3>Date</h3>
            <p> {{ event.date }} </p>
@@ -22,9 +23,12 @@
             <p>NONE</p>
             <!-- <p> {{ reminder.alert_amt }} </p> -->
         </div>
+        </div>
+        <div class="right-side">
         <div class="desc_block">
             <h3>Description</h3>
             <p> {{ event.description }} </p>
+        </div>
         </div>
     </div>
   </div>
@@ -58,11 +62,17 @@ export default {
     margin-top: -20px;
     text-transform: capitalize;
 }
+.left-side {
+    float: left;
+}
+.left-side {
+    float: right;
+}
 .date_block,
 .time_block,
 .location_block,
 .reminder_block {
-    float: left;
+    text-align: left;
 }
 .date_block h3,
 .time_block h3,
@@ -85,7 +95,7 @@ export default {
     padding-left: 2px;
 }
 .desc_block {
-    float: right;
+    /* float: right; */
 }
 
 </style>
