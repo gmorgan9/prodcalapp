@@ -21,7 +21,6 @@
         <div class="reminder_block">
             <h3>Reminder</h3>
             <p>NONE</p>
-            <!-- <p> {{ reminder.alert_amt }} </p> -->
         </div>
         <div class="desc_block">
             <h3>Description</h3>
@@ -35,7 +34,7 @@
 <script>
 import Api from "../api";
 export default {
-  name: "EventDetail",
+  name: "Event",
   data: function () {
     return {
       loading: false,
