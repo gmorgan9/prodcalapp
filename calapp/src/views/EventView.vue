@@ -65,7 +65,7 @@ export default {
 .left-side {
     display: flex;
 }
-.left-side {
+.right-side {
     float: flex;
 }
 .date_block,
