@@ -56,17 +56,23 @@ export default {
 <style>
 .cal_event {
     border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    grid-template-rows: 100% auto;
 }
 .type {
     color: gray;
     margin-top: -20px;
     text-transform: capitalize;
 }
-.left-side {
-    display: flex;
+.date_block {
+    grid-column: 1 / 2;
+    grid-row: 1;
 }
-.right-side {
-    float: flex;
+.date_block {
+    grid-column: 1 / 2;
+    grid-row: 2;
 }
 .date_block,
 .time_block,
