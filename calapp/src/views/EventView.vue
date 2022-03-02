@@ -111,5 +111,18 @@ display: grid;
     grid-column: 2 / 2;
     grid-row: 1;
 }
+.desc_block h3 {
+    background: gray;
+    color: white;
+    text-transform: uppercase;
+    width: 30%;
+    margin-right: 30%;
+    padding-left: 2px;
+}
+.desc_block p {
+    width: 30%;
+    margin-right: 30%;
+    padding-left: 2px;
+}
 
 </style>
