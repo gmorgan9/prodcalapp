@@ -107,7 +107,6 @@ display: grid;
     margin-left: 70%;
     padding-left: 2px;
     margin-top: -2.5%;
-    margin-bottom: -2.5%;
 }
 .desc_block {
     grid-column: 2 / 2;
@@ -128,7 +127,6 @@ display: grid;
     margin-left: 2%;
     padding-left: 2px;
     margin-top: -2.5%;
-    margin-bottom: -2.5%;
 }
 
 </style>
