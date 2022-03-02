@@ -62,7 +62,7 @@ export default {
     color: white;
     text-transform: uppercase;
     width: 20%;
-    margin-left: 5%;
+    margin-left: 15%;
     padding-left: 2px;
 }
 .date_block p,
