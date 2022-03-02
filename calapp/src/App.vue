@@ -20,6 +20,7 @@
 }
 
 nav {
+  margin-top:0;
   padding: 15px;
 }
 
