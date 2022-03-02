@@ -85,7 +85,8 @@ display: grid;
 .date_block,
 .time_block,
 .location_block,
-.reminder_block {
+.reminder_block,
+.desc_block {
     text-align: left;
 }
 .date_block h3,
@@ -112,7 +113,7 @@ display: grid;
     grid-row: 1;
 }
 .desc_block h3 {
-    background: gray;
+    background: rgb(22, 105, 153);
     color: white;
     text-transform: uppercase;
     width: 30%;
