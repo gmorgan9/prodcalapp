@@ -57,7 +57,7 @@ export default {
 .cal_event {
     border: 1px solid black;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 60px 60px;
     grid-auto-rows: minmax(100px, auto);
 }
 .type {
