@@ -34,7 +34,7 @@
 <script>
 import Api from "../api";
 export default {
-  name: "Event",
+  name: "event",
   data: function () {
     return {
       loading: false,
