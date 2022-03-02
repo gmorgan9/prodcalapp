@@ -84,5 +84,8 @@ export default {
     margin-left: 30%;
     padding-left: 2px;
 }
+.desc_block {
+    float: right;
+}
 
 </style>
