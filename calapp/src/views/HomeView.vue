@@ -9,7 +9,7 @@
       <li v-for="users in user" :key="users.id">
         <router-link :to="`users/${users.id}`">{{
           users.username
-        }}</router-link>
+        }}</router-link> &nbsp; | &nbsp;
         <router-link :to="`users/${users.id}`">{{
           users.email
         }}</router-link>
