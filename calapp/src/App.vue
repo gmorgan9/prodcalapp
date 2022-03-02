@@ -4,8 +4,7 @@
 
     <nav>
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> | 
-      <router-link to="/event">Events</router-link>
+      <router-link to="/about">About</router-link>
       <router-view/>
     </nav>
   </div>
