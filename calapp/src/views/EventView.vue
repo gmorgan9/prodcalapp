@@ -117,11 +117,13 @@ display: grid;
     text-transform: uppercase;
     width: 27.5%;
     margin-right: 5%;
+    margin-left: 2%;
     padding-left: 2px;
 }
 .desc_block p {
     width: 27.5%;
     margin-right: 5%;
+    margin-left: 2%;
     padding-left: 2px;
 }
 
