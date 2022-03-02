@@ -62,12 +62,12 @@ export default {
     margin-top: -20px;
     text-transform: capitalize;
 }
-/* .left-side {
-    float: left;
+.left-side {
+    display: flex;
 }
 .left-side {
-    float: right;
-} */
+    float: flex;
+}
 .date_block,
 .time_block,
 .location_block,
