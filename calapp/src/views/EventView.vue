@@ -17,7 +17,7 @@
         </div>
         <div class="reminder_block">
             <h3>Reminder</h3>
-            <!-- <p> {{ reminder.alert_amt }} </p> -->
+            <p> {{ reminder.alert_amt }} </p>
         </div>
       <p>{{ event.type }}</p>
     </div>
