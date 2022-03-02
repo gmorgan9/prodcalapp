@@ -67,7 +67,6 @@ export default {
 display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
-    grid-template-rows: 100% auto;
 }
 .right-side {
 display: grid;
