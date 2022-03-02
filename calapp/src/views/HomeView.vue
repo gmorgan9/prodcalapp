@@ -7,12 +7,7 @@
     <div v-if="loading">Loading articles....</div>
     <ul v-else>
       <li v-for="users in user" :key="users.id">
-        <router-link :to="`users/${users.id}`">{{
-          users.username
-        }}</router-link> &nbsp; | &nbsp;
-        <router-link :to="`users/${users.id}`">{{
-          users.email
-        }}</router-link>
+        {{ users.username }} &nbsp; | &nbsp; {{ users.email }}
       </li>
     </ul>
   </div>
