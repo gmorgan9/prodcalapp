@@ -15,13 +15,13 @@ export default {
   data: function () {
     return {
       loading: false,
-      article: null,
+      cal_events: null,
     };
   },
   created: function () {
     this.loading = true;
-    Api.getArticleDetail(this.$route.params.id).then((res) => {
-      this.article = res.data[0];
+    Api.event_view(this.$route.params.id).then((res) => {
+      this.cal_events = res.data[0];
       this.loading = false;
     });
   },
