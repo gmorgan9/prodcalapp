@@ -4,7 +4,7 @@
       <p>Welcome to the IT350 blog!</p>
     </b-jumbotron>
     <br />
-    <div v-if="loading">Loading articles....</div>
+    <div v-if="loading">Loading events....</div>
     <ul v-else>
       <li v-for="events in event" :key="events.id">
         {{ events.title }} &nbsp; | &nbsp; {{ events.type }}
