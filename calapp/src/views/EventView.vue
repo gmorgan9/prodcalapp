@@ -55,10 +55,8 @@ export default {
 </script>
 <style>
 .cal_event {
-    display: grid;
-  grid-template-columns: repeat(3, 5fr);
-  gap: 50px;
-  grid-auto-rows: minmax(100px, auto);
+    border: 1px solid black;
+    display: inline;
 }
 .type {
     color: gray;
@@ -66,12 +64,10 @@ export default {
     text-transform: capitalize;
 }
 .left-side {
-    grid-column: 1 / 2;
-    grid-row: 1;
+    float: left;
 }
 .left-side {
-    grid-column: 2 / 2;
-    grid-row: 1;
+    float: right;
 }
 .date_block,
 .time_block,
