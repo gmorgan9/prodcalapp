@@ -6,7 +6,7 @@
     <br />
     <div v-if="loading">Loading articles....</div>
     <ul v-else>
-      <li v-for="users in user" :key="users.user_id">
+      <li v-for="users in users" :key="users.user_id">
         <router-link :to="`users/${users.user_id}`">{{
           users.user_name
         }}</router-link>
@@ -26,8 +26,8 @@ export default {
   },
   created: function () {
     this.loading = true;
-    Api.users().then((res) => {
-      this.users = res.data;
+    Api.getUsers().then((res) => {
+      this.getUsers = res.data;
       this.loading = false;
     });
   },
