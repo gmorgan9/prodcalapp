@@ -4,14 +4,11 @@
       <p>Welcome to the IT350 blog!</p>
     </b-jumbotron>
     <br />
-    <div v-if="loading">Loading articles....</div>
-    <ul v-else>
-      <li v-for="article in articles" :key="article.articleid">
-        <router-link :to="`article/${article.articleid}`">{{
-          article.title
+      <li v-for="cal_event in cal_events" :key="cal_events.event_id">
+        <router-link :to="`event/${cal_events.event_id}`">{{
+          cal_events.event_title
         }}</router-link>
       </li>
-    </ul>
   </div>
 </template>
 
@@ -21,14 +18,13 @@ export default {
   name: "Home",
   data: function () {
     return {
-      loading: false,
-      articles: [],
+      cal_event: [],
     };
   },
   created: function () {
     this.loading = true;
-    Api.getArticles().then((res) => {
-      this.articles = res.data;
+    Api.cal_events().then((res) => {
+      this.cal_events = res.data;
       this.loading = false;
     });
   },
