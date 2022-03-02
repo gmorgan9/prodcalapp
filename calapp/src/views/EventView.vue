@@ -37,6 +37,9 @@ export default {
 }
 .date_block {
     text-align: left;
+}
+.date_block h3 {
     border: 1px solid black;
+    width: 20%;
 }
 </style>
