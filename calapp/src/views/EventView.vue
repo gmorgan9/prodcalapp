@@ -56,8 +56,8 @@ export default {
 <style>
 .cal_event {
     display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  grid-template-columns: repeat(3, 5fr);
+  gap: 50px;
   grid-auto-rows: minmax(100px, auto);
 }
 .type {
