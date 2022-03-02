@@ -88,6 +88,11 @@ display: grid;
 .desc_block {
     text-align: left;
 }
+.time_block,
+.location_block,
+.reminder_block {
+    margin-top: -5%;
+}
 .date_block h3,
 .time_block h3,
 .location_block h3,
