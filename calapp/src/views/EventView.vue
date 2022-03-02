@@ -95,16 +95,16 @@ display: grid;
     background: gray;
     color: white;
     text-transform: uppercase;
-    width: 20%;
-    margin-left: 70%;
+    width: 30%;
+    margin-left: 65%;
     padding-left: 2px;
 }
 .date_block p,
 .time_block p,
 .location_block p,
 .reminder_block p {
-    width: 20%;
-    margin-left: 70%;
+    width: 30%;
+    margin-left: 65%;
     padding-left: 2px;
 }
 .desc_block {
@@ -116,7 +116,7 @@ display: grid;
     color: white;
     text-transform: uppercase;
     width: 30%;
-    margin-right: 10%;
+    margin-right: 15%;
     padding-left: 2px;
 }
 .desc_block p {
