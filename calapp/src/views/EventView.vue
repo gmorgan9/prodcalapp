@@ -95,7 +95,7 @@ display: grid;
     background: gray;
     color: white;
     text-transform: uppercase;
-    width: 30%;
+    width: 20%;
     margin-left: 70%;
     padding-left: 2px;
 }
@@ -103,7 +103,7 @@ display: grid;
 .time_block p,
 .location_block p,
 .reminder_block p {
-    width: 30%;
+    width: 20%;
     margin-left: 70%;
     padding-left: 2px;
 }
