@@ -25,7 +25,7 @@ export default {
   },
   created: function () {
     this.loading = true;
-    Api.getEvent(id).then((res) => {
+    Api.getEvent(this.$route.params.id).then((res) => {
       this.event = res.data;
       this.loading = false;
     });
