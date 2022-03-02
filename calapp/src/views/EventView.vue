@@ -3,7 +3,7 @@
     <div v-if="loading">Loading events....</div>
     <div v-else>
         <h1>{{ event.title }}</h1>
-        <p class="type">{{ event.type }}</p>
+        <h3 class="type">{{ event.type }}</h3>
         <div class="date_block">
             <h3>Date</h3>
            <p> {{ event.date }} </p>
