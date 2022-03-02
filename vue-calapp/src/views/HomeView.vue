@@ -4,11 +4,14 @@
       <p>Welcome to the IT350 blog!</p>
     </b-jumbotron>
     <br />
-      <li v-for="cal_event in cal_events" :key="cal_events.event_id">
-        <router-link :to="`event/${cal_events.event_id}`">{{
-          cal_events.event_title
+    <div v-if="loading">Loading articles....</div>
+    <ul v-else>
+      <li v-for="user in users" :key="user.user_id">
+        <router-link :to="`user/${user.user_id}`">{{
+          user.user_name
         }}</router-link>
       </li>
+    </ul>
   </div>
 </template>
 
@@ -18,13 +21,13 @@ export default {
   name: "home",
   data: function () {
     return {
-      cal_event: [],
+      users: [],
     };
   },
   created: function () {
     this.loading = true;
-    Api.cal_events().then((res) => {
-      this.cal_events = res.data;
+    Api.users().then((res) => {
+      this.users = res.data;
       this.loading = false;
     });
   },
