@@ -1,8 +1,8 @@
 <template>
   <div class="cal_event">
     <div v-if="loading">Loading events....</div>
-    <ul v-else>
-        <li class="event" v-for="event in events" :key="event.id">
+    <div v-else>
+        <!-- <li class="event" v-for="event in events" :key="event.id"> -->
 
         
         <h1>{{ event.title }}</h1>
@@ -31,8 +31,8 @@
             <p> {{ event.description }} </p>
         </div>
         </div>
-        </li>
-    </ul>
+        <!-- </div> -->
+    </div>
   </div>
 </template>
 
