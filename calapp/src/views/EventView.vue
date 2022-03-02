@@ -61,16 +61,10 @@ export default {
     margin-top: -20px;
     text-transform: capitalize;
 }
-.left-side {
+.content {
 display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
-}
-.right-side {
-display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    grid-template-rows: 100% auto;
 }
 .date_block {
     grid-column: 1 / 2;
