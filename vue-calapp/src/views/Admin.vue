@@ -2,8 +2,8 @@
   <div>
     <nav>
         <router-link to="/">Home</router-link> |
-        <router-link to="/Admin">Admin</router-link> | 
-        <router-link to="/Logout">Logout</router-link>
+        <router-link to="/admin">Admin</router-link> | 
+        <router-link to="/logout">Logout</router-link>
     </nav>
     <br />
     <hr />
@@ -13,6 +13,6 @@
 
 <script>
 export default {
-  name: "Admin",
+  name: "admin",
 };
 </script>

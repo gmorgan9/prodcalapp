@@ -3,42 +3,42 @@ import HomeView from '../views/HomeView.vue'
 const routes = [
   {
     path: '/',
-    name: 'Home',
+    name: 'home',
     component: HomeView
   },
   {
-    path: '/About',
-    name: 'About',
+    path: '/about',
+    name: 'about',
     component: () => import( '../views/AboutView.vue')
   },
   {
-    path: '/Calendar',
-    name: 'Calendar',
+    path: '/calendar',
+    name: 'calendar',
     component: () => import( '../views/CalendarView.vue')
   },
   {
-    path: '/Login',
-    name: 'Login',
+    path: '/login',
+    name: 'login',
     component: () => import( '../views/Login.vue')
   },
   {
-    path: '/Register',
-    name: 'Register',
+    path: '/register',
+    name: 'register',
     component: () => import( '../views/Register.vue')
   },
   {
-    path: '/Admin',
-    name: 'Admin',
+    path: '/admin',
+    name: 'admin',
     component: () => import( '../views/Admin.vue')
   },
   {
-    path: '/Event',
-    name: 'Event',
+    path: '/event',
+    name: 'event',
     component: () => import( '../views/EventView.vue')
   },
   {
-    path: '/Logout',
-    name: 'Logout',
+    path: '/logout',
+    name: 'logout',
     component: () => import( '../views/Logout.vue')
   }
 ]

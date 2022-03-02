@@ -15,7 +15,7 @@
 <script>
 import Api from "../api";
 export default {
-  name: "Home",
+  name: "home",
   data: function () {
     return {
       cal_event: [],

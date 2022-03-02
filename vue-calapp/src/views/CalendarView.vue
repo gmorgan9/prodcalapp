@@ -27,17 +27,17 @@
 <script>
 import Api from "../api";
 export default {
-  name: "Calendar",
+  name: "calendar",
   data: function () {
     return {
       loading: false,
-      articles: [],
+      calendar: [],
     };
   },
   created: function () {
     this.loading = true;
-    Api.getArticles().then((res) => {
-      this.articles = res.data;
+    Api.calendar().then((res) => {
+      this.calendar = res.data;
       this.loading = false;
     });
   },

@@ -48,7 +48,7 @@
 import Api from "../api";
 import { setJwtToken } from "../auth";
 export default {
-  name: "Login",
+  name: "login",
   data() {
     return {
       user_name: "",
