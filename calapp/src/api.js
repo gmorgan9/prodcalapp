@@ -8,7 +8,7 @@ class Api {
     return axios.get(API_URL + "/event", {});
   }
 
-  getEvent(id) {
+  getEventDetail(id) {
     return axios.get(API_URL + `/event?event.id=eq.${id}`);
   }
 

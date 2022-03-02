@@ -1,11 +1,8 @@
 <template>
-  <div class="cal_event">
-    <div v-if="loading">Loading events....</div>
+  <div>
+    <div v-if="loading">Loading article....</div>
     <div v-else>
-        <!-- <li class="event" v-for="event in events" :key="event.id"> -->
-
-        
-        <h1>{{ event.title }}</h1>
+      <h1>{{ event.title }}</h1>
         <h3 class="type">{{ event.type }}</h3>
         <div class="content">
         <div class="date_block">
@@ -31,7 +28,6 @@
             <p> {{ event.description }} </p>
         </div>
         </div>
-        <!-- </div> -->
     </div>
   </div>
 </template>
@@ -39,7 +35,7 @@
 <script>
 import Api from "../api";
 export default {
-  name: "Event",
+  name: "EventDetail",
   data: function () {
     return {
       loading: false,
@@ -48,13 +44,17 @@ export default {
   },
   created: function () {
     this.loading = true;
-    Api.getEvent(this.$route.params.id).then((res) => {
+    Api.getEventDetail(this.$route.params.id).then((res) => {
       this.event = res.data[0];
       this.loading = false;
     });
   },
 };
 </script>
+
+
+
+
 <style>
 .type {
     color: gray;
