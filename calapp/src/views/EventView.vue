@@ -7,7 +7,7 @@
     <div v-if="loading">Loading events....</div>
     <div v-else>
       <h1>{{ event.title }}</h1>
-      <p>{{ event.content }}</p>
+      <p>{{ event.type }}</p>
     </div>
   </div>
 </template>
