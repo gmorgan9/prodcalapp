@@ -53,6 +53,7 @@
             </button>
           </div>
         </div>
+        </div>
       </form>
 
       <div v-if="message" class="alert alert-danger">
