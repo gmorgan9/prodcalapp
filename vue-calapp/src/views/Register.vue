@@ -38,7 +38,7 @@
             <label for="dept_id">Department</label>
             <input
               v-model="dept_id"
-              type="text"
+              type="int"
               class="form-control"
               name="dept_id"
                 />
