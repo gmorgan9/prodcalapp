@@ -62,7 +62,7 @@ export default {
 .time_block,
 .location_block,
 .reminder_block {
-    text-align: left;
+    float: left;
 }
 .date_block h3,
 .time_block h3,
