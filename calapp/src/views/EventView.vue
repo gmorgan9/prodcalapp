@@ -56,19 +56,18 @@ export default {
 <style>
 .cal_event {
     border: 1px solid black;
-    display: inline;
 }
 .type {
     color: gray;
     margin-top: -20px;
     text-transform: capitalize;
 }
-.left-side {
+/* .left-side {
     float: left;
 }
 .left-side {
     float: right;
-}
+} */
 .date_block,
 .time_block,
 .location_block,
@@ -96,7 +95,7 @@ export default {
     padding-left: 2px;
 }
 .desc_block {
-    /* float: right; */
+    text-align: right;
 }
 
 </style>
