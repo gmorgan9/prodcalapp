@@ -35,6 +35,11 @@ const routes = [
     path: '/event',
     name: 'event',
     component: () => import( '../views/EventView.vue')
+  },
+  {
+    path: '/logout',
+    name: 'logout',
+    component: () => import( '../views/Logout.vue')
   }
 ]
 const router = createRouter({
