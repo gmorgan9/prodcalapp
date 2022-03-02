@@ -2,6 +2,9 @@
   <div class="cal_event">
     <div v-if="loading">Loading events....</div>
     <div v-else>
+        <div class="event" v-for="event in events" :key="event.id">
+
+        
         <h1>{{ event.title }}</h1>
         <h3 class="type">{{ event.type }}</h3>
         <div class="content">
@@ -26,6 +29,7 @@
         <div class="desc_block">
             <h3>Description</h3>
             <p> {{ event.description }} </p>
+        </div>
         </div>
         </div>
     </div>
