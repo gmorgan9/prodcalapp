@@ -21,7 +21,7 @@ export default {
   name: "home",
   data: function () {
     return {
-      users: [],
+      users: [user_name],
     };
   },
   created: function () {
