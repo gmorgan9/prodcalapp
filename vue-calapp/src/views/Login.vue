@@ -8,21 +8,21 @@
       />
       <form name="form" @submit.prevent="handleLogin">
         <div class="form-group">
-          <label for="email">Email</label>
+          <label for="email">Username</label>
           <input
-            v-model="email"
+            v-model="user_name"
             type="text"
             class="form-control"
-            name="email"
+            name="user_name"
           />
         </div>
         <div class="form-group">
           <label for="password">Password</label>
           <input
-            v-model="password"
+            v-model="password_hash"
             type="password"
             class="form-control"
-            name="password"
+            name="password_hash"
           />
         </div>
         <div class="form-group">
@@ -51,8 +51,8 @@ export default {
   name: "Login",
   data() {
     return {
-      email: "",
-      password: "",
+      user_name: "",
+      password_hash: "",
       loading: false,
       message: "",
     };
@@ -61,7 +61,7 @@ export default {
     handleLogin() {
       this.loading = true;
       this.message = "";
-      Api.login(this.email, this.password)
+      Api.login(this.user_name, this.password_hash)
         .then((res) => {
           setJwtToken(res.data[0].token);
           if (this.$route.params.nextUrl != null) {
