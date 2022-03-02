@@ -10,6 +10,9 @@
         <router-link :to="`users/${users.id}`">{{
           users.username
         }}</router-link>
+        <router-link :to="`users/${users.id}`">{{
+          users.email
+        }}</router-link>
       </li>
     </ul>
   </div>
