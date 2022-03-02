@@ -5,11 +5,11 @@
         <h1>{{ event.title }}</h1>
         <div class="date_block">
             <h3>Date</h3>
-            {{ event.date }}
+           <p> {{ event.date }} </p>
         </div>
         <div class="time_block">
             <h3>Time Of Day</h3>
-            {{ event.time }}
+            <p> {{ event.time }} </p>
         </div>
       <p>{{ event.type }}</p>
     </div>
@@ -53,4 +53,11 @@ export default {
     margin-left: 5%;
     padding-left: 2px;
 }
+.date_block h3,
+.time_block h3 {
+    width: 20%;
+    margin-left: 5%;
+    padding-left: 2px;
+}
+
 </style>
