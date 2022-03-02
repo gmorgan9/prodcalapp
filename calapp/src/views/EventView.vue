@@ -56,6 +56,8 @@ export default {
 <style>
 .cal_event {
     border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 .type {
     color: gray;
@@ -63,10 +65,12 @@ export default {
     text-transform: capitalize;
 }
 .left-side {
-    float: left;
+    grid-column: 1 / 2;
+    grid-row: 1;
 }
 .left-side {
-    float: right;
+    grid-column: 2 / 2;
+    grid-row: 1;
 }
 .date_block,
 .time_block,
@@ -83,7 +87,7 @@ export default {
     color: white;
     text-transform: uppercase;
     width: 15%;
-    /* margin-left: 30%; */
+    margin-left: 30%;
     padding-left: 2px;
 }
 .date_block p,
@@ -91,7 +95,7 @@ export default {
 .location_block p,
 .reminder_block p {
     width: 15%;
-    /* margin-left: 30%; */
+    margin-left: 30%;
     padding-left: 2px;
 }
 .desc_block {
