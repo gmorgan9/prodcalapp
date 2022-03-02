@@ -1,9 +1,5 @@
 <template>
-  <div>
-    <b-jumbotron>
-      <p>Calendar App!</p>
-    </b-jumbotron>
-    <br />
+  <div class="cal_event">
     <div v-if="loading">Loading events....</div>
     <div v-else>
       <h1>{{ event.title }}</h1>
@@ -31,3 +27,8 @@ export default {
   },
 };
 </script>
+<style>
+.cal_event {
+    border: 1px solid black;
+}
+</style>
