@@ -1,6 +1,6 @@
 <template>
   <div>
-      <h1>{{ cal_events.event_title }}</h1>
+      <h1>Event Title: {{ cal_events.event_title }}</h1>
       <p>{{ cal_events.event_type }}</p>
   </div>
 </template>
