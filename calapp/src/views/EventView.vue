@@ -2,11 +2,15 @@
   <div class="cal_event">
     <div v-if="loading">Loading events....</div>
     <div v-else>
+        <h1>{{ event.title }}</h1>
         <div class="date_block">
             <h3>Date</h3>
             {{ event.date }}
         </div>
-      <h1>{{ event.title }}</h1>
+        <div class="time_block">
+            <h3>Time Of Day</h3>
+            {{ event.time }}
+        </div>
       <p>{{ event.type }}</p>
     </div>
   </div>
@@ -45,5 +49,6 @@ export default {
     text-transform: uppercase;
     width: 20%;
     margin-left: 5%;
+    padding-left: 2px;
 }
 </style>
