@@ -98,7 +98,7 @@ display: grid;
     text-transform: uppercase;
     width: 27.5%;
     margin-left: 70%;
-    padding-left: 2px;
+    padding-left: 5px;
 }
 .date_block p,
 .time_block p,
@@ -126,7 +126,7 @@ display: grid;
     width: 27.5%;
     margin-right: 5%;
     margin-left: 2%;
-    padding-left: 2px;
+    padding-left: 5px;
     margin-top: -2%;
 }
 
