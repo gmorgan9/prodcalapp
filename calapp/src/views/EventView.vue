@@ -120,13 +120,13 @@ display: grid;
     width: 27.5%;
     margin-right: 5%;
     margin-left: 2%;
-    padding-left: 2px;
+    padding-left: 5px;
 }
 .desc_block p {
     width: 27.5%;
     margin-right: 5%;
     margin-left: 2%;
-    padding-left: 5px;
+    padding-left: 2px;
     margin-top: -2%;
 }
 
