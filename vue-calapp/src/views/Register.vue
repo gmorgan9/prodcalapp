@@ -66,7 +66,7 @@
 <script>
 import Api from "../api";
 export default {
-  name: "Register",
+  name: "register",
   data() {
     return {
       user_name: "",
