@@ -63,7 +63,7 @@ export default {
 }
 .content {
 display: grid;
-    grid-template-columns: 60px 60px;
+    grid-template-columns: repeat(2, 2fr);
     gap: 20px;
 }
 .date_block {
