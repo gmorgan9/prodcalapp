@@ -62,7 +62,7 @@ export default {
     color: white;
     text-transform: uppercase;
     width: 20%;
-    margin-left: 15%;
+    margin-left: 30%;
     padding-left: 2px;
 }
 .date_block p,
@@ -70,7 +70,7 @@ export default {
 .location_block p,
 .reminder_block p {
     width: 20%;
-    margin-left: 5%;
+    margin-left: 30%;
     padding-left: 2px;
 }
 
