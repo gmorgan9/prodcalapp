@@ -101,7 +101,8 @@ export default {
     padding-left: 2px;
 }
 .desc_block {
-    text-align: right;
+    grid-column: 2 / 2;
+    grid-row: 1;
 }
 
 </style>
