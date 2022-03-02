@@ -14,11 +14,11 @@
         <div class="location_block">
             <h3>Location</h3>
             <p> {{ event.location }} </p>
-            NONE
+            <p>NONE</p>
         </div>
         <div class="reminder_block">
             <h3>Reminder</h3>
-            NONE
+            <p>NONE</p>
             <!-- <p> {{ reminder.alert_amt }} </p> -->
         </div>
       <p>{{ event.type }}</p>
