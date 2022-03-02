@@ -63,7 +63,7 @@ export default {
 }
 .content {
 display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 60px 60px;
     gap: 20px;
 }
 .date_block {
@@ -104,7 +104,7 @@ display: grid;
 .location_block p,
 .reminder_block p {
     width: 30%;
-    margin-left: 30%;
+    margin-left: 50%;
     padding-left: 2px;
 }
 .desc_block {
