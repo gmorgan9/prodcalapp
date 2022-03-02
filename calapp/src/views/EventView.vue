@@ -39,10 +39,12 @@ export default {
 .cal_event {
     border: 1px solid black;
 }
-.date_block {
+.date_block,
+.time_block {
     text-align: left;
 }
-.date_block h3 {
+.date_block h3,
+.time_block h3 {
     /* border: 1px solid black; */
     background: gray;
     color: white;
