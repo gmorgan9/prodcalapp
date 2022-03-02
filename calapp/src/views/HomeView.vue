@@ -6,8 +6,8 @@
     <br />
     <div v-if="loading">Loading articles....</div>
     <ul v-else>
-      <li v-for="users in user" :key="users.id">
-        {{ users.username }} &nbsp; | &nbsp; {{ users.email }}
+      <li v-for="event in events" :key="event.id">
+        {{ event.title }}
       </li>
     </ul>
   </div>
@@ -20,13 +20,13 @@ export default {
   data: function () {
     return {
       loading: false,
-      user: [],
+      events: [],
     };
   },
   created: function () {
     this.loading = true;
-    Api.getUsers().then((res) => {
-      this.user = res.data;
+    Api.getEvent(this.$route.params.id).then((res) => {
+      this.events = res.data;
       this.loading = false;
     });
   },
