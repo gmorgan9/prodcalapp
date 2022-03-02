@@ -52,11 +52,6 @@ export default {
 };
 </script>
 <style>
-.cal_event {
-    border: 1px solid black;
-    width: 50%;
-    
-}
 .type {
     color: gray;
     margin-top: -20px;
