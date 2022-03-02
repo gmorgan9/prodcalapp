@@ -8,8 +8,8 @@ class Api {
 //     return axios.get(API_URL + "/users", {});
 //   }
 
-  event_view() {
-    return axios.get(API_URL + `/cal_events`);
+  user() {
+    return axios.get(API_URL + `/users`);
   }
 
 //   addArticle(article) {
