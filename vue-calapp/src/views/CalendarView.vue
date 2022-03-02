@@ -23,3 +23,23 @@
   </div>
   
 </template>
+
+<script>
+import Api from "../api";
+export default {
+  name: "Calendar",
+  data: function () {
+    return {
+      loading: false,
+      articles: [],
+    };
+  },
+  created: function () {
+    this.loading = true;
+    Api.getArticles().then((res) => {
+      this.articles = res.data;
+      this.loading = false;
+    });
+  },
+};
+</script>

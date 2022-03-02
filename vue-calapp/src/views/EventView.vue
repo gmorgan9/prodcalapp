@@ -8,7 +8,7 @@
 <script>
 import Api from "../api";
 export default {
-  name: "event_view",
+  name: "Event",
   data: function () {
     return {
       loading: false,

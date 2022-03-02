@@ -5,7 +5,7 @@
 <script>
 import { deleteJwtToken } from "../auth";
 export default {
-  name: "logout",
+  name: "Logout",
   mounted: function () {
     deleteJwtToken();
     this.$router.push({ path: "/" });
