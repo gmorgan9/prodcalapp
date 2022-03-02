@@ -109,6 +109,9 @@ display: grid;
     margin-top: -2.5%;
     margin-bottom: -2.5%;
 }
+.date_block {
+    margin-bottom: -2.5%;
+}
 .desc_block {
     grid-column: 2 / 2;
     grid-row: 1;
