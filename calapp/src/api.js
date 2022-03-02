@@ -9,7 +9,7 @@ class Api {
   }
 
   getEvent(id) {
-    return axios.get(API_URL + `/event?id=eq.${id}`);
+    return axios.get(API_URL + `/event?event.id=eq.${id}`);
   }
 
   addArticle(article) {
