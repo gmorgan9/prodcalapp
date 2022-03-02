@@ -74,32 +74,31 @@ export default {
     grid-column: 1 / 2;
     grid-row: 2;
 }
-.date_block,
+/* .date_block,
 .time_block,
 .location_block,
 .reminder_block {
     text-align: left;
-}
-.date_block h3,
+} */
+/* .date_block h3,
 .time_block h3,
 .location_block h3,
 .reminder_block h3 {
-    /* border: 1px solid black; */
     background: gray;
     color: white;
     text-transform: uppercase;
     width: 15%;
     margin-left: 30%;
     padding-left: 2px;
-}
-.date_block p,
+} */
+/* .date_block p,
 .time_block p,
 .location_block p,
 .reminder_block p {
     width: 15%;
     margin-left: 30%;
     padding-left: 2px;
-}
+} */
 .desc_block {
     grid-column: 2 / 2;
     grid-row: 1;
