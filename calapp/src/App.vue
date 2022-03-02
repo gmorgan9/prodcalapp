@@ -1,12 +1,6 @@
 <template>
   <div class="header">
   <h1>Calendar App</h1>
-
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-      <router-view/>
-    </nav>
   </div>
 </template>
 
