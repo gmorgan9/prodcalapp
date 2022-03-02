@@ -64,7 +64,6 @@ export default {
 .content {
 display: grid;
     grid-template-columns: repeat(2, 2fr);
-    gap: 20px;
 }
 .date_block {
     grid-column: 1 / 2;
