@@ -44,6 +44,6 @@ export default {
     color: white;
     text-transform: uppercase;
     width: 20%;
-    text-align: center;
+    margin-left: 5%;
 }
 </style>
