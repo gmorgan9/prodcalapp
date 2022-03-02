@@ -52,6 +52,7 @@ export default {
 .type {
     color: gray;
     margin-top: -20px;
+    text-transform: capitalize;
 }
 .date_block,
 .time_block,
