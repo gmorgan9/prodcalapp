@@ -8,8 +8,8 @@ class Api {
     return axios.get(API_URL + "/users", {});
   }
 
-  getArticleDetail(id) {
-    return axios.get(API_URL + `/articles?articleid=eq.${id}`);
+  getEvent(id) {
+    return axios.get(API_URL + `/Event?id=eq.${id}`);
   }
 
   addArticle(article) {
