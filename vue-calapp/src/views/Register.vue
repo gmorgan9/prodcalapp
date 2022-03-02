@@ -71,6 +71,7 @@ export default {
       user_name: "",
       user_email: "",
       password_hash: "",
+      dept_id: "",
       loading: false,
       message: "",
     };
@@ -79,7 +80,7 @@ export default {
     handleRegister() {
       this.message = "";
       this.loading = true;
-      Api.signup(this.user_name, this.user_email, this.password_hash)
+      Api.signup(this.user_name, this.user_email, this.password_hash, this.dept_id)
         .then(() => {
           this.$router.push("/login");
         })
