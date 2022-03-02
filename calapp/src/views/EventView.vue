@@ -91,7 +91,7 @@ display: grid;
 .time_block,
 .location_block,
 .reminder_block {
-    margin-top: -2.5%;
+    margin-top: -3.5%;
 }
 .date_block h3,
 .time_block h3,
