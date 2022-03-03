@@ -159,7 +159,7 @@ form {
 .time h3,
 .location h3,
 .description h3 {
-  display: inline;
+  display: inline-flex;
   background: gray;
   color: white;
   text-transform: uppercase;
