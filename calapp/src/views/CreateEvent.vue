@@ -57,7 +57,7 @@ export default {
 <style>
 .content {
   display: grid;
-  grid-template-columns: repeat(2, 2fr);
+  grid-template-columns: repeat(2, 3fr);
 }
 .event-form-item {
     display: flex;
