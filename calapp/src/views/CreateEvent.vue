@@ -71,51 +71,51 @@ export default {
     margin-bottom: 10px;
     width: 15.5%;
 }
-.title_block {
+#title_block {
   grid-column: 1 / 2;
     grid-row: 1;
 }
-.title {
+#title {
   grid-column: 2 / 2;
     grid-row: 1;
 }
-.type_block {
+#type_block {
   grid-column: 1 / 2;
     grid-row: 2;
 }
-.type {
+#type {
   grid-column: 2 / 2;
     grid-row: 2;
 }
-.date_block {
+#date_block {
   grid-column: 1 / 2;
     grid-row: 3;
 }
-.date {
+#date {
   grid-column: 2 / 2;
     grid-row: 3;
 }
-.time_block {
+#time_block {
   grid-column: 1 / 2;
     grid-row: 4;
 }
-.time {
+#time {
   grid-column: 2 / 2;
     grid-row: 4;
 }
-.location_block {
+#location_block {
   grid-column: 1 / 2;
     grid-row: 5;
 }
-.location {
+#location {
   grid-column: 2 / 2;
     grid-row: 5;
 }
-.description_block {
+#description_block {
   grid-column: 1 / 2;
     grid-row: 6;
 }
-.description {
+#description {
   grid-column: 2 / 2;
     grid-row: 6;
 }
