@@ -177,12 +177,14 @@ form {
   margin-top: 5px;
   margin-right: 10px;
 }
+.description input {
+  margin-top: 5px;
+}
 .title input,
 .type input,
 .date input,
 .time input,
-.location input,
-.description input {
+.location input {
     width: 27.5%;
     /* margin-left: 70%; */
     /* padding-left: 2px; */
