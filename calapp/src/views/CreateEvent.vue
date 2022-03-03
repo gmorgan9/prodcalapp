@@ -19,6 +19,7 @@
           <div class="location"><h3>Location</h3><input id="location" class="event-form-item" v-model="location" placeholder="event location..."></div>
           <div class="description"><h3>Description</h3><textarea id="description" class="event-form-item" v-model="description" placeholder="event description..."></textarea></div>
         </div>
+      </form>
     </div>
     <!-- </ul> -->
   </div>
