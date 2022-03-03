@@ -15,8 +15,6 @@
         <h3 id="location_block">Location</h3>
         <h3 id="description_block">Description</h3>
       </div>
-      
-
       <form action="">
         <input id="title" class="event-form-item" v-model="title" placeholder="event title...">
           <input id="type" class="event-form-item" v-model="type" placeholder="event type...">
@@ -59,7 +57,7 @@ export default {
 <style>
 .content {
   display: grid;
-  grid-template-columns: repeat(6, 2fr);
+  grid-template-columns: repeat(2, 2fr);
 }
 .event-form-item {
     display: flex;
