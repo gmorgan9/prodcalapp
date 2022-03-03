@@ -40,6 +40,6 @@ export default {
 </script>
 <style>
 input {
-    display: inline;
+    float: right;
 }
 </style>
