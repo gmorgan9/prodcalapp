@@ -165,7 +165,7 @@ form {
   text-transform: uppercase;
   width: 10%;
   margin-right: 15px;
-  margin-left: 70%;
+  margin-left: 30%;
   /* padding-left: 5px; */
 }
 .title input,
