@@ -9,11 +9,11 @@
     <div class="content">
       <form action="">
         <div class="title"><h3>Title</h3><input class="event-form-item" v-model="title" placeholder="event title..."></div>
-          <div class="type"><h3>Type</h3><input class="event-form-item" v-model="type" placeholder="event type..."></div>
-          <datepicker id="date" class="picker" v-model="date" ><input type="date" name="date"></datepicker>
-          <vue-timepicker id="time" class="picker" v-model="time"><input type="time" name="time"></vue-timepicker>
-          <input id="location" class="event-form-item" v-model="location" placeholder="event location...">
-          <textarea id="description" class="event-form-item" v-model="description" placeholder="event description..."></textarea>
+        <div class="type"><h3>Type</h3><input class="event-form-item" v-model="type" placeholder="event type..."></div>
+        <div class="date"><h3>Date</h3><datepicker id="date" class="picker" v-model="date" ><input type="date" name="date"></datepicker>
+        <div class="time"><h3>Time</h3><vue-timepicker id="time" class="picker" v-model="time"><input type="time" name="time"></vue-timepicker>
+        <div class="location"><h3>Location</h3><input id="location" class="event-form-item" v-model="location" placeholder="event location...">
+        <div class="description"><h3>Description</h3><textarea id="description" class="event-form-item" v-model="description" placeholder="event description..."></textarea>
       </form>
     </div>
 
@@ -55,68 +55,34 @@ export default {
     flex-direction: column;
     margin-bottom: 10px;
     width:15%;
-    height: 15px;
 }
 .picker {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
     width: 15.5%;
-    height: 15px;
 }
 #title_block {
   grid-column: 1 / 2;
     grid-row: 1;
 }
 .title,
-.type {
+.type,
+.date,
+.time,
+.location,
+.description {
   display: flex;
 }
 .title h3,
-.type h3 {
+.type h3,
+.date h3,
+.time h3,
+.location h3,
+.description h3 {
   margin-right: 10px;
   background: gray;
   color: white;
   text-transform: uppercase;
-}
-#type_block {
-  grid-column: 1 / 2;
-    grid-row: 2;
-}
-#type {
-  grid-column: 2 / 2;
-    grid-row: 2;
-}
-#date_block {
-  grid-column: 1 / 2;
-    grid-row: 3;
-}
-#date {
-  grid-column: 2 / 2;
-    grid-row: 3;
-}
-#time_block {
-  grid-column: 1 / 2;
-    grid-row: 4;
-}
-#time {
-  grid-column: 2 / 2;
-    grid-row: 4;
-}
-#location_block {
-  grid-column: 1 / 2;
-    grid-row: 5;
-}
-#location {
-  grid-column: 2 / 2;
-    grid-row: 5;
-}
-#description_block {
-  grid-column: 1 / 2;
-    grid-row: 6;
-}
-#description {
-  grid-column: 2 / 2;
-    grid-row: 6;
 }
 </style>
