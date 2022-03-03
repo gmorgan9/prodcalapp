@@ -6,18 +6,7 @@
     <br />
     <!-- <div v-if="loading">Loading articles....</div> -->
     <!-- <ul v-else> -->
-    <div class="content">
-      <form action="">
-        <div class="title"><h3>Title</h3><input class="event-form-item" v-model="title" placeholder="event title..."></div>
-        <div class="type"><h3>Type</h3><input class="event-form-item" v-model="type" placeholder="event type..."></div>
-        <div class="date"><h3>Date</h3><datepicker id="date" class="picker" v-model="date" ><input type="date" name="date"></datepicker></div>
-        <div class="time"><h3>Time</h3><vue-timepicker id="time" class="picker" v-model="time"><input type="time" name="time"></vue-timepicker></div>
-        <div class="location"><h3>Location</h3><input id="location" class="event-form-item" v-model="location" placeholder="event location..."></div>
-        <div class="description"><h3>Description</h3><textarea id="description" class="event-form-item" v-model="description" placeholder="event description..."></textarea></div>
-      </form>
-    </div>
 
-    <div>
     <router-link to="/">Back</router-link>
     <div v-if="loading">Loading article....</div>
     <div v-else>
@@ -29,28 +18,8 @@
           <div class="time"><h3>Time</h3><vue-timepicker id="time" class="picker" v-model="time"><input type="time" name="time"></vue-timepicker></div>
           <div class="location"><h3>Location</h3><input id="location" class="event-form-item" v-model="location" placeholder="event location..."></div>
           <div class="description"><h3>Description</h3><textarea id="description" class="event-form-item" v-model="description" placeholder="event description..."></textarea></div>
-        <div class="time_block">
-            <h3>Time Of Day</h3>
-            <p> {{ event.time }} </p>
-        </div>
-        <div class="location_block">
-            <h3>Location</h3>
-            <p> {{ event.location }} </p>
-            <p>NONE</p>
-        </div>
-        <div class="reminder_block">
-            <h3>Reminder</h3>
-            <p>NONE</p>
-        </div>
-        <div class="desc_block">
-            <h3>Description</h3>
-            <p> {{ event.description }} </p>
-        </div>
         </div>
     </div>
-  </div>
-
-
     <!-- </ul> -->
   </div>
 </template>
@@ -65,15 +34,15 @@ export default {
     return {
       Datepicker,
       VueTimepicker,
-      // loading: false,
+      loading: false,
       events: [],
     };
   },
   created: function () {
-    // this.loading = true;
+    this.loading = true;
     Api.getEvent().then((res) => {
       this.events = res.data;
-      // this.loading = false;
+      this.loading = false;
     });
   },
 };
