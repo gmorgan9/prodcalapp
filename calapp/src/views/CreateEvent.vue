@@ -10,22 +10,11 @@
           <input v-model="title" placeholder="event title...">
           <input v-model="type" placeholder="event type...">
           <input v-model="type" placeholder="event type...">
-          <div class="FormDate">
-         <input
-           class="FormDate__input FormDate__input--day"
-           type="number"
-           placeholder="dd">
-         <span class="FormDate__divider">/</span>
-         <input
-           class="FormDate__input FormDate__input--month"
-           type="number"
-           placeholder="mm">
-         <span class="FormDate__divider">/</span>
-         <input
-           class="FormDate__input FormDate__input--year"
-           type="number"
-           placeholder="yyyy">
-            </div>
+          <div class="date">
+            <label for="example-datepicker">Choose a date</label>
+            <b-form-datepicker id="example-datepicker" v-model="value" class="mb-2"></b-form-datepicker>
+            <p>Value: '{{ value }}'</p>
+          </div>
       </form>
 
 
