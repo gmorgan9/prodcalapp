@@ -78,6 +78,12 @@ export default {
 .title {
   display: flex;
 }
+.title h3 {
+  margin-left: 5px;
+  background: gray;
+    color: white;
+    text-transform: uppercase;
+}
 #type_block {
   grid-column: 1 / 2;
     grid-row: 2;
