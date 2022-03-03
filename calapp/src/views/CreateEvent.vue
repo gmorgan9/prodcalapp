@@ -40,6 +40,7 @@ export default {
 </script>
 <style>
 input {
-    float: right;
+    display: flex;
+    flex-direction: column;
 }
 </style>
