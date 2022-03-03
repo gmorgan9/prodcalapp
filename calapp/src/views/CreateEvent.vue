@@ -10,7 +10,7 @@
           <input v-model="title" placeholder="event title...">
           <input v-model="type" placeholder="event type...">
           <datepicker v-model="date"><input type="date" name="date"></datepicker>
-          <vue-timepicker><input v-model="time" placeholder="event time..."></vue-timepicker>
+          <vue-timepicker v-model="time"><input type="time" name="time"></vue-timepicker>
           <input v-model="location" placeholder="event location...">
       </form>
 
