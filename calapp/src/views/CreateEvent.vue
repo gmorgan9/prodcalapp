@@ -55,12 +55,14 @@ export default {
     flex-direction: column;
     margin-bottom: 10px;
     width:15%;
+    height: 15px;
 }
 .picker {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
     width: 15.5%;
+    height: 15px;
 }
 #title_block {
   grid-column: 1 / 2;
