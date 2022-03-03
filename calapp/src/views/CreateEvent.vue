@@ -68,7 +68,6 @@ export default {
 .picker {
     display: flex;
     flex-direction: column;
-    margin-left: 43.5%;
     margin-bottom: 10px;
     width: 15.5%;
 }
