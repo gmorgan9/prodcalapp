@@ -6,11 +6,18 @@
     <br />
     <!-- <div v-if="loading">Loading articles....</div> -->
     <!-- <ul v-else> -->
-      <li v-for="event in events" :key="event.id">
-        <router-link :to="`/event/${event.id}`">{{
-          event.title
-        }}</router-link>
-      </li>
+      <form action="">
+          <input v-model="title" placeholder="event title...">
+          <input v-model="type" placeholder="event type...">
+          <input v-model="type" placeholder="event type...">
+          <div>
+            <label for="example-datepicker">Choose a date</label>
+            <b-form-datepicker id="example-datepicker" v-model="value" class="mb-2"></b-form-datepicker>
+          </div>
+      </form>
+
+
+
     <!-- </ul> -->
   </div>
 </template>
@@ -18,7 +25,7 @@
 <script>
 import Api from "../api";
 export default {
-  name: "Home",
+  name: "create",
   data: function () {
     return {
       // loading: false,
