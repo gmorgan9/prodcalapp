@@ -156,8 +156,7 @@ form {
 .type h3,
 .date h3,
 .time h3,
-.location h3,
-.description h3 {
+.location h3 {
   text-align: right;
   display: inline-block;
   background: gray;
@@ -167,6 +166,9 @@ form {
   margin-right: 15px;
   margin-left: 30%;
   /* padding-left: 5px; */
+}
+.description h3 {
+  margin-right: 10px;
 }
 .title input,
 .type input,
