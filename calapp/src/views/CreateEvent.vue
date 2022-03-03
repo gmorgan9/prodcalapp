@@ -27,7 +27,7 @@ export default {
   name: "create",
   data: function () {
     return {
-      Datepicker
+      Datepicker,
       // loading: false,
       events: [],
     };
