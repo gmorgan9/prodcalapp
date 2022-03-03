@@ -116,27 +116,27 @@ export default {
     grid-column: 1 / 2;
     grid-row: 6;
 }
-.title p {
+.title input {
   grid-column: 2 / 2;
   grid-row: 1;
 }
-.type p {
+.type input {
   grid-column: 2 / 2;
   grid-row: 2;
 }
-.date p {
+.date input {
     grid-column: 2 / 2;
     grid-row: 3;
 }
-.time p {
+.time input {
     grid-column: 2 / 2;
     grid-row: 4;
 }
-.location p {
+.location input {
     grid-column: 2 / 2;
     grid-row: 5;
 }
-.description p {
+.description input {
     grid-column: 2 / 2;
     grid-row: 6;
 }
@@ -171,26 +171,6 @@ export default {
 .description input {
     width: 27.5%;
     margin-left: 70%;
-    padding-left: 2px;
-    margin-top: -2%;
-}
-.desc_block {
-    grid-column: 2 / 2;
-    grid-row: 1;
-}
-.desc_block h3 {
-    background: rgb(22, 105, 153);
-    color: white;
-    text-transform: uppercase;
-    width: 27.5%;
-    margin-right: 5%;
-    margin-left: 2%;
-    padding-left: 5px;
-}
-.desc_block p {
-    width: 27.5%;
-    margin-right: 5%;
-    margin-left: 2%;
     padding-left: 2px;
     margin-top: -2%;
 }
