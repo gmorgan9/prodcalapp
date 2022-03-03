@@ -150,7 +150,7 @@ form {
 .time,
 .location,
 .description {
-  text-align: left;
+  text-align: right;
   margin-bottom: -2%;
 }
 .title h3,
@@ -165,7 +165,7 @@ form {
   text-transform: uppercase;
   width: 10%;
   margin-right: 15px;
-  /* margin-left: 70%; */
+  margin-left: 70%;
   /* padding-left: 5px; */
 }
 .title input,
