@@ -6,24 +6,16 @@
     <br />
     <!-- <div v-if="loading">Loading articles....</div> -->
     <!-- <ul v-else> -->
-    <div class="content">
-      <div class="left-side">
-        <h3 id="title_block">Title</h3>
-        <h3 id="type_block">Type</h3>
-        <h3 id="date_block">Date</h3>
-        <h3 id="time_block">Time</h3>
-        <h3 id="location_block">Location</h3>
-        <h3 id="description_block">Description</h3>
-      </div>
+
       <form action="">
         <div class="title"><h3>Title</h3><input class="event-form-item" v-model="title" placeholder="event title..."></div>
-          <input id="type" class="event-form-item" v-model="type" placeholder="event type...">
+          <div class="type"><h3>Type</h3><input class="event-form-item" v-model="type" placeholder="event type..."></div>
           <datepicker id="date" class="picker" v-model="date" ><input type="date" name="date"></datepicker>
           <vue-timepicker id="time" class="picker" v-model="time"><input type="time" name="time"></vue-timepicker>
           <input id="location" class="event-form-item" v-model="location" placeholder="event location...">
           <textarea id="description" class="event-form-item" v-model="description" placeholder="event description..."></textarea>
       </form>
-    </div>
+
 
 
     <!-- </ul> -->
@@ -55,10 +47,6 @@ export default {
 
 </script>
 <style>
-.content {
-  display: grid;
-  grid-template-columns: repeat(2, 3fr);
-}
 .event-form-item {
     display: flex;
     flex-direction: column;
@@ -75,14 +63,16 @@ export default {
   grid-column: 1 / 2;
     grid-row: 1;
 }
-.title {
+.title,
+.type {
   display: flex;
 }
-.title h3 {
-  margin-left: 5px;
+.title h3,
+.type h3 {
+  margin-left: 10px;
   background: gray;
-    color: white;
-    text-transform: uppercase;
+  color: white;
+  text-transform: uppercase;
 }
 #type_block {
   grid-column: 1 / 2;
