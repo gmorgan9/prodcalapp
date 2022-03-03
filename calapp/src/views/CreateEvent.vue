@@ -89,12 +89,12 @@ export default {
   text-transform: uppercase;
 } */
 form {
-  display: inline-block;
-}
-.content {
   display: flex;
   flex-direction: column;
 }
+/* .content {
+  
+} */
 /* .title h3 {
   grid-column: 1 / 2;
   grid-row: 1;
@@ -150,8 +150,9 @@ form {
 .time,
 .location,
 .description {
-    text-align: left;
-    margin-bottom: -2%;
+  display: inline;
+  text-align: left;
+  margin-bottom: -2%;
 }
 .title h3,
 .type h3,
