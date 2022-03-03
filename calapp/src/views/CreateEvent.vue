@@ -53,6 +53,6 @@ export default {
     width:10%;
 }
 #picker {
-  width: 2%;
+  width: 11%;
 }
 </style>
