@@ -6,15 +6,26 @@
     <br />
     <!-- <div v-if="loading">Loading articles....</div> -->
     <!-- <ul v-else> -->
-      <form action="">
-          <input class="event-form-item" v-model="title" placeholder="event title...">
-          <input class="event-form-item" v-model="type" placeholder="event type...">
-          <datepicker id="picker" v-model="date" ><input type="date" name="date"></datepicker>
-          <vue-timepicker id="picker" v-model="time"><input type="time" name="time"></vue-timepicker>
-          <input class="event-form-item" v-model="location" placeholder="event location...">
-          <textarea class="event-form-item" v-model="description" placeholder="event description..."></textarea>
-      </form>
+    <div class="content">
+      <div class="left-side">
+        <h3 id="title_block">Title</h3>
+        <h3 id="type_block">Type</h3>
+        <h3 id="date">Date</h3>
+        <h3 id="">Time</h3>
+        <h3 id="">Location</h3>
+        <h3 id="">Description</h3>
+      </div>
+      
 
+      <form action="">
+         <div class="title"><span>Title</span> <input id="title" class="event-form-item" v-model="title" placeholder="event title..."></div>
+          <input id="type" class="event-form-item" v-model="type" placeholder="event type...">
+          <datepicker id="date" class="picker" v-model="date" ><input type="date" name="date"></datepicker>
+          <vue-timepicker id="time" class="picker" v-model="time"><input type="time" name="time"></vue-timepicker>
+          <input id="location" class="event-form-item" v-model="location" placeholder="event location...">
+          <textarea id="description" class="event-form-item" v-model="description" placeholder="event description..."></textarea>
+      </form>
+    </div>
 
 
     <!-- </ul> -->
@@ -53,7 +64,7 @@ export default {
     margin-bottom: 10px;
     width:15%;
 }
-#picker {
+.picker {
     display: flex;
     flex-direction: column;
     margin-left: 43.5%;
