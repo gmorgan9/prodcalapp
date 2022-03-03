@@ -8,7 +8,8 @@
     <!-- <ul v-else> -->
       <form action="">
           <input v-model="title" placeholder="event title...">
-          <input v-model="type" placeholder="event date...">
+          <input v-model="type" placeholder="event type...">
+          <datepicker></datepicker>
           <input v-model="time" placeholder="event time...">
           <input v-model="location" placeholder="event location...">
       </form>
@@ -20,11 +21,13 @@
 </template>
 
 <script>
+import Datepicker from 'vuejs-datepicker';
 import Api from "../api";
 export default {
   name: "create",
   data: function () {
     return {
+      Datepicker
       // loading: false,
       events: [],
     };
