@@ -9,8 +9,8 @@
       <form action="">
           <input class="event-form-item" v-model="title" placeholder="event title...">
           <input class="event-form-item" v-model="type" placeholder="event type...">
-          <datepicker v-model="date" class="event-form-item"><input type="date" name="date"></datepicker>
-          <vue-timepicker v-model="time" class="event-form-item"><input type="time" name="time"></vue-timepicker>
+          <datepicker id="picker" v-model="date" class="event-form-item"><input type="date" name="date"></datepicker>
+          <vue-timepicker id="picker" v-model="time" class="event-form-item"><input type="time" name="time"></vue-timepicker>
           <input class="event-form-item" v-model="location" placeholder="event location...">
       </form>
 
@@ -51,5 +51,8 @@ export default {
     margin-left: 43.5%;
     margin-bottom: 10px;
     width:10%;
+}
+#picker {
+  width: 2%;
 }
 </style>
