@@ -10,11 +10,22 @@
           <input v-model="title" placeholder="event title...">
           <input v-model="type" placeholder="event type...">
           <input v-model="type" placeholder="event type...">
-          <v-date-picker
-          v-model="date"
-          no-title
-          scrollable
-        >
+          <div class="FormDate">
+         <input
+           class="FormDate__input FormDate__input--day"
+           type="number"
+           placeholder="dd">
+         <span class="FormDate__divider">/</span>
+         <input
+           class="FormDate__input FormDate__input--month"
+           type="number"
+           placeholder="mm">
+         <span class="FormDate__divider">/</span>
+         <input
+           class="FormDate__input FormDate__input--year"
+           type="number"
+           placeholder="yyyy">
+            </div>
       </form>
 
 
