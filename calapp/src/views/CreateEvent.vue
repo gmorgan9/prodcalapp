@@ -147,7 +147,6 @@ export default {
 .time,
 .location,
 .description {
-  display: flex;
     text-align: left;
     margin-bottom: -2%;
 }
@@ -160,7 +159,7 @@ export default {
     background: gray;
     color: white;
     text-transform: uppercase;
-    /* width: 27.5%; */
+    width: 27.5%;
     /* margin-left: 70%; */
     /* padding-left: 5px; */
 }
