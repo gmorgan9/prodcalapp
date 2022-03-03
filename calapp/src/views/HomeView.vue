@@ -1,12 +1,13 @@
 <template>
   <div>
     <b-jumbotron>
-      <p>Welcome to the IT350 blog!</p>
+      <p>Calendar App</p>
     </b-jumbotron>
     <br />
+    <router-link :to="`/create`">+ Create Event</router-link>
     <!-- <div v-if="loading">Loading articles....</div> -->
     <!-- <ul v-else> -->
-      <router-link :to="`/create`">+ Create Event</router-link>
+      <br />
       <li v-for="event in events" :key="event.id">
         <router-link :to="`/event/${event.id}`">{{
           event.title
