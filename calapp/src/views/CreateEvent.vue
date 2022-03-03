@@ -6,7 +6,7 @@
     <br />
     <!-- <div v-if="loading">Loading articles....</div> -->
     <!-- <ul v-else> -->
-
+    <div class="content">
       <form action="">
         <div class="title"><h3>Title</h3><input class="event-form-item" v-model="title" placeholder="event title..."></div>
           <div class="type"><h3>Type</h3><input class="event-form-item" v-model="type" placeholder="event type..."></div>
@@ -15,7 +15,7 @@
           <input id="location" class="event-form-item" v-model="location" placeholder="event location...">
           <textarea id="description" class="event-form-item" v-model="description" placeholder="event description..."></textarea>
       </form>
-
+    </div>
 
 
     <!-- </ul> -->
@@ -47,6 +47,9 @@ export default {
 
 </script>
 <style>
+.content {
+  margin-left: 37.5%;
+}
 .event-form-item {
     display: flex;
     flex-direction: column;
@@ -69,7 +72,7 @@ export default {
 }
 .title h3,
 .type h3 {
-  margin-left: 10px;
+  margin-right: 10px;
   background: gray;
   color: white;
   text-transform: uppercase;
