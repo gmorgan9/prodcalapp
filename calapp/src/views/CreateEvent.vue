@@ -10,15 +10,15 @@
       <div class="left-side">
         <h3 id="title_block">Title</h3>
         <h3 id="type_block">Type</h3>
-        <h3 id="date">Date</h3>
-        <h3 id="">Time</h3>
-        <h3 id="">Location</h3>
-        <h3 id="">Description</h3>
+        <h3 id="date_block">Date</h3>
+        <h3 id="time_block">Time</h3>
+        <h3 id="location_block">Location</h3>
+        <h3 id="description_block">Description</h3>
       </div>
       
 
       <form action="">
-         <div class="title"><span>Title</span> <input id="title" class="event-form-item" v-model="title" placeholder="event title..."></div>
+        <input id="title" class="event-form-item" v-model="title" placeholder="event title...">
           <input id="type" class="event-form-item" v-model="type" placeholder="event type...">
           <datepicker id="date" class="picker" v-model="date" ><input type="date" name="date"></datepicker>
           <vue-timepicker id="time" class="picker" v-model="time"><input type="time" name="time"></vue-timepicker>
@@ -57,6 +57,10 @@ export default {
 
 </script>
 <style>
+.content {
+  display: grid;
+  grid-template-columns: repeat(6, 2fr);
+}
 .event-form-item {
     display: flex;
     flex-direction: column;
@@ -70,5 +74,21 @@ export default {
     margin-left: 43.5%;
     margin-bottom: 10px;
     width: 15.5%;
+}
+.title_block {
+  grid-column: 1 / 2;
+    grid-row: 1;
+}
+.title {
+  grid-column: 2 / 2;
+    grid-row: 1;
+}
+.type_block {
+  grid-column: 1 / 2;
+    grid-row: 2;
+}
+.type {
+  grid-column: 2 / 2;
+    grid-row: 2;
 }
 </style>
