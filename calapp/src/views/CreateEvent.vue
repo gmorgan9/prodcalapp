@@ -9,7 +9,7 @@
       <form action="">
           <input v-model="title" placeholder="event title...">
           <input v-model="type" placeholder="event type...">
-          <datepicker></datepicker>
+          <datepicker :value="state.date"></datepicker>
           <input v-model="time" placeholder="event time...">
           <input v-model="location" placeholder="event location...">
       </form>
@@ -40,6 +40,9 @@ export default {
     });
   },
 };
+var state = {
+  date: new Date(2016, 9,  16)
+}
 </script>
 <style>
 input {
