@@ -26,19 +26,18 @@
 <script>
 import Api from "../api";
 export default {
-  name: "create",
-  data: function () {
-    return {
-      // loading: false,
-      events: [],
-    };
-  },
-  created: function () {
-    // this.loading = true;
-    Api.getEvent().then((res) => {
-      this.events = res.data;
-      // this.loading = false;
-    });
-  },
-};
+    data() {
+      return {
+        value: ''
+      }
+    }
+  }
+//   created: function () {
+//     // this.loading = true;
+//     Api.getEvent().then((res) => {
+//       this.events = res.data;
+//       // this.loading = false;
+//     });
+//   },
+// };
 </script>
