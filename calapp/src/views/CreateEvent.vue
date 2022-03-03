@@ -21,6 +21,9 @@
 </template>
 
 <script>
+var state = {
+  date: new Date(2016, 9,  16)
+}
 import Datepicker from 'vuejs-datepicker';
 import Api from "../api";
 export default {
@@ -40,9 +43,7 @@ export default {
     });
   },
 };
-var state = {
-  date: new Date(2016, 9,  16)
-}
+
 </script>
 <style>
 input {
