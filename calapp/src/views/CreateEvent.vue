@@ -10,7 +10,7 @@
           <input v-model="title" placeholder="event title...">
           <input v-model="type" placeholder="event type...">
           <datepicker v-model="date"><input type="date" name="date"></datepicker>
-          <input v-model="time" placeholder="event time...">
+          <vue-timepicker><input v-model="time" placeholder="event time..."></vue-timepicker>
           <input v-model="location" placeholder="event location...">
       </form>
 
@@ -22,12 +22,14 @@
 
 <script>
 import Datepicker from 'vuejs-datepicker';
+import VueTimepicker from 'vue-time-picker'
 import Api from "../api";
 export default {
   name: "create",
   data: function () {
     return {
       Datepicker,
+      VueTimepicker,
       // loading: false,
       events: [],
     };
