@@ -7,11 +7,11 @@
     <!-- <div v-if="loading">Loading articles....</div> -->
     <!-- <ul v-else> -->
       <form action="">
-          <input v-model="title" placeholder="event title...">
-          <input v-model="type" placeholder="event type...">
-          <datepicker v-model="date"><input type="date" name="date"></datepicker>
-          <vue-timepicker v-model="time"><input type="time" name="time"></vue-timepicker>
-          <input v-model="location" placeholder="event location...">
+          <input class="event-form-item" v-model="title" placeholder="event title...">
+          <input class="event-form-item" v-model="type" placeholder="event type...">
+          <datepicker v-model="date" class="event-form-item"><input type="date" name="date"></datepicker>
+          <vue-timepicker v-model="time" class="event-form-item"><input type="time" name="time"></vue-timepicker>
+          <input class="event-form-item" v-model="location" placeholder="event location...">
       </form>
 
 
@@ -45,7 +45,7 @@ export default {
 
 </script>
 <style>
-input {
+.event-form-item {
     display: flex;
     flex-direction: column;
     margin-left: 43.5%;
