@@ -150,8 +150,7 @@ form {
 .time,
 .location,
 .description {
-  display: inline-flex;
-  flex-direction: column;
+  display: inline-block;
   text-align: left;
   margin-bottom: -2%;
 }
