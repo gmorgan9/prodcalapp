@@ -38,3 +38,8 @@ export default {
   },
 };
 </script>
+<style>
+input {
+    display: inline;
+}
+</style>
