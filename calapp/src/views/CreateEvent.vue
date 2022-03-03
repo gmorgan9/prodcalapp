@@ -12,7 +12,7 @@
           <datepicker id="picker" v-model="date" ><input type="date" name="date"></datepicker>
           <vue-timepicker id="picker" v-model="time"><input type="time" name="time"></vue-timepicker>
           <input class="event-form-item" v-model="location" placeholder="event location...">
-          <textarea id="picker" v-model="description" placeholder="event description..."></textarea>
+          <textarea class="event-form-item" v-model="description" placeholder="event description..."></textarea>
       </form>
 
 
