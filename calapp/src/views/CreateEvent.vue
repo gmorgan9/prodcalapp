@@ -160,12 +160,13 @@ form {
 .time h3,
 .location h3,
 .description h3 {
-    background: gray;
-    color: white;
-    text-transform: uppercase;
-    width: 27.5%;
-    /* margin-left: 70%; */
-    /* padding-left: 5px; */
+  display: inline;
+  background: gray;
+  color: white;
+  text-transform: uppercase;
+  width: 27.5%;
+  /* margin-left: 70%; */
+  /* padding-left: 5px; */
 }
 .title input,
 .type input,
