@@ -168,6 +168,11 @@ form {
   /* padding-left: 5px; */
 }
 .description h3 {
+  text-align: right;
+  display: inline-block;
+  background: gray;
+  color: white;
+  text-transform: uppercase;
   margin-right: 10px;
 }
 .title input,
