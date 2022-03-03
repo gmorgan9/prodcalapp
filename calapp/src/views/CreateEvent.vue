@@ -42,7 +42,7 @@ export default {
 input {
     display: flex;
     flex-direction: column;
-    margin-left: 45%;
+    margin-left: 42.5%;
     margin-bottom: 10px;
 }
 </style>
