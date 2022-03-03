@@ -159,9 +159,9 @@ export default {
     background: gray;
     color: white;
     text-transform: uppercase;
-    width: 27.5%;
-    margin-left: 70%;
-    padding-left: 5px;
+    /* width: 27.5%; */
+    /* margin-left: 70%; */
+    /* padding-left: 5px; */
 }
 .title input,
 .type input,
@@ -170,8 +170,8 @@ export default {
 .location input,
 .description input {
     width: 27.5%;
-    margin-left: 70%;
-    padding-left: 2px;
-    margin-top: -2%;
+    /* margin-left: 70%; */
+    /* padding-left: 2px; */
+    /* margin-top: -2%; */
 }
 </style>
