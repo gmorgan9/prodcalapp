@@ -150,7 +150,6 @@ form {
 .time,
 .location,
 .description {
-  text-align: right;
   margin-bottom: -2%;
 }
 .title h3,
@@ -159,6 +158,7 @@ form {
 .time h3,
 .location h3,
 .description h3 {
+  text-align: right;
   display: inline-flex;
   background: gray;
   color: white;
