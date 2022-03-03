@@ -16,7 +16,7 @@
         <h3 id="description_block">Description</h3>
       </div>
       <form action="">
-        <input id="title" class="event-form-item" v-model="title" placeholder="event title...">
+        <div class="title"><h3>Title</h3><input class="event-form-item" v-model="title" placeholder="event title..."></div>
           <input id="type" class="event-form-item" v-model="type" placeholder="event type...">
           <datepicker id="date" class="picker" v-model="date" ><input type="date" name="date"></datepicker>
           <vue-timepicker id="time" class="picker" v-model="time"><input type="time" name="time"></vue-timepicker>
@@ -75,9 +75,8 @@ export default {
   grid-column: 1 / 2;
     grid-row: 1;
 }
-#title {
-  grid-column: 2 / 2;
-    grid-row: 1;
+.title {
+  display: flex;
 }
 #type_block {
   grid-column: 1 / 2;
