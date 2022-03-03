@@ -8,6 +8,7 @@
     <!-- <div v-if="loading">Loading articles....</div> -->
     <!-- <ul v-else> -->
       <br />
+      HI
       <li v-for="event in events" :key="event.id">
         <router-link :to="`/event/${event.id}`">{{
           event.title
