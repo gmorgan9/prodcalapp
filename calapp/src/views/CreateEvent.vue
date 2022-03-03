@@ -151,6 +151,7 @@ form {
 .location,
 .description {
   display: inline-flex;
+  flex-direction: column;
   text-align: left;
   margin-bottom: -2%;
 }
