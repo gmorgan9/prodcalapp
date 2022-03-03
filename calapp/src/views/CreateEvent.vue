@@ -50,6 +50,6 @@ export default {
     flex-direction: column;
     margin-left: 43.5%;
     margin-bottom: 10px;
-    width:5%;
+    width:10%;
 }
 </style>
