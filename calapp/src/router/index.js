@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import 'mdb-vue-ui-kit/css/mdb.min.css'
 
 const routes = [
   {

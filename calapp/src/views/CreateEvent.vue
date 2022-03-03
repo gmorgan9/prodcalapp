@@ -9,7 +9,7 @@
       <form action="">
           <input v-model="title" placeholder="event title...">
           <input v-model="type" placeholder="event type...">
-          <ejs-datepicker id="datepicker" :placeholder="waterMarkText"></ejs-datepicker>
+          <b-form-datepicker v-model="value" class="mb-2"></b-form-datepicker>
           <input v-model="time" placeholder="event time...">
           <input v-model="location" placeholder="event location...">
       </form>
