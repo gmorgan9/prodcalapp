@@ -89,8 +89,7 @@ export default {
   text-transform: uppercase;
 } */
 form {
-  display: grid;
-  grid-template-columns: repeat(2, 6fr);
+  display: inline-block;
 }
 .content {
   display: flex;
