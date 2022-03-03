@@ -163,7 +163,8 @@ form {
   background: gray;
   color: white;
   text-transform: uppercase;
-  width: 27.5%;
+  width: 10%;
+  margin-right: 15px;
   /* margin-left: 70%; */
   /* padding-left: 5px; */
 }
