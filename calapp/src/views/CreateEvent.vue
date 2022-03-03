@@ -94,6 +94,7 @@ form {
 }
 .content {
   display: flex;
+  flex-direction: column;
 }
 .title h3 {
   grid-column: 1 / 2;
