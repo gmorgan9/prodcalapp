@@ -87,4 +87,36 @@ export default {
   grid-column: 2 / 2;
     grid-row: 2;
 }
+.date_block {
+  grid-column: 1 / 2;
+    grid-row: 3;
+}
+.date {
+  grid-column: 2 / 2;
+    grid-row: 3;
+}
+.time_block {
+  grid-column: 1 / 2;
+    grid-row: 4;
+}
+.time {
+  grid-column: 2 / 2;
+    grid-row: 4;
+}
+.location_block {
+  grid-column: 1 / 2;
+    grid-row: 5;
+}
+.location {
+  grid-column: 2 / 2;
+    grid-row: 5;
+}
+.description_block {
+  grid-column: 1 / 2;
+    grid-row: 6;
+}
+.description {
+  grid-column: 2 / 2;
+    grid-row: 6;
+}
 </style>
