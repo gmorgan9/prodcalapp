@@ -10,10 +10,11 @@
           <input v-model="title" placeholder="event title...">
           <input v-model="type" placeholder="event type...">
           <input v-model="type" placeholder="event type...">
-          <div>
-            <label for="example-datepicker">Choose a date</label>
-            <b-form-datepicker id="example-datepicker" v-model="value" class="mb-2"></b-form-datepicker>
-          </div>
+          <v-date-picker
+          v-model="date"
+          no-title
+          scrollable
+        >
       </form>
 
 
