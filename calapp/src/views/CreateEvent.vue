@@ -90,7 +90,7 @@ export default {
 } */
 .content {
   display: grid;
-  grid-template-columns: repeat(3, 2fr);
+  grid-template-columns: repeat(2, 6fr);
 }
 .title h3 {
   grid-column: 1 / 2;
