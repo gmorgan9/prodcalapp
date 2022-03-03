@@ -9,7 +9,7 @@
       <form action="">
           <input v-model="title" placeholder="event title...">
           <input v-model="type" placeholder="event type...">
-          <datepicker :value="state.date"></datepicker>
+          <datepicker v-model="state.date" name="uniquename"></datepicker>
           <input v-model="time" placeholder="event time...">
           <input v-model="location" placeholder="event location...">
       </form>
