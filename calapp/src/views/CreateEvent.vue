@@ -9,8 +9,9 @@
       <form action="">
           <input v-model="title" placeholder="event title...">
           <input v-model="type" placeholder="event type...">
-          <input v-model="type" placeholder="event type...">
-          <mdb-date-picker-2 v-model="date" label="Basic example" title="Select date" />
+          <ejs-datepicker id="datepicker" :placeholder="waterMarkText"></ejs-datepicker>
+          <input v-model="time" placeholder="event time...">
+          <input v-model="location" placeholder="event location...">
       </form>
 
 
