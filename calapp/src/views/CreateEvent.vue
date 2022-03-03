@@ -96,7 +96,7 @@ form {
   display: flex;
   flex-direction: column;
 }
-.title h3 {
+/* .title h3 {
   grid-column: 1 / 2;
   grid-row: 1;
 }
@@ -143,7 +143,7 @@ form {
 .description input {
     grid-column: 2 / 2;
     grid-row: 6;
-}
+} */
 
 .title,
 .type,
