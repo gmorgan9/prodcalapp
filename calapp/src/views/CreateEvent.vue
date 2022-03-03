@@ -88,9 +88,12 @@ export default {
   color: white;
   text-transform: uppercase;
 } */
-.content {
+form {
   display: grid;
   grid-template-columns: repeat(2, 6fr);
+}
+.content {
+  display: flex;
 }
 .title h3 {
   grid-column: 1 / 2;
