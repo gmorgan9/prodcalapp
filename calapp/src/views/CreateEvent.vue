@@ -10,10 +10,10 @@
       <form action="">
         <div class="title"><h3>Title</h3><input class="event-form-item" v-model="title" placeholder="event title..."></div>
         <div class="type"><h3>Type</h3><input class="event-form-item" v-model="type" placeholder="event type..."></div>
-        <div class="date"><h3>Date</h3><datepicker id="date" class="picker" v-model="date" ><input type="date" name="date"></datepicker>
-        <div class="time"><h3>Time</h3><vue-timepicker id="time" class="picker" v-model="time"><input type="time" name="time"></vue-timepicker>
-        <div class="location"><h3>Location</h3><input id="location" class="event-form-item" v-model="location" placeholder="event location...">
-        <div class="description"><h3>Description</h3><textarea id="description" class="event-form-item" v-model="description" placeholder="event description..."></textarea>
+        <div class="date"><h3>Date</h3><datepicker id="date" class="picker" v-model="date" ><input type="date" name="date"></datepicker></div>
+        <div class="time"><h3>Time</h3><vue-timepicker id="time" class="picker" v-model="time"><input type="time" name="time"></vue-timepicker></div>
+        <div class="location"><h3>Location</h3><input id="location" class="event-form-item" v-model="location" placeholder="event location..."></div>
+        <div class="description"><h3>Description</h3><textarea id="description" class="event-form-item" v-model="description" placeholder="event description..."></textarea></div>
       </form>
     </div>
 
