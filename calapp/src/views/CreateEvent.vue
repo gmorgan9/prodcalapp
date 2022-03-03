@@ -173,6 +173,8 @@ form {
   background: gray;
   color: white;
   text-transform: uppercase;
+  width: 10%;
+  margin-top: 5px;
   margin-right: 10px;
 }
 .title input,
