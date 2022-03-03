@@ -147,6 +147,7 @@ export default {
 .time,
 .location,
 .description {
+  display: flex;
     text-align: left;
     margin-bottom: -2%;
 }
