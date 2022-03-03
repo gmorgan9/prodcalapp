@@ -159,7 +159,7 @@ form {
 .location h3,
 .description h3 {
   text-align: right;
-  display: inline;
+  display: inline-block;
   background: gray;
   color: white;
   text-transform: uppercase;
