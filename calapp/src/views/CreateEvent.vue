@@ -171,4 +171,7 @@ form {
   /* padding-left: 2px; */
   /* margin-top: -2%; */
 }
+textarea {
+  padding-bottom: 25px;
+}
 </style>
