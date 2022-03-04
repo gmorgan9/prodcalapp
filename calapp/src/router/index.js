@@ -1,17 +1,17 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-const checkAuth = function(to, _, next) {
-  const token = getJwtToken();
-  if (token === undefined || token === "undefined" || token === null) {
-    // redirect to login because we don't have token yet
-    next({
-      path: "/login",
-      params: { nextUrl: to.fullPath },
-    });
-  } else {
-    next();
-  }
-};
+// const checkAuth = function(to, _, next) {
+//   const token = getJwtToken();
+//   if (token === undefined || token === "undefined" || token === null) {
+//     // redirect to login because we don't have token yet
+//     next({
+//       path: "/login",
+//       params: { nextUrl: to.fullPath },
+//     });
+//   } else {
+//     next();
+//   }
+// };
 
 // import App from "./App.vue";
 import HomeView from "../views/HomeView.vue";
@@ -50,7 +50,7 @@ const routes = [
   {
     path: '/admin',
     component: Admin,
-    beforeEnter: checkAuth,
+    // beforeEnter: checkAuth,
     childern: [
       { path: "event", component: AdminCreateEvent}
     ],
