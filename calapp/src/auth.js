@@ -12,11 +12,11 @@ export function getUserIdFromToken(token) {
 }
 
 export function setJwtToken(token) {
-  localStorage.setItem("accessToken", token);
+  localStorage.setItem(users.id, token);
 }
 
 export function deleteJwtToken() {
-  localStorage.removeItem("accessToken" + users.id);
+  localStorage.removeItem("accessToken");
 }
 
 export function authHeader() {
