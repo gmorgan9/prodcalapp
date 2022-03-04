@@ -92,9 +92,6 @@ form {
   display: flex;
   flex-direction: column;
 }
-.inputs {
-margin-top: -25px;
-}
 /* .content {
   
 } */
