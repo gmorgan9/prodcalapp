@@ -123,7 +123,7 @@ export default {
     handleAdd() {
       this.loading = true;
       this.message = "";
-      Api.addEvent({ title: this.title, type: this.type, date: this.date, time: this.time, location: this.location, description: this.desctiption })
+      Api.addEvent({ title: this.title, type: this.type, date: this.date, time: this.time, location: this.location, description: this.desctiption, cal_id: this.cal_id })
         .then(() => {
           this.loading = false;
           this.$router.push("/admin/");
