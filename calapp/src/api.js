@@ -16,6 +16,11 @@ class Api {
   //   return axios.get(API_URL + "/users", {});
   // }
 
+  getUserID() {
+    var userID = getUserIdFromToken(getJwtToken());
+    return userID;
+  }
+
   addEvent(event) {
     return axios.post(
       API_URL + "/event",
