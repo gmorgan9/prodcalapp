@@ -168,6 +168,9 @@ form {
   margin-left: 30%;
   /* padding-left: 5px; */
 }
+.description h3 {
+  margin-top: -20px;
+}
 .title input,
 .type input,
 .date input,
