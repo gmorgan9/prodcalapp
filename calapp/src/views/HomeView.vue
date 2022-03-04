@@ -38,5 +38,10 @@ export default {
 <style>
 .nav-link {
   text-decoration: none;
+  color: black;
+}
+.nav-link:hover {
+  color: rgba(68, 68, 68, 0.685);
+  text-decoration: underline;
 }
 </style>
