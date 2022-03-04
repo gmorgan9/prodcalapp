@@ -71,6 +71,15 @@
             />
           </div>
           <div class="form-group">
+            <label for="cal_id">Cal_id</label>
+            <input
+              v-model="cal_id"
+              type="text"
+              class="form-control"
+              name="cal_id"
+            />
+          </div>
+          <div class="form-group">
             <button class="btn btn-primary btn-block" :disabled="loading">
               <span
                 v-show="loading"
@@ -103,6 +112,7 @@ export default {
       time: "",
       location: "",
       description: "",
+      cal_id: "",
       loading: false,
       message: "",
       Datepicker,
