@@ -12,6 +12,15 @@
     <div v-else>
       <form name="form" @submit.prevent="handleAdd">
         <div class="content">
+          <div class="form-group">
+            <label for="title">Title</label>
+            <input
+              v-model="title"
+              type="text"
+              class="form-control"
+              name="title"
+            />
+          </div>
           <div class="title"><h3>Title</h3><input v-model="title" name="title" placeholder="event title..."></div>
           <div class="type"><h3>Type</h3><input v-model="type" name="type" placeholder="event type..."></div>
           <div class="date"><h3>Date</h3><datepicker v-model="date" name="date"><input type="date" name="date"></datepicker></div>
