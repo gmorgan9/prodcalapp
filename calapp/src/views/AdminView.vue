@@ -26,7 +26,7 @@ import { getUserIdFromToken } from "../auth"
 export default {
   name: "Admin",
   computerd: {
-    getUserIdFromToken: getUserIdFromToken(token)
+    token: getUserIdFromToken.localStorage.getItem(accessToken)
     
   }
 };
