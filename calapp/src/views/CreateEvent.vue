@@ -180,6 +180,7 @@ form {
     /* margin-top: -2%; */
 }
 .description textarea {
-  padding-top: -1%;
+  padding-top: -2%;
+  padding-bottom: 3%;
 }
 </style>
