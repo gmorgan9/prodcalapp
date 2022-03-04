@@ -157,7 +157,7 @@ form {
   width: 10%;
   margin-right: 40px;
   margin-left: 30%;
-  padding-left: 5px;
+  padding-right: 5px;
 }
 .title input,
 .type input,
