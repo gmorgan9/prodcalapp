@@ -14,7 +14,7 @@ class Api {
 
   addEvent(event) {
     return axios.post(
-      API_URL + "/addEvent",
+      API_URL + "/event",
       {
         ...event,
         // add user id from JWT token
