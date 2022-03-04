@@ -17,8 +17,8 @@ class Api {
   // }
 
   getUserID() {
-    var user_id = getUserIdFromToken(getJwtToken());
-    return user_id;
+    var id = getUserIdFromToken(getJwtToken());
+    return id;
   }
 
   addEvent(event) {
