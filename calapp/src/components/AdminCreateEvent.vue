@@ -11,7 +11,9 @@
     <div v-else>
       <form name="form" @submit.prevent="handleAdd">
         <div class="content">
-          {{ users.id }}
+          <router-link :to="`/users/${users.id}`">{{
+          users.id
+        }}</router-link>
           <div class="form-group">
             <label for="user_id">User ID</label>
             <input
