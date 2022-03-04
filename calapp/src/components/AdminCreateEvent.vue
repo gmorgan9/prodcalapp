@@ -14,9 +14,9 @@
         <div class="content">
         
         
-        <div v-if="user_id">
+        <div v-if="user">
   Logged in
-  <pre>{{user_d}}</pre>
+  <pre>{{user_id}}</pre>
 </div>
 <div v-else>Not logged in</div>
 
