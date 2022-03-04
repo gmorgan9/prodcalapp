@@ -24,7 +24,7 @@
                 v-show="loading"
                 class="spinner-border spinner-border-sm"
               ></span>
-              <span>Add Article</span>
+              <span>Add Event</span>
             </button>
           </div>
         </div>
@@ -44,16 +44,32 @@ export default {
     return {
       Datepicker,
       VueTimepicker,
+      title: "",
+      type: "",
+      date: "",
+      time: "",
+      location: "",
+      description: "",
       loading: false,
-      events: [],
     };
   },
-  created: function () {
-    this.loading = true;
-    Api.getEvent().then((res) => {
-      this.events = res.data;
-      this.loading = false;
-    });
+  methods: {
+    handleAdd() {
+      this.loading = true;
+      this.message = "";
+      Api.addEvent({ title: this.title, type: this.type, date: this.date, time: this.time, location: this.location, description: this.desctiption })
+        .then(() => {
+          this.loading = false;
+          this.$router.push("/admin/");
+        })
+        .catch((error) => {
+          console.log(error);
+          if (error.response) {
+            this.message = error.response.data.message;
+          }
+          this.loading = false;
+        });
+    },
   },
 };
 

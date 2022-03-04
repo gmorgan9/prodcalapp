@@ -12,13 +12,13 @@ class Api {
     return axios.get(API_URL + `/event?id=eq.${id}`);
   }
 
-  addArticle(article) {
+  addevent(event) {
     return axios.post(
-      API_URL + "/articles",
+      API_URL + "/event",
       {
-        ...article,
+        ...event,
         // add user id from JWT token
-        user_id: getUserIdFromToken(getJwtToken()),
+        id: getUserIdFromToken(getJwtToken()),
       },
       {
         headers: authHeader(),
