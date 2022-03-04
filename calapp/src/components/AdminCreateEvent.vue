@@ -19,7 +19,6 @@
               type="number"
               class="form-control"
               name="user_id"
-              placeholder="{{ users.id }}"
               />
               </div>
           <div class="form-group">
