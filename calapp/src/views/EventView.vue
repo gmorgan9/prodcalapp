@@ -1,7 +1,7 @@
 <template>
   <div>
     <router-link to="/"><button>Back</button></router-link>
-    <div v-if="loading">Loading article....</div>
+    <div v-if="loading">Loading event....</div>
     <div v-else>
       <h1>{{ event.title }}</h1>
         <h3 class="type">{{ event.type }}</h3>
@@ -44,7 +44,7 @@ export default {
   },
   created: function () {
     this.loading = true;
-    Api.getEventDetail(this.$route.params.id).then((res) => {
+    Api.getEventDetail(this.$route.params.event_id).then((res) => {
       this.event = res.data[0];
       this.loading = false;
     });
