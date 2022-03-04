@@ -40,8 +40,8 @@ const routes = [
   {
     path: '/create',
     name: 'create',
-    component: () => import('../views/AdminCreateEvent.vue')
-  }
+    component: () => import('../views/AdminCreateView.vue')
+  },
 ]
 
 const router = createRouter({
