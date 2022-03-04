@@ -22,12 +22,11 @@ const routes = [
     name: 'login',
     component: () => import('../views/LoginView.vue')
   },
-
-  {
-    path: '/create',
-    name: 'create',
-    component: () => import('../views/CreateEvent.vue')
-  }
+  // {
+  //   path: '/create',
+  //   name: 'create',
+  //   component: () => import('../views/CreateEvent.vue')
+  // }
 ]
 
 const router = createRouter({
