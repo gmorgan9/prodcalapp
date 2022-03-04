@@ -112,6 +112,7 @@
 import Datepicker from 'vuejs-datepicker';
 import VueTimepicker from 'vue-time-picker'
 import Api from "../api";
+import { getUserIdFromToken } from "../auth";
 export default {
   name: "AdminCreateEvent",
   data() {
@@ -133,8 +134,9 @@ export default {
     handleAdd() {
       this.loading = true;
       this.message = "";
-      Api.addEvent({ title: this.title, type: this.type, date: this.date, time: this.time, location: this.location, description: this.desctiption, cal_id: this.cal_id })
+      Api.addEvent({ user: this.user_id, title: this.title, type: this.type, date: this.date, time: this.time, location: this.location, description: this.desctiption, cal_id: this.cal_id })
         .then(() => {
+          getUserIdFromToken(res.data[0].token);
           this.loading = false;
           this.$router.push("/admin/");
         })
