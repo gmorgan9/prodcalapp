@@ -14,7 +14,7 @@ const checkAuth = function(to, _, next) {
   }
 };
 
-import AdminCreateEvent from "./components/AdminCreateEvent.vue";
+import AdminCreateEvent from "../components/AdminCreateEvent.vue";
 
 
 const routes = [
