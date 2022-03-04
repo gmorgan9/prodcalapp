@@ -30,6 +30,8 @@ class Api {
     );
   }
 
+
+
   updateArticle(article) {
     return axios.patch(
       API_URL + `/articles?articleid=eq.${article.articleid}`,

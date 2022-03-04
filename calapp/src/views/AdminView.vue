@@ -22,7 +22,13 @@
 </template>
 
 <script>
+import auth from "../auth";
 export default {
   name: "Admin",
+  data() {
+    return {
+      loggedIn: auth.loggedIn()
+    }
+  }
 };
 </script>
