@@ -11,7 +11,7 @@
     <div v-else>
       <form name="form" @submit.prevent="handleAdd">
         <div class="content">
-          {{ users.id }}
+          {{ user_id }}
           <div class="form-group">
             <label for="user_id">User ID</label>
             <input
