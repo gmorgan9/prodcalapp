@@ -23,11 +23,21 @@
 
 <script>
 import { getUserIdFromToken } from "../auth";
+import Api from "../api";
 export default {
   name: "Admin",
-  mounted: function () {
-    getUserIdFromToken();
-    
+  data: function () {
+    return {
+      loading: false,
+      users: [],
+    };
+  },
+  created: function () {
+    this.loading = true;
+    Api.getUsers().then((res) => {
+      this.users = res.data;
+      this.loading = false;
+    });
   },
 };
 </script>
