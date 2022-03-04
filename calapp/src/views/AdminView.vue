@@ -16,7 +16,7 @@
     <br />
     <hr />
 
-    <p>userid: {{ decoded.user_id }}</p>
+    <p>userid: {{ decoded }}</p>
     <!-- <router-view></router-view> -->
   </div>
 </template>
@@ -26,7 +26,10 @@ import { getUserIdFromToken } from "../auth";
 export default {
   name: "Admin",
   mounted: function () {
-    getUserIdFromToken(decoded.user_id);
+    getUserIdFromToken();
+    return {
+      decoded
+    }
   },
 };
 </script>
