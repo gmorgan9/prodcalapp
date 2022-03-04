@@ -18,7 +18,7 @@ class Api {
       {
         ...event,
         // add user id from JWT token
-        id: getUserIdFromToken(getJwtToken()),
+        user_id: getUserIdFromToken(getJwtToken()),
       },
       {
         headers: authHeader(),
