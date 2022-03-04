@@ -136,7 +136,7 @@ export default {
       this.message = "";
       Api.addEvent({ user: this.user_id, title: this.title, type: this.type, date: this.date, time: this.time, location: this.location, description: this.desctiption, cal_id: this.cal_id })
         .then(() => {
-          getUserIdFromToken(res.data[0].token);
+          getUserIdFromToken(user_id);
           this.loading = false;
           this.$router.push("/admin/");
         })
