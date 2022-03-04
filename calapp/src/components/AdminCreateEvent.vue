@@ -12,7 +12,10 @@
     <div v-else>
       <form name="form" @submit.prevent="handleAdd">
         <div class="content">
-        {{user_id}}
+        
+      
+        
+
           <!-- <div class="form-group">
             <label for="user_id">User ID</label>
             <input
@@ -131,6 +134,8 @@ export default {
   },
   methods: {
     handleAdd() {
+      id = Api.getUserID()
+      console.log(id)
       this.loading = true;
       this.message = "";
       Api.addEvent({ user_id: this.user_id, title: this.title, type: this.type, date: this.date, time: this.time, location: this.location, description: this.description, cal_id: this.cal_id })
