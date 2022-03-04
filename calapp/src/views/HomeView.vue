@@ -8,7 +8,8 @@
     <!-- <div v-if="loading">Loading articles....</div> -->
     <!-- <ul v-else> -->
       <br /><br />
-    <router-link :to="`/Login`">Login</router-link>
+    <router-link :to="`/login`">Login</router-link>
+    <router-link :to="`/register`">Register</router-link>
       <br /><br />
       HI
       <li v-for="event in events" :key="event.id">
