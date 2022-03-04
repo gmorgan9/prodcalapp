@@ -62,7 +62,6 @@ export default {
     handleLogin() {
       this.loading = true;
       this.message = "";
-      this.loggedin = 1;
       Api.login(this.username, this.password_hash)
         .then((res) => {
           setJwtToken(res.data[0].token);
@@ -70,6 +69,7 @@ export default {
             this.$router.push(this.$route.params.nextUrl);
           } else {
             this.$router.push("/admin");
+            this.loggedin = true
           }
         })
         .catch((error) => {
