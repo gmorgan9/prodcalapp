@@ -146,15 +146,6 @@ margin-top: -25px;
     grid-column: 2 / 2;
     grid-row: 6;
 } */
-
-.title,
-.type,
-.date,
-.time,
-.location,
-.description {
-  margin-bottom: -2%;
-}
 .title h3,
 .type h3,
 .date h3,
