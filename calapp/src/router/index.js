@@ -32,10 +32,10 @@ const routes = [
     path: '/',
     component: HomeView
   },
-  // {
-  //   path: '/event/:id',
-  //   component: Event
-  // },
+  {
+    path: '/event/:id',
+    component: Event
+  },
   {
     path: '/login',
     component: Login
