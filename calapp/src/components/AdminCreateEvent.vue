@@ -15,8 +15,8 @@
           <div class="form-group">
             <label for="user_id">User ID</label>
             <input
-              v-model="user_id"
-              type="text"
+              v-model.number="user_id"
+              type="number"
               class="form-control"
               name="user_id"
               placeholder="{{ users.id }}"
