@@ -10,9 +10,7 @@ const checkAuth = function(to, _, next) {
       params: { nextUrl: to.fullPath },
     });
   } else {
-    next({
-     users: users.loggedin == true
-    });
+    next();
   }
 };
 
