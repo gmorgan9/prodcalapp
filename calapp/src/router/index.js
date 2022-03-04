@@ -33,7 +33,7 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/event/:id',
+    path: '/event/:event_id',
     component: Event
   },
   {
