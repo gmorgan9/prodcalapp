@@ -1,4 +1,4 @@
-import { userSetter } from "core-js/fn/symbol";
+
 import jwt_decode from "jwt-decode";
 
 export function getJwtToken() {
