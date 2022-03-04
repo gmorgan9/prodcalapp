@@ -22,12 +22,12 @@
 </template>
 
 <script>
-import auth from "../auth";
+import { loggedIn } from "../auth";
 export default {
   name: "Admin",
   data() {
     return {
-      loggedIn: auth.loggedIn()
+      loggedIn: loggedIn.getItem("accessToken")
     }
   }
 };
