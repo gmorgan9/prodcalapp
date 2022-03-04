@@ -27,7 +27,7 @@ export default {
   name: "Admin",
   mounted: function () {
     authHeader();
-    this.$auth.getJwtToken({ accessToken })
+    this.$auth.authHeader({ accessToken })
   },
 };
 </script>
