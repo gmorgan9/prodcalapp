@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import { getJwtToken } from "./auth";
+import { getJwtToken } from "../auth";
 
 const checkAuth = function(to, _, next) {
   const token = getJwtToken();
