@@ -3,15 +3,15 @@ import VueRouter from "vue-router";
 import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
 
 import App from "./App.vue";
-import Home from "./views/HomeView";
+import Home from "./views/HomeView.vue";
 // import Admin from "./pages/Admin";
 // import Login from "./pages/Login";
 // import Logout from "./pages/Logout";
 // import Register from "./pages/Register";
-import Event from "./view/EventView";
-import AdminArticleAdd from "./components/AdminArticleAdd";
-import AdminArticleList from "./components/AdminArticleList";
-import AdminArticleEdit from "./components/AdminArticleEdit";
+import Event from "./view/EventView.vue";
+// import AdminArticleAdd from "./components/AdminArticleAdd";
+// import AdminArticleList from "./components/AdminArticleList";
+// import AdminArticleEdit from "./components/AdminArticleEdit";
 
 Vue.config.productionTip = false;
 
