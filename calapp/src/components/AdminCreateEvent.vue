@@ -13,7 +13,7 @@
       <form name="form" @submit.prevent="handleAdd">
         <div class="content">
         
-        {{ decoded.users.user_id }}
+        {{ decoded.user_id }}
         <!-- <div v-if="isLoggedIn">
   Logged in
 </div>
@@ -123,9 +123,11 @@ import { getUserIdFromToken } from "../auth";
 // import { mapGetters } from 'vuex';
 export default {
   name: "AdminCreateEvent",
-  // computed: {
-  //   ...mapGetters(["isLoggedIn"])
-  // },
+  computed: {
+    getUserIdFromToken() {
+      return this.$router.decoded.user_id;
+    }
+  },
   data() {
     return {
       user_id: "",
