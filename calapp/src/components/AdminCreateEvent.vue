@@ -13,7 +13,7 @@
       <form name="form" @submit.prevent="handleAdd">
         <div class="content">
         
-
+{{ user_id }}
           <!-- <div class="form-group">
             <label for="user_id">User ID</label>
             <input
@@ -127,6 +127,7 @@ export default {
       message: "",
       VueTimepicker,
       Datepicker,
+      user_id,
     };
   },
   methods: {
