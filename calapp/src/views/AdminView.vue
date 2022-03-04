@@ -16,19 +16,18 @@
     <br />
     <hr />
 
-    <p>You are logged {{ loggedIn ? 'in' : 'out' }}</p>
+    <p>You are logged {{ token ? 'in' : 'out' }}</p>
     <!-- <router-view></router-view> -->
   </div>
 </template>
 
 <script>
-import { loggedIn } from "../auth";
+import { getUserIdFromToken } from "../auth"
 export default {
   name: "Admin",
-  data() {
-    return {
-      loggedIn: loggedIn.getItem("accessToken")
-    }
+  computerd: {
+    getUserIdFromToken: getUserIdFromToken(token)
+    
   }
 };
 </script>

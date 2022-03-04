@@ -28,6 +28,3 @@ export function authHeader() {
     return {};
   }
 }
-export function loggedIn() {
-    return !!localStorage.getItem("accessToken");
-}
