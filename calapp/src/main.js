@@ -8,7 +8,7 @@ import Home from "./views/HomeView.vue";
 // import Login from "./pages/Login";
 // import Logout from "./pages/Logout";
 // import Register from "./pages/Register";
-import Event from "./view/EventView.vue";
+import Event from "./views/EventView.vue";
 // import AdminArticleAdd from "./components/AdminArticleAdd";
 // import AdminArticleList from "./components/AdminArticleList";
 // import AdminArticleEdit from "./components/AdminArticleEdit";
