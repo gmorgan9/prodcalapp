@@ -133,7 +133,7 @@ export default {
     };
   },
   created: function() {
-    id = Api.getUserID()
+    id = Api.getUserID(id)
     console.log(id)
 },
   methods: {
