@@ -16,7 +16,7 @@
     <br />
     <hr />
 
-    <p>userid: {{ decoded }}</p>
+    <p>userid: {{ token }}</p>
     <!-- <router-view></router-view> -->
   </div>
 </template>
@@ -28,7 +28,7 @@ export default {
   mounted: function () {
     getUserIdFromToken();
     return {
-      decoded
+      token
     }
   },
 };
