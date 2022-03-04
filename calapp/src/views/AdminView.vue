@@ -16,7 +16,7 @@
     <br />
     <hr />
 
-    <p>You are logged {{ getJwtToken ? 'in' : 'out' }}</p>
+    <p>You are logged {{ token ? 'in' : 'out' }}</p>
     <!-- <router-view></router-view> -->
   </div>
 </template>
@@ -26,7 +26,7 @@ import { getJwtToken } from "../auth"
 export default {
   name: "Admin",
   computerd: {
-    token: !getJwtToken()
+    token: getJwtToken(loggedIn)
     
   }
 };
