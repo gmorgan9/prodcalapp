@@ -58,7 +58,7 @@ const routes = [
     component: Admin,
     beforeEnter: checkAuth,
     childern: [
-      { path: "add", component: AdminCreateEvent}
+      { path: "event", component: AdminCreateEvent}
     ],
   },
   // {
