@@ -131,7 +131,7 @@ export default {
   },
 created: function() {
     var user_id = Api.getUserID()
-    console.log(user_id.innerHTML)
+    console.log(user_id)
 },
   methods: {
     handleAdd() {
