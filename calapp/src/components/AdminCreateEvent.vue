@@ -114,7 +114,7 @@ import Datepicker from 'vuejs-datepicker';
 import VueTimepicker from 'vue-time-picker'
 import Api from "../api";
 export default {
-  name: "AdminCreateEvent",
+  name: "AdminArticleAdd",
   data() {
     return {
       title: "",
@@ -125,17 +125,16 @@ export default {
       description: "",
       loading: false,
       message: "",
-      Datepicker,
       VueTimepicker,
+      Datepicker,
     };
   },
   methods: {
     handleAdd() {
       this.loading = true;
       this.message = "";
-      Api.addEvent({ title: this.title, type: this.type, date: this.date, time: this.time, location: this.location, description: this.desctiption, cal_id: this.cal_id})
+      Api.addArticle({ title: this.title, type: this.type, date: this.date, time: this.time, location: this.location, description: this.description })
         .then(() => {
-          getUserIdFromToken(res.data[0].token);
           this.loading = false;
           this.$router.push("/admin/");
         })
@@ -148,7 +147,6 @@ export default {
         });
     },
   },
-  
 };
 </script>
 <style>
