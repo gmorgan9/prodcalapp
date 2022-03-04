@@ -70,9 +70,6 @@
               name="description"
             />
           </div>
-          <div class="time"><h3>Time</h3><vue-timepicker v-model="time" name="time"><input type="time" name="time"></vue-timepicker></div>
-          <div class="location"><h3>Location</h3><input v-model="location" name="location" placeholder="event location..."></div>
-          <div class="description"><h3>Description</h3><textarea v-model="description" name="description" placeholder="event description..."></textarea></div>
           <div class="form-group">
             <button class="btn btn-primary btn-block" :disabled="loading">
               <span
