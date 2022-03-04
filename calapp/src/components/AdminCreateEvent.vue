@@ -110,7 +110,7 @@ export default {
   name: "AdminCreateEvent",
   data() {
     return {
-      user_id: id,
+      user_id: users.id,
       title: "",
       type: "",
       date: "",
