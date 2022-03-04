@@ -8,7 +8,7 @@ export function getJwtToken() {
 export function getUserIdFromToken(token) {
   const decoded = jwt_decode(token);
   console.log(decoded);
-  return decoded.userid;
+  return decoded.user_id;
 }
 
 export function setJwtToken(token) {

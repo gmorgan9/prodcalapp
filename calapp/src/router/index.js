@@ -56,11 +56,11 @@ const routes = [
       { path: "event", component: AdminCreateEvent}
     ],
   },
-  {
-    path: '/create',
-    name: 'create',
-    component: AdminCreateEvent
-  },
+  // {
+  //   path: '/create',
+  //   name: 'create',
+  //   component: AdminCreateEvent
+  // },
 ]
 
 const router = createRouter({
