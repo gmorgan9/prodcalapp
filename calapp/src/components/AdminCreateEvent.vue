@@ -120,7 +120,7 @@ import Datepicker from 'vuejs-datepicker';
 import VueTimepicker from 'vue-time-picker'
 import Api from "../api";
 import { getUserIdFromToken } from "../auth";
-import { mapGetters } from "vuex";
+import { mapGetters } from 'vuex';
 export default {
   name: "AdminCreateEvent",
   computed: {
@@ -140,6 +140,11 @@ export default {
       Datepicker,
       VueTimepicker,
     };
+  },
+  getters: {
+    isLoggedIn(state) {
+      return !!state.token;
+    }
   },
   methods: {
     handleAdd() {
