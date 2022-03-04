@@ -1,7 +1,6 @@
 <template>
   <div>
     <br />
-    <router-link :to="`/create`">+ Create Event</router-link>
     <div v-if="loading">Loading events....</div>
     <ul v-else>
       <br /><br />

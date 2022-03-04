@@ -1,7 +1,8 @@
 <template>
   <div>
+    <h1>Admin page</h1>
     <b-navbar>
-      <b-navbar-brand :to="{ path: '/' }">Blog Admin</b-navbar-brand>
+      <b-nav-item><router-link :to="{ path: '/' }">Home</router-link></b-nav-item>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
