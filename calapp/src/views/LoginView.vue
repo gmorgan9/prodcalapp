@@ -55,6 +55,7 @@ export default {
       password_hash: "",
       loading: false,
       message: "",
+      loggedin: 1
     };
   },
   methods: {
