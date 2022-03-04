@@ -178,7 +178,7 @@ form {
   margin-right: 10px;
 }
 .description input {
-  margin-top: 5px;
+  margin-top: 25px;
 }
 .title input,
 .type input,
