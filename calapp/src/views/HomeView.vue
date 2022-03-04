@@ -7,8 +7,8 @@
     <router-link class="nav-link" :to="`/login`">Login</router-link> | 
     <router-link class="nav-link" :to="`/register`">Register</router-link>
       <br /><br />
-      <li v-for="event in events" :key="event.id">
-        <router-link :to="`/event/${event.id}`">{{
+      <li v-for="event in events" :key="event.event_id">
+        <router-link :to="`/event/${event.event_id}`">{{
           event.title
         }}</router-link>
       </li>
