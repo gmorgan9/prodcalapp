@@ -16,27 +16,26 @@
     <br />
     <hr />
 
-    <p>userid: {{ users.username }}</p>
+   {{ users.username }}
     <!-- <router-view></router-view> -->
   </div>
 </template>
 
 <script>
-import { getUserIdFromToken } from "../auth";
 import Api from "../api";
 export default {
   name: "Admin",
   data: function () {
     return {
-      loading: false,
+      // loading: false,
       users: [],
     };
   },
   created: function () {
-    this.loading = true;
+    // this.loading = true;
     Api.getUsers().then((res) => {
       this.users = res.data;
-      this.loading = false;
+      // this.loading = false;
     });
   },
 };
