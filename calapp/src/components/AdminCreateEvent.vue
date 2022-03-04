@@ -12,7 +12,7 @@
     <div v-else>
       <form name="form" @submit.prevent="handleAdd">
         <div class="content">
-          {{ getUserIdFromToken(token) }}
+          {{ id }}
           <div class="form-group">
             <label for="user_id">User ID</label>
             <input
@@ -112,7 +112,7 @@
 import Datepicker from 'vuejs-datepicker';
 import VueTimepicker from 'vue-time-picker'
 import Api from "../api";
-import getUserIdFromToken from "../auth"; 
+import { getUserIdFromToken } from "./auth";
 export default {
   name: "AdminCreateEvent",
   data() {
@@ -128,14 +128,14 @@ export default {
       message: "",
       Datepicker,
       VueTimepicker,
-      getUserIdFromToken,
+      getUserIdFromToken
     };
   },
   methods: {
     handleAdd() {
       this.loading = true;
       this.message = "";
-      Api.addEvent({ user_id:getUserIdFromToken, title: this.title, type: this.type, date: this.date, time: this.time, location: this.location, description: this.desctiption, cal_id: this.cal_id })
+      Api.addEvent({  title: this.title, type: this.type, date: this.date, time: this.time, location: this.location, description: this.desctiption, cal_id: this.cal_id })
         .then(() => {
           this.loading = false;
           this.$router.push("/admin/");
@@ -149,6 +149,7 @@ export default {
         });
     },
   },
+  
 };
 </script>
 <style>
