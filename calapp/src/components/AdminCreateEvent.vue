@@ -13,7 +13,6 @@
       <form name="form" @submit.prevent="handleAdd">
         <div class="content">
         
-{{ event.user_id }}
           <!-- <div class="form-group">
             <label for="user_id">User ID</label>
             <input
@@ -43,25 +42,25 @@
           </div>
           <div class="form-group">
             <label for="date">Date</label>
-            <datepicker>
+            <!-- <datepicker> -->
             <input
               v-model="date"
               type="date"
               class="form-control"
               name="date"
             />
-            </datepicker>
+            <!-- </datepicker> -->
           </div>
           <div class="form-group">
             <label for="time">Time</label>
-            <vue-timepicker>
+            <!-- <vue-timepicker> -->
             <input
               v-model="time"
               type="time"
               class="form-control"
               name="time"
             />
-            </vue-timepicker>
+            <!-- </vue-timepicker> -->
           </div>
           <div class="form-group">
             <label for="location">Location</label>
@@ -110,8 +109,8 @@
 </template>
 
 <script>
-import Datepicker from 'vuejs-datepicker';
-import VueTimepicker from 'vue-time-picker'
+// import Datepicker from 'vuejs-datepicker';
+// import VueTimepicker from 'vue-time-picker'
 import Api from "../api";
 export default {
   name: "AdminCreateEvent",
@@ -125,9 +124,8 @@ export default {
       description: "",
       loading: false,
       message: "",
-      VueTimepicker,
-      Datepicker,
-      user_id,
+      // VueTimepicker,
+      // Datepicker,
     };
   },
   methods: {
