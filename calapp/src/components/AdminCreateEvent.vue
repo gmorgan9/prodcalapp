@@ -13,12 +13,6 @@
       <form name="form" @submit.prevent="handleAdd">
         <div class="content">
         
-        {{ decoded.user_id }}
-        <!-- <div v-if="isLoggedIn">
-  Logged in
-</div>
-<div v-else>Not logged in</div> -->
-
 
           <div class="form-group">
             <label for="user_id">User ID</label>
@@ -119,15 +113,8 @@
 import Datepicker from 'vuejs-datepicker';
 import VueTimepicker from 'vue-time-picker'
 import Api from "../api";
-import { getUserIdFromToken } from "../auth";
-// import { mapGetters } from 'vuex';
 export default {
   name: "AdminCreateEvent",
-  computed: {
-    getUserIdFromToken() {
-      return this.$router.decoded.user_id;
-    }
-  },
   data() {
     return {
       user_id: "",
@@ -143,11 +130,6 @@ export default {
       VueTimepicker,
     };
   },
-  // getters: {
-  //   isLoggedIn(state) {
-  //     return !!state.token;
-  //   }
-  // },
   methods: {
     handleAdd() {
       this.loading = true;
@@ -171,100 +153,10 @@ export default {
 };
 </script>
 <style>
-
-/* .content {
-  margin-left: 37.5%;
-}
-.event-form-item {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10px;
-    width:15%;
-}
-.picker {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10px;
-    width: 15.5%;
-}
-#title_block {
-  grid-column: 1 / 2;
-    grid-row: 1;
-}
-.title,
-.type,
-.date,
-.time,
-.location,
-.description {
-  display: flex;
-}
-.title h3,
-.type h3,
-.date h3,
-.time h3,
-.location h3,
-.description h3 {
-  margin-right: 10px;
-  background: gray;
-  color: white;
-  text-transform: uppercase;
-} */
 form {
   display: flex;
   flex-direction: column;
 }
-/* .content {
-  
-} */
-/* .title h3 {
-  grid-column: 1 / 2;
-  grid-row: 1;
-}
-.type h3 {
-  grid-column: 1 / 2;
-  grid-row: 2;
-}
-.date h3 {
-    grid-column: 1 / 2;
-    grid-row: 3;
-}
-.time h3 {
-    grid-column: 1 / 2;
-    grid-row: 4;
-}
-.location h3 {
-    grid-column: 1 / 2;
-    grid-row: 5;
-}
-.description h3 {
-    grid-column: 1 / 2;
-    grid-row: 6;
-}
-.title input {
-  grid-column: 2 / 2;
-  grid-row: 1;
-}
-.type input {
-  grid-column: 2 / 2;
-  grid-row: 2;
-}
-.date input {
-    grid-column: 2 / 2;
-    grid-row: 3;
-}
-.time input {
-    grid-column: 2 / 2;
-    grid-row: 4;
-}
-.location input {
-    grid-column: 2 / 2;
-    grid-row: 5;
-}
-.description input {
-    grid-column: 2 / 2;
-    grid-row: 6;
-} */
 .title h3,
 .type h3,
 .date h3,
@@ -289,8 +181,6 @@ form {
 .description textarea {
   width: 15%;
   margin-left: 15%;
-  /* padding-left: 2px; */
-  /* margin-top: -2%; */
 }
 textarea {
   padding-bottom: 25px;

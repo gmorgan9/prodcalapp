@@ -5,12 +5,6 @@
       <b-nav-item><router-link :to="{ path: '/' }">Home</router-link></b-nav-item>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-
-      
-
-
-
-
       <b-collapse id="nav-collapse" is-nav>
         <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto">
@@ -21,6 +15,8 @@
     </b-navbar>
     <br />
     <hr />
+
+    <p>You are logged {{ loggedIn ? 'in' : 'out' }}</p>
     <!-- <router-view></router-view> -->
   </div>
 </template>
