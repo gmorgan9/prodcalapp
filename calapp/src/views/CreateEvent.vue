@@ -10,7 +10,7 @@
     <router-link to="/">Back</router-link>
     <div v-if="loading">Loading article....</div>
     <div v-else>
-      <form action="">
+      <form name="form" @submit.prevent="handleAdd">
         <div class="content">
           <div class="title"><h3>Title</h3><input v-model="title" name="title" placeholder="event title..."></div>
           <div class="type"><h3>Type</h3><input v-model="type" name="type" placeholder="event type..."></div>
