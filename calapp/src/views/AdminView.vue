@@ -16,7 +16,7 @@
     <br />
     <hr />
 
-    <p>userid: {{ token }}</p>
+    <p>userid: {{ accessToken }}</p>
     <!-- <router-view></router-view> -->
   </div>
 </template>
@@ -28,7 +28,7 @@ export default {
   mounted: function () {
     getUserIdFromToken();
     return {
-      token
+      accessToken = localStorage.getItem("accessToken")
     }
   },
 };
