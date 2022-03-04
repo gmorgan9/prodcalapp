@@ -130,9 +130,9 @@ export default {
     };
   },
 created: function() {
-  this.loading = true;
-  user_id = Api.getUserID().then(() =>
-  console.log(user_id))
+  this.user_id;
+    user_id = Api.getUserID()
+    console.log(user_id)
 },
   methods: {
     handleAdd() {
