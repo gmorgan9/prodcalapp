@@ -14,6 +14,7 @@ const checkAuth = function(to, _, next) {
   }
 };
 
+import Admin from "../views/AdminView.vue";
 import AdminCreateEvent from "../components/AdminCreateEvent.vue";
 
 
@@ -51,7 +52,7 @@ const routes = [
   {
     path: '/admin',
     name: 'admin',
-    component: () => import('../views/AdminView.vue'),
+    component: Admin,
     beforeEnter: checkAuth,
     childern: [
       { path: "add", component: AdminCreateEvent}
