@@ -19,7 +19,7 @@ import { getJwtToken } from "./auth";
 
 Vue.use(BootstrapVue);
 Vue.use(IconsPlugin);
-Vue.use(VueRouter);
+// Vue.use(VueRouter);
 
 const checkAuth = function(to, _, next) {
   const token = getJwtToken();
