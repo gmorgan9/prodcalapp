@@ -28,3 +28,8 @@ export function authHeader() {
     return {};
   }
 }
+export default {
+  loggedIn() {
+    return !!localStorage.token;
+  }
+}
