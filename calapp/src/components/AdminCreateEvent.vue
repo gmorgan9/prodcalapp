@@ -114,7 +114,7 @@
 import Api from "../api";
 export default {
   name: "AdminCreateEvent",
-  data() {
+  data: function() {
     return {
       id: Api.getUserID(),
       title: "",
@@ -129,10 +129,10 @@ export default {
       // Datepicker,
     };
   },
-  created: () => {
-    user_id=Api.getUserID();
-    console.log(user_id);
-  },
+created: function() {
+    user_id = Api.getUserID()
+    console.log(user_id)
+},
   methods: {
     handleAdd() {
       this.loading = true;
