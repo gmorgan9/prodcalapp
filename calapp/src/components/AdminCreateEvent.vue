@@ -12,7 +12,7 @@
     <div v-else>
       <form name="form" @submit.prevent="handleAdd">
         <div class="content">
-{{ id }}
+{{ getUserID(id) }}
           <!-- <div class="form-group">
             <label for="user_id">User ID</label>
             <input
@@ -116,7 +116,7 @@ export default {
   name: "AdminCreateEvent",
   data: function() {
     return {
-      user_id: Api.getUserID(),
+      id: Api.getUserID(),
       title: "",
       type: "",
       date: "",
@@ -130,8 +130,8 @@ export default {
     };
   },
 created: function() {
-    var user_id = Api.getUserID()
-    console.log(user_id)
+    var id = Api.getUserID()
+    console.log(id)
 },
   methods: {
     handleAdd() {
