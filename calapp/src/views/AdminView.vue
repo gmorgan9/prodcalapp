@@ -26,7 +26,7 @@ import { getJwtToken } from "../auth"
 export default {
   name: "Admin",
   computerd: {
-    token: getJwtToken(loggedIn)
+    token: getJwtToken()
     
   }
 };
