@@ -12,10 +12,15 @@
     <div v-else>
       <form name="form" @submit.prevent="handleAdd">
         <div class="content">
-          <!-- <div class="form-group">
-            <label for="username">User Id</label>
-            {{ users.id }}
-          </div> -->
+          <div class="form-group">
+            <label for="user_id">User ID</label>
+            <input
+              v-model="user_id"
+              type="text"
+              class="form-control"
+              name="user_id"
+              placeholder="{{ users.id }}"
+              />
           <div class="form-group">
             <label for="title">Title</label>
             <input
@@ -110,7 +115,7 @@ export default {
   name: "AdminCreateEvent",
   data() {
     return {
-      user_id: id,
+      user_id: "",
       title: "",
       type: "",
       date: "",
@@ -127,7 +132,7 @@ export default {
     handleAdd() {
       this.loading = true;
       this.message = "";
-      Api.addEvent({ user_id: this.id, title: this.title, type: this.type, date: this.date, time: this.time, location: this.location, description: this.desctiption, cal_id: this.cal_id })
+      Api.addEvent({ user_id: this.user_id, title: this.title, type: this.type, date: this.date, time: this.time, location: this.location, description: this.desctiption, cal_id: this.cal_id })
         .then(() => {
           this.loading = false;
           this.$router.push("/admin/");
