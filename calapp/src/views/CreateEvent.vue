@@ -18,6 +18,15 @@
           <div class="time"><h3>Time</h3><vue-timepicker v-model="time"><input type="time" name="time"></vue-timepicker></div>
           <div class="location"><h3>Location</h3><input v-model="location" placeholder="event location..."></div>
           <div class="description"><h3>Description</h3><textarea v-model="description" placeholder="event description..."></textarea></div>
+          <div class="form-group">
+            <button class="btn btn-primary btn-block" :disabled="loading">
+              <span
+                v-show="loading"
+                class="spinner-border spinner-border-sm"
+              ></span>
+              <span>Add Article</span>
+            </button>
+          </div>
         </div>
       </form>
     </div>
