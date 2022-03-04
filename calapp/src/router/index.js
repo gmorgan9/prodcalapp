@@ -10,7 +10,9 @@ const checkAuth = function(to, _, next) {
       params: { nextUrl: to.fullPath },
     });
   } else {
-    next();
+    next({
+     users: users.loggedin == true
+    });
   }
 };
 
@@ -51,16 +53,13 @@ const routes = [
   {
     path: '/admin',
     component: Admin,
-    beforeEnter: checkAuth,
-    childern: [
-      { path: "event", component: AdminCreateEvent}
-    ],
+    beforeEnter: checkAuth
   },
-  // {
-  //   path: '/create',
-  //   name: 'create',
-  //   component: AdminCreateEvent
-  // },
+  {
+    path: '/create',
+    name: 'create',
+    component: AdminCreateEvent
+  },
 ]
 
 const router = createRouter({
