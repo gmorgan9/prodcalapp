@@ -147,6 +147,7 @@ export default {
         });
     },
   },
+  getUserIdFromToken(token);
 };
 </script>
 <style>
