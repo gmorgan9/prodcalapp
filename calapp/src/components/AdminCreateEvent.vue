@@ -13,7 +13,7 @@
       <form name="form" @submit.prevent="handleAdd">
         <div class="content">
         
-        {{ decoded.user_id }}
+        {{ decoded.users.user_id }}
         <!-- <div v-if="isLoggedIn">
   Logged in
 </div>
