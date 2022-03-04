@@ -29,32 +29,26 @@ import AdminCreateEvent from "../components/AdminCreateEvent.vue";
 const routes = [
   {
     path: '/',
-    name: 'home',
     component: HomeView
   },
   {
     path: '/event/:id',
-    name: 'event',
     component: Event
   },
   {
     path: '/login',
-    name: 'login',
     component: Login
   },
   {
     path: '/logout',
-    name: 'logout',
     component: Logout
   },
   {
     path: '/register',
-    name: 'register',
     component: Register
   },
   {
     path: '/admin',
-    name: 'admin',
     component: Admin,
     beforeEnter: checkAuth,
     childern: [
