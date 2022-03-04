@@ -16,18 +16,18 @@
     <br />
     <hr />
 
-    <p>userid: {{ accessToken }}</p>
+    <p>userid: {{ users.user_id }}</p>
     <!-- <router-view></router-view> -->
   </div>
 </template>
 
 <script>
-import { authHeader } from "../auth";
+import { getUserIdFromToken } from "../auth";
 export default {
   name: "Admin",
   mounted: function () {
-    authHeader();
-    this.$auth.authHeader({ accessToken })
+    getUserIdFromToken();
+    
   },
 };
 </script>
