@@ -69,7 +69,7 @@ export default {
             this.$router.push(this.$route.params.nextUrl);
           } else {
             this.$router.push("/admin");
-            this.users.loggedin = 1
+            this.loggedin = 1
           }
         })
         .catch((error) => {
