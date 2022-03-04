@@ -1,8 +1,6 @@
-
-import VueRouter from "vue-router";
 import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
 
-import App from "./App.vue";
+// import App from "./App.vue";
 import Home from "./pages/Home";
 import Admin from "./pages/Admin";
 import Login from "./pages/Login";
