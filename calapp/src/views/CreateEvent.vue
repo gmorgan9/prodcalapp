@@ -156,7 +156,7 @@ form {
   text-transform: uppercase;
   width: 10%;
   margin-right: 100px;
-  margin-left: 40%;
+  margin-left: 38.5%;
   padding-right: 5px;
 }
 .title input,
@@ -166,7 +166,7 @@ form {
 .location input,
 .description textarea {
   width: 20%;
-  margin-left: 25%;
+  margin-left: 23.5%;
   /* padding-left: 2px; */
   /* margin-top: -2%; */
 }
