@@ -16,7 +16,7 @@
     <br />
     <hr />
 
-    <p>You are logged {{ token ? 'in' : 'out' }}</p>
+    <p>You are logged {{ getJwtToken ? 'in' : 'out' }}</p>
     <!-- <router-view></router-view> -->
   </div>
 </template>
