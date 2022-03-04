@@ -9,7 +9,7 @@ class Api {
   }
 
   getEventDetail(id) {
-    return axios.get(API_URL + `/event?id=eq.${id}`);
+    return axios.get(API_URL + `/event?event_id=eq.${event_id}`);
   }
 
   getUsers() {
@@ -31,7 +31,7 @@ class Api {
   }
 
 
-  
+
 
 
   updateArticle(article) {
