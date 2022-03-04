@@ -119,7 +119,7 @@ export default {
   name: "AdminCreateEvent",
   data() {
     return {
-      user_id: Api.getUserID(),
+      id: Api.getUserID(),
       title: "",
       type: "",
       date: "",
@@ -133,7 +133,7 @@ export default {
     };
   },
   created: function() {
-    id = Api.getUserID(id)
+    id = Api.getUserID()
     console.log(id)
 },
   methods: {
