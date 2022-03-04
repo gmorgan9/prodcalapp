@@ -8,7 +8,7 @@
     <!-- <div v-if="loading">Loading articles....</div> -->
     <!-- <ul v-else> -->
     <router-link to="/admin"><button>Back</button></router-link>
-    <div v-if="loading">Loading article....</div>
+    <div v-if="loading">Loading event....</div>
     <div v-else>
       <form name="form" @submit.prevent="handleAdd">
         <div class="content">
