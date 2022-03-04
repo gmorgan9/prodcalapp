@@ -14,7 +14,7 @@
         <div class="content">
         
         
-        <div v-if="$page.props.user">
+        <div v-if="loggedIn">
   Logged in
   <pre>{{user_id}}</pre>
 </div>
