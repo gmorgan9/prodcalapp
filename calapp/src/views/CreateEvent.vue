@@ -155,7 +155,7 @@ form {
   color: white;
   text-transform: uppercase;
   width: 10%;
-  margin-right: 40px;
+  margin-right: 30px;
   margin-left: 30%;
   padding-right: 5px;
 }
