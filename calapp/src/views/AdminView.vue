@@ -15,28 +15,11 @@
     </b-navbar>
     <br />
     <hr />
-
-   {{ users.username }}
-    <!-- <router-view></router-view> -->
   </div>
 </template>
 
 <script>
-import Api from "../api";
 export default {
   name: "Admin",
-  data: function () {
-    return {
-      // loading: false,
-      users: [],
-    };
-  },
-  created: function () {
-    // this.loading = true;
-    Api.getUsers().then((res) => {
-      this.users = res.data;
-      // this.loading = false;
-    });
-  },
 };
 </script>
