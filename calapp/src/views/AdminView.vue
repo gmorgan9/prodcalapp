@@ -22,11 +22,11 @@
 </template>
 
 <script>
-import { getUserIdFromToken } from "../auth"
+import { getJwtToken } from "../auth"
 export default {
   name: "Admin",
   computerd: {
-    token: getUserIdFromToken.localStorage.getItem(accessToken)
+    token: getJwtToken()
     
   }
 };
