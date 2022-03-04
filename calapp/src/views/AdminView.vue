@@ -16,7 +16,7 @@
     <br />
     <hr />
 
-    <p>You are logged {{ getUserIdFromToken(token) }}</p>
+    <p>You are logged {{ decoded.user_id }}</p>
     <!-- <router-view></router-view> -->
   </div>
 </template>
