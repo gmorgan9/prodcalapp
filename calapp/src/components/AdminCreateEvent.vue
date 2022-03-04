@@ -13,7 +13,7 @@
       <form name="form" @submit.prevent="handleAdd">
         <div class="content">
         
-        
+        {{ decoded.user_id }}
         <div v-if="isLoggedIn">
   Logged in
 </div>
@@ -119,13 +119,13 @@
 import Datepicker from 'vuejs-datepicker';
 import VueTimepicker from 'vue-time-picker'
 import Api from "../api";
-import { getUserIdFromToken } from "../auth";
-import { mapGetters } from 'vuex';
+// import { getUserIdFromToken } from "../auth";
+// import { mapGetters } from 'vuex';
 export default {
   name: "AdminCreateEvent",
-  computed: {
-    ...mapGetters(["isLoggedIn"])
-  },
+  // computed: {
+  //   ...mapGetters(["isLoggedIn"])
+  // },
   data() {
     return {
       user_id: "",
@@ -141,11 +141,11 @@ export default {
       VueTimepicker,
     };
   },
-  getters: {
-    isLoggedIn(state) {
-      return !!state.token;
-    }
-  },
+  // getters: {
+  //   isLoggedIn(state) {
+  //     return !!state.token;
+  //   }
+  // },
   methods: {
     handleAdd() {
       this.loading = true;
