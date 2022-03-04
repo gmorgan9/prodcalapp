@@ -11,9 +11,7 @@
     <div v-else>
       <form name="form" @submit.prevent="handleAdd">
         <div class="content">
-          <router-link :to="`/users/${users.id}`">{{
-          users.id
-        }}</router-link>
+          {{displayUserName(scope.row.id)}}
           <div class="form-group">
             <label for="user_id">User ID</label>
             <input
@@ -149,7 +147,10 @@ export default {
     },
   },
 };
-
+displayUserName(id)
+    {
+       return this.users.id;
+    };
 </script>
 <style>
 
