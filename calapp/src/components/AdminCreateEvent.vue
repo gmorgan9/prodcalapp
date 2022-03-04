@@ -115,6 +115,7 @@ export default {
   name: "AdminCreateEvent",
   data() {
     return {
+      userid: document.querySelector("meta[users.id='id']").getAttribute('content'),
       user_id: "",
       title: "",
       type: "",
