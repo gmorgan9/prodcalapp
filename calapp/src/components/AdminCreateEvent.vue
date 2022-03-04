@@ -21,6 +21,7 @@
               name="user_id"
               placeholder="{{ users.id }}"
               />
+              </div>
           <div class="form-group">
             <label for="title">Title</label>
             <input
