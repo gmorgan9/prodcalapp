@@ -137,7 +137,7 @@ created: function() {
     handleAdd() {
       this.loading = true;
       this.message = "";
-      Api.addEvent({ id: this.id, title: this.title, type: this.type, date: this.date, time: this.time, location: this.location, description: this.description, cal_id: this.cal_id })
+      Api.addEvent({ id: this.user_id, title: this.title, type: this.type, date: this.date, time: this.time, location: this.location, description: this.description, cal_id: this.cal_id })
         .then(() => {
           this.loading = false;
           this.$router.push("/admin/");
