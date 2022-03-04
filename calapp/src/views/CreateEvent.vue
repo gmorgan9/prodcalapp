@@ -155,8 +155,8 @@ form {
   color: white;
   text-transform: uppercase;
   width: 10%;
-  margin-right: 50px;
-  margin-left: 30%;
+  margin-right: 20px;
+  margin-left: 40%;
   padding-right: 5px;
 }
 .title input,
