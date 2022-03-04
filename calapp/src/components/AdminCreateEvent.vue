@@ -11,11 +11,6 @@
     <div v-else>
       <form name="form" @submit.prevent="handleAdd">
         <div class="content">
-          <div v-for="users in user" :key="users.id">
-        <router-link :to="`/users/${users.id}`">{{
-          users.id
-        }}</router-link>
-      </div>
           <div class="form-group">
             <label for="user_id">User ID</label>
             <input
@@ -149,13 +144,6 @@ export default {
           this.loading = false;
         });
     },
-  },
-  created: function () {
-    this.loading = true;
-    Api.getUsers().then((res) => {
-      this.user = res.data;
-      this.loading = false;
-    });
   },
 };
 </script>

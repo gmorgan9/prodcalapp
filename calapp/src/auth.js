@@ -1,7 +1,8 @@
+import { userSetter } from "core-js/fn/symbol";
 import jwt_decode from "jwt-decode";
 
 export function getJwtToken() {
-  return localStorage.getItem("accessToken");
+  return localStorage.getItem("accessToken" + users.id);
 }
 
 export function getUserIdFromToken(token) {
