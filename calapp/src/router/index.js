@@ -40,7 +40,7 @@ const routes = [
   {
     path: '/create',
     name: 'create',
-    component: () => import('../views/AdminCreateView.vue')
+    component: () => import('../components/AdminCreateView.vue')
   },
 ]
 
