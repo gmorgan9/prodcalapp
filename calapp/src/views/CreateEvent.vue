@@ -173,9 +173,10 @@ form {
 .time input,
 .location input,
 .description textarea {
-    width: 27.5%;
-    /* margin-left: 70%; */
-    /* padding-left: 2px; */
-    /* margin-top: -2%; */
+  margin-left: 5%;
+  width: 27.5%;
+  /* margin-left: 70%; */
+  /* padding-left: 2px; */
+  /* margin-top: -2%; */
 }
 </style>
