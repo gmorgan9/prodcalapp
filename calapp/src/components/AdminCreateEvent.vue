@@ -14,7 +14,7 @@
         <div class="content">
         
       
-        
+        {{id}}
 
           <!-- <div class="form-group">
             <label for="user_id">User ID</label>
