@@ -4,7 +4,7 @@
     <div v-if="loading">Loading events....</div>
     <ul v-else>
       <br /><br />
-    <router-link :to="`/login`">Login</router-link>
+    <router-link :to="`/login`">Login</router-link> | 
     <router-link :to="`/register`">Register</router-link>
       <br /><br />
       <li v-for="event in events" :key="event.id">
@@ -35,3 +35,8 @@ export default {
   },
 };
 </script>
+<style>
+router-link {
+  text-decoration: none;
+}
+</style>
