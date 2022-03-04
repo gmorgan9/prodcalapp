@@ -154,7 +154,7 @@ form {
   background: gray;
   color: white;
   text-transform: uppercase;
-  width: 7.5%;
+  width: 10%;
   margin-right: 100px;
   margin-left: 38.5%;
   padding-right: 5px;
@@ -165,7 +165,7 @@ form {
 .time input,
 .location input,
 .description textarea {
-  width: 20%;
+  width: 15%;
   margin-left: 20%;
   /* padding-left: 2px; */
   /* margin-top: -2%; */
