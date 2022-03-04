@@ -14,7 +14,7 @@ const checkAuth = function(to, _, next) {
 };
 
 // import App from "./App.vue";
-import HomeView from "../views/Home";
+import HomeView from "../views/HomeView.vue";
 import Login from "../views/LoginView.vue";
 import Logout from "../views/LogoutView.vue";
 import Register from "../views/RegisterView.vue";
