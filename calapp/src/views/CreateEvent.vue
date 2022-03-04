@@ -60,7 +60,7 @@ export default {
       Api.addEvent({ title: this.title, type: this.type, date: this.date, time: this.time, location: this.location, description: this.desctiption })
         .then(() => {
           this.loading = false;
-          this.$router.push("/admin/");
+          // this.$router.push("/admin/");
         })
         .catch((error) => {
           console.log(error);
