@@ -12,12 +12,12 @@
     <div v-else>
       <form action="">
         <div class="content">
-          <div class="title"><h3>Title</h3><div class="inputs"><input v-model="title" placeholder="event title..."></div></div>
-          <div class="type"><h3>Type</h3><div class="inputs"><input v-model="type" placeholder="event type..."></div></div>
-          <div class="date"><h3>Date</h3><div class="inputs"><datepicker v-model="date" ><input type="date" name="date"></datepicker></div></div>
-          <div class="time"><h3>Time</h3><div class="inputs"><vue-timepicker v-model="time"><input type="time" name="time"></vue-timepicker></div></div>
-          <div class="location"><h3>Location</h3><div class="inputs"><input v-model="location" placeholder="event location..."></div></div>
-          <div class="description"><h3>Description</h3><div class="inputs"><textarea v-model="description" placeholder="event description..."></textarea></div></div>
+          <div class="title"><h3>Title</h3><input v-model="title" placeholder="event title..."></div>
+          <div class="type"><h3>Type</h3><input v-model="type" placeholder="event type..."></div>
+          <div class="date"><h3>Date</h3><datepicker v-model="date" ><input type="date" name="date"></datepicker></div>
+          <div class="time"><h3>Time</h3><vue-timepicker v-model="time"><input type="time" name="time"></vue-timepicker></div>
+          <div class="location"><h3>Location</h3><input v-model="location" placeholder="event location..."></div>
+          <div class="description"><h3>Description</h3><textarea v-model="description" placeholder="event description..."></textarea></div>
         </div>
       </form>
     </div>
@@ -149,6 +149,7 @@ form {
 .time h3,
 .location h3,
 .description h3 {
+  margin-bottom: -2%;
   text-align: right;
   background: gray;
   color: white;
