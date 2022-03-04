@@ -12,7 +12,9 @@
     <div v-else>
       <form name="form" @submit.prevent="handleAdd">
         <div class="content">
-          {{ id }}
+          <div v-if="users.id">
+        {{ users.id }}
+      </div>
           <div class="form-group">
             <label for="user_id">User ID</label>
             <input
@@ -112,7 +114,6 @@
 import Datepicker from 'vuejs-datepicker';
 import VueTimepicker from 'vue-time-picker'
 import Api from "../api";
-import { getUserIdFromToken } from "../auth";
 export default {
   name: "AdminCreateEvent",
   data() {
@@ -128,7 +129,6 @@ export default {
       message: "",
       Datepicker,
       VueTimepicker,
-      getUserIdFromToken
     };
   },
   methods: {
