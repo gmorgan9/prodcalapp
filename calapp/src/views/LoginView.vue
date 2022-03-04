@@ -55,14 +55,13 @@ export default {
       password_hash: "",
       loading: false,
       message: "",
-      loggedin: 1
     };
   },
   methods: {
     handleLogin() {
       this.loading = true;
       this.message = "";
-      Api.login(this.username, this.password_hash, this.loggedin = 1)
+      Api.login(this.username, this.password_hash)
         .then((res) => {
           setJwtToken(res.data[0].token);
           if (this.$route.params.nextUrl != null) {

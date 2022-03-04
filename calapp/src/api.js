@@ -31,6 +31,8 @@ class Api {
   }
 
 
+  
+
 
   updateArticle(article) {
     return axios.patch(
@@ -59,7 +61,7 @@ class Api {
   }
 
   login(username, password_hash) {
-    return axios.post(API_URL + "/rpc/login", { username, password_hash, loggedin});
+    return axios.post(API_URL + "/rpc/login", { username, password_hash });
   }
 
   signup(username, email, password_hash, dept_id) {

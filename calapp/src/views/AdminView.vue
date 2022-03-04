@@ -16,18 +16,17 @@
     <br />
     <hr />
 
-    <p>You are logged {{ token ? 'in' : 'out' }}</p>
+    <p>You are logged {{ user_id }}</p>
     <!-- <router-view></router-view> -->
   </div>
 </template>
 
 <script>
-import { getJwtToken } from "../auth"
+import { authHeader } from "../auth";
 export default {
   name: "Admin",
-  computerd: {
-    token: getJwtToken()
-    
-  }
+  mounted: function () {
+    authHeader();
+  },
 };
 </script>

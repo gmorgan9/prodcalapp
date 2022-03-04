@@ -2,7 +2,6 @@
 import jwt_decode from "jwt-decode";
 
 export function getJwtToken() {
-  const loggedIn = localStorage.getItem("accessToken");
   return localStorage.getItem("accessToken");
 }
 
