@@ -114,7 +114,7 @@ import Datepicker from 'vuejs-datepicker';
 import VueTimepicker from 'vue-time-picker'
 import Api from "../api";
 export default {
-  name: "AdminCreateAdd",
+  name: "AdminCreateEvent",
   data() {
     return {
       title: "",
