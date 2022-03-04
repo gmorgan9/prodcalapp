@@ -1,23 +1,19 @@
 <template>
   <div>
-    <b-jumbotron>
-      <p>Calendar App</p>
-    </b-jumbotron>
     <br />
     <router-link :to="`/create`">+ Create Event</router-link>
-    <!-- <div v-if="loading">Loading articles....</div> -->
-    <!-- <ul v-else> -->
+    <div v-if="loading">Loading events....</div>
+    <ul v-else>
       <br /><br />
     <router-link :to="`/login`">Login</router-link>
     <router-link :to="`/register`">Register</router-link>
       <br /><br />
-      HI
       <li v-for="event in events" :key="event.id">
         <router-link :to="`/event/${event.id}`">{{
           event.title
         }}</router-link>
       </li>
-    <!-- </ul> -->
+    </ul>
   </div>
 </template>
 
@@ -27,15 +23,15 @@ export default {
   name: "Home",
   data: function () {
     return {
-      // loading: false,
+      loading: false,
       events: [],
     };
   },
   created: function () {
-    // this.loading = true;
+    this.loading = true;
     Api.getEvent().then((res) => {
       this.events = res.data;
-      // this.loading = false;
+      this.loading = false;
     });
   },
 };
