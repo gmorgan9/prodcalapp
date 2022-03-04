@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
 
 const checkAuth = function(to, _, next) {
   const token = getJwtToken();
@@ -14,6 +13,15 @@ const checkAuth = function(to, _, next) {
   }
 };
 
+// import App from "./App.vue";
+import HomeView from "../views/Home";
+import Login from "../views/LoginView.vue";
+import Logout from "../views/LogoutView.vue";
+import Register from "../views/RegisterView.vue";
+import Event from "../views/EventView.vue";
+// import AdminArticleAdd from "./components/AdminArticleAdd";
+// import AdminArticleList from "./components/AdminArticleList";
+// import AdminArticleEdit from "./components/AdminArticleEdit";
 import Admin from "../views/AdminView.vue";
 import AdminCreateEvent from "../components/AdminCreateEvent.vue";
 
@@ -25,29 +33,24 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/about',
-    name: 'about',
-    component: () => import('../views/AboutView.vue')
-  },
-  {
     path: '/event/:id',
     name: 'event',
-    component: () => import('../views/EventView.vue')
+    component: Event
   },
   {
     path: '/login',
     name: 'login',
-    component: () => import('../views/LoginView.vue')
+    component: Login
   },
   {
     path: '/logout',
     name: 'logout',
-    component: () => import('../views/LogoutView.vue')
+    component: Logout
   },
   {
     path: '/register',
     name: 'register',
-    component: () => import('../views/RegisterView.vue')
+    component: Register
   },
   {
     path: '/admin',
