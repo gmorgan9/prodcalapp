@@ -14,10 +14,10 @@
         <div class="content">
         
         {{ decoded.user_id }}
-        <div v-if="isLoggedIn">
+        <!-- <div v-if="isLoggedIn">
   Logged in
 </div>
-<div v-else>Not logged in</div>
+<div v-else>Not logged in</div> -->
 
 
           <div class="form-group">
