@@ -14,9 +14,8 @@
         <div class="content">
         
         
-        <div v-if="loggedIn">
+        <div v-if="isLoggedIn">
   Logged in
-  <pre>{{user_id}}</pre>
 </div>
 <div v-else>Not logged in</div>
 
@@ -121,8 +120,12 @@ import Datepicker from 'vuejs-datepicker';
 import VueTimepicker from 'vue-time-picker'
 import Api from "../api";
 import { getUserIdFromToken } from "../auth";
+import { mapGetters } from "vuex";
 export default {
   name: "AdminCreateEvent",
+  computed: {
+    ...mapGetters(["isLoggedIn"])
+  },
   data() {
     return {
       user_id: "",
