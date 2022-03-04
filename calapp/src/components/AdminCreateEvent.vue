@@ -13,10 +13,6 @@
       <form name="form" @submit.prevent="handleAdd">
         <div class="content">
           <div class="form-group">
-            <label for="username">User Id</label>
-            {{ users.id }}
-          </div>
-          <div class="form-group">
             <label for="title">Title</label>
             <input
               v-model="title"
