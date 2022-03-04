@@ -16,7 +16,7 @@
     <br />
     <hr />
 
-    <p>userid: {{ users.user_id }}</p>
+    <p>userid: {{ users.username }}</p>
     <!-- <router-view></router-view> -->
   </div>
 </template>
