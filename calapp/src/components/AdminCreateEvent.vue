@@ -1,9 +1,6 @@
 <template>
 
   <div>
-    <head>
-  <meta name="id" content="{{ Auth::users()->id }}">
-</head>
     <b-jumbotron>
       <p>Welcome to the IT350 blog!</p>
     </b-jumbotron>
@@ -15,7 +12,7 @@
     <div v-else>
       <form name="form" @submit.prevent="handleAdd">
         <div class="content">
-          
+          {{ user_id }}
           <div class="form-group">
             <label for="user_id">User ID</label>
             <input
@@ -119,7 +116,6 @@ export default {
   name: "AdminCreateEvent",
   data() {
     return {
-      userid: document.querySelector("meta[users.id='id']").getAttribute('content'),
       user_id: "",
       title: "",
       type: "",
