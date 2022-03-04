@@ -22,13 +22,13 @@
 </template>
 
 <script>
-import { getJwtToken } from "../auth";
+import { authHeader } from "../auth";
 export default {
   name: "Admin",
   mounted: function () {
-    getJwtToken();
+    authHeader();
     return {
-      accessToken = localStorage.getItem("accessToken")
+      accessToken
     }
   },
 };
