@@ -21,12 +21,55 @@
               name="title"
             />
           </div>
-          <div class="title"><h3>Title</h3><input v-model="title" name="title" placeholder="event title..."></div>
-          <div class="type"><h3>Type</h3><input v-model="type" name="type" placeholder="event type..."></div>
-          <div class="date"><h3>Date</h3><datepicker v-model="date" name="date"><input type="date" name="date"></datepicker></div>
-          <div class="time"><h3>Time</h3><vue-timepicker v-model="time" name="time"><input type="time" name="time"></vue-timepicker></div>
-          <div class="location"><h3>Location</h3><input v-model="location" name="location" placeholder="event location..."></div>
-          <div class="description"><h3>Description</h3><textarea v-model="description" name="description" placeholder="event description..."></textarea></div>
+          <div class="form-group">
+            <label for="type">Type</label>
+            <input
+              v-model="type"
+              type="text"
+              class="form-control"
+              name="type"
+            />
+          </div>
+          <div class="form-group">
+            <label for="date">Date</label>
+            <datepicker>
+            <input
+              v-model="date"
+              type="text"
+              class="form-control"
+              name="date"
+            />
+            </datepicker>
+          </div>
+          <div class="form-group">
+            <label for="time">Time</label>
+            <vue-timepicker>
+            <input
+              v-model="time"
+              type="text"
+              class="form-control"
+              name="time"
+            />
+            </vue-timepicker>
+          </div>
+          <div class="form-group">
+            <label for="location">Location</label>
+            <input
+              v-model="location"
+              type="text"
+              class="form-control"
+              name="location"
+            />
+          </div>
+          <div class="form-group">
+            <label for="description">Description</label>
+            <input
+              v-model="description"
+              type="text"
+              class="form-control"
+              name="description"
+            />
+          </div>
           <div class="form-group">
             <button class="btn btn-primary btn-block" :disabled="loading">
               <span
