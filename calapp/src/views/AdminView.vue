@@ -16,17 +16,17 @@
     <br />
     <hr />
 
-    <p>You are logged {{ users.user_id }}</p>
+    <p>You are logged {{ token }}</p>
     <!-- <router-view></router-view> -->
   </div>
 </template>
 
 <script>
-import { authHeader } from "../auth";
+import { getUserIdFromToken } from "../auth";
 export default {
   name: "Admin",
   mounted: function () {
-    authHeader();
+    getUserIdFromToken(token);
   },
 };
 </script>
