@@ -110,7 +110,7 @@ export default {
   name: "AdminCreateEvent",
   data() {
     return {
-      user_id: users.id,
+      user_id: id,
       title: "",
       type: "",
       date: "",
@@ -127,7 +127,7 @@ export default {
     handleAdd() {
       this.loading = true;
       this.message = "";
-      Api.addEvent({ user_id: this.users.id, title: this.title, type: this.type, date: this.date, time: this.time, location: this.location, description: this.desctiption, cal_id: this.cal_id })
+      Api.addEvent({ user_id: this.id, title: this.title, type: this.type, date: this.date, time: this.time, location: this.location, description: this.desctiption, cal_id: this.cal_id })
         .then(() => {
           this.loading = false;
           this.$router.push("/admin/");
