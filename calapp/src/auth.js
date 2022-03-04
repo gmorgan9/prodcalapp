@@ -30,6 +30,6 @@ export function authHeader() {
 }
 export default {
   loggedIn() {
-    return !!localStorage.token;
+    return !!localStorage.getItem("accessToken");
   }
 }
