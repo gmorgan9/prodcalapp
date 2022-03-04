@@ -130,9 +130,8 @@ export default {
     };
   },
 created: function() {
-  this.user_id;
     user_id = Api.getUserID()
-    console.log(user_id)
+    console.log(user_id.innerHTML)
 },
   methods: {
     handleAdd() {
