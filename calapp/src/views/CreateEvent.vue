@@ -166,7 +166,7 @@ form {
 .location input,
 .description textarea {
   width: 15%;
-  margin-left: 20%;
+  margin-left: 15%;
   /* padding-left: 2px; */
   /* margin-top: -2%; */
 }
