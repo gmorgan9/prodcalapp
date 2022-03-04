@@ -75,15 +75,6 @@
             />
           </div>
           <div class="form-group">
-            <label for="cal_id">Cal_id</label>
-            <input
-              v-model="cal_id"
-              type="text"
-              class="form-control"
-              name="cal_id"
-            />
-          </div>
-          <div class="form-group">
             <button class="btn btn-primary btn-block" :disabled="loading">
               <span
                 v-show="loading"
@@ -110,14 +101,12 @@ export default {
   name: "AdminCreateEvent",
   data() {
     return {
-      user_id: users.id,
       title: "",
       type: "",
       date: "",
       time: "",
       location: "",
       description: "",
-      cal_id: "",
       loading: false,
       message: "",
       Datepicker,
@@ -128,7 +117,7 @@ export default {
     handleAdd() {
       this.loading = true;
       this.message = "";
-      Api.addEvent({ user_id: this.users.id, title: this.title, type: this.type, date: this.date, time: this.time, location: this.location, description: this.desctiption, cal_id: this.cal_id })
+      Api.addEvent({ title: this.title, type: this.type, date: this.date, time: this.time, location: this.location, description: this.desctiption })
         .then(() => {
           this.loading = false;
           this.$router.push("/admin/");
