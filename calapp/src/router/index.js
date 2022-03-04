@@ -32,10 +32,10 @@ const routes = [
     path: '/',
     component: HomeView
   },
-  {
-    path: '/event/:id',
-    component: Event
-  },
+  // {
+  //   path: '/event/:id',
+  //   component: Event
+  // },
   {
     path: '/login',
     component: Login
@@ -56,11 +56,11 @@ const routes = [
       { path: "event", component: AdminCreateEvent}
     ],
   },
-  // {
-  //   path: '/create',
-  //   name: 'create',
-  //   component: () => import('../views/CreateEvent.vue')
-  // },
+  {
+    path: '/create',
+    name: 'create',
+    component: AdminCreateEvent
+  },
 ]
 
 const router = createRouter({
