@@ -12,7 +12,15 @@
     <div v-else>
       <form name="form" @submit.prevent="handleAdd">
         <div class="content">
-        {{ user_id }}
+        
+        
+        <div v-if="user_id">
+  Logged in
+  <pre>{{user_d}}</pre>
+</div>
+<div v-else>Not logged in</div>
+
+
           <div class="form-group">
             <label for="user_id">User ID</label>
             <input
