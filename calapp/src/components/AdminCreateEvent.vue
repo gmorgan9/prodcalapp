@@ -81,7 +81,7 @@
               name="description"
             />
           </div>
-          <!-- <div class="form-group">
+          <div class="form-group">
             <label for="cal_id">Cal_id</label>
             <input
               v-model="cal_id"
@@ -89,7 +89,7 @@
               class="form-control"
               name="cal_id"
             />
-          </div> -->
+          </div>
           <div class="form-group">
             <button class="btn btn-primary btn-block" :disabled="loading">
               <span
@@ -133,7 +133,7 @@ export default {
     handleAdd() {
       this.loading = true;
       this.message = "";
-      Api.addEvent({ title: this.title, type: this.type, date: this.date, time: this.time, location: this.location, description: this.desctiption})
+      Api.addEvent({ title: this.title, type: this.type, date: this.date, time: this.time, location: this.location, description: this.desctiption, cal_id: this.cal_id})
         .then(() => {
           getUserIdFromToken(res.data[0].token);
           this.loading = false;
