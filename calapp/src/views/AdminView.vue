@@ -22,11 +22,11 @@
 </template>
 
 <script>
-import { authHeader } from "../auth"
+import { getJwtToken } from "../auth"
 export default {
   name: "Admin",
   computerd: {
-    token: authHeader(accessToken)
+    token: !getJwtToken()
     
   }
 };
