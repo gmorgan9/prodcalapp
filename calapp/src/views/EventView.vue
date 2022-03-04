@@ -1,6 +1,6 @@
 <template>
   <div>
-    <router-link to="/">Back</router-link>
+    <router-link to="/"><button>Back</button></router-link>
     <div v-if="loading">Loading article....</div>
     <div v-else>
       <h1>{{ event.title }}</h1>
