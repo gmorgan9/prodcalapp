@@ -6,7 +6,7 @@
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
-      <div v-if="user_id">
+      <div v-if="user">
   Logged in
   <pre>{{user_d}}</pre>
 </div>
