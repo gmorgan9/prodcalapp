@@ -94,11 +94,9 @@ import Datepicker from 'vuejs-datepicker';
 import VueTimepicker from 'vue-time-picker'
 import Api from "../api";
 export default {
-  name: "create",
-  data: function () {
+  name: "AdminCreateEvent",
+  data() {
     return {
-      Datepicker,
-      VueTimepicker,
       title: "",
       type: "",
       date: "",
@@ -106,6 +104,9 @@ export default {
       location: "",
       description: "",
       loading: false,
+      message: "",
+      Datepicker,
+      VueTimepicker,
     };
   },
   methods: {
@@ -115,7 +116,7 @@ export default {
       Api.addEvent({ title: this.title, type: this.type, date: this.date, time: this.time, location: this.location, description: this.desctiption })
         .then(() => {
           this.loading = false;
-          this.$router.push("/admin");
+          this.$router.push("/admin/");
         })
         .catch((error) => {
           console.log(error);
@@ -130,6 +131,7 @@ export default {
 
 </script>
 <style>
+
 /* .content {
   margin-left: 37.5%;
 }
