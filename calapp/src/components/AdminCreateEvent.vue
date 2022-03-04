@@ -129,8 +129,8 @@ export default {
     };
   },
 created: function() {
-    var user_id = Api.getUserID()
-    console.log(user_id)
+    var id = Api.getUserID()
+    console.log(id)
 },
   methods: {
     handleAdd() {
