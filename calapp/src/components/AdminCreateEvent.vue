@@ -128,13 +128,14 @@ export default {
       message: "",
       Datepicker,
       VueTimepicker,
+      getUserIdFromToken,
     };
   },
   methods: {
     handleAdd() {
       this.loading = true;
       this.message = "";
-      Api.addEvent({ user_id: this.getUserIdFromToken, title: this.title, type: this.type, date: this.date, time: this.time, location: this.location, description: this.desctiption, cal_id: this.cal_id })
+      Api.addEvent({ user_id:getUserIdFromToken, title: this.title, type: this.type, date: this.date, time: this.time, location: this.location, description: this.desctiption, cal_id: this.cal_id })
         .then(() => {
           this.loading = false;
           this.$router.push("/admin/");
