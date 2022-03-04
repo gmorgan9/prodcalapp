@@ -12,6 +12,10 @@ class Api {
     return axios.get(API_URL + `/event?id=eq.${id}`);
   }
 
+  getUsers() {
+    return axios.get(API_URL + "/users", {});
+  }
+
   addEvent(event) {
     return axios.post(
       API_URL + "/event",
