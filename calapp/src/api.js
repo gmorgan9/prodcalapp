@@ -12,9 +12,9 @@ class Api {
     return axios.get(API_URL + `/event?event_id=eq.${event_id}`);
   }
 
-  getUsers() {
-    return axios.get(API_URL + "/users", {});
-  }
+  // getUsers() {
+  //   return axios.get(API_URL + "/users", {});
+  // }
 
   addEvent(event) {
     return axios.post(
