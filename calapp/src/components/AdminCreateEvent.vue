@@ -130,7 +130,7 @@ export default {
     };
   },
 created: function() {
-    user_id = Api.getUserID()
+    var user_id = Api.getUserID()
     console.log(user_id.innerHTML)
 },
   methods: {
