@@ -1,5 +1,9 @@
 <template>
+
   <div>
+    <head>
+  <meta name="id" content="{{ Auth::users()->id }}">
+</head>
     <b-jumbotron>
       <p>Welcome to the IT350 blog!</p>
     </b-jumbotron>
@@ -11,7 +15,7 @@
     <div v-else>
       <form name="form" @submit.prevent="handleAdd">
         <div class="content">
-          <meta name="id" content="{{ Auth::users()->id }}">
+          {{ id }}
           <div class="form-group">
             <label for="user_id">User ID</label>
             <input
