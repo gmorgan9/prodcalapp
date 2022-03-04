@@ -6,6 +6,15 @@
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
+      <div v-if="user_id">
+  Logged in
+  <pre>{{user_d}}</pre>
+</div>
+<div v-else>Not logged in</div>
+
+
+
+
       <b-collapse id="nav-collapse" is-nav>
         <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto">
