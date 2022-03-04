@@ -2,7 +2,7 @@
 
   <div>
     <b-jumbotron>
-      <p>Welcome to the IT350 blog!</p>
+      <p>Create Event</p>
     </b-jumbotron>
     <br />
     <!-- <div v-if="loading">Loading articles....</div> -->
