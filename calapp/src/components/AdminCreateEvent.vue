@@ -112,7 +112,7 @@
 import Datepicker from 'vuejs-datepicker';
 import VueTimepicker from 'vue-time-picker'
 import Api from "../api";
-import { getUserIdFromToken } from "./auth";
+import { getUserIdFromToken } from "../auth";
 export default {
   name: "AdminCreateEvent",
   data() {
