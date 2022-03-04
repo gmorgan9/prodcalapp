@@ -156,7 +156,8 @@ form {
 .type h3,
 .date h3,
 .time h3,
-.location h3 {
+.location h3,
+.description h3 {
   text-align: right;
   display: inline-block;
   background: gray;
@@ -167,24 +168,12 @@ form {
   margin-left: 30%;
   /* padding-left: 5px; */
 }
-.description h3 {
-  text-align: right;
-  display: inline-block;
-  background: gray;
-  color: white;
-  text-transform: uppercase;
-  width: 10%;
-  margin-top: 5px;
-  margin-right: 10px;
-}
-.description input {
-  margin-top: 25px;
-}
 .title input,
 .type input,
 .date input,
 .time input,
-.location input {
+.location input,
+.description textarea {
     width: 27.5%;
     /* margin-left: 70%; */
     /* padding-left: 2px; */
