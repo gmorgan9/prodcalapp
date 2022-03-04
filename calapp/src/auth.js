@@ -2,7 +2,7 @@
 import jwt_decode from "jwt-decode";
 
 export function getJwtToken() {
-  return localStorage.getItem("accessToken" + users.id);
+  return localStorage.getItem("accessToken");
 }
 
 export function getUserIdFromToken(token) {
@@ -16,7 +16,7 @@ export function setJwtToken(token) {
 }
 
 export function deleteJwtToken() {
-  localStorage.removeItem("accessToken");
+  localStorage.removeItem("accessToken" + users.id);
 }
 
 export function authHeader() {
