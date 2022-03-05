@@ -156,6 +156,9 @@ created: function() {
 } */
 form {
   width: 30%;
-  margin-left: 25%;
+  margin-left: 30%;
+}
+.form-control {
+  margin-right: 10px;
 }
 </style>
