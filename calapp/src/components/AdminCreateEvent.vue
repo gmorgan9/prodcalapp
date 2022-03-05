@@ -82,7 +82,7 @@
               name="cal_id"
             />
           </div>
-          <div class="form-group" id="buttons">
+          <div class="form-group">
             <button class="btn btn-primary btn-block" :disabled="loading">
               <span
                 v-show="loading"
@@ -161,7 +161,7 @@ form {
 #right {
   margin-right: 10px;
 }
-#buttons {
+button {
   margin-left: 15%;
 }
 </style>
