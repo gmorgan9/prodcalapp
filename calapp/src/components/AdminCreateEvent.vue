@@ -161,9 +161,8 @@ form {
   margin-right: 10px;
 }
 button {
-  margin-left: 15%;
-  width: 50%;
+  margin-left: 5%;
+  width: 25%;
   margin-top: 2.5%;
-  display: inline-block;
 }
 </style>
