@@ -80,6 +80,15 @@
             />
           </div>
           <div class="form-group">
+            <label for="reminder_amt">Reminder</label>
+            <input
+              v-model="reminder_amt"
+              type="text"
+              class="form-control"
+              name="reminder_amt"
+            />
+          </div>
+          <div class="form-group">
             <label for="cal_id">Cal_id</label>
             <input
               v-model="cal_id"
@@ -122,6 +131,7 @@ export default {
       time: "",
       location: "",
       description: "",
+      reminder_amt: "",
       loading: false,
       message: "",
       // VueTimepicker,
@@ -136,7 +146,7 @@ created: function() {
     handleAdd() {
       this.loading = true;
       this.message = "";
-      Api.addEvent({ user_id: Api.getUserID(), title: this.title, type: this.type, date: this.date, time: this.time, location: this.location, description: this.description, cal_id: this.cal_id })
+      Api.addEvent({ user_id: Api.getUserID(), title: this.title, type: this.type, date: this.date, time: this.time, location: this.location, description: this.description, cal_id: this.cal_id, reminder_amt: this.reminder_amt })
         .then(() => {
           this.loading = false;
           this.$router.push("/admin/");

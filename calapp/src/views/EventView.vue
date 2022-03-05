@@ -21,11 +21,13 @@
         </div>
         <div class="reminder_block">
             <h3>Reminder</h3>
-            <p>NONE</p>
+            <p v-if= "!!event.reminder_amt"> {{ event.reminder_amt }}</p>
+            <p v-else>NONE</p>
         </div>
         <div class="desc_block">
             <h3>Description</h3>
-            <p> {{ event.description }} </p>
+            <p v-if= "!!event.description"> {{ event.description }}</p>
+            <p v-else>NONE</p>
         </div>
         </div>
     </div>
