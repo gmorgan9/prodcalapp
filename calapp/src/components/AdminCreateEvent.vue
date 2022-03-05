@@ -155,7 +155,7 @@ created: function() {
 <style>
 form {
   width: 30%;
-  margin-left: 50%;
+  margin-left: 37.5%;
 }
 #right {
   margin-right: 10px;
