@@ -50,17 +50,12 @@ const routes = [
   },
   {
     path: '/admin',
-      component: Admin,
-      beforeEnter: checkAuth,
-      // children: [
-        // { path: '/create', component: AdminCreateEvent }
-        // { path: "edit/:id", component: AdminArticleEdit },
-        // { path: "", component: AdminArticleList },
-      // ],
+    beforeEnter: checkAuth,
+    component: Admin,
+      
     },
   {
     path: '/create',
-    name: 'create',
     beforeEnter: checkAuth,
     component: AdminCreateEvent
   },
