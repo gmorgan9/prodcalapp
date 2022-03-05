@@ -6,11 +6,11 @@
     <ul v-else>
     
       <br /><br />
-      <p v-for="event in events" :key="event.event_id">
+      <div class="event-links" v-for="event in events" :key="event.event_id">
         <router-link :to="`/event/${event.event_id}`">{{
           event.title
         }}</router-link>
-      </p>
+      </div>
     </ul>
   </div>
 </template>
@@ -42,5 +42,8 @@ export default {
 .nav-link:hover {
   color: rgba(68, 68, 68, 0.685);
   text-decoration: underline;
+}
+.event-links {
+  display: inline;
 }
 </style>
