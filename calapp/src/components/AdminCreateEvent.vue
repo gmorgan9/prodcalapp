@@ -5,7 +5,6 @@
       <p>Create Event</p>
     </b-jumbotron>
     <br />
-    <router-link to="/admin"><button>Back</button></router-link>
     <div v-if="loading">Loading event....</div>
     <div v-else>
       <form name="form" @submit.prevent="handleAdd">
@@ -83,7 +82,7 @@
               name="cal_id"
             />
           </div>
-          <div class="form-group">
+          <div class="form-group" id="buttons">
             <button class="btn btn-primary btn-block" :disabled="loading">
               <span
                 v-show="loading"
@@ -91,6 +90,7 @@
               ></span>
               <span>Add Event</span>
             </button>
+            <button><router-link to="/admin">Back</router-link></button>
           </div>
         </div>
       </form>
@@ -160,5 +160,8 @@ form {
 }
 #right {
   margin-right: 10px;
+}
+#buttons {
+  margin-left: 5%;
 }
 </style>
