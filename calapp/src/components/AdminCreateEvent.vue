@@ -8,6 +8,7 @@
     <div v-if="loading">Loading event....</div>
     <div v-else>
       <form name="form" @submit.prevent="handleAdd">
+        <div class="content">
           <div class="form-group" id="right">
             <label for="title">Title</label>
             <input
@@ -80,6 +81,7 @@
               class="form-control"
               name="cal_id"
             />
+          </div>
           </div>
         <div class="form-group">
             <button class="btn btn-primary btn-block" :disabled="loading">
