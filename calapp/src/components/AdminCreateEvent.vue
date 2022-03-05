@@ -163,8 +163,5 @@ created: function() {
 };
 </script>
 <style>
-form {
-  display: flex;
-  flex-direction: column;
-}
+
 </style>
