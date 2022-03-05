@@ -170,6 +170,7 @@ form {
   margin-right: 10px;
 }
 button {
+  margin-left: 15%;
   margin-top: 2.5%;
   display: inline-block;
 }
