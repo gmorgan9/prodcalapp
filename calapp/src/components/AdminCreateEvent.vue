@@ -146,8 +146,4 @@ created: function() {
 };
 </script>
 <style>
-.content {
-  display: flex;
-  flex-direction: column;
-}
 </style>
