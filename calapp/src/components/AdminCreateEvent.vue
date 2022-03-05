@@ -167,32 +167,4 @@ form {
   display: flex;
   flex-direction: column;
 }
-.title h3,
-.type h3,
-.date h3,
-.time h3,
-.location h3,
-.description h3 {
-  margin-bottom: -2%;
-  text-align: right;
-  background: gray;
-  color: white;
-  text-transform: uppercase;
-  width: 10%;
-  margin-right: 100px;
-  margin-left: 38.5%;
-  padding-right: 5px;
-}
-.title input,
-.type input,
-.date input,
-.time input,
-.location input,
-.description textarea {
-  width: 15%;
-  margin-left: 15%;
-}
-textarea {
-  padding-bottom: 25px;
-}
 </style>
