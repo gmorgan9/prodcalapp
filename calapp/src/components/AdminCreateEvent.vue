@@ -83,7 +83,7 @@
             />
           </div>
           </div>
-        <div class="form-group" id="btn">
+        <div class="form-group">
             <button class="btn btn-primary btn-block" :disabled="loading">
               <span
                 v-show="loading"
@@ -91,7 +91,7 @@
               ></span>
               <span>Add Event</span>
             </button>
-            <router-link :to="`/admin`"><button class="btn btn-primary btn-block" :disabled="loading">
+            <router-link :to="`/admin`"><button class="btn btn-primary btn-block" :disabled="loading" id="btn">
                 <span
                   v-show="loading"
                   class="spinner-border spinner-border-sm"
@@ -164,7 +164,7 @@ button {
   width: 25%;
   margin-top: 2.5%;
 }
-/* #btn {
-  margin-left: 5%;
-} */
+#btn {
+  margin-right: 10px;
+}
 </style>
