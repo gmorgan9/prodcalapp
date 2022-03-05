@@ -5,7 +5,7 @@
     <ul v-else>
       <br /><br />
       <h1 v-if="{id}">Vue is awesome!</h1>
-    <h1 v-else>Oh no 😢</h1>
+      <h1 v-else>Oh no 😢</h1>
     <router-link class="nav-link" :to="`/login`">Login</router-link> | 
     <router-link class="nav-link" :to="`/register`">Register</router-link>
       <br /><br />
