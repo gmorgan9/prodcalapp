@@ -83,7 +83,7 @@
             />
           </div>
           </div>
-        <div class="form-group">
+        <div class="form-group" id="btn">
             <button class="btn btn-primary btn-block" :disabled="loading">
               <span
                 v-show="loading"
@@ -161,8 +161,10 @@ form {
   margin-right: 10px;
 }
 button {
-  margin-left: 5%;
   width: 25%;
   margin-top: 2.5%;
+}
+#btn {
+  margin-left: 5%;
 }
 </style>
