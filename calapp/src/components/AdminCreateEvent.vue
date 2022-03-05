@@ -10,7 +10,7 @@
     <div v-else>
       <form name="form" @submit.prevent="handleAdd">
         <div class="content">
-          <div class="form-group">
+          <div class="form-group" id="right">
             <label for="title">Title</label>
             <input
               v-model="title"
@@ -28,7 +28,7 @@
               name="type"
             />
           </div>
-          <div class="form-group">
+          <div class="form-group" id="right">
             <label for="date">Date</label>
             <input
               v-model="date"
@@ -46,7 +46,7 @@
               name="time"
             />
           </div>
-          <div class="form-group">
+          <div class="form-group" id="right">
             <label for="location">Location</label>
             <input
               v-model="location"
@@ -64,7 +64,7 @@
               name="description"
             />
           </div>
-          <div class="form-group">
+          <div class="form-group" id="right">
             <label for="reminder_amt">Reminder</label>
             <input
               v-model="reminder_amt"
@@ -158,7 +158,7 @@ form {
   width: 30%;
   margin-left: 30%;
 }
-.form-control {
+#right {
   margin-right: 10px;
 }
 </style>
