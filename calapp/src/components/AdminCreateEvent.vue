@@ -149,8 +149,8 @@ created: function() {
 </script>
 <style>
 .content {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
 }
 .form-group-line {
   display: inline;
