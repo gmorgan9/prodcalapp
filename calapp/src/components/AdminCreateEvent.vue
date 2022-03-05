@@ -8,20 +8,18 @@
     <router-link to="/admin"><button>Back</button></router-link>
     <div v-if="loading">Loading event....</div>
     <div v-else>
-      <b-form name="form" @submit.prevent="handleAdd">
+      <form name="form" @submit.prevent="handleAdd">
         <div class="content">
-          <!-- <div class="form-group form-inline">
-            <label for="title">Title</label> -->
-            <b-form-group id="input-group-1" label="Title:" label-for="input-1">
-            <b-form-input
-              id="input-1"
+          <div class="form-group">
+            <label for="title">Title</label>
+            <input
               v-model="title"
               type="text"
               class="form-control"
               name="title"
-            ></b-form-input>
-          </b-form-group>
-          <div class="form-group form-inline">
+            />
+          </div>
+          <div class="form-group">
             <label for="type">Type</label>
             <input
               v-model="type"
@@ -30,63 +28,61 @@
               name="type"
             />
           </div>
-          <div class="form-group form-inline">
+          <div class="form-group">
             <label for="date">Date</label>
-            <b-form-input
+            <input
               v-model="date"
               type="date"
               class="form-control"
               name="date"
             />
           </div>
-          <div class="form-group form-inline">
+          <div class="form-group">
             <label for="time">Time</label>
-            <b-form-input
+            <input
               v-model="time"
               type="time"
               class="form-control"
               name="time"
             />
           </div>
-          <div class="form-group form-inline">
+          <div class="form-group">
             <label for="location">Location</label>
-            <b-form-input
+            <input
               v-model="location"
               type="text"
               class="form-control"
               name="location"
             />
           </div>
-          <div class="form-group form-inline">
+          <div class="form-group">
             <label for="description">Description</label>
-            <b-form-input
+            <input
               v-model="description"
               type="text"
               class="form-control"
               name="description"
             />
           </div>
-          <div class="form-group form-inline">
+          <div class="form-group">
             <label for="reminder_amt">Reminder</label>
-            <b-form-input
+            <input
               v-model="reminder_amt"
               type="text"
               class="form-control"
               name="reminder_amt"
             />
           </div>
-          <!-- <div class="form-group form-inline"> -->
-            <!-- <label for="cal_id">Cal_id</label> -->
-          <b-form-group id="input-group-3" label="Food:" label-for="input-3">
-            <b-form-input
-              id="input-8"
+            
+          <div class="form-group">
+            <label for="cal_id">Cal_id</label>
+            <input
               v-model="cal_id"
               type="text"
               class="form-control"
               name="cal_id"
-            ></b-form-input>
-          </b-form-group>
-          <!-- </div> -->
+            />
+          </div>
           <div class="form-group">
             <button class="btn btn-primary btn-block" :disabled="loading">
               <span
@@ -97,7 +93,7 @@
             </button>
           </div>
         </div>
-      </b-form>
+      </form>
       <div v-if="message" class="alert alert-danger">
         {{ message }}
       </div>
