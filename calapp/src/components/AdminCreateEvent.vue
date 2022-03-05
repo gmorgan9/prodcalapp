@@ -161,6 +161,7 @@ form {
   margin-right: 10px;
 }
 button {
+  margin-left: -2px;
   width: 25%;
   margin-top: 2.5%;
 }
