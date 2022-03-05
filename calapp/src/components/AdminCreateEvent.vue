@@ -182,6 +182,6 @@ button {
   margin-left: 3%;
 }
 router-link {
-  
+  text-decoration: none;
 }
 </style>
