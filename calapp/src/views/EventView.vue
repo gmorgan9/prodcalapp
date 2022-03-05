@@ -21,7 +21,7 @@
         </div>
         <div class="reminder_block">
             <h3>Reminder</h3>
-            <p v-if= "!!event.reminder_amt"> {{ event.reminder_amt }}</p>
+            <p v-if= "!!event.reminder_amt"> {{ event.reminder_amt }} Minutes</p>
             <p v-else>NONE</p>
         </div>
         <div class="desc_block">
