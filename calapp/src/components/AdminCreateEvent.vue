@@ -148,5 +148,6 @@ created: function() {
 <style>
 form {
   width: 70%;
+  margin-left: 10%;
 }
 </style>
