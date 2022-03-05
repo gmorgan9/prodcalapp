@@ -45,5 +45,6 @@ export default {
 }
 .event-links {
   display: inline;
+  margin-right: 10px;
 }
 </style>
