@@ -173,8 +173,6 @@ form {
 }
 button {
   margin-top: 2.5%;
-}
-.back-btn {
-  text-decoration: none;
+  display: inline-block;
 }
 </style>
