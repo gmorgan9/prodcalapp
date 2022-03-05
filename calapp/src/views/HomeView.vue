@@ -44,7 +44,8 @@ export default {
   text-decoration: underline;
 }
 .event-links {
-  display: inline;
+  display: flex;
+  flex-direction: column;
   margin-right: 10px;
 }
 </style>
