@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Admin page</h1>
+    <h2>Admin page</h2>
     <b-navbar>
       <b-nav-item><router-link :to="{ path: '/' }">Home</router-link></b-nav-item>
 
@@ -16,6 +16,11 @@
     <br />
     <hr />
 
+<div class="admin-content">
+  <h4>
+    Welcome to the Admin Dashboard!
+  </h4>
+</div>
     
   </div>
 </template>
