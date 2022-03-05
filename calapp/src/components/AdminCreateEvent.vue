@@ -166,7 +166,6 @@ button {
 }
 .back-btn {
   text-decoration: none;
-  color: white;
   margin-left: 3%;
 }
 </style>
