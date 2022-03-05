@@ -146,12 +146,12 @@ created: function() {
 };
 </script>
 <style>
-.form-group {
+/* .form-group {
   display: flex;
   flex-direction: column;
-}
+} */
 label {
-  display: inline-block;
+  float: left;
 }
 form {
   width: 50%;
