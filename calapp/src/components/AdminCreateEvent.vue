@@ -151,7 +151,7 @@ created: function() {
   flex-direction: column;
 }
 .form-group {
-  display: inline;
+  display: inline-block;
 }
 form {
   width: 50%;
