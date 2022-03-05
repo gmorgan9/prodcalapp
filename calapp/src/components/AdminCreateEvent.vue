@@ -8,7 +8,6 @@
     <router-link to="/admin"><button>Back</button></router-link>
     <div v-if="loading">Loading event....</div>
     <div v-else>
-      <div class="create_event">
       <form name="form" @submit.prevent="handleAdd">
         <div class="content">
           <div class="form-group">
@@ -94,7 +93,6 @@
           </div>
         </div>
       </form>
-      </div>
       <div v-if="message" class="alert alert-danger">
         {{ message }}
       </div>
@@ -104,8 +102,6 @@
 </template>
 
 <script>
-// import Datepicker from 'vuejs-datepicker';
-// import VueTimepicker from 'vue-time-picker'
 import Api from "../api";
 export default {
   name: "AdminCreateEvent",
