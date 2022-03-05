@@ -10,15 +10,17 @@
     <div v-else>
       <form name="form" @submit.prevent="handleAdd">
         <div class="content">
-          <div class="form-group form-inline">
-            <label for="title">Title</label>
-            <input
+          <!-- <div class="form-group form-inline">
+            <label for="title">Title</label> -->
+            <b-form-group id="input-group-1" label="Food:" label-for="input-1">
+            <b-form-input
+              id="input-1"
               v-model="title"
               type="text"
               class="form-control"
               name="title"
-            />
-          </div>
+            ></b-form-input>
+          </b-form-group>
           <div class="form-group form-inline">
             <label for="type">Type</label>
             <input
@@ -30,7 +32,7 @@
           </div>
           <div class="form-group form-inline">
             <label for="date">Date</label>
-            <input
+            <b-form-input
               v-model="date"
               type="date"
               class="form-control"
@@ -39,7 +41,7 @@
           </div>
           <div class="form-group form-inline">
             <label for="time">Time</label>
-            <input
+            <b-form-input
               v-model="time"
               type="time"
               class="form-control"
@@ -48,7 +50,7 @@
           </div>
           <div class="form-group form-inline">
             <label for="location">Location</label>
-            <input
+            <b-form-input
               v-model="location"
               type="text"
               class="form-control"
@@ -57,7 +59,7 @@
           </div>
           <div class="form-group form-inline">
             <label for="description">Description</label>
-            <input
+            <b-form-input
               v-model="description"
               type="text"
               class="form-control"
@@ -66,23 +68,25 @@
           </div>
           <div class="form-group form-inline">
             <label for="reminder_amt">Reminder</label>
-            <input
+            <b-form-input
               v-model="reminder_amt"
               type="text"
               class="form-control"
               name="reminder_amt"
             />
           </div>
-            
-          <div class="form-group form-inline">
-            <label for="cal_id">Cal_id</label>
-            <input
+          <!-- <div class="form-group form-inline"> -->
+            <!-- <label for="cal_id">Cal_id</label> -->
+          <b-form-group id="input-group-3" label="Food:" label-for="input-3">
+            <b-form-input
+              id="input-8"
               v-model="cal_id"
               type="text"
               class="form-control"
               name="cal_id"
-            />
-          </div>
+            ></b-form-input>
+          </b-form-group>
+          <!-- </div> -->
           <div class="form-group">
             <button class="btn btn-primary btn-block" :disabled="loading">
               <span
