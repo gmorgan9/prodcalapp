@@ -154,7 +154,7 @@ label {
   float: left;
 }
 form {
-  width: 50%;
-  margin-left: 15%;
+  width: 30%;
+  margin-left: 25%;
 }
 </style>
