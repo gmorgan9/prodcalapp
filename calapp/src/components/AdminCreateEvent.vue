@@ -155,13 +155,10 @@ created: function() {
 };
 </script>
 <style>
-/* .content {
+.content {
   display: flex;
   flex-direction: column;
 }
-.form-group-line {
-  display: in;
-} */
 form {
   width: 30%;
   margin-left: 30%;
