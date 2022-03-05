@@ -84,8 +84,7 @@
           </div>
           
         </div>
-      </form>
-      <div class="form-group">
+        <div class="form-group">
             <button class="btn btn-primary btn-block" :disabled="loading">
               <span
                 v-show="loading"
@@ -101,6 +100,8 @@
                 <span>Back</span>
             </button></router-link>
           </div>
+      </form>
+      
       <div v-if="message" class="alert alert-danger">
         {{ message }}
       </div>
