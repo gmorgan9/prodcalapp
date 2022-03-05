@@ -90,7 +90,7 @@
               ></span>
               <span>Add Event</span>
             </button>
-            <button id="back_btn" class="btn btn-primary btn-block"><router-link to="/admin">Back</router-link></button>
+            <button id="back_btn" class="btn btn-primary btn-block"><router-link id="back_btn_link" to="/admin">Back</router-link></button>
           </div>
         </div>
       </form>
@@ -166,6 +166,10 @@ button {
 }
 #back_btn {
   margin-right: 2%;
+  width: 3%;
+}
+.back_btn_link {
+  text-decoration: none;
   color: white;
 }
 </style>
