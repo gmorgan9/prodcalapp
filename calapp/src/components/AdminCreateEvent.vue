@@ -152,8 +152,8 @@ created: function() {
   display: flex;
   flex-direction: column;
 }
-label {
-  float: left;
+.form-group-line {
+  display: inline;
 }
 form {
   width: 30%;
