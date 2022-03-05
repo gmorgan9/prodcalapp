@@ -6,11 +6,11 @@
     <ul v-else>
     
       <br /><br />
-      <li v-for="event in events" :key="event.event_id">
+      <p v-for="event in events" :key="event.event_id">
         <router-link :to="`/event/${event.event_id}`">{{
           event.title
         }}</router-link>
-      </li>
+      </p>
     </ul>
   </div>
 </template>
