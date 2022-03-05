@@ -16,6 +16,8 @@
         </div>
         <div class="location_block">
             <h3>Location</h3>
+            <p v-if= "!!location"> {{ location }}</p>
+            <p v-else>Login</p>
             <p> {{ event.location }} </p>
             <p>NONE</p>
         </div>
