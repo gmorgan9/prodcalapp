@@ -49,11 +49,11 @@ const routes = [
     component: Register
   },
   {
-    path: "/admin",
+    path: '/admin',
       component: Admin,
       beforeEnter: checkAuth,
       children: [
-        { path: "create", component: AdminCreateEvent },
+        { path: '/create', component: AdminCreateEvent },
         // { path: "edit/:id", component: AdminArticleEdit },
         // { path: "", component: AdminArticleList },
       ],
