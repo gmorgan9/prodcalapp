@@ -93,13 +93,13 @@
             </button>
           </div>
           <div class="form-group">
-            <button class="btn btn-primary btn-block" :disabled="loading">
+            <router-link :to="`/admin`"><button class="btn btn-primary btn-block" :disabled="loading">
                 <span
                   v-show="loading"
                   class="spinner-border spinner-border-sm"
                 ></span>
                 <span>Back</span>
-            </button>
+            </button></router-link>
           </div>
           </div>
         </div>
