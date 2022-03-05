@@ -146,10 +146,12 @@ created: function() {
 };
 </script>
 <style>
+.content {
+  display: flex;
+  flex-direction: column;
+}
 form {
   width: 70%;
   margin-left: 15%;
-  display: flex;
-  flex-direction: column;
 }
 </style>
