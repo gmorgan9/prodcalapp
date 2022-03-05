@@ -26,6 +26,7 @@ export default {
     return {
       loading: false,
       events: [],
+      id: Api.getUserID(),
     };
   },
   created: function() {
