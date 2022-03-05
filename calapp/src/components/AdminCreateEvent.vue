@@ -82,6 +82,7 @@
               name="cal_id"
             />
           </div>
+          <div class="buttons">
           <div class="form-group">
             <button class="btn btn-primary btn-block" :disabled="loading">
               <span
@@ -103,7 +104,7 @@
               </router-link>
             </button>
           </div>
-          <button class="btn btn-primary btn-block">Back</button>
+          </div>
         </div>
       </form>
       <div v-if="message" class="alert alert-danger">
@@ -176,9 +177,8 @@ form {
 button {
   margin-top: 2.5%;
 }
-.back-btn {
-  text-decoration: none;
-  color: white;
+.buttons {
+  display: inline-block;
   margin-left: 3%;
 }
 </style>
