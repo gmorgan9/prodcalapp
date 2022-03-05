@@ -47,7 +47,7 @@ export default {
   text-decoration: underline;
 }
 .event-list {
-  margin-left: -4%;
+  margin-left: -2.75%;
 }
 .event-links {
   display: flex;
