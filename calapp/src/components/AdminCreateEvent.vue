@@ -150,6 +150,9 @@ created: function() {
   display: flex;
   flex-direction: column;
 }
+.form-group {
+  display: inline;
+}
 form {
   width: 50%;
   margin-left: 15%;
