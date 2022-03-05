@@ -73,16 +73,15 @@
               name="reminder_amt"
             />
           </div>
-          <div class="form-group-line">
+            
+          <div class="form-group form-inline">
             <label for="cal_id">Cal_id</label>
-            <div class="form-group">
-              <input
-                v-model="cal_id"
-                type="text"
-                class="form-control"
-                name="cal_id"
-              />
-            </div>
+            <input
+              v-model="cal_id"
+              type="text"
+              class="form-control"
+              name="cal_id"
+            />
           </div>
           <div class="form-group">
             <button class="btn btn-primary btn-block" :disabled="loading">
@@ -148,13 +147,13 @@ created: function() {
 };
 </script>
 <style>
-.content {
-  /* display: flex;
-  flex-direction: column; */
+/* .content {
+  display: flex;
+  flex-direction: column;
 }
 .form-group-line {
-  display: inline;
-}
+  display: in;
+} */
 form {
   width: 30%;
   margin-left: 25%;
