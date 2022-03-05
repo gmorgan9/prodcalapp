@@ -150,7 +150,7 @@ created: function() {
   display: flex;
   flex-direction: column;
 }
-.form-group {
+.form-group label {
   display: inline-block;
 }
 form {
