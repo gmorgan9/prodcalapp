@@ -5,22 +5,11 @@
       <p>Create Event</p>
     </b-jumbotron>
     <br />
-    <!-- <div v-if="loading">Loading articles....</div> -->
-    <!-- <ul v-else> -->
     <router-link to="/admin"><button>Back</button></router-link>
     <div v-if="loading">Loading event....</div>
     <div v-else>
       <form name="form" @submit.prevent="handleAdd">
         <div class="content">
-          <!-- <div class="form-group">
-            <label for="user_id">User ID</label>
-            <input
-              v-model.number="user_id"
-              type="number"
-              class="form-control"
-              name="user_id"
-              />
-              </div> -->
           <div class="form-group">
             <label for="title">Title</label>
             <input
@@ -41,25 +30,21 @@
           </div>
           <div class="form-group">
             <label for="date">Date</label>
-            <!-- <datepicker> -->
             <input
               v-model="date"
               type="date"
               class="form-control"
               name="date"
             />
-            <!-- </datepicker> -->
           </div>
           <div class="form-group">
             <label for="time">Time</label>
-            <!-- <vue-timepicker> -->
             <input
               v-model="time"
               type="time"
               class="form-control"
               name="time"
             />
-            <!-- </vue-timepicker> -->
           </div>
           <div class="form-group">
             <label for="location">Location</label>
@@ -163,7 +148,7 @@ created: function() {
 };
 </script>
 <style>
-.form-group {
+form {
   display: flex;
   flex-direction: column;
 }
