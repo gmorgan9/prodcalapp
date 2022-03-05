@@ -52,17 +52,17 @@ const routes = [
     path: '/admin',
       component: Admin,
       beforeEnter: checkAuth,
-      // children: [
-      //   { path: '/create', component: AdminCreateEvent },
+      children: [
+        { path: '/create', component: AdminCreateEvent },
         // { path: "edit/:id", component: AdminArticleEdit },
         // { path: "", component: AdminArticleList },
-      // ],
+      ],
     },
-  {
-    path: '/create',
-    name: 'create',
-    component: AdminCreateEvent
-  },
+  // {
+  //   path: '/create',
+  //   name: 'create',
+  //   component: AdminCreateEvent
+  // },
 ]
 
 const router = createRouter({
