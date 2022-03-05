@@ -151,7 +151,7 @@ created: function() {
   flex-direction: column;
 }
 form {
-  width: %;
+  width: 50%;
   margin-left: 15%;
 }
 </style>
