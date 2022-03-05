@@ -7,6 +7,7 @@
     
       <br /><br />
       <div class="event-list">
+        <h3>Event list</h3>
       <p class="event-links" v-for="event in events" :key="event.event_id">
         <router-link :to="`/event/${event.event_id}`">{{
           event.title
@@ -46,7 +47,7 @@ export default {
   text-decoration: underline;
 }
 .event-list {
-  margin-left: -5%;
+  margin-left: -4%;
 }
 .event-links {
   display: flex;
