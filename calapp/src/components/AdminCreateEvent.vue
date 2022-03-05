@@ -91,8 +91,6 @@
               ></span>
               <span>Add Event</span>
             </button>
-          </div>
-          <div class="form-group">
             <router-link :to="`/admin`"><button class="btn btn-primary btn-block" :disabled="loading">
                 <span
                   v-show="loading"
