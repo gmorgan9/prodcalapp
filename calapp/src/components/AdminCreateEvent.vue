@@ -83,15 +83,25 @@
             />
           </div>
           <div class="form-group">
-            <button class="btn btn-primary btn-block" :disabled="loading">
+            <button class="btn btn-primary btn-block" :disabled="loading"><router-link to="/admin">
               <span
                 v-show="loading"
                 class="spinner-border spinner-border-sm"
               ></span>
               <span>Add Event</span>
+              </router-link>
             </button>
-            <button class="btn btn-primary btn-block"><router-link class="back-btn" to="/admin">Back</router-link></button>
           </div>
+          <div class="form-group">
+            <button class="btn btn-primary btn-block" :disabled="loading">
+              <span
+                v-show="loading"
+                class="spinner-border spinner-border-sm"
+              ></span>
+              <span>Back</span>
+            </button>
+          </div>
+          <button class="btn btn-primary btn-block">Back</button>
         </div>
       </form>
       <div v-if="message" class="alert alert-danger">
