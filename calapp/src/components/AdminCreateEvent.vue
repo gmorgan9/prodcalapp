@@ -8,7 +8,6 @@
     <div v-if="loading">Loading event....</div>
     <div v-else>
       <form name="form" @submit.prevent="handleAdd">
-        <div class="content">
           <div class="form-group" id="right">
             <label for="title">Title</label>
             <input
@@ -82,8 +81,6 @@
               name="cal_id"
             />
           </div>
-          
-        </div>
         <div class="form-group">
             <button class="btn btn-primary btn-block" :disabled="loading">
               <span
@@ -103,10 +100,9 @@
       </form>
       
       <div v-if="message" class="alert alert-danger">
-        {{ message }}
+          {{ message }}
+        </div>
       </div>
-    </div>
-    <!-- </ul> -->
   </div>
 </template>
 
@@ -155,13 +151,9 @@ created: function() {
 };
 </script>
 <style>
-/* .content {
-  display: flex;
-  flex-direction: column;
-} */
 form {
   width: 30%;
-  margin-left: 30%;
+  margin-left: 50%;
 }
 #right {
   margin-right: 10px;
