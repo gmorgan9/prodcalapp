@@ -149,5 +149,7 @@ created: function() {
 form {
   width: 70%;
   margin-left: 15%;
+  display: flex;
+  flex-direction: column;
 }
 </style>
