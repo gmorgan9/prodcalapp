@@ -1,5 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import { getJwtToken } from "../auth";
+import Vue from "vue";
+import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
 
 const checkAuth = function(to, _, next) {
   const token = getJwtToken();
@@ -13,7 +15,7 @@ const checkAuth = function(to, _, next) {
     next();
   }
 };
-
+Vue.config.productionTip = false;
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
 
