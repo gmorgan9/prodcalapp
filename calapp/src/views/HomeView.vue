@@ -6,10 +6,12 @@
     <ul v-else>
     
       <br /><br />
-      <div class="event-links" v-for="event in events" :key="event.event_id">
+      <div class="event-list">
+      <p class="event-links" v-for="event in events" :key="event.event_id">
         <router-link :to="`/event/${event.event_id}`">{{
           event.title
         }}</router-link>
+      </p>
       </div>
     </ul>
   </div>
@@ -43,9 +45,11 @@ export default {
   color: rgba(68, 68, 68, 0.685);
   text-decoration: underline;
 }
+.event-list {
+  margin-left: -5%;
+}
 .event-links {
   display: flex;
   flex-direction: column;
-  margin-right: 10px;
 }
 </style>
