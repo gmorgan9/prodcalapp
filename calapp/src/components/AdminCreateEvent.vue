@@ -91,7 +91,7 @@
               ></span>
               <span>Add Event</span>
             </button>
-            <router-link :to="`/admin`"><button class="btn btn-primary btn-block" :disabled="loading" id="btn">
+            <router-link id="btn" :to="`/admin`"><button class="btn btn-primary btn-block" :disabled="loading">
                 <span
                   v-show="loading"
                   class="spinner-border spinner-border-sm"
