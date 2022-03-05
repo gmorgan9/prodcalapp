@@ -150,7 +150,7 @@ created: function() {
 };
 </script>
 <style>
-.create_event {
+.content {
   display: flex;
   flex-direction: column;
 }
