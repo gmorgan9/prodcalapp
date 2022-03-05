@@ -10,7 +10,7 @@
     <div v-else>
       <form name="form" @submit.prevent="handleAdd">
         <div class="content">
-          <div class="form-group">
+          <div class="form-group form-inline">
             <label for="title">Title</label>
             <input
               v-model="title"
@@ -19,7 +19,7 @@
               name="title"
             />
           </div>
-          <div class="form-group">
+          <div class="form-group form-inline">
             <label for="type">Type</label>
             <input
               v-model="type"
@@ -28,7 +28,7 @@
               name="type"
             />
           </div>
-          <div class="form-group">
+          <div class="form-group form-inline">
             <label for="date">Date</label>
             <input
               v-model="date"
@@ -37,7 +37,7 @@
               name="date"
             />
           </div>
-          <div class="form-group">
+          <div class="form-group form-inline">
             <label for="time">Time</label>
             <input
               v-model="time"
@@ -46,7 +46,7 @@
               name="time"
             />
           </div>
-          <div class="form-group">
+          <div class="form-group form-inline">
             <label for="location">Location</label>
             <input
               v-model="location"
@@ -55,7 +55,7 @@
               name="location"
             />
           </div>
-          <div class="form-group">
+          <div class="form-group form-inline">
             <label for="description">Description</label>
             <input
               v-model="description"
@@ -64,7 +64,7 @@
               name="description"
             />
           </div>
-          <div class="form-group">
+          <div class="form-group form-inline">
             <label for="reminder_amt">Reminder</label>
             <input
               v-model="reminder_amt"
