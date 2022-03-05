@@ -146,4 +146,7 @@ created: function() {
 };
 </script>
 <style>
+form {
+  width: 20%;
+}
 </style>
