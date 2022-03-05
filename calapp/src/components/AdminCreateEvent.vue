@@ -165,7 +165,7 @@ button {
   margin-top: 2.5%;
 }
 #back_btn {
-  margin-right: 2%;
+  margin-right: 3%;
   width: 3%;
 }
 .back_btn_link {
