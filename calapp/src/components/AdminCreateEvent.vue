@@ -146,10 +146,10 @@ created: function() {
 };
 </script>
 <style>
-/* .form-group {
+.content {
   display: flex;
   flex-direction: column;
-} */
+}
 label {
   float: left;
 }
