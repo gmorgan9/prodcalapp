@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import { getJwtToken } from "../auth";
-import Vue from "vue";
 import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
 
 const checkAuth = function(to, _, next) {
