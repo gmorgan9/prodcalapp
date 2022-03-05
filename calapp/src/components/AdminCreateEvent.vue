@@ -8,11 +8,11 @@
     <router-link to="/admin"><button>Back</button></router-link>
     <div v-if="loading">Loading event....</div>
     <div v-else>
-      <form name="form" @submit.prevent="handleAdd">
+      <b-form name="form" @submit.prevent="handleAdd">
         <div class="content">
           <!-- <div class="form-group form-inline">
             <label for="title">Title</label> -->
-            <b-form-group id="input-group-1" label="Food:" label-for="input-1">
+            <b-form-group id="input-group-1" label="Title:" label-for="input-1">
             <b-form-input
               id="input-1"
               v-model="title"
@@ -97,7 +97,7 @@
             </button>
           </div>
         </div>
-      </form>
+      </b-form>
       <div v-if="message" class="alert alert-danger">
         {{ message }}
       </div>
