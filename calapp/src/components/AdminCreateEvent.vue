@@ -82,8 +82,10 @@
               name="cal_id"
             />
           </div>
-          <div class="buttons">
-          <div class="form-group">
+          
+        </div>
+      </form>
+      <div class="form-group">
             <button class="btn btn-primary btn-block" :disabled="loading">
               <span
                 v-show="loading"
@@ -99,9 +101,6 @@
                 <span>Back</span>
             </button></router-link>
           </div>
-          </div>
-        </div>
-      </form>
       <div v-if="message" class="alert alert-danger">
         {{ message }}
       </div>
@@ -155,10 +154,10 @@ created: function() {
 };
 </script>
 <style>
-.content {
+/* .content {
   display: flex;
   flex-direction: column;
-}
+} */
 form {
   width: 30%;
   margin-left: 30%;
