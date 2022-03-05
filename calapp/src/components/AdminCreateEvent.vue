@@ -163,5 +163,8 @@ created: function() {
 };
 </script>
 <style>
-
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
 </style>
