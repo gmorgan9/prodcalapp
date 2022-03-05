@@ -73,14 +73,16 @@
               name="reminder_amt"
             />
           </div>
-          <div class="form-group">
+          <div class="form-group-line">
             <label for="cal_id">Cal_id</label>
-            <input
-              v-model="cal_id"
-              type="text"
-              class="form-control"
-              name="cal_id"
-            />
+            <div class="form-group">
+              <input
+                v-model="cal_id"
+                type="text"
+                class="form-control"
+                name="cal_id"
+              />
+            </div>
           </div>
           <div class="form-group">
             <button class="btn btn-primary btn-block" :disabled="loading">
