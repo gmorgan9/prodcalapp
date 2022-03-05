@@ -147,6 +147,6 @@ created: function() {
 </script>
 <style>
 form {
-  width: 20%;
+  width: 70%;
 }
 </style>
