@@ -95,7 +95,7 @@
           </div>
           <div class="form-group">
             <button class="btn btn-primary btn-block" :disabled="loading">
-              <router-link to="/admin">
+              <router-link class="back-btn" to="/admin">
                 <span
                   v-show="loading"
                   class="spinner-border spinner-border-sm"
@@ -181,7 +181,7 @@ button {
   display: inline-block;
   margin-left: 3%;
 }
-router-link {
+.back-btn {
   text-decoration: none;
 }
 </style>
