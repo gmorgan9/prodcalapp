@@ -207,4 +207,66 @@ export default {
   display: flex;
   flex-direction: column;
 }
+
+
+
+.row_1 {
+    margin-top: -2%;
+    margin-left: 4%;
+    margin-right: 6%;
+    height: 100px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-auto-rows: minmax(80px, auto);
+}
+.box_1 {
+    grid-column: 1 / 7;
+    grid-row: 1;
+    border: 1px solid black;
+}
+.box_2 {
+    grid-column: 2 / 7;
+    grid-row: 1;
+    border: 1px solid black;
+}
+.box_3 {
+    grid-column: 3 / 7;
+    grid-row: 1;
+    border: 1px solid black;
+}
+.box_4 {
+    grid-column: 4 / 7;
+    grid-row: 1;
+    border: 1px solid black;
+}
+.box_5 {
+    grid-column: 5 / 7;
+    grid-row: 1;
+    border: 1px solid black;
+}
+.box_6 {
+    grid-column: 6 / 7;
+    grid-row: 1;
+    border: 1px solid black;
+}
+.box_7 {
+    grid-column: 7 / 7;
+    grid-row: 1;
+    border: 1px solid black;
+}
+.row_2, 
+.row_3, 
+.row_4 {
+    margin-left: 4%;
+    margin-right: 6%;
+    height: 100px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-auto-rows: minmax(80px, auto);
+}
+
+
+
+
+
 </style>
