@@ -32,6 +32,7 @@
           event.title
         }}</router-link>
         <router-link id="update-events" class="event alert-primary" :to="`/update/${event.event_id}`">Update</router-link>
+        <router-link id="update-events" class="event alert-primary" @click="() => deleteArticle(article.articleid)">Update</router-link>
         </li>
       </ul>
 
@@ -53,13 +54,29 @@ export default {
     };
   },
   created: function () {
-    // this.loading = true;
+    this.loadEvents();
+  },
+  methods:  {
+    loadEvents() {
+      // this.loading = true;
+      this.events = [];
     Api.getEvent().then((res) => {
       this.events = res.data;
       // this.loading = false;
     });
+    },
+  deleteEvent(event_id) {
+      Api.deleteEvent(event_id)
+        .then(() => {
+          this.loadEvents();
+        })
+        .catch((err) => {
+          console.log(err);
+       });
+    },
   },
 };
+
 </script>
 <style scoped>
 .list-group {

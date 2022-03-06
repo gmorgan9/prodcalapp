@@ -48,8 +48,8 @@ class Api {
     );
   }
 
-  deleteArticle(id) {
-    return axios.delete(API_URL + `/articles?articleid=eq.${id}`, {
+  deleteEvent(event_id) {
+    return axios.delete(API_URL + `/event?event_id=eq.${event_id}`, {
       headers: authHeader(),
     });
   }
