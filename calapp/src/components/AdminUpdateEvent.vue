@@ -29,7 +29,7 @@
           </div>
           <div class="form-group">
             <label for="type">Type</label>
-            <textarea
+            <input
               v-model="event.type"
               type="text"
               class="form-control"
@@ -38,7 +38,7 @@
           </div>
           <div class="form-group">
             <label for="date">Date</label>
-            <textarea
+            <input
               v-model="event.date"
               type="date"
               class="form-control"
@@ -47,7 +47,7 @@
           </div>
           <div class="form-group">
             <label for="time">Time</label>
-            <textarea
+            <input
               v-model="event.time"
               type="time"
               class="form-control"
@@ -56,7 +56,7 @@
           </div>
           <div class="form-group">
             <label for="location">Location</label>
-            <textarea
+            <input
               v-model="event.location"
               type="text"
               class="form-control"
@@ -65,7 +65,7 @@
           </div>
           <div class="form-group">
             <label for="description">Description</label>
-            <textarea
+            <input
               v-model="event.description"
               type="text"
               class="form-control"
@@ -74,7 +74,7 @@
           </div>
           <div class="form-group">
             <label for="reminder">Reminder</label>
-            <textarea
+            <input
               v-model="event.reminder_amt"
               type="number"
               class="form-control"
@@ -83,7 +83,7 @@
           </div>
           <div class="form-group">
             <label for="cal_id">Cal Id</label>
-            <textarea
+            <input
               v-model="event.cal_id"
               type="number"
               class="form-control"
