@@ -8,7 +8,7 @@
     <ul v-else> -->
       <br />
 
-      <h3>Welcome {{ this.username }}</h3>
+      <h3>Welcome {{ event.user_id }}</h3>
 
 
 
