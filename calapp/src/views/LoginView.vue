@@ -86,6 +86,9 @@ export default {
 .form-group {
   width: 180px;
 }
+.btn {
+  width: 50%;
+}
 label {
   display: block;
   margin-top: 10px;
