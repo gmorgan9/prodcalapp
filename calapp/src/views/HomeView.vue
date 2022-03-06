@@ -1,8 +1,8 @@
 <template>
   <div>
     <div class="nav">
-        <router-link :to="{ path: '/admin' }">Admin</router-link> &nbsp; &nbsp;| &nbsp; &nbsp;   
-        <router-link :to="{ path: '/logout' }">logout</router-link>
+        <router-link id="nav-link-route" :to="{ path: '/admin' }">Admin</router-link> &nbsp; &nbsp;| &nbsp; &nbsp;   
+        <router-link id="nav-link-route" :to="{ path: '/logout' }">logout</router-link>
       </div>
     <!-- <div v-if="loading">Loading events....</div>
     <ul v-else> -->
@@ -48,11 +48,11 @@ export default {
 <style>
 .nav {
   margin-left: 44.5%;
+  
+}
+#nav-link-route {
   text-decoration: none;
   color: black;
-}
-.nav-link {
-  
 }
 .nav-link:hover {
   color: rgba(68, 68, 68, 0.685);
