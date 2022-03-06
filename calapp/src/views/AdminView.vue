@@ -31,7 +31,7 @@
           <router-link id="events" :to="`/update/${event.event_id}`">{{
           event.title
         }}</router-link>
-        <router-link :to="`/update/${event.event_id}`">update</router-link>
+        <router-link id="update-events" :to="`/update/${event.event_id}`">Update</router-link>
         </li>
       </ul>
 
@@ -73,6 +73,11 @@ export default {
 #events:hover {
   color: rgba(68, 68, 68, 0.685);
   text-decoration: underline;
+}
+#update-events {
+  text-decoration: none;
+  color: black;
+  text-align: right;
 }
 .admin-event-links {
   display: flex;
