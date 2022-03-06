@@ -71,8 +71,8 @@ export default {
 </script>
 <style scoped>
 .list-group {
-  width: 50%;
-  margin-left: 25%; 
+  width: 40%;
+  margin-left: 30%; 
   
 }
 .title {
