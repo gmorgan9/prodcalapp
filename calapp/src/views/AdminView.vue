@@ -32,7 +32,7 @@
           event.title
         }}</router-link>
         <router-link id="update-events" class="event alert-primary" :to="`/update/${event.event_id}`">Update</router-link>
-        <button id="update-events" class="event alert-primary" @click="() => deleteEvent(event.event_id)">Update</button>
+        <button id="update-events" class="event alert-primary" @click="() => deleteEvent(event.event_id)">Delete</button>
         </li>
       </ul>
 
