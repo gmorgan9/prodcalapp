@@ -29,8 +29,9 @@
             <p v-if= "!!event.description"> {{ event.description }}</p>
             <p v-else>NONE</p>
         </div>
-        <router-link to="/"><button class="btn btn-primary">Back</button></router-link>
+        
         </div>
+        <router-link to="/"><button class="btn btn-primary">Back</button></router-link>
     </div>
   </div>
 </template>
