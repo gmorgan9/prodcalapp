@@ -2,7 +2,7 @@
   <div>
     <div class="nav">
 
-      <div v-if="loggedin === 0">
+      <div v-if="loggedin = 0">
         <router-link :to="{ path: '/admin' }">Admin</router-link>
       </div>
       <div v-else>
