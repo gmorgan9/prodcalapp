@@ -31,5 +31,10 @@
 <script>
 export default {
   name: "Admin",
+  date: function() {
+    return {
+      savingSuccessful: false
+    }
+  }
 };
 </script>
