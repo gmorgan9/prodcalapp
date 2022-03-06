@@ -16,7 +16,7 @@
     <!-- <div v-if="loading">Loading events....</div>
     <ul v-else> -->
       <br />
-      <ul class="list-group list-group-flush">
+      <ul class="list-group">
         <li class="list-group-item" v-for="event in events" :key="event.event_id">
           <router-link :to="`/event/${event.event_id}`">{{
           event.title
