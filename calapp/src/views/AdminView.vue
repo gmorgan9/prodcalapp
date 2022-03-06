@@ -27,7 +27,7 @@
 
       <div class="admin-event-list">
           <h3>Admin Event list</h3>
-        <div class="event-links" v-for="event in events" :key="event.event_id">
+        <div class="admin-event-links" v-for="event in events" :key="event.event_id">
           <p>{{ event.title }}</p>
           <router-link :to="`/update/${event.event_id}`">update</router-link>
         </div>
@@ -60,8 +60,8 @@ export default {
 };
 </script>
 <style scoped>
-.admin-event-list {
-  display: inline;
+.admin-event-links {
+  display: inline-block;
 }
 
 #nav-link-route {
