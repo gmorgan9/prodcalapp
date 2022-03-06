@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="nav">
-        <router-link :to="{ path: '/admin' }">Admin</router-link>
+        <router-link :to="{ path: '/admin' }">Admin</router-link> | 
         <router-link :to="{ path: '/logout' }">logout</router-link>
       </div>
     <!-- <div v-if="loading">Loading events....</div>
