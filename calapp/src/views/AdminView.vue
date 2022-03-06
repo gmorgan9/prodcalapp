@@ -98,7 +98,7 @@ export default {
   color: black;
   float: right;
 }
-#update-events {
+#update-events-btn {
   text-decoration: none;
   color: black;
   float: right;
