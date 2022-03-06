@@ -34,10 +34,10 @@ class Api {
       }
     );
   }
-  updateEvent(event) {
+  updateEvent(events) {
     return axios.patch(
-      API_URL + `/event?event_id=eq.${event.event_id}`,
-      event,
+      API_URL + `/event?event_id=eq.${events.event_id}`,
+      events,
       {
         headers: authHeader(),
       }
