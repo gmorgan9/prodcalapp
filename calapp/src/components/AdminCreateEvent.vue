@@ -142,7 +142,7 @@ created: function() {
       Api.addEvent({ user_id: Api.getUserID(), title: this.title, type: this.type, date: this.date, time: this.time, location: this.location, description: this.description, cal_id: this.cal_id, reminder_amt: this.reminder_amt })
         .then(() => {
           this.loading = false;
-          this.$router.push("/admin/");
+          // this.$router.push("/admin/");
         })
         .catch((error) => {
           console.log(error);
