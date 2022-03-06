@@ -31,7 +31,7 @@
             <label for="type">Type</label>
             <textarea
               v-model="event.type"
-              type="date"
+              type="text"
               class="form-control"
               name="type"
             />
