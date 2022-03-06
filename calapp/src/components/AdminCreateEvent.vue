@@ -166,11 +166,11 @@ created: function() {
 #right {
   margin-right: 10px;
 }
-/* .btn {
-  margin-left: -10px;
-  width: 25%;
+.btn {
+  /* margin-left: -10px;
+  width: 25%; */
   margin-top: 2.5%;
-} */
+} 
 button:last-child {
   margin-left: 10px;
 }
