@@ -66,6 +66,10 @@ export default {
   width: 50%;
   margin-left: 25%; 
 }
+.event {
+  padding: 2px;
+  border-radius: 15px;
+}
 #events {
   text-decoration: none;
   color: black;
