@@ -3,7 +3,7 @@
     <br>
     <h3>Home Page</h3>
     <div class="nav">
-        <router-link id="nav-link-route" :to="{ path: '/admin' }">Admin</router-link> &nbsp; &nbsp;| &nbsp; &nbsp;   
+        <router-link id="nav-link-route" :to="{ path: '/admin' }">Admin</router-link>  
         <router-link id="nav-link-route" :to="{ path: '/logout' }">Logout</router-link>
       </div>
       <hr>
@@ -48,10 +48,6 @@ export default {
 };
 </script>
 <style>
-.nav {
-  margin-left: 44.5%;
-  
-}
 #nav-link-route {
   text-decoration: none;
   color: black;
