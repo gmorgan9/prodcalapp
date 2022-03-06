@@ -32,6 +32,7 @@
           <p>{{ event.title }}</p>
           <div class="eventLink">
             <router-link id="" :to="`/update/${event.event_id}`"><button class="btn btn-primary">Update</button></router-link>
+            <hr>
           </div>
         </div>
       </div>
