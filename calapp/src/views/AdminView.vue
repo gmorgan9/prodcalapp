@@ -85,7 +85,7 @@ export default {
   padding: 5px;
   border-radius: 5px;
 }
-#update-events {
+router-link {
   margin-left: 5%;
 }
 #events {
