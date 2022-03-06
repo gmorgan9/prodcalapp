@@ -65,6 +65,9 @@ export default {
     margin-top: -20px;
     text-transform: capitalize;
 }
+.title {
+    text-transform: capitalize;
+}
 .content {
 display: grid;
     grid-template-columns: repeat(2, 2fr);

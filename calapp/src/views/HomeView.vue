@@ -60,6 +60,7 @@ export default {
 #events {
   text-decoration: none;
   color: black;
+  text-transform: capitalize;
 }
 #events:hover {
   color: rgba(68, 68, 68, 0.685);
