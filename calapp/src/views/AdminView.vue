@@ -31,6 +31,7 @@
         <router-link :to="`/update/${event.event_id}`">{{
           event.title
         }}</router-link>
+        </div>
 
 
 
