@@ -18,7 +18,7 @@
       <br />
       <ul class="list-group">
         <li class="list-group-item" v-for="event in events" :key="event.event_id">
-          <router-link :to="`/event/${event.event_id}`">{{
+          <router-link id="events" :to="`/event/${event.event_id}`">{{
           event.title
         }}</router-link>
         </li>
@@ -56,6 +56,14 @@ export default {
 .list-group {
   width: 50%;
   margin-left: 25%; 
+}
+#events {
+  text-decoration: none;
+  color: black;
+}
+#events:hover {
+  color: rgba(68, 68, 68, 0.685);
+  text-decoration: underline;
 }
 #nav-link-route {
   text-decoration: none;
