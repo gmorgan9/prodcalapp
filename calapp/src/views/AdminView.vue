@@ -60,8 +60,12 @@ export default {
 };
 </script>
 <style scoped>
+.admin-event-list {
+  display: flex;
+  flex-direction: column;
+}
 .admin-event-links {
-  display: inline-block;
+  display: inline;
 }
 
 #nav-link-route {
