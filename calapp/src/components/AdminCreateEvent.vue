@@ -106,7 +106,7 @@
         </div>
       </div>
       <div v-if="message" class="alert alert-success">
-          {{ message }}
+          Congrats! Your Event was Created!
         </div>
   </div>
 </template>
