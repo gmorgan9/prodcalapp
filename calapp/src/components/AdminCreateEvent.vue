@@ -127,7 +127,7 @@ export default {
       reminder_amt: "",
       loading: false,
       message: "",
-      savingSuccessful: False,
+      savingSuccessful: false,
       // VueTimepicker,
       // Datepicker,
     };
