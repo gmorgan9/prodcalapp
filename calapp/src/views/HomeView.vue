@@ -38,7 +38,6 @@ export default {
     return {
       // loading: false,
       events: [],
-      users: [],
     };
   },
   created: function () {
