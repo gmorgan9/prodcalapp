@@ -8,7 +8,7 @@
     <ul v-else> -->
       <br />
 
-      <h3>Welcome {{ Api.login(username) }}</h3>
+      <h3>Welcome {{ Api.login(this.username) }}</h3>
 
 
 
@@ -44,10 +44,6 @@ export default {
     // this.loading = true;
     Api.getEvent().then((res) => {
       this.events = res.data;
-      // this.loading = false;
-    });
-    Api.login().then((res) => {
-      this.users = res.data;
       // this.loading = false;
     });
   },
