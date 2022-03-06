@@ -48,10 +48,11 @@ export default {
 <style>
 .nav {
   margin-left: 44.5%;
-}
-.nav-link {
   text-decoration: none;
   color: black;
+}
+.nav-link {
+  
 }
 .nav-link:hover {
   color: rgba(68, 68, 68, 0.685);
