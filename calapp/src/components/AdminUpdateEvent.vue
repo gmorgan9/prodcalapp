@@ -31,9 +31,9 @@
             <label for="type">Type</label>
             <textarea
               v-model="event.type"
+              type="date"
               class="form-control"
               name="type"
-              rows="20"
             />
           </div>
           <div class="form-group">
