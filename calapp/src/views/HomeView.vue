@@ -2,10 +2,15 @@
   <div>
     <br>
     <h3>Home Page</h3>
-    <div class="nav">
-        <router-link id="nav-link-route" :to="{ path: '/admin' }">Admin</router-link>  
-        <router-link id="nav-link-route" :to="{ path: '/logout' }">Logout</router-link>
-      </div>
+
+<ul class="nav justify-content-center">
+  <li class="nav-item">
+    <router-link id="nav-link-route" :to="{ path: '/admin' }">Admin</router-link>  
+  </li>
+  <li class="nav-item">
+    <router-link id="nav-link-route" :to="{ path: '/logout' }">Logout</router-link>
+  </li>
+</ul>
       <hr>
     <!-- <div v-if="loading">Loading events....</div>
     <ul v-else> -->
