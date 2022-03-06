@@ -1,6 +1,6 @@
 <template>
   <div>
-    <router-link to="/"><button>Back</button></router-link>
+    
     <div v-if="loading">Loading event....</div>
     <div v-else>
       <h1>{{ event.title }}</h1>
@@ -29,6 +29,7 @@
             <p v-if= "!!event.description"> {{ event.description }}</p>
             <p v-else>NONE</p>
         </div>
+        <router-link to="/"><button class="btn btn-primary">Back</button></router-link>
         </div>
     </div>
   </div>
@@ -109,7 +110,6 @@ display: grid;
     width: 27.5%;
     margin-left: 70%;
     padding-left: 2px;
-    margin-top: -2%;
 }
 .desc_block {
     grid-column: 2 / 2;
