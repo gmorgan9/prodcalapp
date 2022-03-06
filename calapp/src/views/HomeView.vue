@@ -20,7 +20,7 @@
 
 
 
-<div v-if="id">test</div>
+<div v-if="user_id">test</div>
 <dir v-else> no</dir>
 
 
@@ -35,7 +35,7 @@ export default {
     return {
       loading: false,
       events: [],
-      id: "",
+      user_id: Api.getUserID()
     };
   },
   created: function() {
