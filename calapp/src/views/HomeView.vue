@@ -35,8 +35,13 @@ export default {
     return {
       loading: false,
       events: [],
+      id: "",
     };
   },
+  created: function() {
+    var id = Api.getUserID()
+    console.log(id)
+},
   created: function () {
     this.loading = true;
     Api.getEvent().then((res) => {
