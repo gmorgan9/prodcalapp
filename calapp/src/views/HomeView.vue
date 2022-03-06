@@ -2,7 +2,7 @@
   <div>
     <div class="nav">
 
-      <div v-if="id">
+      <div v-if="Api.getUserID()">
         <router-link :to="{ path: '/admin' }">Admin</router-link>
       </div>
       <div v-else>
@@ -43,7 +43,6 @@ export default {
     };
   },
   created: function () {
-    id = Api.getUserID();
     // this.loading = true;
     Api.getEvent().then((res) => {
       this.events = res.data;
