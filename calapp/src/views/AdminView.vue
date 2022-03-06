@@ -64,6 +64,7 @@ export default {
 <style scoped>
 .links-event {
   float: right;
+  width: 30%;
 }
 .admin-event-links {
   display: flex;
