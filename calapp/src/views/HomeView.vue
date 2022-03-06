@@ -50,7 +50,7 @@ export default {
 </script>
 <style>
 .list-group {
-  width: 50%;
+  width: 30%;
   margin-left: 25%; 
 }
 #events {
