@@ -30,7 +30,6 @@
       
         <div class="admin-event-links" v-for="event in events" :key="event.event_id">
           <p>{{ event.title }}</p>
-          <hr>
           <router-link id="eventLink" :to="`/update/${event.event_id}`"><button class="btn btn-primary">Update</button></router-link>
           
         </div>
