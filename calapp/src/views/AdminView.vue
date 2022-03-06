@@ -102,7 +102,7 @@ export default {
   text-decoration: none;
   color: black;
   float: right;
-  margin-left: 5%;
+  margin-left: 2.5%;
 }
 .admin-event-links {
   display: flex;
