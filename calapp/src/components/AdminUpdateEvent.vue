@@ -133,7 +133,7 @@ export default {
     },
     handleSave() {
       this.saving = true;
-      Api.updateEvent(this.event)
+      Api.updateEvent(this.event_id)
         .then(() => {
           this.saving = false;
           this.$router.push("/admin");
