@@ -101,11 +101,11 @@
           </div>
       </form>
       
-      <div v-if="message" class="alert alert-danger alert-dismissible fade show">
+      <div v-if="message" class="alert alert-danger alert-dismissible fade show" role="alert">
           {{ message }}
         </div>
       </div>
-      <div v-if="message" class="alert alert-success alert-dismissible fade show">
+      <div v-if="message" class="alert alert-success alert-dismissible fade show" role="alert">
           Congrats! Your Event was Created!
         </div>
   </div>
