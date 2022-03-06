@@ -34,7 +34,7 @@ class Api {
       }
     );
   }
-  updateEvent(event_id) {
+  updateEvent(event) {
     return axios.patch(
       API_URL + `/event?event_id=eq.${event_id}`,
       event,
