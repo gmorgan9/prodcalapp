@@ -85,7 +85,7 @@ export default {
   padding: 5px;
   border-radius: 5px;
 }
-#update-events:last-child {
+#update-events {
   margin-left: 5%;
 }
 #events {
