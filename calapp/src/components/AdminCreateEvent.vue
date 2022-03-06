@@ -105,9 +105,7 @@
           {{ message }}
         </div>
       </div>
-      <div v-if="savingSuccessful" class="alert alert-success alert-dismissible fade show" role="alert">
-          Congrats! Your Event was Created!
-        </div>
+      
   </div>
 </template>
 
@@ -143,7 +141,7 @@ created: function() {
       Api.addEvent({ user_id: Api.getUserID(), title: this.title, type: this.type, date: this.date, time: this.time, location: this.location, description: this.description, cal_id: this.cal_id, reminder_amt: this.reminder_amt })
         .then(() => {
           this.loading = false;
-          this.$router.push("/create/");
+          this.$router.push("/admin/");
           this.savingSuccessful = true;
         })
         .catch((error) => {
