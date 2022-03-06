@@ -129,7 +129,6 @@ display: grid;
     margin-right: 5%;
     margin-left: 2%;
     padding-left: 2px;
-    margin-top: -2%;
 }
 
 </style>
