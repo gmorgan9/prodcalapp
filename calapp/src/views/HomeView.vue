@@ -44,7 +44,6 @@ export default {
   },
   created: function () {
     id = Api.getUserID();
-    deleteJwtToken();
     // this.loading = true;
     Api.getEvent().then((res) => {
       this.events = res.data;
