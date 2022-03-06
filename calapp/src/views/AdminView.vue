@@ -85,14 +85,6 @@ export default {
   padding: 5px;
   border-radius: 5px;
 }
-#events {
-  text-decoration: none;
-  color: black;
-}
-#events:hover {
-  color: rgba(68, 68, 68, 0.685);
-  text-decoration: underline;
-}
 #update-events {
   text-decoration: none;
   color: black;
@@ -103,16 +95,6 @@ export default {
   color: black;
   float: right;
   margin-left: 1.5%;
-}
-.admin-event-links {
-  display: flex;
-  flex-direction: row;
-  margin-left: 40%;
-  text-align: right;
-}
-#eventLink {
-  margin-left: 15px;
-  float: right;
 }
 #nav-link-route {
   text-decoration: none;
