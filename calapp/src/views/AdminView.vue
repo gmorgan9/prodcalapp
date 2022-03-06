@@ -68,7 +68,7 @@ export default {
 }
 .event {
   padding: 2px;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 #events {
   text-decoration: none;
