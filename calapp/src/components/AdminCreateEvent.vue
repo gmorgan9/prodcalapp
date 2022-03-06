@@ -6,8 +6,7 @@
     </b-jumbotron>
     <br />
     <div v-if="loading">Loading event....</div>
-    <div v-else>
-      <div v-else class="card card-container p-4">
+    <div v-else class="card card-container p-4">
       <form name="form" @submit.prevent="handleAdd" v-if="!savingSuccessful">
           <div class="form-group">
             <label for="title">Title</label>
@@ -104,8 +103,6 @@
       <div v-if="message" class="alert alert-danger alert-dismissible fade show" role="alert">
           {{ message }}
         </div>
-      </div>
-      
   </div>
 </template>
 
