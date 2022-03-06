@@ -54,7 +54,7 @@ export default {
   text-decoration: none;
   color: black;
 }
-.nav-link:hover {
+#nav-link-route:hover {
   color: rgba(68, 68, 68, 0.685);
   text-decoration: underline;
 }
