@@ -65,7 +65,8 @@ export default {
   flex-direction: column;
 }
 .admin-event-links {
-  display: inline;
+  display: flex;
+  flex-direction: column;
 }
 
 #nav-link-route {
