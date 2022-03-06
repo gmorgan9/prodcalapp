@@ -1,7 +1,7 @@
 <template>
   <div>
     <br>
-    <h3>Home Page</h3>
+    <h2>Home Page</h2>
 
 <ul class="nav justify-content-center">
   <li class="nav-item">
