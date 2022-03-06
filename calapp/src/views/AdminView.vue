@@ -29,7 +29,7 @@
           <h3>Admin Event list</h3>
         <div class="admin-event-links" v-for="event in events" :key="event.event_id">
           <p>{{ event.title }}</p>
-          <router-link :to="`/update/${event.event_id}`">update</router-link>
+          <router-link id="eventLink" :to="`/update/${event.event_id}`">update</router-link>
         </div>
       </div>
 
@@ -65,7 +65,9 @@ export default {
   flex-direction: row;
   margin-left: 40%;
 }
-
+#eventLink {
+  margin-left: 10px;
+}
 #nav-link-route {
   text-decoration: none;
   color: black;
