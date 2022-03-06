@@ -30,13 +30,10 @@
       
         <div class="admin-event-links" v-for="event in events" :key="event.event_id">
           <p>{{ event.title }}</p>
-          <div class="eventLink">
-            <router-link id="" :to="`/update/${event.event_id}`"><button class="btn btn-primary">Update</button></router-link>
-            
-          </div>
-          
+            <router-link id="eventLink" :to="`/update/${event.event_id}`"><button class="btn btn-primary">Update</button></router-link>
+            <hr>
         </div>
-        <hr>
+        
       </div>
 
 
@@ -72,7 +69,7 @@ export default {
   margin-left: 40%;
   text-align: right;
 }
-.eventLink {
+#eventLink {
   margin-left: 15px;
   float: right;
 }
