@@ -1,11 +1,7 @@
 <template>
   <div>
-    <b-breadcrumb>
         <br>
         <h2>Update Event</h2>
-      <p class="breadcrumb-item" to="/admin"> Admin </p>
-      <p class="breadcrumb-item" active>Edit Event</p>
-    </b-breadcrumb>
     <div v-if="loading">Loading event...</div>
     <div v-else>
         <hr>
