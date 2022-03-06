@@ -159,3 +159,8 @@ export default {
   },
 };
 </script>
+<style scoped>
+.form-control {
+    width: 50%;
+}
+</style>
