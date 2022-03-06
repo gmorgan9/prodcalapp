@@ -1,6 +1,7 @@
 <template>
   <div>
     <b-breadcrumb>
+        <h2>Update Event</h2>
       <b-breadcrumb-item to="/admin"> Admin </b-breadcrumb-item>
       <b-breadcrumb-item active>Edit Event</b-breadcrumb-item>
     </b-breadcrumb>

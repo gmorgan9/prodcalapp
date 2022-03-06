@@ -2,7 +2,7 @@
 
   <div>
     <b-jumbotron>
-      <p>Create Event</p>
+      <h2>Create Event</h2>
     </b-jumbotron>
     <div v-if="loading">Loading event....</div>
     <div v-else>
