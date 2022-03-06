@@ -15,10 +15,6 @@
     </b-navbar>
     <br />
     <hr />
-
-<div v-if="savingSuccessful" class="alert alert-success alert-dismissible fade show" role="alert">
-          Congrats! Your Event was Created!
-        </div>
 <div class="admin-content">
   <h4>
     Welcome to the Admin Dashboard!
@@ -31,10 +27,5 @@
 <script>
 export default {
   name: "Admin",
-  date: function() {
-    return {
-      savingSuccessful: true
-    }
-  }
 };
 </script>

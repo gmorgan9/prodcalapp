@@ -125,7 +125,6 @@ export default {
       reminder_amt: "",
       loading: false,
       message: "",
-      savingSuccessful: false,
       // VueTimepicker,
       // Datepicker,
     };
@@ -142,7 +141,6 @@ created: function() {
         .then(() => {
           this.loading = false;
           this.$router.push("/admin/");
-          this.savingSuccessful = true;
         })
         .catch((error) => {
           console.log(error);
