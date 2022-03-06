@@ -64,9 +64,10 @@ export default {
   display: flex;
   flex-direction: row;
   margin-left: 40%;
+  text-align: right;
 }
 #eventLink {
-  float: right;
+  margin-left: 15px;
 }
 #nav-link-route {
   text-decoration: none;
