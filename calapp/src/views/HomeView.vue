@@ -3,7 +3,7 @@
     <div class="nav">
 
       <div v-if="user_id">
-        <router-link class="nav-link" :to="`/logout`">Logout</router-link>
+        <router-link :to="{ path: '/logout' }">Logout</router-link>
       </div>
       <div v-else>
         <router-link class="nav-link" :to="`/login`">Login</router-link>
