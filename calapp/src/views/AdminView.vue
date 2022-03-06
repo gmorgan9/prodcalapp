@@ -27,10 +27,12 @@
 
       <div class="admin-event-list">
           <h3>Admin Event list</h3>
-        <div class="admin-event-links" v-for="event in events" :key="event.event_id">
-          <p>{{ event.title }}</p>
-          <router-link id="eventLink" :to="`/update/${event.event_id}`">update</router-link>
-        </div>
+        <div class="links-event">
+          <div class="admin-event-links" v-for="event in events" :key="event.event_id">
+            <p>{{ event.title }}</p>
+            <router-link id="eventLink" :to="`/update/${event.event_id}`">update</router-link>
+          </div>
+       </div>
       </div>
 
 
@@ -60,6 +62,9 @@ export default {
 };
 </script>
 <style scoped>
+.links-event {
+  float: right;
+}
 .admin-event-links {
   display: flex;
   flex-direction: row;
