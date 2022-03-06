@@ -160,7 +160,7 @@ form {
 #right {
   margin-right: 10px;
 }
-button {
+.btn {
   margin-left: -10px;
   width: 25%;
   margin-top: 2.5%;
