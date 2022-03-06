@@ -51,7 +51,7 @@ export default {
 <style>
 .list-group {
   width: 30%;
-  margin-left: 25%; 
+  margin-left: 35%; 
 }
 #events {
   text-decoration: none;
