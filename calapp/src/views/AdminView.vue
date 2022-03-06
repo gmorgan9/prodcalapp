@@ -32,6 +32,6 @@
 <script>
 export default {
   name: "Admin",
-  loggedin,
+  loggedin: 1,
 };
 </script>
