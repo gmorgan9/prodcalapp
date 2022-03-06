@@ -74,7 +74,7 @@
           <div class="form-group">
             <label for="reminder">Reminder</label>
             <input
-              v-model="event.reminder_amt"
+              v-model="event.reminder"
               type="number"
               class="form-control"
               name="reminder"

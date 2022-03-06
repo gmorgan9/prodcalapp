@@ -64,12 +64,12 @@
             />
           </div>
           <div class="form-group">
-            <label for="reminder_amt">Reminder</label>
+            <label for="reminder">Reminder</label>
             <input
-              v-model="reminder_amt"
-              type="text"
+              v-model="reminder"
+              type="number"
               class="form-control"
-              name="reminder_amt"
+              name="reminder"
             />
           </div>
             
@@ -136,7 +136,7 @@ created: function() {
     handleAdd() {
       this.loading = true;
       this.message = "";
-      Api.addEvent({ user_id: Api.getUserID(), title: this.title, type: this.type, date: this.date, time: this.time, location: this.location, description: this.description, cal_id: this.cal_id, reminder_amt: this.reminder_amt })
+      Api.addEvent({ user_id: Api.getUserID(), title: this.title, type: this.type, date: this.date, time: this.time, location: this.location, description: this.description, cal_id: this.cal_id, reminder: this.reminder })
         .then(() => {
           this.loading = false;
           this.$router.push("/admin/");
