@@ -48,6 +48,9 @@ export default {
 };
 </script>
 <style>
+.nav {
+  text-align: center;
+}
 #nav-link-route {
   text-decoration: none;
   color: black;
