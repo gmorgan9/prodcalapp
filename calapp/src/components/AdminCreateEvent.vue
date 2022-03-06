@@ -153,6 +153,9 @@ created: function() {
 };
 </script>
 <style>
+.alert {
+  width: 50%;
+}
 form {
   width: 30%;
   margin-left: 35%;
