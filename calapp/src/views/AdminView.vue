@@ -60,9 +60,8 @@ export default {
 };
 </script>
 <style scoped>
-.admin-event-list {
-  display: flex;
-  flex-direction: column;
+.admin-event-list h3 {
+  float: right;
 }
 .admin-event-links {
   display: flex;
