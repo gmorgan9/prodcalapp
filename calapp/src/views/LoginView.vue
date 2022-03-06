@@ -83,6 +83,9 @@ export default {
 </script>
 
 <style scoped>
+.btn {
+  width: 30%;
+}
 label {
   display: block;
   margin-top: 10px;
