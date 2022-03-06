@@ -154,6 +154,7 @@ created: function() {
 </script>
 <style>
 .alert {
+  margin-top: 2.5%;
   width: 50%;
   margin-left: 25%;
 }
