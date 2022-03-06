@@ -83,8 +83,8 @@ export default {
 </script>
 
 <style scoped>
-.btn {
-  width: 30%;
+.form-group {
+  width: 30px;
 }
 label {
   display: block;
