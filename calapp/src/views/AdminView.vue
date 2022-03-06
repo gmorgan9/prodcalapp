@@ -30,7 +30,7 @@
         <li class="list-group-item" v-for="event in events" :key="event.event_id">
           {{ event.title }}
           <button id="update-events" class="event alert-danger" @click="() => deleteEvent(event.event_id)">Delete</button>
-          <button><router-link id="update-events" class="event alert-primary" :to="`/update/${event.event_id}`">Update</router-link></button>
+          <router-link id="update-events" class="event alert-primary" :to="`/update/${event.event_id}`"><button>Update</button></router-link>
         </li>
       </ul>
 
