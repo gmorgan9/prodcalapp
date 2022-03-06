@@ -4,7 +4,6 @@
     <b-jumbotron>
       <p>Create Event</p>
     </b-jumbotron>
-    <br />
     <div v-if="loading">Loading event....</div>
     <div v-else>
       <hr>
