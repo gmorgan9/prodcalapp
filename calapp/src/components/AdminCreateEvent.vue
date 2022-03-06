@@ -159,10 +159,10 @@ created: function() {
   width: 50%;
   margin-left: 25%;
 }
-form {
+/* form {
   width: 30%;
   margin-left: 35%;
-}
+} */
 #right {
   margin-right: 10px;
 }
