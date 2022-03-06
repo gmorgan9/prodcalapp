@@ -17,6 +17,13 @@
       </p>
       </div>
     </ul>
+
+
+
+<div v-if="id">test</div>
+<dir v-else> no</dir>
+
+
   </div>
 </template>
 
