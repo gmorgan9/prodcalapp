@@ -105,7 +105,7 @@
           {{ message }}
         </div>
       </div>
-      <div v-if="handleAdd" class="alert alert-success">
+      <div v-if="Api.addEvent()" class="alert alert-success">
           Congrats! Your Event was Created!
         </div>
   </div>
