@@ -101,11 +101,11 @@
           </div>
       </form>
       
-      <div v-if="message" class="alert alert-danger">
+      <div v-if="message" class="alert alert-danger alert-dismissible fade show">
           {{ message }}
         </div>
       </div>
-      <div v-if="Api.addEvent()" class="alert alert-success">
+      <div v-if="message" class="alert alert-success alert-dismissible fade show">
           Congrats! Your Event was Created!
         </div>
   </div>
@@ -142,8 +142,7 @@ created: function() {
       Api.addEvent({ user_id: Api.getUserID(), title: this.title, type: this.type, date: this.date, time: this.time, location: this.location, description: this.description, cal_id: this.cal_id, reminder_amt: this.reminder_amt })
         .then(() => {
           this.loading = false;
-          // this.$router.push("");
-
+          this.$router.push("/admin/");
         })
         .catch((error) => {
           console.log(error);
