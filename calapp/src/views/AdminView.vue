@@ -26,14 +26,14 @@
 
 
       <div class="admin-event-list">
-          <h3>Admin Event list</h3>
-        
-          <div class="admin-event-links" v-for="event in events" :key="event.event_id">
-            <p>{{ event.title }}</p>
-            <div class="eventLink">
-              <router-link id="" :to="`/update/${event.event_id}`">update</router-link>
-            </div>
-       </div>
+        <h3>Admin Event list</h3>
+      
+        <div class="admin-event-links" v-for="event in events" :key="event.event_id">
+          <p>{{ event.title }}</p>
+          <div class="eventLink">
+            <router-link id="" :to="`/update/${event.event_id}`">update</router-link>
+          </div>
+        </div>
       </div>
 
 
@@ -69,7 +69,7 @@ export default {
   margin-left: 40%;
   text-align: right;
 }
-#eventLink {
+.eventLink {
   margin-left: 15px;
 }
 #nav-link-route {
