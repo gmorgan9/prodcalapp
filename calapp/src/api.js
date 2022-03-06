@@ -37,6 +37,7 @@ class Api {
   updateEvent(event_id) {
     return axios.patch(
       API_URL + `/event?event_id=eq.${event_id}`,
+      event,
       {
         headers: authHeader(),
       }
