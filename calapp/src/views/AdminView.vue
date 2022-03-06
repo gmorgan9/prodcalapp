@@ -60,12 +60,9 @@ export default {
 };
 </script>
 <style scoped>
-.admin-event-list h3 {
-  float: right;
-}
 .admin-event-links {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 #nav-link-route {
