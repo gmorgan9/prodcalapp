@@ -53,8 +53,9 @@ export default {
 };
 </script>
 <style>
-.nav {
-  text-align: center;
+.list-group {
+  width: 50%;
+  margin-left: 25%; 
 }
 #nav-link-route {
   text-decoration: none;
