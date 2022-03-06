@@ -1,6 +1,5 @@
 <template>
   <div class="header">
-  <h1>Calendar App</h1>
       <router-view/>
   </div>
 </template>
