@@ -75,7 +75,7 @@
           <div class="form-group">
             <label for="reminder">Reminder</label>
             <textarea
-              v-model="event.reminder"
+              v-model="event.reminder_amt"
               type="number"
               class="form-control"
               name="reminder"
