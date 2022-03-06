@@ -16,9 +16,6 @@
     <br />
     <hr />
 
-<div v-if="loggedin">logged in</div>
-<div v-else>test</div>
-
 
 <div class="admin-content">
   <h4>
@@ -32,6 +29,5 @@
 <script>
 export default {
   name: "Admin",
-  loggedin: true,
 };
 </script>

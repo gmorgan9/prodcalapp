@@ -59,7 +59,6 @@ export default {
       password_hash: "",
       loading: false,
       message: "",
-      loggedin: false,
     };
   },
   methods: {
@@ -73,7 +72,7 @@ export default {
             this.$router.push(this.$route.params.nextUrl);
           } else {
             this.$router.push('/admin');
-            this.loggedin = true;
+            this.loggedin = 1;
           }
         })
         .catch((error) => {
