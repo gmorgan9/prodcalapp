@@ -73,7 +73,7 @@ export default {
 .list-group {
   width: 50%;
   margin-left: 25%; 
-  padding-top: 2%;
+  padding-top: 4%;
 }
 .title {
  margin-bottom: -5%;
