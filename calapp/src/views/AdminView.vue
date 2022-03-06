@@ -75,7 +75,7 @@ export default {
   margin-left: 25%; 
 }
 .title {
- 
+ margin-bottom: -3%;
 }
 .event {
   padding: 5px;
