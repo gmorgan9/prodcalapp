@@ -53,9 +53,6 @@ import Api from "../api";
 import { setJwtToken } from "../auth";
 export default {
   name: "login",
-  props: [
-    loggedin
-  ],
   data() {
     return {
       username: "",
