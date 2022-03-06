@@ -24,6 +24,16 @@
         }}</router-link>
       </p>
       </div>
+
+
+
+      <ul class="list-group">
+        <li class="list-group-item" v-for="event in events" :key="event.event_id">
+          <router-link :to="`/event/${event.event_id}`">{{
+          event.title
+        }}</router-link>
+        </li>
+      </ul>
     <!-- </ul> -->
 
 
