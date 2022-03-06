@@ -74,6 +74,9 @@ export default {
   width: 50%;
   margin-left: 25%; 
 }
+.list-group-item {
+  margin-top: 5%;
+}
 .event {
   padding: 5px;
   border-radius: 5px;
