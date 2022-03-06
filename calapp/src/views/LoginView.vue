@@ -84,7 +84,8 @@ export default {
 
 <style scoped>
 .form-group {
-  width: 90px;
+  width: 120px;
+  margin-left: -10%;
 }
 .btn {
   width: 50%;
