@@ -30,9 +30,9 @@
       
         <div class="admin-event-links" v-for="event in events" :key="event.event_id">
           <p>{{ event.title }}</p>
-          <span class="badge badge-secondary">
-          <router-link id="eventLink" :to="`/update/${event.event_id}`"><button class="btn btn-primary">Update</button></router-link>
-          </span>
+          
+          <router-link id="eventLink" :to="`/update/${event.event_id}`"><span class="badge badge-secondary">Update</span></router-link>
+        
         </div>
         
       </div>
