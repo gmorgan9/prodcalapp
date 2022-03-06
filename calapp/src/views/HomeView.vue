@@ -38,12 +38,17 @@ export default {
     return {
       // loading: false,
       events: [],
+      users: [],
     };
   },
   created: function () {
     // this.loading = true;
     Api.getEvent().then((res) => {
       this.events = res.data;
+      // this.loading = false;
+    });
+    Api.getUsers().then((res) => {
+      this.users = res.data;
       // this.loading = false;
     });
   },

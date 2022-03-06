@@ -4,6 +4,10 @@ import { authHeader, getJwtToken, getUserIdFromToken } from "./auth";
 const API_URL = "http://10.25.90.110:8000";
 
 class Api {
+  getUsers() {
+    return axios.get(API_URL + "/users", {});
+  }
+
   getEvent() {
     return axios.get(API_URL + "/event", {});
   }
