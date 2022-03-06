@@ -26,7 +26,7 @@ import Event from "../views/EventView.vue";
 // import AdminArticleList from "./components/AdminArticleList";
 import Admin from "../views/AdminView.vue";
 import AdminCreateEvent from "../components/AdminCreateEvent.vue";
-import AdminUpdateEvent from "./components/AdminUpdateEvent.vue";
+import AdminUpdateEvent from "../components/AdminUpdateEvent.vue";
 
 
 const routes = [
