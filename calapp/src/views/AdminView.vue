@@ -26,17 +26,13 @@
   </h4>
 
 
-      <div class="admin-event-list">
-        <h3>Admin Event list</h3>
-      
-        <div class="admin-event-links" v-for="event in events" :key="event.event_id">
-          <p>{{ event.title }}</p>
-          
-          <router-link id="eventLink" :to="`/update/${event.event_id}`"><button class="btn btn-outline-primary btn-sm">Update</button></router-link>
-        
-        </div>
-        
-      </div>
+      <ul class="list-group">
+        <li class="list-group-item" v-for="event in events" :key="event.event_id">
+          <router-link id="events" :to="`/update/${event.event_id}`">{{
+          event.title
+        }}</router-link>
+        </li>
+      </ul>
 
 
 
@@ -65,6 +61,18 @@ export default {
 };
 </script>
 <style scoped>
+.list-group {
+  width: 50%;
+  margin-left: 25%; 
+}
+#events {
+  text-decoration: none;
+  color: black;
+}
+#events:hover {
+  color: rgba(68, 68, 68, 0.685);
+  text-decoration: underline;
+}
 .admin-event-links {
   display: flex;
   flex-direction: row;
