@@ -3,8 +3,8 @@
     <b-breadcrumb>
         <br>
         <h2>Update Event</h2>
-      <li class="breadcrumb-item" to="/admin"> Admin </li>
-      <li class="breadcrumb-item" active>Edit Event</li>
+      <p class="breadcrumb-item" to="/admin"> Admin </p>
+      <p class="breadcrumb-item" active>Edit Event</p>
     </b-breadcrumb>
     <div v-if="loading">Loading event...</div>
     <div v-else>
