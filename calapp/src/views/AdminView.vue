@@ -31,7 +31,7 @@
         <div class="admin-event-links" v-for="event in events" :key="event.event_id">
           <p>{{ event.title }}</p>
           
-          <router-link id="eventLink" :to="`/update/${event.event_id}`"><span class="badge badge-secondary">Update</span></router-link>
+          <h1><router-link id="eventLink" :to="`/update/${event.event_id}`"><span class="badge badge-secondary">Update</span></router-link></h1>
         
         </div>
         
