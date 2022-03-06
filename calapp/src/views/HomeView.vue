@@ -41,7 +41,7 @@ export default {
 </script>
 <style>
 .nav {
-  margin-left: 50%;
+  margin-left: 40%;
 }
 .nav-link {
   text-decoration: none;
