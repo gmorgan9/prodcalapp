@@ -71,6 +71,7 @@ export default {
 }
 .eventLink {
   margin-left: 15px;
+  float: right;
 }
 #nav-link-route {
   text-decoration: none;
