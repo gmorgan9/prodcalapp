@@ -83,13 +83,6 @@ export default {
 </script>
 
 <style scoped>
-.form-group {
-  width: 150px;
-  margin-left: -50%;
-}
-.btn {
-  width: 50%;
-}
 label {
   display: block;
   margin-top: 10px;
