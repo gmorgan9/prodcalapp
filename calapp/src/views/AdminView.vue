@@ -77,7 +77,7 @@ export default {
 #update-events {
   text-decoration: none;
   color: black;
-  text-align: right;
+  float: right;
 }
 .admin-event-links {
   display: flex;
