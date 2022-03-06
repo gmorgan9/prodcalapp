@@ -63,6 +63,7 @@ export default {
 .admin-event-links {
   display: flex;
   flex-direction: row;
+  margin-left: 40%;
 }
 
 #nav-link-route {
