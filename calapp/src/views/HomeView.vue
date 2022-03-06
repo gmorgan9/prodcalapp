@@ -2,7 +2,7 @@
   <div>
     <div class="nav">
         <router-link id="nav-link-route" :to="{ path: '/admin' }">Admin</router-link> &nbsp; &nbsp;| &nbsp; &nbsp;   
-        <router-link id="nav-link-route" :to="{ path: '/logout' }">logout</router-link>
+        <router-link id="nav-link-route" :to="{ path: '/logout' }">Logout</router-link>
       </div>
     <!-- <div v-if="loading">Loading events....</div>
     <ul v-else> -->

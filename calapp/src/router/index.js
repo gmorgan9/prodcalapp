@@ -24,9 +24,9 @@ import Register from "../views/RegisterView.vue";
 import Event from "../views/EventView.vue";
 // import AdminArticleAdd from "./components/AdminArticleAdd";
 // import AdminArticleList from "./components/AdminArticleList";
-// import AdminArticleEdit from "./components/AdminArticleEdit";
 import Admin from "../views/AdminView.vue";
 import AdminCreateEvent from "../components/AdminCreateEvent.vue";
+import AdminUpdateEvent from "./components/AdminUpdateEvent.vue";
 
 
 const routes = [
@@ -62,6 +62,11 @@ const routes = [
     path: '/create',
     beforeEnter: checkAuth,
     component: AdminCreateEvent
+  },
+  {
+    path: '/update/:id',
+    beforeEnter: checkAuth,
+    component: AdminUpdateEvent
   },
 ]
 

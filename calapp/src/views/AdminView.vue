@@ -17,18 +17,45 @@
     <hr />
 
 
+
+
 <div class="admin-content">
   <h4>
     Welcome to the Admin Dashboard!
   </h4>
+
+
+<div class="event-list">
+        <h3>Event list</h3>
+      <p class="event-links" v-for="event in events" :key="event.event_id">
+        <router-link :to="`/update/${event.event_id}`">{{
+          event.title
+        }}</router-link>
+
+
+
 </div>
     
   </div>
 </template>
 
 <script>
+import Api from "../api";
 export default {
   name: "Admin",
+  data: function () {
+    return {
+      // loading: false,
+      events: [],
+    };
+  },
+  created: function () {
+    // this.loading = true;
+    Api.getEvent().then((res) => {
+      this.events = res.data;
+      // this.loading = false;
+    });
+  },
 };
 </script>
 <style scoped>
