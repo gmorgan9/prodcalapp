@@ -2,9 +2,9 @@
   <div>
     <b-breadcrumb>
       <b-breadcrumb-item to="/admin"> Admin </b-breadcrumb-item>
-      <b-breadcrumb-item active>Edit Article</b-breadcrumb-item>
+      <b-breadcrumb-item active>Edit Event</b-breadcrumb-item>
     </b-breadcrumb>
-    <div v-if="loading">Loading article...</div>
+    <div v-if="loading">Loading event...</div>
     <div v-else class="card card-container p-4">
       <form name="form" @submit.prevent="handleSave">
         <div>
