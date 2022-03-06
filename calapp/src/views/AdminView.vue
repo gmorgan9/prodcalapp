@@ -98,7 +98,7 @@ export default {
   color: black;
   float: right;
 }
-#update-events:first-child {
+#update-events:first-of-type {
   margin-right: 5%;
 }
 .admin-event-links {
