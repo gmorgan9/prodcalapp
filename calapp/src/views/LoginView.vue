@@ -84,7 +84,7 @@ export default {
 
 <style scoped>
 .form-group {
-  width: 30px;
+  width: 70px;
 }
 label {
   display: block;
