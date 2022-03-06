@@ -28,10 +28,8 @@
 <div class="event-list">
         <h3>Event list</h3>
       <p class="event-links" v-for="event in events" :key="event.event_id">
-        <router-link :to="`/update/${event.event_id}`">{{
-          event.title
-        }}</router-link>
-        </p>
+        {{event.title }}
+        </p><router-link :to="`/update/${event.event_id}`"> Update</router-link>
         </div>
 
 
