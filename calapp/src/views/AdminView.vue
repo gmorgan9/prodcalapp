@@ -34,8 +34,9 @@
             <router-link id="" :to="`/update/${event.event_id}`"><button class="btn btn-primary">Update</button></router-link>
             
           </div>
-          <hr>
+          
         </div>
+        <hr>
       </div>
 
 
