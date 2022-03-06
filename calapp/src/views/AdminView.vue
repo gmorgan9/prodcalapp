@@ -85,6 +85,9 @@ export default {
   padding: 5px;
   border-radius: 5px;
 }
+.event:last-child {
+  margin-left: 5px;
+}
 #events {
   text-decoration: none;
   color: black;
