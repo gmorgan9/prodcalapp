@@ -31,9 +31,7 @@
 
 <script>
 export default {
-  props: [
-  loggedin
-],
   name: "Admin",
+  loggedin,
 };
 </script>
