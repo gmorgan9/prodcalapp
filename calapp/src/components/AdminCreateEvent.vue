@@ -155,7 +155,7 @@ created: function() {
 <style>
 .alert {
   width: 50%;
-  margin-left: 30%;
+  margin-left: 25%;
 }
 form {
   width: 30%;
