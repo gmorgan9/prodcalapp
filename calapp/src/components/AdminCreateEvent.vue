@@ -105,7 +105,7 @@
           {{ message }}
         </div>
       </div>
-      <div v-if="message" class="success alert-danger">
+      <div v-if="message" class="alert alert-sucess">
           {{ message }}
         </div>
   </div>
