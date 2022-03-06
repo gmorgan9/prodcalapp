@@ -7,6 +7,7 @@
   <li class="nav-item">
     <router-link id="nav-link-route" :to="{ path: '/admin' }">Admin</router-link>  
   </li>
+  &nbsp; | &nbsp;
   <li class="nav-item">
     <router-link id="nav-link-route" :to="{ path: '/logout' }">Logout</router-link>
   </li>
