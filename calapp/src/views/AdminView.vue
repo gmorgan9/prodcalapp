@@ -66,7 +66,7 @@ export default {
   margin-left: 40%;
 }
 #eventLink {
-  text-align: right;
+  float: right;
   margin-left: 10px;
 }
 #nav-link-route {
