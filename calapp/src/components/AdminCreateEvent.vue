@@ -144,7 +144,7 @@ created: function() {
         .then(() => {
           this.loading = false;
           this.$router.push("/admin/");
-          savingSuccessful = true;
+          this.savingSuccessful = true;
         })
         .catch((error) => {
           console.log(error);
