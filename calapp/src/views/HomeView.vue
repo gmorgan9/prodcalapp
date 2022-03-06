@@ -2,16 +2,16 @@
   <div>
     <div class="nav">
 
-      <!-- <div v-if="user_id">
+      <div v-if="user_id">
         <router-link :to="{ path: '/logout' }">Logout</router-link>
       </div>
       <div v-else>
         <router-link class="nav-link" :to="`/login`">Login</router-link>
         <router-link class="nav-link" :to="`/register`">Register</router-link>
-      </div> -->
+      </div>
     </div>
-    <div v-if="loading">Loading events....</div>
-    <ul v-else>
+    <!-- <div v-if="loading">Loading events....</div>
+    <ul v-else> -->
     
       <br />
       <div class="event-list">
@@ -22,7 +22,7 @@
         }}</router-link>
       </p>
       </div>
-    </ul>
+    <!-- </ul> -->
 
 
 
@@ -38,7 +38,7 @@ export default {
   name: "Home",
   data: function () {
     return {
-      loading: false,
+      // loading: false,
       events: [],
       user_id: Api.getUserID()
     };
@@ -48,10 +48,10 @@ export default {
     console.log(id)
 },
   created: function () {
-    this.loading = true;
+    // this.loading = true;
     Api.getEvent().then((res) => {
       this.events = res.data;
-      this.loading = false;
+      // this.loading = false;
     });
   },
 };
