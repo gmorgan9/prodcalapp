@@ -28,7 +28,7 @@
 
       <ul class="list-group">
         <li class="list-group-item" v-for="event in events" :key="event.event_id">
-          {{ event.title }}
+          <p>{{ event.title }}</p>
           <button id="update-events" class="event alert-danger" @click="() => deleteEvent(event.event_id)">Delete</button>
           <router-link id="update-events" :to="`/update/${event.event_id}`"><button id="update-btn" class="event alert-primary">Update</button></router-link>
         </li>
@@ -80,6 +80,9 @@ export default {
 .list-group {
   width: 50%;
   margin-left: 25%; 
+}
+.list-group-item p {
+  margin-top: 2px;
 }
 .event {
   padding: 5px;
