@@ -25,6 +25,10 @@
             name="password_hash"
           />
         </div>
+
+
+
+
         <div class="form-group">
           <button class="btn btn-primary btn-block" :disabled="loading">
             <span
@@ -49,6 +53,9 @@ import Api from "../api";
 import { setJwtToken } from "../auth";
 export default {
   name: "login",
+  props: [
+    loggedin
+  ],
   data() {
     return {
       username: "",

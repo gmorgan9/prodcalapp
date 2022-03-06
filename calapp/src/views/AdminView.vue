@@ -15,6 +15,11 @@
     </b-navbar>
     <br />
     <hr />
+
+<div v-if="loggedin">logged in</div>
+<div v-else>test</div>
+
+
 <div class="admin-content">
   <h4>
     Welcome to the Admin Dashboard!
@@ -26,6 +31,9 @@
 
 <script>
 export default {
+  props: [
+    loggedin
+  ],
   name: "Admin",
 };
 </script>
