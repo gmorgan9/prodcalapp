@@ -7,7 +7,7 @@
     <br />
     <div v-if="loading">Loading event....</div>
     <div v-else>
-      <form name="form" @submit.prevent="handleAdd">
+      <form name="form" @submit.prevent="handleAdd" v-if="!savingSuccessful">
         <div class="content">
           <div class="form-group" id="right">
             <label for="title">Title</label>
@@ -105,7 +105,7 @@
           {{ message }}
         </div>
       </div>
-      <div v-if="submit" class="alert alert-success alert-dismissible fade show" role="alert">
+      <div v-if="savingSuccessful" class="alert alert-success alert-dismissible fade show" role="alert">
           Congrats! Your Event was Created!
         </div>
   </div>
@@ -127,6 +127,7 @@ export default {
       reminder_amt: "",
       loading: false,
       message: "",
+      savingSuccessful: False,
       // VueTimepicker,
       // Datepicker,
     };
@@ -142,7 +143,8 @@ created: function() {
       Api.addEvent({ user_id: Api.getUserID(), title: this.title, type: this.type, date: this.date, time: this.time, location: this.location, description: this.description, cal_id: this.cal_id, reminder_amt: this.reminder_amt })
         .then(() => {
           this.loading = false;
-          // this.$router.push("/admin/");
+          this.$router.push("/admin/");
+          savingSuccessful = true;
         })
         .catch((error) => {
           console.log(error);
