@@ -6,8 +6,12 @@
       </div>
     <!-- <div v-if="loading">Loading events....</div>
     <ul v-else> -->
-    
       <br />
+
+      <h3>Welcome {{ users.username }}</h3>
+
+
+
       <div class="event-list">
         <h3>Event list</h3>
       <p class="event-links" v-for="event in events" :key="event.event_id">
