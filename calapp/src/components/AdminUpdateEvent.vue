@@ -120,7 +120,7 @@ export default {
     return {
       loading: false,
       saving: false,
-      events: null,
+      event: null,
     };
   },
   methods: {
@@ -133,7 +133,7 @@ export default {
     },
     handleSave() {
       this.saving = true;
-      Api.updateEvent(this.events)
+      Api.updateEvent(this.event)
         .then(() => {
           this.saving = false;
           this.$router.push("/admin");
