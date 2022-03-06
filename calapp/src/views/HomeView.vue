@@ -1,5 +1,6 @@
 <template>
   <div>
+    <br>
     <div class="nav">
         <router-link id="nav-link-route" :to="{ path: '/admin' }">Admin</router-link> &nbsp; &nbsp;| &nbsp; &nbsp;   
         <router-link id="nav-link-route" :to="{ path: '/logout' }">Logout</router-link>

@@ -1,5 +1,6 @@
 <template>
   <div>
+    <br>
     <h2>Admin page</h2>
     <b-navbar>
       <b-nav-item><router-link id="nav-link-route" :to="{ path: '/' }">Home</router-link></b-nav-item>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    
+    <br>
     <div v-if="loading">Loading event....</div>
     <div v-else>
       <h1>{{ event.title }}</h1>
