@@ -216,7 +216,7 @@ export default {
     margin-right: 6%;
     height: 100px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     grid-auto-rows: minmax(80px, auto);
 }
 .box_1 {
