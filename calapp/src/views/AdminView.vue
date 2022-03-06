@@ -62,7 +62,7 @@ export default {
 };
 </script>
 <style scoped>
-.links-event {
+.links-event router-link {
   float: right;
   width: 30%;
 }
