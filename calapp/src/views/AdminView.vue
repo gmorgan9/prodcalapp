@@ -86,7 +86,7 @@ export default {
   border-radius: 5px;
 }
 #update-events:last-child {
-  margin-left: 5px;
+  margin-left: 5%;
 }
 #events {
   text-decoration: none;
