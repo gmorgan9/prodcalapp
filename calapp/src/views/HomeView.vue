@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="nav">
-    <router-link class="nav-link" :to="`/login`">Login</router-link> | 
+    <router-link class="nav-link" :to="`/login`">Login</router-link>
     <router-link class="nav-link" :to="`/register`">Register</router-link>
     </div>
     <div v-if="loading">Loading events....</div>
@@ -40,6 +40,9 @@ export default {
 };
 </script>
 <style>
+.nav {
+  text-align: center;
+}
 .nav-link {
   text-decoration: none;
   color: black;
