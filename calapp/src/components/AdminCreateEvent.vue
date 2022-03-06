@@ -105,7 +105,7 @@
           {{ message }}
         </div>
       </div>
-      <div v-if="message" class="alert alert-success alert-dismissible fade show" role="alert">
+      <div v-if="submit" class="alert alert-success alert-dismissible fade show" role="alert">
           Congrats! Your Event was Created!
         </div>
   </div>
