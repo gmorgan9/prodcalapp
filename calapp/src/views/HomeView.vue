@@ -11,9 +11,9 @@
       <div class="event-list">
         <h3>Event list</h3>
       <p class="event-links" v-for="event in events" :key="event.event_id">
-        <button class="btn btn-outline-primary btn-sm"><router-link :to="`/event/${event.event_id}`">{{
+        <router-link :to="`/event/${event.event_id}`">{{
           event.title
-        }}</router-link></button>
+        }}</router-link>
       </p>
       </div>
     <!-- </ul> -->

@@ -159,16 +159,7 @@ created: function() {
   width: 50%;
   margin-left: 25%;
 }
-/* form {
-  width: 30%;
-  margin-left: 35%;
-} */
-#right {
-  margin-right: 10px;
-}
 .btn {
-  /* margin-left: -10px;
-  width: 25%; */
   margin-top: 2.5%;
 } 
 button:last-child {
