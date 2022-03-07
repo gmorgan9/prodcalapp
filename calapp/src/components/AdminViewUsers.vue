@@ -24,7 +24,7 @@
         <ul class="list-group">
           <li class="list-group-item" v-for="users in user" :key="users.user_id">
             <div class="title">{{ users.username }}</div>
-            <button id="update-users-btn" class="users alert-danger" @click="() => deleteEvent(users.user_id)">Delete</button>
+            <button id="update-users-btn" class="users alert-danger" @click="() => deleteUser(users.user_id)">Delete</button>
             <router-link id="update-users" :to="`/updateusers/${users.user_id}`"><button class="users alert-primary">Update</button></router-link>
           </li>
         </ul>
@@ -40,7 +40,7 @@ export default {
   data: function () {
     return {
       // loading: false,
-      users: [],
+      user: [],
     };
   },
   created: function () {
@@ -49,9 +49,9 @@ export default {
   methods:  {
     loadUsers() {
       // this.loading = true;
-      this.users = [];
+      this.user = [];
     Api.getUsers().then((res) => {
-      this.users = res.data;
+      this.user = res.data;
       // this.loading = false;
     });
     },
