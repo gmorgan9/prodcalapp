@@ -36,7 +36,7 @@
 <script>
 import Api from "../api";
 export default {
-  name: "Admin",
+  name: "AdminViewUsers",
   data: function () {
     return {
       // loading: false,
@@ -51,7 +51,7 @@ export default {
       // this.loading = true;
       this.user = [];
     Api.getUsers().then((res) => {
-      this.User = res.data;
+      this.user = res.data;
       // this.loading = false;
     });
     },
