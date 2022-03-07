@@ -4,14 +4,18 @@ import { authHeader, getJwtToken, getUserIdFromToken } from "./auth";
 const API_URL = "http://10.25.90.110:8000";
 
 class Api {
+  getUserID() {
+    var id = getUserIdFromToken(getJwtToken());
+    return id;
+  }
+
+  // USERS
   getUsers() {
     return axios.get(API_URL + "/users", {});
   }
-
   getUsersDetail(user_id) {
     return axios.get(API_URL + `/users?user_id=eq.${user_id}`);
   }
-
   updateUser(users) {
     return axios.patch(
       API_URL + `/users?user_id=eq.${users.user_id}`,
@@ -27,23 +31,13 @@ class Api {
     });
   }
 
+  // EVENTS
   getEvent() {
     return axios.get(API_URL + "/event", {});
   }
-
   getEventDetail(event_id) {
     return axios.get(API_URL + `/event?event_id=eq.${event_id}`);
   }
-
-  // getUsers() {
-  //   return axios.get(API_URL + "/users", {});
-  // }
-
-  getUserID() {
-    var id = getUserIdFromToken(getJwtToken());
-    return id;
-  }
-
   addEvent(event) {
     return axios.post(
       API_URL + "/event",
@@ -66,23 +60,13 @@ class Api {
       }
     );
   }
-
   deleteEvent(event_id) {
     return axios.delete(API_URL + `/event?event_id=eq.${event_id}`, {
       headers: authHeader(),
     });
   }
 
-  publishArticle(id) {
-    return axios.post(
-      API_URL + "/rpc/publish",
-      { id: id },
-      {
-        headers: authHeader(),
-      }
-    );
-  }
-
+  // AUTHENTICATION
   login(username, password_hash) {
     return axios.post(API_URL + "/rpc/login", { username, password_hash });
   }

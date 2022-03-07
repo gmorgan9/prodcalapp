@@ -6,7 +6,12 @@
         src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"
         class="profile-img-card"
       />
+
+
       <form name="form" @submit.prevent="handleLogin">
+
+
+        <!-- Username & Password -->
         <div class="form-group">
           <label for="username">Username</label>
           <input
@@ -72,7 +77,6 @@ export default {
             this.$router.push(this.$route.params.nextUrl);
           } else {
             this.$router.push('/');
-            this.loggedin = 1;
           }
         })
         .catch((error) => {
