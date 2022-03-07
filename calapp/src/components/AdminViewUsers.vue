@@ -40,7 +40,7 @@ export default {
   data: function () {
     return {
       // loading: false,
-      user: [],
+      users: [],
     };
   },
   created: function () {
@@ -49,9 +49,9 @@ export default {
   methods:  {
     loadUsers() {
       // this.loading = true;
-      this.user = [];
+      this.users = [];
     Api.getUsers().then((res) => {
-      this.user = res.data;
+      this.users = res.data;
       // this.loading = false;
     });
     },
