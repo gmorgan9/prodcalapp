@@ -40,25 +40,25 @@ export default {
   data: function () {
     return {
       // loading: false,
-      events: [],
+      users: [],
     };
   },
   created: function () {
-    this.loadEvents();
+    this.loadUsers();
   },
   methods:  {
-    loadEvents() {
+    loadUsers() {
       // this.loading = true;
-      this.events = [];
-    Api.getEvent().then((res) => {
-      this.events = res.data;
+      this.users = [];
+    Api.getUsers().then((res) => {
+      this.Users = res.data;
       // this.loading = false;
     });
     },
-  deleteEvent(event_id) {
-      Api.deleteEvent(event_id)
+  deleteUser(user_id) {
+      Api.deleteUser(user_id)
         .then(() => {
-          this.loadEvents();
+          this.loadUsers();
         })
         .catch((err) => {
           console.log(err);
