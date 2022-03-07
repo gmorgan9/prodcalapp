@@ -22,11 +22,12 @@ import Login from "../views/LoginView.vue";
 import Logout from "../views/LogoutView.vue";
 import Register from "../views/RegisterView.vue";
 import Event from "../views/EventView.vue";
-// import AdminArticleAdd from "./components/AdminArticleAdd";
-// import AdminArticleList from "./components/AdminArticleList";
+import AdminViewUsers from "./components/AdminViewUsers.vue";
+import AdminViewEvents from "./components/AdminViewEvents.vue";
 import Admin from "../views/AdminView.vue";
 import AdminCreateEvent from "../components/AdminCreateEvent.vue";
 import AdminUpdateEvent from "../components/AdminUpdateEvent.vue";
+import AdminUpdateUser from "../components/AdminUpdateUser.vue";
 
 
 const routes = [
@@ -56,7 +57,6 @@ const routes = [
     path: '/admin',
     beforeEnter: checkAuth,
     component: Admin,
-      
     },
   {
     path: '/create',
@@ -67,6 +67,21 @@ const routes = [
     path: '/update/:event_id',
     beforeEnter: checkAuth,
     component: AdminUpdateEvent
+  },
+  {
+    path: '/adminusers',
+    beforeEnter: checkAuth,
+    component: AdminViewUsers
+  },
+  {
+    path: '/adminevents',
+    beforeEnter: checkAuth,
+    component: AdminViewEvents
+  },
+  {
+    path: '/update/:user_id',
+    beforeEnter: checkAuth,
+    component: AdminUpdateUser
   },
 ]
 
