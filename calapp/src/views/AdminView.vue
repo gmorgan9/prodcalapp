@@ -27,7 +27,7 @@
     <router-link id="car-btn" :to="`/adminusers`"><button class="btn btn-primary">View</button></router-link>
   </div>
 </div>
-<div class="card" style="width: 18rem;">
+<div id="right-card" class="card" style="width: 18rem;">
   <div class="card-body">
     <h5 class="card-title">View/Edit Events</h5>
     <p class="card-text">Follow this link to view and edit events within this calendar.</p>
@@ -90,7 +90,7 @@ export default {
 .card {
   display: inline-block;
 }
-.card:last-child {
+#right-card {
   margin-left: 10px;
 }
 .card-btn {
