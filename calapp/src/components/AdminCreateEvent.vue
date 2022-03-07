@@ -90,7 +90,7 @@
               ></span>
               <span>Add Event</span>
             </button>
-            <router-link :to="`-1`"><button class="btn btn-primary btn-block" :disabled="loading">
+            <router-link :to="-1"><button class="btn btn-primary btn-block" :disabled="loading">
                 <span
                   v-show="loading"
                   class="spinner-border spinner-border-sm"
