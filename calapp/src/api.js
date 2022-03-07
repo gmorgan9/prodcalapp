@@ -8,7 +8,7 @@ class Api {
     return axios.get(API_URL + "/users", {});
   }
 
-  getusersDetail(user_id) {
+  getUsersDetail(user_id) {
     return axios.get(API_URL + `/users?user_id=eq.${user_id}`);
   }
 
