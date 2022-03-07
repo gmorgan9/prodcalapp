@@ -95,7 +95,7 @@
                   v-show="loading"
                   class="spinner-border spinner-border-sm"
                 ></span>
-                <a href="javascript:history.go(-1)"><span>Back</span></a>
+                <a href="javascript:history.go(-1)">Back</a>
             </button>
             
           </div>
