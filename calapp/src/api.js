@@ -12,6 +12,21 @@ class Api {
     return axios.get(API_URL + `/users?user_id=eq.${user_id}`);
   }
 
+  updateUser(users) {
+    return axios.patch(
+      API_URL + `/users?user_id=eq.${users.user_id}`,
+      users,
+      {
+        headers: authHeader(),
+      }
+    );
+  }
+  deleteUser(user_id) {
+    return axios.delete(API_URL + `/users?user_id=eq.${user_id}`, {
+      headers: authHeader(),
+    });
+  }
+
   getEvent() {
     return axios.get(API_URL + "/event", {});
   }
