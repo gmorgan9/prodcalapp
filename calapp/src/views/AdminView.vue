@@ -24,14 +24,14 @@
   <div class="card-body">
     <h5 class="card-title">View/Edit Users</h5>
     <p class="card-text">Follow this link to view and edit users within this calendar.</p>
-    <router-link id="update-events" :to="`/adminusers`"><button class="btn btn-primary">View</button></router-link>
+    <router-link id="car-btn" :to="`/adminusers`"><button class="btn btn-primary">View</button></router-link>
   </div>
 </div>
 <div class="card" style="width: 18rem;">
   <div class="card-body">
     <h5 class="card-title">View/Edit Events</h5>
     <p class="card-text">Follow this link to view and edit events within this calendar.</p>
-    <router-link id="update-events" :to="`/adminevents`"><button class="btn btn-primary">View</button></router-link>
+    <router-link id="car-btn" :to="`/adminevents`"><button class="btn btn-primary">View</button></router-link>
   </div>
 </div>
 
@@ -89,6 +89,9 @@ export default {
 <style scoped>
 .card {
   display: inline-block;
+}
+.card-btn {
+  margin-bottom: 5px;
 }
 .list-group {
   width: 40%;
