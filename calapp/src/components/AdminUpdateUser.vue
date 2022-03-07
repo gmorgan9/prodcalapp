@@ -46,24 +46,17 @@
           </div>
           <div class="form-group">
             <label for="isadmin">Admin</label>
-            <input
+            <select
               v-model="users.isadmin"
               type="radio"
               class="form-control"
               name="isadmin"
               id="one"
               calue="1"
-            />
-            <label for="one">Yes</label>
-            <input
-              v-model="users.isadmin"
-              type="radio"
-              class="form-control"
-              name="isadmin"
-              id="zero"
-              value="0"
-            />
-            <label for="zero">No</label>
+            >
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+            </select>
           </div>
           <div class="form-group">
             <label for="dept_id">Department Id</label>
