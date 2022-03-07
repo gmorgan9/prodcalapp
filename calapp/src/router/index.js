@@ -64,7 +64,7 @@ const routes = [
     component: AdminCreateEvent
   },
   {
-    path: '/update/:event_id',
+    path: '/updateevents/:event_id',
     beforeEnter: checkAuth,
     component: AdminUpdateEvent
   },
@@ -79,7 +79,7 @@ const routes = [
     component: AdminViewEvents
   },
   {
-    path: '/update/:user_id',
+    path: '/updateusers/:user_id',
     beforeEnter: checkAuth,
     component: AdminUpdateUser
   },

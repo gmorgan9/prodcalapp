@@ -24,8 +24,8 @@
         <ul class="list-group">
           <li class="list-group-item" v-for="users in user" :key="users.user_id">
             <div class="title">{{ users.username }}</div>
-            <button id="update-events-btn" class="event alert-danger" @click="() => deleteEvent(users.user_id)">Delete</button>
-            <router-link id="update-events" :to="`/update/${users.user_id}`"><button class="event alert-primary">Update</button></router-link>
+            <button id="update-users-btn" class="users alert-danger" @click="() => deleteEvent(users.user_id)">Delete</button>
+            <router-link id="update-users" :to="`/updateusers/${users.user_id}`"><button class="users alert-primary">Update</button></router-link>
           </li>
         </ul>
   </div>
@@ -88,16 +88,16 @@ export default {
   margin-bottom: -5.5%;
   margin-left: -8%;
 }
-.event {
+.users {
   padding: 5px;
   border-radius: 5px;
 }
-#update-events {
+#update-users {
   text-decoration: none;
   color: black;
   float: right;
 }
-#update-events-btn {
+#update-users-btn {
   text-decoration: none;
   color: black;
   float: right;
