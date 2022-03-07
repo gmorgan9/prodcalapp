@@ -88,8 +88,7 @@ export default {
 </script>
 <style scoped>
 .card {
-  display: flex;
-  flex-direction: row;
+  float: left;
 }
 .list-group {
   width: 40%;
