@@ -88,7 +88,7 @@ export default {
 </script>
 <style scoped>
 .card {
-  display: inline;
+  display: inline-block;
 }
 .list-group {
   width: 40%;
