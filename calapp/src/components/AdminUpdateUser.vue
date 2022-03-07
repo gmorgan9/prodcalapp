@@ -8,9 +8,9 @@
       <form name="form" @submit.prevent="handleSave">
         <div>
           <div class="form-group">
-            <label for="id">Event Id</label>
+            <label for="id">User Id</label>
             <input
-              v-model="event.event_id"
+              v-model="users.user_id"
               type="text"
               class="form-control"
               name="id"
@@ -18,75 +18,60 @@
             />
           </div>
           <div class="form-group">
-            <label for="title">Title</label>
+            <label for="email">Email</label>
             <input
-              v-model="event.title"
+              v-model="users.email"
+              type="email"
+              class="form-control"
+              name="email"
+            />
+          </div>
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input
+              v-model="users.username"
               type="text"
               class="form-control"
-              name="title"
+              name="username"
             />
           </div>
           <div class="form-group">
-            <label for="type">Type</label>
+            <label for="password_hash">password</label>
             <input
-              v-model="event.type"
-              type="text"
+              v-model="users.password_hash"
+              type="password"
               class="form-control"
-              name="type"
+              name="password_hash"
             />
           </div>
           <div class="form-group">
-            <label for="date">Date</label>
+            <label for="isadmin">Admin</label>
             <input
-              v-model="event.date"
-              type="date"
+              v-model="users.isadmin"
+              type="radio"
               class="form-control"
-              name="date"
+              name="isadmin"
+              id="one"
+              calue="1"
             />
-          </div>
-          <div class="form-group">
-            <label for="time">Time</label>
+            <label for="one">Yes</label>
             <input
-              v-model="event.time"
-              type="time"
+              v-model="users.isadmin"
+              type="radio"
               class="form-control"
-              name="time"
+              name="isadmin"
+              id="zero"
+              value="0"
             />
+            <label for="zero">No</label>
           </div>
           <div class="form-group">
-            <label for="location">Location</label>
+            <label for="dept_id">Department Id</label>
             <input
-              v-model="event.location"
-              type="text"
-              class="form-control"
-              name="location"
-            />
-          </div>
-          <div class="form-group">
-            <label for="description">Description</label>
-            <input
-              v-model="event.description"
-              type="text"
-              class="form-control"
-              name="description"
-            />
-          </div>
-          <div class="form-group">
-            <label for="reminder">Reminder</label>
-            <input
-              v-model="event.reminder"
+              v-model="users.dept_id"
               type="number"
               class="form-control"
-              name="reminder"
-            />
-          </div>
-          <div class="form-group">
-            <label for="cal_id">Cal Id</label>
-            <input
-              v-model="event.cal_id"
-              type="number"
-              class="form-control"
-              name="cal_id"
+              name="dept_id"
               readonly
             />
           </div>
@@ -121,25 +106,25 @@
 <script>
 import Api from "../api";
 export default {
-  name: "AdminUpdateEvent",
+  name: "AdminUpdateUsers",
   data: function () {
     return {
       loading: false,
       saving: false,
-      event: null,
+      users: null,
     };
   },
   methods: {
-    loadEventDetail() {
+    loadUsersDetail() {
       this.loading = true;
-      Api.getEventDetail(this.$route.params.event_id).then((res) => {
-        this.event = res.data[0];
+      Api.getEventDetail(this.$route.params.user_id).then((res) => {
+        this.users = res.data[0];
         this.loading = false;
       });
     },
     handleSave() {
       this.saving = true;
-      Api.updateEvent(this.event)
+      Api.updateEvent(this.users)
         .then(() => {
           this.saving = false;
           this.$router.push("/admin");
@@ -154,7 +139,7 @@ export default {
     },
   },
   created: function () {
-    this.loadEventDetail();
+    this.loadUsersDetail();
   },
 };
 </script>
