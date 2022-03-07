@@ -90,7 +90,7 @@
               ></span>
               <span>Add Event</span>
             </button>
-            <a href="history.back()"><button class="btn btn-primary btn-block" :disabled="loading">
+            <a href="javascript:history.back()"><button class="btn btn-primary btn-block" :disabled="loading">
                 <span
                   v-show="loading"
                   class="spinner-border spinner-border-sm"
