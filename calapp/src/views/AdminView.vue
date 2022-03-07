@@ -90,6 +90,9 @@ export default {
 .card {
   display: inline-block;
 }
+.card:last-child {
+  margin-left: 10px;
+}
 .card-btn {
   margin-bottom: 5px;
 }
