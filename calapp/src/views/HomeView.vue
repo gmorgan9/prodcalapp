@@ -14,6 +14,7 @@
 </ul>
       <hr>
       <router-link :to="{ path: '/create' }"><button class="btn btn-primary">+ Create Event</button></router-link>
+      <br>
     <!-- <div v-if="loading">Loading events....</div>
     <ul v-else> -->
       <br />
