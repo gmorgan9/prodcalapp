@@ -1,8 +1,8 @@
 <template>
   <div>
         <br>
-        <h2>Update Event</h2>
-    <div v-if="loading">Loading event...</div>
+        <h2>Update User</h2>
+    <div v-if="loading">Loading user...</div>
     <div v-else>
         <hr>
       <form name="form" @submit.prevent="handleSave">
@@ -117,14 +117,14 @@ export default {
   methods: {
     loadUsersDetail() {
       this.loading = true;
-      Api.getEventDetail(this.$route.params.user_id).then((res) => {
+      Api.getUsersDetail(this.$route.params.user_id).then((res) => {
         this.users = res.data[0];
         this.loading = false;
       });
     },
     handleSave() {
       this.saving = true;
-      Api.updateEvent(this.users)
+      Api.updateUser(this.users)
         .then(() => {
           this.saving = false;
           this.$router.push("/admin");
