@@ -90,13 +90,13 @@
               ></span>
               <span>Add Event</span>
             </button>
-            <a href="javascript:history.go(-1)"><button class="btn btn-primary btn-block" :disabled="loading">
+            <button class="btn btn-primary btn-block" :disabled="loading"><a href="javascript:history.go(-1)">
                 <span
                   v-show="loading"
                   class="spinner-border spinner-border-sm"
                 ></span>
                 <span>Back</span>
-            </button></a>
+            </a></button>
           </div>
       </form>
       
