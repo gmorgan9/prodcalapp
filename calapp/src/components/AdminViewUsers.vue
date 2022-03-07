@@ -11,7 +11,6 @@
             <b-nav-item><router-link id="nav-link-route" :to="{ path: '/admin' }">Admin</router-link></b-nav-item>
           | <b-nav-item><router-link id="nav-link-route" :to="{ path: '/' }">Home</router-link></b-nav-item>
           | <b-nav-item><router-link id="nav-link-route" :to="{ path: '/logout' }">Logout</router-link></b-nav-item>
-          | <b-nav-item><router-link id="nav-link-route" :to="{ path: '/create' }">Create</router-link></b-nav-item>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
