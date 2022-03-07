@@ -56,7 +56,7 @@ export default {
     });
     },
   deleteUser(user_id) {
-      Api.deleteEvent(user_id)
+      Api.deleteUser(user_id)
         .then(() => {
           this.loadUsers();
         })
