@@ -90,14 +90,14 @@
               ></span>
               <span>Add Event</span>
             </button>
-            <router-link :to="`/admin`"><button class="btn btn-primary btn-block" :disabled="loading">
+            <button class="btn btn-primary btn-block" :disabled="loading">
                 <span
                   v-show="loading"
                   class="spinner-border spinner-border-sm"
                 ></span>
                 <span>Back</span>
                 <a href="javascript:history.go(-1)"> Go Back</a>
-            </button></router-link>
+            </button>
             
           </div>
       </form>
