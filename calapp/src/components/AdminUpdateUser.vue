@@ -77,7 +77,7 @@
               ></span>
               <span>Save</span>
             </button>
-            <router-link :to="`/admin`"><button class="btn btn-primary btn-block" :disabled="loading">
+            <router-link :to="`/adminusers`"><button class="btn btn-primary btn-block" :disabled="loading">
                 <span
                   v-show="loading"
                   class="spinner-border spinner-border-sm"
