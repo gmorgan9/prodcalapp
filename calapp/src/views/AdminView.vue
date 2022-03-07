@@ -19,7 +19,8 @@
 
 
 
-
+<div class="admin-content">
+    <h5>Welcome to the Admin Dashboard!</h5>
 <div class="card" style="width: 18rem;">
   <div class="card-body">
     <h5 class="card-title">View/Edit Users</h5>
@@ -34,19 +35,7 @@
     <router-link id="car-btn" :to="`/adminevents`"><button class="btn btn-primary">View</button></router-link>
   </div>
 </div>
-
-
-
-  <div class="admin-content">
-    <h5>Welcome to the Admin Dashboard!</h5>
-        <ul class="list-group">
-          <li class="list-group-item" v-for="event in events" :key="event.event_id">
-            <div class="title">{{ event.title }}</div>
-            <button id="update-events-btn" class="event alert-danger" @click="() => deleteEvent(event.event_id)">Delete</button>
-            <router-link id="update-events" :to="`/update/${event.event_id}`"><button class="event alert-primary">Update</button></router-link>
-          </li>
-        </ul>
-  </div>
+</div>
     
 </div>
 </template>
