@@ -13,7 +13,7 @@
             <input
               v-model="username"
               type="text"
-              class="form-control"
+              id="form-control"
               name="username"
             />
           </div>
@@ -22,7 +22,7 @@
             <input
               v-model="email"
               type="email"
-              class="form-control"
+              id="form-control"
               name="email"
             />
           </div>
@@ -31,7 +31,7 @@
             <input
               v-model="password_hash"
               type="password"
-              class="form-control"
+              id="form-control"
               name="password_hash"
             />
           </div>
@@ -40,7 +40,7 @@
             <input
               v-model="dept_id"
               type="text"
-              class="form-control"
+              id="form-control"
               name="dept_id"
             />
           </div>
@@ -53,6 +53,7 @@
               <span>Sign Up</span>
             </button>
           </div>
+          <p class="bottom-link">Or <router-link :to="`/login`">Login</router-link></p>
         </div>
       </form>
 
@@ -98,6 +99,15 @@ export default {
 </script>
 
 <style scoped>
+#form-control {
+  width: 50%;
+}
+.bottom-link {
+  margin-top: 10px;
+}
+.btn {
+  margin-top: 10px;
+}
 label {
   display: block;
   margin-top: 10px;
