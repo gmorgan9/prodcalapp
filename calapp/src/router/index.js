@@ -16,8 +16,17 @@ const checkAuth = function(to, _, next) {
 };
 
 const checkAdmin = function(to, _, next) {
-const isadmin = API_URL + `/users?isadmin=eq.1`
-};
+    const admin = getAdmin();
+    if (token === 1) {
+      // redirect to login because we don't have token yet
+      next({
+        path: "/login",
+        params: { nextUrl: to.fullPath },
+      });
+    } else {
+      next();
+    }
+  };
 
 
 import "bootstrap/dist/css/bootstrap.css";
