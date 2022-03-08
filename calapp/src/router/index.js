@@ -15,19 +15,6 @@ const checkAuth = function(to, _, next) {
   }
 };
 
-const checkAdmin = function(to, _, next) {
-    const isadmin = getAdmin();
-    if (isadmin) {
-      // redirect to login because we don't have token yet
-      next({
-        path: "/login",
-        params: { nextUrl: to.fullPath },
-      });
-    } else {
-      next();
-    }
-  };
-
 
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
@@ -78,7 +65,6 @@ const routes = [
     },
     {
       path: '/superadmin',
-      beforeEnter: checkAdmin,
       component: SuperAdmin,
       },
   {

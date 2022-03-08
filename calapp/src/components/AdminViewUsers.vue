@@ -17,7 +17,10 @@
     <br />
     <hr />
 
-
+<div v-if="users.isadmin === 1">
+<router-link id="car-btn" :to="`/superadmin`"><button class="btn btn-primary">superadmin</button></router-link>
+</div>
+<div v-else></div>
 
   <div class="admin-content">
     <h5>Users</h5>
