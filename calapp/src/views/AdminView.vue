@@ -17,7 +17,7 @@
     <br />
     <hr />
 
-<router-link id="car-btn" :to="`/superadmin`"><button class="btn btn-primary">superadmin</button></router-link>
+<router-link id="car-btn" v-if="Api.getAdmin()" :to="`/superadmin`"><button class="btn btn-primary">superadmin</button></router-link>
 
 
 <div class="admin-content">

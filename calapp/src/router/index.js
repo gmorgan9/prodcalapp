@@ -16,8 +16,8 @@ const checkAuth = function(to, _, next) {
 };
 
 const checkAdmin = function(to, _, next) {
-    const admin = getAdmin();
-    if (admin === 1) {
+    const isadmin = getAdmin();
+    if (isadmin) {
       // redirect to login because we don't have token yet
       next({
         path: "/login",
