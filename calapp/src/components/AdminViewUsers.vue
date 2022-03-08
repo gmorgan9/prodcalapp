@@ -18,14 +18,12 @@
     <hr />
 
 
-<span v-for="users in user" :key="users.user_id">
     <span v-if="users.isadmin == 1">Yes</span>
     <span v-else>-</span>
-</span>
 
 
 
-<!-- <div v-if="users.isadmin = 1">
+<!-- <div v-if="users.isadmin == 1">
 <router-link id="car-btn" :to="`/superadmin`"><button class="btn btn-primary">superadmin</button></router-link>
 </div>
 <div v-else></div> -->
