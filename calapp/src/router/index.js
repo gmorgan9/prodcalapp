@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import { getJwtToken } from "../auth";
-const API_URL = "http://10.25.90.110:8000";
+import { getAdmin } from "../api";
 
 const checkAuth = function(to, _, next) {
   const token = getJwtToken();
