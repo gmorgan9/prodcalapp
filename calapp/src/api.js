@@ -13,6 +13,15 @@ class Api {
     return axios.get(API_URL + "/department", {});
   }
 
+  getAdmin() {
+    return axios.get(API_URL + "/isadmin", {});
+  }
+
+getisAdmin(isadmin) {
+  var admin = getAdmin(getUserID());
+  return admin;
+}
+
   // USERS
   getUsers() {
     return axios.get(API_URL + "/users", {});

@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import { getJwtToken } from "../auth";
+import { getisAdmin } from "../api.js";
 
 const checkAuth = function(to, _, next) {
   const token = getJwtToken();
@@ -15,7 +16,8 @@ const checkAuth = function(to, _, next) {
 };
 
 const checkAdmin = function(to, _, next) {
-  if (users.isadmin != 1) {
+  const admin = getisAdmin();
+  if (admin != 1) {
     next({
       path: "/admin",
       params: { nextUrl: to.fullPath },
