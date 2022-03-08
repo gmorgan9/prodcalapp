@@ -10,7 +10,7 @@ class Api {
   }
 
   getDept() {
-    return axios.get(API_URL + "/departments", {});
+    return axios.get(API_URL + "/department", {});
   }
 
   // USERS
