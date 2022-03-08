@@ -16,14 +16,15 @@ const checkAuth = function(to, _, next) {
 };
 
 const checkAdmin = function(to, _, next) {
-  if (API_URL + `/users?isadmin=eq.1`) {
+  const isadmin = API_URL + `/users?isadmin=eq.1`
+  if (!isadmin) {
     // redirect to login because we don't have token yet
-    next();
-  } else {
     next({
       path: "/admin",
       params: { nextUrl: to.fullPath },
     });
+  } else {
+    next();
   }
 };
 
