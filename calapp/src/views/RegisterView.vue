@@ -81,6 +81,7 @@ export default {
       dept_id: "",
       loading: false,
       message: "",
+      department: [],
     };
   },
   methods: {
@@ -98,6 +99,11 @@ export default {
           }
           this.loading = false;
         });
+        this.department = [];
+        Api.getDept().then((res) => {
+      this.department = res.data;
+      // this.loading = false;
+    });
     },
   },
 };
