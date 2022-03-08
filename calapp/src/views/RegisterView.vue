@@ -44,7 +44,7 @@
               name="dept_id"
             />
             <select  v-model="selected" id="deptList">
-              <option v-for="department in departments" :key="department.dept_id">
+              <option v-for="department in dept" :key="department.dept_id">
                 {{department.dept_name}}
             </option>
     </select> 
@@ -81,7 +81,7 @@ export default {
       dept_id: "",
       loading: false,
       message: "",
-      department: [],
+      dept: [],
     };
   },
   methods: {
@@ -99,9 +99,9 @@ export default {
           }
           this.loading = false;
         });
-        this.department = [];
+        this.dept = [];
         Api.getDept().then((res) => {
-      this.department = res.data;
+      this.dept = res.data;
       // this.loading = false;
     });
     },
