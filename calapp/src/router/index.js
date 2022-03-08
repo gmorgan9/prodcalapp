@@ -1,5 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import { getJwtToken } from "../auth";
+import { getUsers } from "../api.js"
+
 
 const checkAuth = function(to, _, next) {
   const token = getJwtToken();
@@ -15,6 +17,7 @@ const checkAuth = function(to, _, next) {
 };
 
 const checkAdmin = function(to, _, next) {
+  getUsers();
   if (users.isadmin === 1) {
     // redirect to login because we don't have token yet
     next({
