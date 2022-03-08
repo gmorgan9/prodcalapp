@@ -13,8 +13,10 @@ class Api {
     return axios.get(API_URL + "/department", {});
   }
 
-  getAdmin() {
-    return axios.get(API_URL + `/users?isadmin=eq.1`);
+  getAdmin(isadmin) {
+    this.getUsers();
+    var isadmin = (API_URL + `/users?isadmin=eq.1`);
+    return isadmin;
   }
 
   // USERS
