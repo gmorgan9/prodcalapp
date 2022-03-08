@@ -14,7 +14,7 @@ class Api {
   }
 
   getAdmin() {
-    return axios.get(API_URL + "/isadmin", {});
+    return axios.get(API_URL + `/users?isadmin=1`);
   }
 
   // USERS
