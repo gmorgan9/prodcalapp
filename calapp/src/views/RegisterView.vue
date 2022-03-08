@@ -84,7 +84,18 @@ export default {
       dept: [],
     };
   },
+  created: function () {
+    this.loadDepts();
+  },
   methods: {
+    loadDepts() {
+      // this.loading = true;
+      this.dept = [];
+    Api.getDept().then((res) => {
+      this.dept = res.data;
+      // this.loading = false;
+    });
+    },
     handleRegister() {
       this.message = "";
       this.loading = true;
@@ -99,11 +110,7 @@ export default {
           }
           this.loading = false;
         });
-        this.dept = [];
-        Api.getDept().then((res) => {
-      this.dept = res.data;
-      // this.loading = false;
-    });
+        
     },
   },
 };
