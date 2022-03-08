@@ -61,7 +61,7 @@
 
       <select  v-model="selected" id="deptList">
               <option v-for="department in dept" :key="department.dept_id">
-                {{department.dept_name}}
+                {{department.name}}
             </option>
           </select> 
 
