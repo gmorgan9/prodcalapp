@@ -18,14 +18,14 @@ const checkAuth = function(to, _, next) {
 
 const checkAdmin = function(to, _, next) {
   getAdmin();
-  if (!getAdmin()) {
+  if (getAdmin()) {
     // redirect to login because we don't have token yet
+    next();
+  } else {
     next({
       path: "/admin",
       params: { nextUrl: to.fullPath },
     });
-  } else {
-    next();
   }
 };
 
