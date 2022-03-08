@@ -17,11 +17,6 @@ class Api {
     return axios.get(API_URL + "/isadmin", {});
   }
 
-getisAdmin(admin) {
-  var admin = getAdmin(getUserID());
-  return admin;
-}
-
   // USERS
   getUsers() {
     return axios.get(API_URL + "/users", {});
