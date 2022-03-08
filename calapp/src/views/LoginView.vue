@@ -99,6 +99,9 @@ export default {
 .bottom-link {
   margin-top: 10px;
 }
+.btn {
+  margin-top: 10px;
+}
 label {
   display: block;
   margin-top: 10px;
