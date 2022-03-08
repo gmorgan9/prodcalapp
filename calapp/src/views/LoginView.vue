@@ -17,8 +17,7 @@
           <input
             v-model="username"
             type="text"
-            class="form-control"
-            id="form-input"
+            id="form-control"
             name="username"
           />
         </div>
@@ -27,8 +26,7 @@
           <input
             v-model="password_hash"
             type="password"
-            class="form-control"
-            id="form-input"
+            id="form-control"
             name="password_hash"
           />
         </div>
@@ -94,7 +92,7 @@ export default {
 </script>
 
 <style scoped>
-#form-input {
+#form-control {
   width: 50%;
 }
 label {
