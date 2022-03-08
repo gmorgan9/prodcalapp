@@ -43,6 +43,11 @@
               id="form-control"
               name="dept_id"
             />
+            <select  v-model="selected" id="deptList">
+              <option v-for="department in departments" :key="department.dept_id">
+                {{department.dept_name}}
+            </option>
+    </select> 
           </div>
           <div class="form-group">
             <button class="btn btn-primary btn-block" :disabled="loading">
