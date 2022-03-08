@@ -15,9 +15,9 @@ const checkAuth = function(to, _, next) {
 };
 
 const checkAdmin = function(to, _, next) {
-  if (users.isadmin == 0) {
+  if (users.isadmin != 1) {
     next({
-      path: "/login",
+      path: "/admin",
       params: { nextUrl: to.fullPath },
   });
   } else {
