@@ -43,11 +43,7 @@
               id="form-control"
               name="dept_id"
             />
-            <select  v-model="selected" id="deptList">
-              <option v-for="department in dept" :key="department.dept_id">
-                {{department.dept_name}}
-            </option>
-    </select> 
+            
           </div>
           <div class="form-group">
             <button class="btn btn-primary btn-block" :disabled="loading">
@@ -61,6 +57,13 @@
           <p class="bottom-link">Or <router-link :to="`/login`">Login</router-link></p>
         </div>
       </form>
+
+
+      <select  v-model="selected" id="deptList">
+              <option v-for="department in dept" :key="department.dept_id">
+                {{department.dept_name}}
+            </option>
+          </select> 
 
       <div v-if="message" class="alert alert-danger">
         {{ message }}
