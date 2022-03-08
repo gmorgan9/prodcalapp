@@ -43,7 +43,7 @@
             <span>Login</span>
           </button>
         </div>
-        <p>Or <router-link :to="`/signup`">Sign Up</router-link></p>
+        <p class="bottom-link">Or <router-link :to="`/signup`">Sign Up</router-link></p>
         <div class="form-group">
           <div v-if="message" class="alert alert-danger" role="alert">
             {{ message }}
@@ -95,6 +95,9 @@ export default {
 <style scoped>
 #form-control {
   width: 50%;
+}
+.bottom-link {
+  margin-top: 5px;
 }
 label {
   display: block;
