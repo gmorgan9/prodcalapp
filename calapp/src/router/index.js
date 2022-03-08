@@ -13,6 +13,19 @@ const checkAuth = function(to, _, next) {
     next();
   }
 };
+
+const checkAdmin = function(to, _, next) {
+  if (users.isadmin == 0) {
+    next({
+      path: "/login",
+      params: { nextUrl: to.fullPath },
+  });
+  } else {
+    next();
+  }
+};
+
+
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
 
@@ -28,6 +41,8 @@ import Admin from "../views/AdminView.vue";
 import AdminCreateEvent from "../components/AdminCreateEvent.vue";
 import AdminUpdateEvent from "../components/AdminUpdateEvent.vue";
 import AdminUpdateUser from "../components/AdminUpdateUser.vue";
+import SuperAdmin from "../views/SuperAdmin.vue";
+
 
 
 const routes = [
@@ -58,6 +73,11 @@ const routes = [
     beforeEnter: checkAuth,
     component: Admin,
     },
+    {
+      path: '/superadmin',
+      beforeEnter: checkAdmin,
+      component: SuperAdmin,
+      },
   {
     path: '/create',
     beforeEnter: checkAuth,
