@@ -81,7 +81,6 @@ const routes = [
     },
     {
       path: '/superadmin',
-      beforeEnter: checkAdmin,
       component: SuperAdmin,
       },
   {
