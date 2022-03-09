@@ -18,6 +18,7 @@ class Api {
     return axios.get(API_URL + "/users", {});
   }
   getUsersDetail(user_id) {
+    console.log("passed: " + user_id)
     return axios.get(API_URL + `/users?user_id=eq.${user_id}`);
   }
   updateUser(users) {
