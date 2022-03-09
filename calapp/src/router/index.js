@@ -15,21 +15,21 @@ const checkAuth = function(to, _, next) {
   }
 };
 
-const checkAdmin = async function(to, _, next) {
-  const userid = Api.getUserID();
-  console.log(String(userid));
-  const getuser = await Api.getUsersDetail(userid);
-  console.log("query return:" + getuser);
-if (getuser.isadmin === 0) {
-    // redirect to login because we don't have token yet
-    next({
-      path: "/",
-      params: { nextUrl: to.fullPath },
-    });
-  } else {
-    next();
-  }
-};
+// const checkAdmin = async function(to, _, next) {
+//   const userid = Api.getUserID();
+//   console.log(String(userid));
+//   const getuser = await Api.getUsersDetail(userid);
+//   console.log("query return:" + getuser);
+// if (getuser.isadmin === 0) {
+//     // redirect to login because we don't have token yet
+//     next({
+//       path: "/",
+//       params: { nextUrl: to.fullPath },
+//     });
+//   } else {
+//     next();
+//   }
+// };
 
 
 import "bootstrap/dist/css/bootstrap.css";
