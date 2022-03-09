@@ -41,10 +41,17 @@ export default {
     return {
       // loading: false,
       user: [],
+      isAdmin: true,
     };
   },
   created: function () {
     this.loadUsers();
+    Api.getUsersDetail(Api.getUserID()).then((res) => {
+      this.isAdmin = (res.data[0].isadmin == 1);
+      if(this.isAdmin == false) {
+        this.$router.push("/");
+      }
+    });
   },
   methods:  {
     loadUsers() {
