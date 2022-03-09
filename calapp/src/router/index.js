@@ -20,7 +20,7 @@ const checkAdmin = function(to, _, next) {
   console.log(userid);
   const getuser = Api.getUsersDetail(userid);
   console.log(getuser);
-  if (getuser.isadmin == 0) {
+  if (getuser.isadmin === 0) {
     // redirect to login because we don't have token yet
     next({
       path: "/login",
