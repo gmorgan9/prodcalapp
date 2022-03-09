@@ -15,12 +15,12 @@ const checkAuth = function(to, _, next) {
   }
 };
 
-const checkAdmin = function(to, _, next) {
+const checkAdmin = async function(to, _, next) {
   const userid = Api.getUserID();
   console.log(String(userid));
-  const getuser = Api.getUsersDetail(userid);
+  const getuser = await Api.getUsersDetail(userid);
   console.log("query return:" + getuser);
-  if (getuser.isadmin === 0) {
+if (getuser.isadmin === 0) {
     // redirect to login because we don't have token yet
     next({
       path: "/",
