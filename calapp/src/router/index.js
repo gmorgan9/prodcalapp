@@ -1,10 +1,24 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import { getJwtToken } from "../auth";
-import { getAdmin } from "../api";
+import { Api } from "../api.js";
 
 const checkAuth = function(to, _, next) {
   const token = getJwtToken();
   if (token === undefined || token === "undefined" || token === null) {
+    // redirect to login because we don't have token yet
+    next({
+      path: "/login",
+      params: { nextUrl: to.fullPath },
+    });
+  } else {
+    next();
+  }
+};
+
+const checkAdmin = function(to, _, next) {
+  const userid = Api.getUserID();
+  const getuser = Api.getUsersDetail(userid);
+  if (getuser.isadmin == 0) {
     // redirect to login because we don't have token yet
     next({
       path: "/login",
@@ -65,6 +79,7 @@ const routes = [
     },
     {
       path: '/superadmin',
+      beforeEnter: checkAdmin,
       component: SuperAdmin,
       },
   {
