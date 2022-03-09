@@ -23,7 +23,7 @@ const checkAdmin = function(to, _, next) {
   if (getuser.isadmin === 0) {
     // redirect to login because we don't have token yet
     next({
-      path: "/login",
+      path: "/",
       params: { nextUrl: to.fullPath },
     });
   } else {
