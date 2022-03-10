@@ -17,7 +17,7 @@
     <br />
     <hr />
 
-<div v-if="users.isadmin = 1">Happy Birthday</div>
+<div v-if="$users.isadmin = 1">Happy Birthday</div>
 <div v-else>NOOOOO</div>
 
 
