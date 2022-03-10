@@ -119,7 +119,7 @@ export default {
       Api.updateUser(this.users)
         .then(() => {
           this.saving = false;
-          this.$router.push("/admin");
+          this.$router.push("/dashboard");
         })
         .catch((error) => {
           console.log(error);

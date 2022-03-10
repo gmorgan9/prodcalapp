@@ -17,6 +17,8 @@
     <br />
     <hr />
 
+<div v-if="users.isadmin = 1">Happy Birthday</div>
+<div v-else>NOOOOO</div>
 
 
 
@@ -43,10 +45,12 @@ export default {
     return {
       // loading: false,
       events: [],
+      users: [],
     };
   },
   created: function () {
     this.loadEvents();
+    this.loadUsersDetail()
   },
   methods:  {
     loadEvents() {
@@ -56,6 +60,13 @@ export default {
       this.events = res.data;
       // this.loading = false;
     });
+    },
+    loadUsersDetail() {
+      this.loading = true;
+      Api.getUsersDetail(this.$route.params.user_id).then((res) => {
+        this.users = res.data[0];
+        this.loading = false;
+      });
     },
   deleteEvent(event_id) {
       Api.deleteEvent(event_id)
