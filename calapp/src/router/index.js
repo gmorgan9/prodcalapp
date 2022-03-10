@@ -43,7 +43,7 @@ import Register from "../views/RegisterView.vue";
 import Event from "../views/EventView.vue";
 import AdminViewUsers from "../components/AdminViewUsers.vue";
 import AdminViewEvents from "../components/AdminViewEvents.vue";
-import Admin from "../views/AdminView.vue";
+import Dashboard from "../views/Dashboard.vue";
 import AdminCreateEvent from "../components/AdminCreateEvent.vue";
 import AdminUpdateEvent from "../components/AdminUpdateEvent.vue";
 import AdminUpdateUser from "../components/AdminUpdateUser.vue";
@@ -75,9 +75,9 @@ const routes = [
     component: Register
   },
   {
-    path: '/admin',
+    path: '/dashboard',
     beforeEnter: checkAuth,
-    component: Admin,
+    component: Dashboard,
     },
     {
       path: '/superadmin',

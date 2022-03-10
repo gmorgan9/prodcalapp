@@ -5,7 +5,7 @@
 
 <ul class="nav justify-content-center">
   <li class="nav-item">
-    <router-link id="nav-link-route" :to="{ path: '/admin' }">Admin</router-link>  
+    <router-link id="nav-link-route" :to="{ path: '/dashboard' }">Dashboard</router-link>  
   </li>
   &nbsp; | &nbsp;
   <li class="nav-item">

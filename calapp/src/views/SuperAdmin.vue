@@ -22,6 +22,13 @@
 <div class="admin-content">
     <h5>Welcome to the SUPER Admin Dashboard!</h5>
 </div>
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">View/Edit Users</h5>
+    <p class="card-text">Follow this link to view and edit users within this calendar.</p>
+    <router-link id="car-btn" :to="`/adminusers`"><button class="btn btn-primary">View</button></router-link>
+  </div>
+</div>
     
 </div>
 </template>
