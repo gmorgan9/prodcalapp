@@ -17,7 +17,7 @@
     <br />
     <hr />
 
-<router-link id="car-btn" :to="`/superadmin`"><button class="btn btn-primary">Admin</button></router-link>
+
 
 
 <div class="admin-content">
@@ -30,6 +30,7 @@
   </div>
 </div>
 </div>
+<router-link id="car-btn" :to="`/superadmin`"><button class="btn btn-primary">Admin</button></router-link>
     
 </div>
 </template>
