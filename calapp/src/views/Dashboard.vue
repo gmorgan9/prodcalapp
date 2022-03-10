@@ -17,11 +17,11 @@
     <br />
     <hr />
 
-<router-link id="car-btn" :to="`/superadmin`"><button class="btn btn-primary">superadmin</button></router-link>
+<router-link id="car-btn" :to="`/superadmin`"><button class="btn btn-primary">Admin</button></router-link>
 
 
 <div class="admin-content">
-    <h5>Welcome to the Admin Dashboard!</h5>
+    <h5>Welcome to the Dashboard!</h5>
 <div id="right-card" class="card" style="width: 18rem;">
   <div class="card-body">
     <h5 class="card-title">View/Edit Events</h5>

@@ -20,7 +20,7 @@
 
 
 <div class="admin-content">
-    <h5>Welcome to the SUPER Admin Dashboard!</h5>
+    <h5>Welcome to the Admin Dashboard!</h5>
 </div>
 <div class="card" style="width: 18rem;">
   <div class="card-body">
@@ -49,7 +49,7 @@ export default {
     Api.getUsersDetail(Api.getUserID()).then((res) => {
       this.isAdmin = (res.data[0].isadmin == 1);
       if(this.isAdmin == false) {
-        this.$router.push("/");
+        this.$router.push("/dashboard");
       }
     });
   },
