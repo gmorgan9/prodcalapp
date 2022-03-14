@@ -77,47 +77,6 @@ export default {
 
 </script>
 <style scoped>
-.card {
-  display: inline-block;
-}
-#right-card {
-  margin-left: 10px;
-}
-.card-btn {
-  margin-bottom: 5px;
-}
-.list-group {
-  width: 40%;
-  margin-left: 30%; 
-  
-}
-.title {
-  padding-top: 1%;
-  margin-bottom: -5.5%;
-  margin-left: -8%;
-}
-.event {
-  padding: 5px;
-  border-radius: 5px;
-}
-#update-events {
-  text-decoration: none;
-  color: black;
-  float: right;
-}
-#update-events-btn {
-  text-decoration: none;
-  color: black;
-  float: right;
-  margin-left: 1.5%;
-}
-#nav-link-route {
-  text-decoration: none;
-  color: black;
-}
-#nav-link-route:hover {
-  color: rgba(68, 68, 68, 0.685);
-  text-decoration: underline;
-}
+
 
 </style>
