@@ -45,6 +45,8 @@
             />
             
           </div>
+
+          <br>
           <div class="form-group">
             <button class="btn btn-primary btn-block" :disabled="loading">
               <span
@@ -120,15 +122,6 @@ export default {
 </script>
 
 <style scoped>
-#form-control {
-  width: 50%;
-}
-.bottom-link {
-  margin-top: 10px;
-}
-.btn {
-  margin-top: 10px;
-}
 label {
   display: block;
   margin-top: 10px;
