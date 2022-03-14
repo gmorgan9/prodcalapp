@@ -32,8 +32,7 @@
 
 
 
-<div v-if="isAdmin">HAPPY</div>
-<div v-else>NOT</div>
+
     
 </div>
 </template>
