@@ -136,5 +136,8 @@ export default {
 };
 </script>
 <style scoped>
-
+.form-control {
+    width: 50%;
+    margin-left: 25%;
+}
 </style>

@@ -60,6 +60,79 @@ export default {
 
 
 <style>
-
+.type {
+    color: gray;
+    margin-top: -20px;
+    text-transform: capitalize;
+}
+.title {
+    text-transform: capitalize;
+}
+.content {
+display: grid;
+    grid-template-columns: repeat(2, 2fr);
+}
+.date_block {
+    grid-column: 1 / 2;
+    grid-row: 1;
+}
+.time_block {
+    grid-column: 1 / 2;
+    grid-row: 2;
+}
+.location_block {
+    grid-column: 1 / 2;
+    grid-row: 3;
+}
+.reminder_block {
+    grid-column: 1 / 2;
+    grid-row: 4;
+}
+.date_block,
+.time_block,
+.location_block,
+.reminder_block,
+.desc_block {
+    text-align: left;
+    margin-bottom: -2%;
+}
+.date_block h3,
+.time_block h3,
+.location_block h3,
+.reminder_block h3 {
+    background: gray;
+    color: white;
+    text-transform: uppercase;
+    width: 27.5%;
+    margin-left: 70%;
+    padding-left: 5px;
+}
+.date_block p,
+.time_block p,
+.location_block p,
+.reminder_block p {
+    width: 27.5%;
+    margin-left: 70%;
+    padding-left: 2px;
+}
+.desc_block {
+    grid-column: 2 / 2;
+    grid-row: 1;
+}
+.desc_block h3 {
+    background: rgb(22, 105, 153);
+    color: white;
+    text-transform: uppercase;
+    width: 27.5%;
+    margin-right: 5%;
+    margin-left: 2%;
+    padding-left: 5px;
+}
+.desc_block p {
+    width: 27.5%;
+    margin-right: 5%;
+    margin-left: 2%;
+    padding-left: 2px;
+}
 
 </style>

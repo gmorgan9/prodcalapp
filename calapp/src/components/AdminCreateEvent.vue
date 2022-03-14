@@ -154,5 +154,19 @@ created: function() {
 };
 </script>
 <style>
-
+.form-control {
+    width: 50%;
+    margin-left: 25%;
+}
+.alert {
+  margin-top: 2.5%;
+  width: 50%;
+  margin-left: 25%;
+}
+.btn {
+  margin-top: 2.5%;
+} 
+button:last-child {
+  margin-left: 10px;
+}
 </style>
