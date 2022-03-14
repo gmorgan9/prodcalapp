@@ -46,11 +46,19 @@ export default {
   data: function () {
     return {
       // loading: false,
+      isAdmin: true,
       events: [],
       users: [],
     };
   },
   created: function () {
+Api.getUsersDetail(Api.getUserID()).then((res) => {
+      this.isAdmin = (res.data[0].isadmin == 1);
+      if(this.isAdmin == false) {
+        this.$router.push("/dashboard");
+      }
+    });
+
     this.loadEvents();
   },
   methods:  {
