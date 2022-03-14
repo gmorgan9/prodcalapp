@@ -46,6 +46,7 @@ export default {
   },
   created: function () {
     this.loadEvents();
+    // ONLY ALLOWS isADMIN
     Api.getUsersDetail(Api.getUserID()).then((res) => {
       this.isAdmin = (res.data[0].isadmin == 1);
       if(this.isAdmin == false) {
