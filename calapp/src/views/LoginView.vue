@@ -93,11 +93,6 @@ export default {
 </script>
 
 <style scoped>
-
-label {
-  display: block;
-  margin-top: 10px;
-}
 .card-container.card {
   max-width: 350px !important;
   padding: 40px 40px;
