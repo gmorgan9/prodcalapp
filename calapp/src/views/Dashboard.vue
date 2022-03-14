@@ -34,7 +34,7 @@
 <div v-if="isAdmin">
 <router-link id="car-btn" :to="`/superadmin`"><button class="btn btn-primary">Admin</button></router-link>
 </div>
-<div v-else>NOT</div>
+<div v-else>NOT Admin</div>
     
 </div>
 </template>
