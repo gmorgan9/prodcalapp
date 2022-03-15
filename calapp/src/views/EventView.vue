@@ -14,7 +14,6 @@
             <h3 class="display-10">Reminder</h3> <p v-if= "!!event.reminder"> {{ event.reminder }} Minute(s)</p> <p v-else>NONE</p>
             <h3 class="display-10">Description</h3> <p v-if= "!!event.description"> {{ event.description }}</p> <p v-else>NONE</p>
             <router-link to="/"><button class="btn btn-outline-secondary">Back</button></router-link>
-            <router-link id="update-events" :to="`/updateusers/${users.user_id}`">Update</router-link>
         </div>
     </div>
   </div>
