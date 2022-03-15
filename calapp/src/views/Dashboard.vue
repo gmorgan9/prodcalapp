@@ -10,8 +10,8 @@
         <!-- Right aligned nav items -->
         <nav class="ml-auto">
           <router-link class="nav-link-route" :to="{ path: '/' }">Home</router-link>
-          <div v-if="isAdmin"> | <router-link class="nav-link-route" :to="{ path: '/superadmin' }">Admin</router-link></div>
-          <div v-else></div>
+          <p v-if="isAdmin"> | <router-link class="nav-link-route" :to="{ path: '/superadmin' }">Admin</router-link></p>
+          <p v-else></p>
           | <router-link class="nav-link-route" :to="{ path: '/logout' }">Logout</router-link>
           | <router-link class="nav-link-route" :to="{ path: '/create' }">Create</router-link>
         </nav>
