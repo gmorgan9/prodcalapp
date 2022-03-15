@@ -97,15 +97,14 @@ export default {
   text-decoration: none;
   color: blue;
   float: right;
-  cursor: pointer; 
-  margin-left: 2px;
+  cursor: pointer;
 }
 #delete-events {
   text-decoration: none;
   color: red;
   float: right;
   cursor: pointer; 
-  margin-left: 2px;
+  margin-left: 5px;
 }
 #update-events-btn {
   text-decoration: none;
