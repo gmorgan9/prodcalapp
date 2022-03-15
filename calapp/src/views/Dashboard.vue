@@ -9,11 +9,11 @@
       <b-collapse id="nav-collapse" is-nav>
         <!-- Right aligned nav items -->
         <nav class="ml-auto">
-          <router-link class="nav-item" :to="{ path: '/' }">Home</router-link>
-          <div v-if="isAdmin"> | <router-link class="nav-item" :to="{ path: '/superadmin' }">Admin</router-link></div>
+          <router-link class="nav-link-route" :to="{ path: '/' }">Home</router-link>
+          <div v-if="isAdmin"> | <router-link class="nav-link-route" :to="{ path: '/superadmin' }">Admin</router-link></div>
           <div v-else></div>
-          | <router-link class="nav-item" :to="{ path: '/logout' }">Logout</router-link>
-          | <router-link class="nav-item" :to="{ path: '/create' }">Create</router-link>
+          | <router-link class="nav-link-route" :to="{ path: '/logout' }">Logout</router-link>
+          | <router-link class="nav-link-route" :to="{ path: '/create' }">Create</router-link>
         </nav>
       </b-collapse>
     </b-navbar>
@@ -119,11 +119,11 @@ Api.getUsersDetail(Api.getUserID()).then((res) => {
   float: right;
   margin-left: 1.5%;
 }
-#nav-link-route {
+.nav-link-route {
   text-decoration: none;
   color: black;
 }
-#nav-link-route:hover {
+.nav-link-route:hover {
   color: rgba(68, 68, 68, 0.685);
   text-decoration: underline;
 }
