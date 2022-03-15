@@ -88,5 +88,14 @@ export default {
 .link {
   text-decoration: none;
 }
-
+.log-btn {
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
 </style>
