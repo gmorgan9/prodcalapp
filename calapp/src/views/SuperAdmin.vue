@@ -4,24 +4,22 @@
     <h2>Admin page</h2>
 
       <nav>
-         <router-link id="nav-link-route" :to="{ path: '/dashboard' }">Dashboard</router-link>
-       | <router-link id="nav-link-route" :to="{ path: '/logout' }">Logout</router-link>
-       | <router-link id="nav-link-route" :to="{ path: '/create' }">Create</router-link>
+         <router-link class="link" :to="{ path: '/dashboard' }">Dashboard</router-link>
+       | <router-link class="link" :to="{ path: '/logout' }">Logout</router-link>
+       | <router-link class="link" :to="{ path: '/create' }">Create</router-link>
         </nav>
     <hr />
 
 
-
-<div class="admin-content">
-    <h5>Welcome to the Admin Dashboard!</h5>
-</div>
-<div class="card" style="width: 18rem;">
-  <div class="card-body">
-    <h5 class="card-title">View/Edit Users</h5>
-    <p class="card-text">Follow this link to view and edit users within this calendar.</p>
-    <router-link id="car-btn" :to="`/adminusers`"><button class="btn btn-primary">View</button></router-link>
+<div class="log-header">
+    <h5>Welcome to the Dashboard!</h5>
   </div>
-</div>
+
+  <div class="message-content">
+    <h5>View/Edit Users</h5>
+    <p class="card-text">Follow this link to view and edit users within this calendar.</p>
+    <router-link id="car-btn" :to="`/adminevents`"><button class="btn btn-outline-secondary">View</button></router-link>
+  </div>
 
 
 

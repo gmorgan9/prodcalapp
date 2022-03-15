@@ -3,21 +3,13 @@
     <br>
     <h2>Home Page</h2>
 
-<ul class="nav justify-content-center">
-  <li class="nav-item">
-    <router-link id="nav-link-route" :to="{ path: '/dashboard' }">Dashboard</router-link>  
-  </li>
-  &nbsp; | &nbsp;
-  <li class="nav-item">
-    <router-link id="nav-link-route" :to="{ path: '/logout' }">Logout</router-link>
-  </li>
-</ul>
-      <hr>
-      <router-link :to="{ path: '/create' }"><button class="btn btn-outline-secondary">+ Create Event</button></router-link>
-      <br>
-    <!-- <div v-if="loading">Loading events....</div>
-    <ul v-else> -->
-      <br />
+        <nav>
+         <router-link class="link" :to="{ path: '/dashboard' }">Dashboard</router-link>
+       | <router-link class="link" :to="{ path: '/logout' }">Logout</router-link>
+        </nav>
+    <hr />
+
+    
       <ul class="list-group">
         <li class="list-group-item" v-for="event in events" :key="event.event_id">
           <router-link id="events" :to="`/event/${event.event_id}`">{{

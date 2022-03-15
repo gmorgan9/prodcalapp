@@ -2,6 +2,18 @@
   <div>
     <br>
     <h2>Admin page</h2>
+
+    <nav>
+         <router-link class="link" :to="{ path: '/dashboard' }">Dashboard</router-link>
+       | <router-link class="link" :to="{ path: '/' }">Home</router-link>
+       | <router-link class="link" :to="{ path: '/logout' }">Logout</router-link>
+       | <router-link class="link" :to="{ path: '/create' }">Create</router-link>
+        </nav>
+    <hr />
+
+
+
+
     <b-navbar>
      
 
