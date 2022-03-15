@@ -25,8 +25,8 @@
         <ul class="list-group">
           <li class="list-group-item" v-for="event in events" :key="event.event_id">
             <div class="title">{{ event.title }}</div>
-            <button id="update-events-btn" class="event alert-danger" @click="() => deleteEvent(event.event_id)">Delete</button>
-            <router-link id="update-events" :to="`/updateevents/${event.event_id}`"><button class="event alert-primary">Update</button></router-link>
+            <button id="update-events-btn" class="btn btn-outline-danger" @click="() => deleteEvent(event.event_id)">Delete</button>
+            <router-link id="update-events" :to="`/updateevents/${event.event_id}`"><button class="btn btn-outline-success">Update</button></router-link>
           </li>
         </ul>
   </div>
