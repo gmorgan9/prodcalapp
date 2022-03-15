@@ -21,17 +21,15 @@
 
 
 
-<div class="admin-content">
+  <div class="log-header">
     <h5>Welcome to the Dashboard!</h5>
-<div id="right-card" class="card" style="width: 18rem;">
-  <div class="card-body">
-    <h5 class="card-title">View/Edit Events</h5>
+  </div>
+
+  <div class="message-content">
+    <h5>View/Edit Events</h5>
     <p class="card-text">Follow this link to view and edit events within this calendar.</p>
     <router-link id="car-btn" :to="`/adminevents`"><button class="btn btn-primary">View</button></router-link>
   </div>
-</div>
-</div>
-<hr>
 
 
 
@@ -84,6 +82,9 @@ Api.getUsersDetail(Api.getUserID()).then((res) => {
 
 </script>
 <style scoped>
-
+.nav-link-route {
+  text-decoration: none;
+  color: black;
+}
 
 </style>
