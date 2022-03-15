@@ -97,6 +97,8 @@ export default {
   text-decoration: none;
   color: black;
   float: right;
+  cursor: pointer; 
+  margin-left: 2px;
 }
 #update-events-btn {
   text-decoration: none;
