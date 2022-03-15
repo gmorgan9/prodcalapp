@@ -3,7 +3,7 @@
 <div class="log-header">
 Profile
 </div>
-<div class="content">
+<div class="message-content">
 		
 		<!-- logged in user information -->
 		<div class="profile_info">
