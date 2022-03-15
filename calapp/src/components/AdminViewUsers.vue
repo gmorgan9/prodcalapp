@@ -80,11 +80,6 @@ export default {
 .card-btn {
   margin-bottom: 5px;
 }
-.list-group {
-  width: 40%;
-  margin-left: 30%; 
-  
-}
 .title {
   padding-top: 1%;
   margin-bottom: -2.8%;
