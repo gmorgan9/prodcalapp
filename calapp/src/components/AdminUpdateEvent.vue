@@ -142,7 +142,7 @@ export default {
       Api.updateEvent(this.event)
         .then(() => {
           this.saving = false;
-          this.$router.push("/dashboard");
+          this.$router.push("/adminevents");
         })
         .catch((error) => {
           console.log(error);

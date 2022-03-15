@@ -11,7 +11,7 @@
 
 
   <div class="log-header">
-    <h5>Events</h5>
+    <h2>Events</h2>
     </div>
     <div class="message-content">
       <router-link id="car-btn" :to="`/profile`"><button class="btn btn-outline-secondary">Back</button></router-link>

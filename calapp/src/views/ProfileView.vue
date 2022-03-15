@@ -1,17 +1,20 @@
 <template>
 <div>
 <div class="log-header">
-Profile
+<h2>Profile</h2>
 </div>
 <div class="message-content">
 		
 		<!-- logged in user information -->
 		<div class="profile_info">
-
 			<img src="../assets/admin.png">
-            <strong>{{ uname }}</strong>
-		<br>
-			<div>
+      <div class="info">
+        <strong>{{ uname }}</strong>
+        <i v-if="isAdmin">&nbsp;(admin)</i>
+        <i v-else>&nbsp;(standard user)</i>
+      </div>
+		  <br>
+		<div>
 				
 					<strong></strong>
 
@@ -108,8 +111,11 @@ Api.getUsersDetail(Api.getUserID()).then((res) => {
 	/* float: left; */
 }
 .profile_info div {
-	display: inline-block; 
-	margin: 5px;
+	display: inline-block;
+	margin-right: 5px;
+}
+.info {
+  margin-bottom: -25px;
 }
 .profile_info:after {
 	content: "";

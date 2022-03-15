@@ -140,7 +140,7 @@ created: function() {
       Api.addEvent({ user_id: Api.getUserID(), title: this.title, type: this.type, date: this.date, time: this.time, location: this.location, description: this.description, cal_id: this.cal_id, reminder: this.reminder })
         .then(() => {
           this.loading = false;
-          this.$router.push("/dashboard");
+          this.$router.push("/");
         })
         .catch((error) => {
           console.log(error);

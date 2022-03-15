@@ -4,14 +4,10 @@
     <h2>Home Page</h2>
 
         <nav>
-         <router-link class="link" :to="{ path: '/logout' }">Logout &nbsp;</router-link>
-         <router-link class="link" :to="{ path: '/profile' }">Profile</router-link>
+        <router-link class="link" :to="{ path: '/profile' }">Profile &nbsp; &nbsp;</router-link>
+         <router-link class="link" :to="{ path: '/logout' }">Logout</router-link>
         </nav>
     <hr />
-
-
-
-
       
       <div class="log-header">
         <h3>Event List</h3>
