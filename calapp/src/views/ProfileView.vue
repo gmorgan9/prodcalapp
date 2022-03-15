@@ -21,10 +21,12 @@ Profile
       						<a href="/logout"><button class="log-btn">Logout</button></a>
 							<a href="/"><button class="log-btn">Home</button></a>
 							<a href="/adminusers"><button class="log-btn">View User</button></a>
+                            <a href="/adminevents"><button class="log-btn">View Events</button></a>
                             </div>
 						<div v-else>
 							<a href="/logout"><button class="log-btn">Logout</button></a>
 							<a href="/"><button class="log-btn">Home</button></a>
+                            <a href="/adminevents"><button class="log-btn">View Events</button></a>
 						</div>
 					</small>
 			</div>
