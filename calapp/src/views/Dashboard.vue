@@ -1,7 +1,7 @@
 <template>
   <div>
     <br>
-    <h2>Admin page</h2>
+    <h2>Dashboard</h2>
     <b-navbar>
       
 
@@ -9,10 +9,10 @@
       <b-collapse id="nav-collapse" is-nav>
         <!-- Right aligned nav items -->
         <nav class="ml-auto">
-          <router-link class="nav-link-route" :to="{ path: '/' }">Home</router-link>
-          <router-link class="nav-link-route" :to="{ path: '/logout' }">Logout</router-link>
+          <router-link class="nav-link-route" :to="{ path: '/' }">Home | </router-link>
+          <router-link class="nav-link-route" :to="{ path: '/logout' }">Logout | </router-link>
           <router-link class="nav-link-route" :to="{ path: '/create' }">Create</router-link>
-          <router-link v-if="isAdmin" class="nav-link-route" :to="{ path: '/superadmin' }">Admin</router-link>
+          <router-link v-if="isAdmin" class="nav-link-route" :to="{ path: '/superadmin' }"> | Admin</router-link>
         </nav>
       </b-collapse>
     </b-navbar>
