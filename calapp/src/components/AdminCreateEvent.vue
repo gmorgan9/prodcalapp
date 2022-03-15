@@ -90,7 +90,7 @@
               ></span>
               <span>Add Event</span>
             </button>
-            <router-link :to="`/dashboard`"><button class="btn btn-outline-secondary" :disabled="loading">
+            <router-link :to="`/`"><button class="btn btn-outline-secondary" :disabled="loading">
                 <span
                   v-show="loading"
                   class="spinner-border spinner-border-sm"
