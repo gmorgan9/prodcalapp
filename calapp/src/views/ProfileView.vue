@@ -8,8 +8,8 @@ Profile
 		<!-- logged in user information -->
 		<div class="profile_info">
 
-			<img v-if="isAdmin" src="../assets/admin.png">
-			<img v-else src="../assets/profile.png">
+			<img src="../assets/admin.png">
+            <p>{{ users.username }}</p>
 		
 			<div>
 				
