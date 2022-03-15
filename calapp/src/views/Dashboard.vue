@@ -8,7 +8,7 @@
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>
         <!-- Right aligned nav items -->
-        <nav class="ml-auto">
+        <nav>
           <router-link class="nav-link-route" :to="{ path: '/' }">Home | </router-link>
           <router-link class="nav-link-route" :to="{ path: '/logout' }">Logout | </router-link>
           <router-link class="nav-link-route" :to="{ path: '/create' }">Create</router-link>
@@ -16,7 +16,6 @@
         </nav>
       </b-collapse>
     </b-navbar>
-    <br />
     <hr />
 
 
