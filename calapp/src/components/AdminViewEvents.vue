@@ -91,7 +91,7 @@ export default {
 }
 .event {
   padding: 5px;
-  border-radius: 5px;
+  border-radius: 8.5px;
 }
 #update-events {
   text-decoration: none;
@@ -113,7 +113,6 @@ export default {
   color: black;
   float: right;
   margin-left: 1.5%;
-  
 }
 #nav-link-route {
   text-decoration: none;
