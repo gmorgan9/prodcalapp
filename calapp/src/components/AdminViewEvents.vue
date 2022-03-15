@@ -105,14 +105,14 @@ export default {
   float: right;
   cursor: pointer; 
   margin-left: 8px;
-  margin-bottom: -.5%
+  margin-bottom: -1%
 }
 #update-events-btn {
   text-decoration: none;
   color: black;
   float: right;
   margin-left: 1.5%;
-  margin-bottom: -.5%
+  margin-bottom: -1%
 }
 #nav-link-route {
   text-decoration: none;
