@@ -104,7 +104,7 @@ export default {
   color: red;
   float: right;
   cursor: pointer; 
-  margin-left: 10px;
+  margin-left: 8px;
 }
 #update-events-btn {
   text-decoration: none;
