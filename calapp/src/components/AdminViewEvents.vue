@@ -98,6 +98,7 @@ export default {
   color: blue;
   float: right;
   cursor: pointer;
+  margin-top: -1.5%
 }
 #delete-events {
   text-decoration: none;
@@ -112,7 +113,7 @@ export default {
   color: black;
   float: right;
   margin-left: 1.5%;
-  margin-top: -1.5%
+  
 }
 #nav-link-route {
   text-decoration: none;
