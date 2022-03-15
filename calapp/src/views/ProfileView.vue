@@ -7,9 +7,9 @@ Profile
 		
 		<!-- logged in user information -->
 		<div class="profile_info">
-			<img src="../assets/admin.png">
-		
-			<img src="profile.png">
+
+			<img v-if="isAdmin" src="../assets/admin.png">
+			<img v-else src="../assets/profile.png">
 		
 			<div>
 				
