@@ -85,7 +85,6 @@ export default {
   
 }
 .title {
-  padding-top: 1%;
   margin-bottom: -5.5%;
   margin-left: -8%;
 }
