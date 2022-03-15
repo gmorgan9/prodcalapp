@@ -7,9 +7,9 @@ Profile
 		
 		<!-- logged in user information -->
 		<div class="profile_info">
-			<img src="calapp/src/assets/admin.png">
+			<img src="../calapp/src/assets/admin.png">
 		
-			<img src="calapp/src/assets/profile.png">
+			<img src="../calapp/src/assets/profile.png">
 		
 			<div>
 				
