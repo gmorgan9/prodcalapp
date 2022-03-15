@@ -1,18 +1,18 @@
 <template>
   <div>
-    <br>
+    <!-- <br>
     <h2>Admin page</h2>
 
     <nav>
          <router-link class="link" :to="{ path: '/dashboard' }">Dashboard &nbsp;</router-link>
          <router-link class="link" :to="{ path: '/logout' }">&nbsp; Logout</router-link>
         </nav>
-    <hr />
+    <hr /> -->
 
 
 
   <div class="log-header">
-    <h5>Users</h5>
+    <h5>Users List</h5>
     </div>
     <div class="message-content">
         <ul class="list-group">
