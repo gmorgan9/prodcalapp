@@ -7,26 +7,10 @@
         <h3 class="display-6" style="text-transform:capitalize;">{{ event.type }}</h3>
         <div class="content">
             <h3 class="display-10">Date</h3> <p> {{ event.date }} </p>
-        <div class="input-group mb-3">
-            <h3>Time Of Day</h3>
-            <p> {{ event.time }} </p>
-        </div>
-        <div class="input-group mb-3">
-            <h3>Location</h3>
-            <p v-if= "!!event.location"> {{ event.location }}</p>
-            <p v-else>NONE</p>
-        </div>
-        <div class="input-group mb-3">
-            <h3>Reminder</h3>
-            <p v-if= "!!event.reminder"> {{ event.reminder }} Minute(s)</p>
-            <p v-else>NONE</p>
-        </div>
-        <div class="input-group mb-3">
-            <h3>Description</h3>
-            <p v-if= "!!event.description"> {{ event.description }}</p>
-            <p v-else>NONE</p>
-        </div>
-        
+            <h3 class="display-10">Time Of Day</h3> <p> {{ event.time }} </p>
+            <h3 class="display-10">Location</h3> <p v-if= "!!event.location"> {{ event.location }}</p> <p v-else>NONE</p>
+            <h3 class="display-10">Reminder</h3> <p v-if= "!!event.reminder"> {{ event.reminder }} Minute(s)</p> <p v-else>NONE</p>
+            <h3 class="display-10">Description</h3> <p v-if= "!!event.description"> {{ event.description }}</p> <p v-else>NONE</p>
         </div>
         <router-link to="/"><button class="btn btn-primary">Back</button></router-link>
     </div>
