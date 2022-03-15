@@ -127,7 +127,7 @@ label {
   margin-top: 10px;
 }
 .card-container.card {
-  max-width: 450px !important;
+  max-width: 400px !important;
   padding: 40px 40px;
 }
 .card {
