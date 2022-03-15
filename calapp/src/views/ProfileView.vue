@@ -9,7 +9,7 @@ Profile
 		<div class="profile_info">
 
 			<img src="../assets/admin.png">
-            <p>{{ users.username }}</p>
+            <p>{{ Api.getUsersDetail().username }}</p>
 		
 			<div>
 				
