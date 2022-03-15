@@ -3,7 +3,7 @@
     <br>
     <div v-if="loading">Loading event....</div>
     <div class="jumbotron" v-else>
-        <div class="header">
+        <div class="log-header">
             <h1 style="text-transform:capitalize;">{{ event.title }}</h1>
             <h3 style="text-transform:capitalize;">{{ event.type }}</h3>
         </div>
