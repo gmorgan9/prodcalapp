@@ -12,8 +12,10 @@
     <hr />
 
 
-  <div class="admin-content">
+  <div class="log-header">
     <h5>Events</h5>
+    </div>
+    <div class="message-content">
         <ul class="list-group">
           <li class="list-group-item" v-for="event in events" :key="event.event_id">
             <div class="title">{{ event.title }}</div>
@@ -70,11 +72,6 @@ export default {
 }
 .card-btn {
   margin-bottom: 5px;
-}
-.list-group {
-  width: 40%;
-  margin-left: 30%; 
-  
 }
 .title {
   padding-top: 1%;
