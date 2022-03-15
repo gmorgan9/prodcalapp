@@ -4,8 +4,8 @@
     <h2>Admin page</h2>
 
     <nav>
-         <router-link class="link" :to="{ path: '/dashboard' }">Dashboard</router-link>
-       | <router-link class="link" :to="{ path: '/logout' }">Logout</router-link>
+         <router-link class="link" :to="{ path: '/dashboard' }">Dashboard &nbsp;</router-link>
+         <router-link class="link" :to="{ path: '/logout' }">&nbsp; Logout</router-link>
         </nav>
     <hr />
 
