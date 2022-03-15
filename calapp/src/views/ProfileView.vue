@@ -9,7 +9,8 @@ Profile
 		<div class="profile_info">
 
 			<img src="../assets/admin.png">
-            <p>{{ uname }}</p>
+            <br>
+            <h3>{{ uname }}</h3>
 		
 			<div>
 				
