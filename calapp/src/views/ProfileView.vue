@@ -9,7 +9,7 @@ Profile
 		<div class="profile_info">
 
 			<img src="../assets/admin.png">
-            <p>{{ Api.getUsersDetail().username }}</p>
+            <p>{{ uname }}</p>
 		
 			<div>
 				
@@ -52,6 +52,7 @@ export default {
       isAdmin: true,
       events: [],
       users: [],
+      uname: Api.getUserName(),
     };
   },
   created: function () {

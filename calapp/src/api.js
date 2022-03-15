@@ -23,6 +23,10 @@ class Api {
     // setTimeout(() => {console.log(details); }, 2000);
     return details;
   }
+  getUserName() {
+    var username = getUserNameFromToken(getJwtToken());
+    return username;
+  }
   updateUser(users) {
     return axios.patch(
       API_URL + `/users?user_id=eq.${users.user_id}`,

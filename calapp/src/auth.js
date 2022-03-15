@@ -10,6 +10,12 @@ export function getUserIdFromToken(token) {
   return decoded.id;
 }
 
+export function getUserNameFromToken(token) {
+  const decoded = jwt_decode(token);
+  //console.log(decoded);
+  return decoded.username;
+}
+
 export function setJwtToken(token) {
   localStorage.setItem("accessToken", token);
 }
