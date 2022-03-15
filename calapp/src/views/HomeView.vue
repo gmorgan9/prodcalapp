@@ -10,6 +10,10 @@
     <hr />
 
 
+
+
+      <router-link :to="{ path: '/create' }"><button class="btn btn-outline-secondary">+ Create Event</button></router-link>
+      <br />
       <ul class="list-group">
         <li class="list-group-item" v-for="event in events" :key="event.event_id">
           <router-link id="events" :to="`/event/${event.event_id}`">{{
@@ -56,16 +60,20 @@ export default {
   color: rgba(68, 68, 68, 0.685);
   text-decoration: underline;
 }
+#nav-link-route {
+  text-decoration: none;
+  color: black;
+}
+#nav-link-route:hover {
+  color: rgba(68, 68, 68, 0.685);
+  text-decoration: underline;
+}
 .event-list {
   margin-left: -2.75%;
 }
 .event-links {
   display: flex;
   flex-direction: column;
-}
-
-.link {
-  text-decoration: none;
 }
 
 </style>
