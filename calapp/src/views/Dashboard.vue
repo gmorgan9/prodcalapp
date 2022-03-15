@@ -4,10 +4,9 @@
     <h2>Dashboard</h2>
         <!-- Right aligned nav items -->
         <nav>
-          <router-link class="link" :to="{ path: '/' }">Home | </router-link>
-          <router-link class="link" :to="{ path: '/logout' }">Logout | </router-link>
-          <router-link class="link" :to="{ path: '/create' }">Create</router-link>
-          <router-link class="link" v-if="isAdmin" :to="{ path: '/superadmin' }"> | Admin</router-link>
+          <router-link class="link" v-if="isAdmin" :to="{ path: '/superadmin' }">Admin &nbsp;</router-link>
+          <router-link class="link" :to="{ path: '/' }"> &nbsp; Home &nbsp;</router-link>
+          <router-link class="link" :to="{ path: '/logout' }">&nbsp; Logout &nbsp;</router-link>
         </nav>
     <hr />
 
