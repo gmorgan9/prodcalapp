@@ -43,6 +43,7 @@
             <span>Login</span>
           </button>
         </div>
+        <br>
         <p class="bottom-link">Or <router-link :to="`/register`">Sign Up</router-link></p>
         <div class="form-group">
           <div v-if="message" class="alert alert-danger" role="alert">

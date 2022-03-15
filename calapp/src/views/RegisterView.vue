@@ -56,6 +56,7 @@
               <span>Sign Up</span>
             </button>
           </div>
+          <br>
           <p class="bottom-link">Or <router-link :to="`/login`">Login</router-link></p>
         </div>
       </form>
