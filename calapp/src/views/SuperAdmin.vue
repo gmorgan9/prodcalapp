@@ -10,6 +10,7 @@
     <h5>View/Edit Users</h5>
     <p class="card-text">Follow this link to view and edit users within this calendar.</p>
     <router-link id="car-btn" :to="`/adminusers`"><button class="btn btn-outline-secondary">View</button></router-link>
+    <router-link id="car-btn" :to="`/profile`"><button class="btn btn-outline-secondary">Back</button></router-link>
   </div>
 
 
