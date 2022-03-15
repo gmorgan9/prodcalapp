@@ -3,7 +3,7 @@
 <div class="log-header">
 Profile
 </div>
-<div class="message-content">
+<div class="content">
 		
 		<!-- logged in user information -->
 		<div class="profile_info">
@@ -16,8 +16,7 @@ Profile
 				
 					<strong></strong>
 
-					<small>
-						<i  class="profile-user"></i> 
+					<small> 
 						<br>
                         <div v-if="isAdmin">
       						<a href="/logout"><button class="log-btn">Logout</button></a>
@@ -92,10 +91,6 @@ Api.getUsersDetail(Api.getUserID()).then((res) => {
 .link {
   text-decoration: none;
 }
-img {
-    width: 10%;
-    height: 10%;
-}
 .log-btn {
     padding: 10px;
     font-size: 15px;
@@ -106,4 +101,21 @@ img {
     cursor: pointer;
     text-decoration: none;
 }
+.profile_info img {
+	display: inline-block; 
+	width: 50px; 
+	height: 50px; 
+	margin: 5px;
+	float: left;
+}
+.profile_info div {
+	display: inline-block; 
+	margin: 5px;
+}
+.profile_info:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
 </style>
