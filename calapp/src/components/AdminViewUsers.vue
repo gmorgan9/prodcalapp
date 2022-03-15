@@ -15,6 +15,8 @@
     <h5>Users List</h5>
     </div>
     <div class="message-content">
+      <router-link id="car-btn" :to="`/profile`"><button class="btn btn-outline-secondary">Back</button></router-link>
+      <br>
         <ul class="list-group">
           <li class="list-group-item" v-for="users in user" :key="users.user_id">
             <div class="title">{{ users.username }}</div>
