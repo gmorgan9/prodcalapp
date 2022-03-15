@@ -5,9 +5,7 @@
 
     <nav>
          <router-link class="link" :to="{ path: '/dashboard' }">Dashboard</router-link>
-       | <router-link class="link" :to="{ path: '/' }">Home</router-link>
        | <router-link class="link" :to="{ path: '/logout' }">Logout</router-link>
-       | <router-link class="link" :to="{ path: '/create' }">Create</router-link>
         </nav>
     <hr />
 
@@ -17,6 +15,7 @@
     </div>
     <div class="message-content">
       <router-link :to="{ path: '/create' }"><button class="btn btn-outline-secondary">+ Create Event</button></router-link>
+      <br>
         <ul class="list-group">
           <li class="list-group-item" v-for="event in events" :key="event.event_id">
             <div class="title">{{ event.title }}</div>
