@@ -44,18 +44,18 @@ export default {
 
 <style>
 
-.header {
-    /* margin: 50px auto 0px; */
-    margin-top: 0;
+
+.log-header {
+    /* width: 40%; */
+    margin: 50px auto 0px;
     color: white;
     background: #002E5D;
+    text-align: center;
     border: 1px solid #002E5D;
     border-bottom: none;
+    border-radius: 10px 10px 0px 0px;
     padding: 20px;
-    display: flex;
-    flex-direction: row;
 }
-
 
 
 
