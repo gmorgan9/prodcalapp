@@ -92,7 +92,7 @@ export default {
     padding: 10px;
     font-size: 15px;
     color: white;
-    background-color: var(--secondary-color);
+    background-color: black;
     border: none;
     border-radius: 5px;
     cursor: pointer;
