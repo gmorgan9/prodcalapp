@@ -81,9 +81,8 @@ Api.getUsersDetail(Api.getUserID()).then((res) => {
 
 </script>
 <style scoped>
-.nav-link-route {
+router-link {
   text-decoration: none;
-  color: black;
 }
 
 </style>
