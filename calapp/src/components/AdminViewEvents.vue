@@ -99,7 +99,7 @@ export default {
   color: blue;
   float: right;
   cursor: pointer;
-  margin-top: -1%;
+  margin-top: -1.5%;
 }
 #delete-events {
   text-decoration: none;
@@ -107,7 +107,7 @@ export default {
   float: right;
   cursor: pointer; 
   margin-left: 8px;
-  margin-top: -1%;
+  margin-top: -1.5%;
 }
 #update-events-btn {
   text-decoration: none;
