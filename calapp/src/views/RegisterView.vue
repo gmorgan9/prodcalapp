@@ -123,6 +123,9 @@ export default {
 </script>
 
 <style scoped>
+.form-control {
+  width: 35%;
+}
 label {
   display: block;
   margin-top: 10px;
