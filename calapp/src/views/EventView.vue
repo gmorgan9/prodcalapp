@@ -46,7 +46,7 @@ export default {
 
 
 .log-header {
-    /* width: 40%; */
+    width: 40%;
     margin: 50px auto 0px;
     color: white;
     background: #002E5D;
