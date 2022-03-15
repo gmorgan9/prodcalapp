@@ -98,7 +98,7 @@ label {
   margin-top: 10px;
 }
 .card-container.card {
-  max-width: 350px !important;
+  max-width: 450px !important;
   padding: 40px 40px;
 }
 .card {
