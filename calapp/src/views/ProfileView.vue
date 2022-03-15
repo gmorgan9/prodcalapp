@@ -1,18 +1,9 @@
 <template>
 <div>
 <div class="log-header">
-
+Profile
 </div>
 <div class="message-content">
-
-
-
-
-			<div class="error success" >
-				<h3>
-					
-				</h3>
-			</div>
 		
 		<!-- logged in user information -->
 		<div class="profile_info">
@@ -37,12 +28,8 @@
 							<a href="/"><button class="log-btn">Reset Password</button></a>
 						
 					</small>
-				
 			</div>
-
-
-
-
+</div>
 </div>
 
 
