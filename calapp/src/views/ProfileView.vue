@@ -9,7 +9,6 @@ Profile
 		<div class="profile_info">
 
 			<img src="../assets/admin.png">
-            <br>
             <strong>{{ uname }}</strong>
 		
 			<div>
@@ -21,13 +20,11 @@ Profile
                         <div v-if="isAdmin">
       						<a href="/logout"><button class="log-btn">Logout</button></a>
 							<a href="/"><button class="log-btn">Home</button></a>
-							<a href="/"><button class="log-btn">Add User</button></a>
-							<a href="/"><button class="log-btn">Reset Password</button></a>
+							<a href="/adminusers"><button class="log-btn">View User</button></a>
                             </div>
 						<div v-else>
 							<a href="/logout"><button class="log-btn">Logout</button></a>
 							<a href="/"><button class="log-btn">Home</button></a>
-							<a href="/"><button class="log-btn">Reset Password</button></a>
 						</div>
 					</small>
 			</div>
