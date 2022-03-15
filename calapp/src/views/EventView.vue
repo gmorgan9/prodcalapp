@@ -5,6 +5,7 @@
     <div class="jumbotron" v-else>
       <h1 class="display-5" style="text-transform:capitalize;">{{ event.title }}</h1>
         <h3 class="display-6" style="text-transform:capitalize;">{{ event.type }}</h3>
+        <hr class="my-4">
         <div class="content">
             <h3 class="display-10">Date</h3> <p> {{ event.date }} </p>
             <h3 class="display-10">Time Of Day</h3> <p> {{ event.time }} </p>
