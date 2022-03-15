@@ -9,10 +9,10 @@
       <b-collapse id="nav-collapse" is-nav>
         <!-- Right aligned nav items -->
         <nav>
-          <router-link :to="{ path: '/' }">Home | </router-link>
-          <router-link :to="{ path: '/logout' }">Logout | </router-link>
-          <router-link :to="{ path: '/create' }">Create</router-link>
-          <router-link v-if="isAdmin" :to="{ path: '/superadmin' }"> | Admin</router-link>
+          <router-link class="link" :to="{ path: '/' }">Home | </router-link>
+          <router-link class="link" :to="{ path: '/logout' }">Logout | </router-link>
+          <router-link class="link" :to="{ path: '/create' }">Create</router-link>
+          <router-link class="link" v-if="isAdmin" :to="{ path: '/superadmin' }"> | Admin</router-link>
         </nav>
       </b-collapse>
     </b-navbar>
@@ -81,7 +81,7 @@ Api.getUsersDetail(Api.getUserID()).then((res) => {
 
 </script>
 <style scoped>
-router-link {
+.link {
   text-decoration: none;
 }
 
