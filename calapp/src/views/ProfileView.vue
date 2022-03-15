@@ -90,6 +90,10 @@ Api.getUsersDetail(Api.getUserID()).then((res) => {
 .link {
   text-decoration: none;
 }
+img {
+    width: 5%;
+    height: 5%;
+}
 .log-btn {
     padding: 10px;
     font-size: 15px;
