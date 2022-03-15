@@ -2,11 +2,6 @@
   <div>
     <br>
     <h2>Dashboard</h2>
-    <b-navbar>
-      
-
-      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-      <b-collapse id="nav-collapse" is-nav>
         <!-- Right aligned nav items -->
         <nav>
           <router-link class="link" :to="{ path: '/' }">Home | </router-link>
@@ -14,8 +9,6 @@
           <router-link class="link" :to="{ path: '/create' }">Create</router-link>
           <router-link class="link" v-if="isAdmin" :to="{ path: '/superadmin' }"> | Admin</router-link>
         </nav>
-      </b-collapse>
-    </b-navbar>
     <hr />
 
 
