@@ -7,7 +7,7 @@ Profile
 		
 		<!-- logged in user information -->
 		<div class="profile_info">
-			<img src="admin.png">
+			<img src="../assets/admin.png">
 		
 			<img src="profile.png">
 		
