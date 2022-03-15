@@ -86,6 +86,7 @@ export default {
 }
 .title {
   padding-top: 1%;
+  margin-bottom: -5.25%;
   margin-left: -8%;
 }
 .event {
