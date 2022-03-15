@@ -3,10 +3,10 @@
     <br>
     <div v-if="loading">Loading event....</div>
     <div class="jumbotron" v-else>
-      <h1 class="display-4" style="text-transform:capitalize;">{{ event.title }}</h1>
+      <h1 class="display-3" style="text-transform:capitalize;">{{ event.title }}</h1>
         <h3 class="display-5" style="text-transform:capitalize;">{{ event.type }}</h3>
         <div class="content">
-            <h3 class="display-5">Date</h3> <p> {{ event.date }} </p>
+            <h3 class="display-6">Date</h3> <p> {{ event.date }} </p>
         <div class="input-group mb-3">
             <h3>Time Of Day</h3>
             <p> {{ event.time }} </p>
