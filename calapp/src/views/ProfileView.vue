@@ -18,15 +18,17 @@ Profile
 					<small>
 						<i  class="profile-user"></i> 
 						<br>
+                        <div v-if="isadmin">
       						<a href="/logout"><button class="log-btn">Logout</button></a>
 							<a href="/"><button class="log-btn">Home</button></a>
 							<a href="/"><button class="log-btn">Add User</button></a>
 							<a href="/"><button class="log-btn">Reset Password</button></a>
-						
+                            </div>
+						<div v-else>
 							<a href="/logout"><button class="log-btn">Logout</button></a>
 							<a href="/"><button class="log-btn">Home</button></a>
 							<a href="/"><button class="log-btn">Reset Password</button></a>
-						
+						</div>
 					</small>
 			</div>
 </div>
@@ -53,12 +55,12 @@ export default {
     };
   },
   created: function () {
-// Api.getUsersDetail(Api.getUserID()).then((res) => {
-//       this.isAdmin = (res.data[0].isadmin == 1);
-//       if(this.isAdmin == false) {
-//         this.$router.push("/dashboard");
-//       }
-//     });
+Api.getUsersDetail(Api.getUserID()).then((res) => {
+      this.isAdmin = (res.data[0].isadmin == 1);
+      if(this.isAdmin == false) {
+        this.$router.push("/profile");
+      }
+    });
 
     this.loadEvents();
   },
