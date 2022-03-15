@@ -18,9 +18,9 @@ class Api {
     return axios.get(API_URL + "/users", {});
   }
   getUsersDetail(user_id) {
-    console.log("passed: " + user_id);
+    // console.log("passed: " + user_id);
     const details = axios.get(API_URL + `/users?user_id=eq.${user_id}`);
-    setTimeout(() => {console.log(details); }, 2000);
+    // setTimeout(() => {console.log(details); }, 2000);
     return details;
   }
   updateUser(users) {
