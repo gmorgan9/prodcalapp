@@ -52,10 +52,6 @@ export default {
 };
 </script>
 <style>
-.list-group {
-  width: 30%;
-  margin-left: 35%; 
-}
 #events {
   text-decoration: none;
   color: black;
