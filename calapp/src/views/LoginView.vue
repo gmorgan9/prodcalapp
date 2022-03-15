@@ -98,12 +98,12 @@ label {
   margin-top: 10px;
 }
 .card-container.card {
-  max-width: 400px !important;
-  padding: 40px 40px;
+  max-width: 325px !important;
+  padding: 30px 30px;
 }
 .card {
   background-color: #f7f7f7;
-  padding: 10px 15px 20px;
+  padding: 20px 25px 30px;
   margin: 0 auto 25px;
   margin-top: 50px;
   -moz-border-radius: 2px;
