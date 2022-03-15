@@ -62,11 +62,11 @@
       </form>
 
 
-      <select  v-model="selected" id="deptList">
+      <!-- <select  v-model="selected" id="deptList">
               <option v-for="department in dept" :key="department.dept_id">
                 {{department.name}}
             </option>
-          </select> 
+          </select>  -->
 
       <div v-if="message" class="alert alert-danger">
         {{ message }}
@@ -123,9 +123,6 @@ export default {
 </script>
 
 <style scoped>
-.form-control {
-  width: 35%;
-}
 label {
   display: block;
   margin-top: 10px;
