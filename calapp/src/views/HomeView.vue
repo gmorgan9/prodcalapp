@@ -18,8 +18,8 @@
         <h3>Event List</h3>
       </div>
       <div class="message-content">
-      <ul>
-        <li v-for="event in events" :key="event.event_id">
+      <ul class="list-group">
+        <li class="list-group-item" v-for="event in events" :key="event.event_id">
           <router-link id="events" :to="`/event/${event.event_id}`">{{
           event.title
         }}</router-link>
