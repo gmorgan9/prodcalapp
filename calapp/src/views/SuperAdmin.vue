@@ -1,17 +1,9 @@
 <template>
   <div>
-    <br>
-    <h2>Admin page</h2>
-
-      <nav>
-         <router-link class="link" :to="{ path: '/dashboard' }">Dashboard &nbsp;</router-link>
-         <router-link class="link" :to="{ path: '/logout' }">&nbsp; Logout</router-link>
-        </nav>
-    <hr />
 
 
 <div class="log-header">
-    <h5>Welcome to the Dashboard!</h5>
+    <h5>Welcome to the Admin!</h5>
   </div>
 
   <div class="message-content">
