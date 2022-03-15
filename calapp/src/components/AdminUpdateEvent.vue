@@ -93,14 +93,14 @@
 
 
           <div class="form-group">
-            <button class="btn btn-primary btn-block" :disabled="saving">
+            <button class="btn btn-outline-secondary" :disabled="saving">
               <span
                 v-show="saving"
                 class="spinner-border spinner-border-sm"
               ></span>
               <span>Save</span>
             </button>
-            <router-link :to="`/adminevents`"><button class="btn btn-primary btn-block" :disabled="loading">
+            <router-link :to="`/adminevents`"><button class="btn btn-outline-secondary" :disabled="loading">
                 <span
                   v-show="loading"
                   class="spinner-border spinner-border-sm"
