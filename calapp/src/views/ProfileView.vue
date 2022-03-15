@@ -18,7 +18,7 @@ Profile
 					<small>
 						<i  class="profile-user"></i> 
 						<br>
-                        <div v-if="isadmin">
+                        <div v-if="isAdmin">
       						<a href="/logout"><button class="log-btn">Logout</button></a>
 							<a href="/"><button class="log-btn">Home</button></a>
 							<a href="/"><button class="log-btn">Add User</button></a>
