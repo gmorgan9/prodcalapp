@@ -85,12 +85,12 @@ export default {
 }
 .title {
   padding-top: 1%;
-  margin-bottom: -5.5%;
+  margin-bottom: -2.8%;
   margin-left: -8%;
 }
-.users {
+.event {
   padding: 5px;
-  border-radius: 5px;
+  border-radius: 8.5px;
 }
 #update-events {
   text-decoration: none;
@@ -107,13 +107,12 @@ export default {
   margin-left: 8px;
   margin-top: -1.5%
 }
-#update-users-btn {
+#update-events-btn {
   text-decoration: none;
   color: black;
   float: right;
   margin-left: 1.5%;
 }
-
 .link {
   text-decoration: none;
 }
