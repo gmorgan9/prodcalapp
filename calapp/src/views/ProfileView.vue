@@ -106,7 +106,7 @@ Api.getUsersDetail(Api.getUserID()).then((res) => {
 	width: 50px; 
 	height: 50px; 
 	margin: 5px;
-	float: left;
+	/* float: left; */
 }
 .profile_info div {
 	display: inline-block; 
