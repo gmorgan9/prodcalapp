@@ -5,7 +5,6 @@
 
     <nav>
          <router-link class="link" :to="{ path: '/dashboard' }">Dashboard</router-link>
-       | <router-link class="link" :to="{ path: '/' }">Home</router-link>
        | <router-link class="link" :to="{ path: '/logout' }">Logout</router-link>
         </nav>
     <hr />
