@@ -91,8 +91,8 @@ Api.getUsersDetail(Api.getUserID()).then((res) => {
   text-decoration: none;
 }
 img {
-    width: 15%;
-    height: 15%;
+    width: 10%;
+    height: 10%;
 }
 .log-btn {
     padding: 10px;
