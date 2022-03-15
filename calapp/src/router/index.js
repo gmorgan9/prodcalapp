@@ -48,6 +48,7 @@ import AdminCreateEvent from "../components/AdminCreateEvent.vue";
 import AdminUpdateEvent from "../components/AdminUpdateEvent.vue";
 import AdminUpdateUser from "../components/AdminUpdateUser.vue";
 import SuperAdmin from "../views/SuperAdmin.vue";
+import Profile from "../views/ProfileView.vue";
 
 
 
@@ -73,6 +74,10 @@ const routes = [
   {
     path: '/register',
     component: Register
+  },
+  {
+    path: '/profile',
+    component: Profile
   },
   {
     path: '/dashboard',
