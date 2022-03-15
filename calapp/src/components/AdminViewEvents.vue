@@ -106,13 +106,13 @@ export default {
   float: right;
   cursor: pointer; 
   margin-left: 8px;
-  padding-top: -1.5%
+  padding-top: -2%
 }
 #update-events-btn {
   text-decoration: none;
   color: black;
   float: right;
-  margin-left: 1.5%;
+  margin-left: 2%;
   
 }
 #nav-link-route {
