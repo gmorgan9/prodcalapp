@@ -5,7 +5,7 @@
         <!-- Right aligned nav items -->
         <nav>
           <router-link class="link" v-if="isAdmin" :to="{ path: '/superadmin' }">Admin &nbsp;</router-link>
-          <router-link class="link" :to="{ path: '/' }"> &nbsp; Home &nbsp;</router-link>
+          <router-link class="link" :to="{ path: '/' }">&nbsp; Home &nbsp;</router-link>
           <router-link class="link" :to="{ path: '/logout' }">&nbsp; Logout &nbsp;</router-link>
           <router-link class="link" :to="{ path: '/profile' }">&nbsp; Profile &nbsp;</router-link>
         </nav>
@@ -22,8 +22,6 @@
     <p class="card-text">Follow this link to view and edit events within this calendar.</p>
     <router-link id="car-btn" :to="`/adminevents`"><button class="btn btn-outline-secondary">View</button></router-link>
   </div>
-
-
 
     
 </div>

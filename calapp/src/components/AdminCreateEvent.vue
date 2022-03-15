@@ -130,8 +130,8 @@ export default {
     };
   },
 created: function() {
-    var id = Api.getUserID()
-    console.log(id)
+    var id = Api.getUserID();
+    console.log(id);
 },
   methods: {
     handleAdd() {
