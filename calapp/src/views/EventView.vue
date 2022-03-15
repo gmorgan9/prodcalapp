@@ -60,7 +60,7 @@ export default {
 
 
 <style>
-.type {
+/* .type {
     color: gray;
     margin-top: -20px;
     text-transform: capitalize;
@@ -133,6 +133,6 @@ display: grid;
     margin-right: 5%;
     margin-left: 2%;
     padding-left: 2px;
-}
+} */
 
 </style>
