@@ -103,13 +103,11 @@ export default {
   float: right;
   margin-left: 1.5%;
 }
-#nav-link-route {
+
+.link {
   text-decoration: none;
-  color: black;
 }
-#nav-link-route:hover {
-  color: rgba(68, 68, 68, 0.685);
-  text-decoration: underline;
-}
+
+
 
 </style>
