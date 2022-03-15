@@ -49,9 +49,9 @@ export default {
     width: 40%;
     margin: 50px auto 0px;
     color: white;
-    background: rgb(45,11,244);
+    background: #002E5D;
     text-align: center;
-    border: 1px solid rgb(45,11,244);
+    border: 1px solid #002E5D;
     border-bottom: none;
     border-radius: 10px 10px 0px 0px;
     padding: 20px;
