@@ -25,7 +25,7 @@
         <ul class="list-group">
           <li class="list-group-item" v-for="event in events" :key="event.event_id">
             <div class="title">{{ event.title }}</div>
-            <routerlink id="update-events" :to="{name: '/adminevents'}" tag="li" exact v-on:click.native="deleteEvent(event.event_id)">Delete</routerlink>
+            <routerlink id="delete-events" :to="{name: '/adminevents'}" tag="li" exact v-on:click.native="deleteEvent(event.event_id)">Delete</routerlink>
             <router-link id="update-events" :to="`/updateevents/${event.event_id}`">Update</router-link>
           </li>
         </ul>
@@ -95,7 +95,14 @@ export default {
 }
 #update-events {
   text-decoration: none;
-  color: black;
+  color: blue;
+  float: right;
+  cursor: pointer; 
+  margin-left: 2px;
+}
+#delete-events {
+  text-decoration: none;
+  color: red;
   float: right;
   cursor: pointer; 
   margin-left: 2px;
