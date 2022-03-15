@@ -1,19 +1,21 @@
 <template>
   <div>
-    <br>
+    <!-- <br>
     <h2>Admin page</h2>
 
     <nav>
          <router-link class="link" :to="{ path: '/dashboard' }">Dashboard &nbsp;</router-link>
          <router-link class="link" :to="{ path: '/logout' }">&nbsp; Logout</router-link>
         </nav>
-    <hr />
+    <hr /> -->
 
 
   <div class="log-header">
     <h5>Events</h5>
     </div>
     <div class="message-content">
+      <router-link id="car-btn" :to="`/profile`"><button class="btn btn-outline-secondary">Back</button></router-link>
+      <br><br>
         <ul class="list-group">
           <li class="list-group-item" v-for="event in events" :key="event.event_id">
             <div class="title">{{ event.title }}</div>
