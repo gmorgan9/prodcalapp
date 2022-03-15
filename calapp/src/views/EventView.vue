@@ -3,8 +3,10 @@
     <br>
     <div v-if="loading">Loading event....</div>
     <div class="jumbotron" v-else>
+        <div class="header">
       <h1 class="display-5" style="text-transform:capitalize;">{{ event.title }}</h1>
         <h3 class="display-6" style="text-transform:capitalize;">{{ event.type }}</h3>
+        </div>
         <hr class="my-4">
         <div class="content">
             <h3 class="display-10">Date</h3> <p> {{ event.date }} </p>
@@ -42,6 +44,22 @@ export default {
 
 
 <style>
+
+.header {
+    /* margin: 50px auto 0px; */
+    margin-top: 0;
+    color: white;
+    background: #002E5D;
+    border: 1px solid #002E5D;
+    border-bottom: none;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
 /* .type {
     color: gray;
     margin-top: -20px;
