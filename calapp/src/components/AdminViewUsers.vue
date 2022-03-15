@@ -12,8 +12,10 @@
 
 
 
-  <div class="admin-content">
+  <div class="log-header">
     <h5>Users</h5>
+    </div>
+    <div class="message-content">
         <ul class="list-group">
           <li class="list-group-item" v-for="users in user" :key="users.user_id">
             <div class="title">{{ users.username }}</div>
