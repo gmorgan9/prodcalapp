@@ -94,7 +94,7 @@ Api.getUsersDetail(Api.getUserID()).then((res) => {
     padding: 10px;
     font-size: 15px;
     color: white;
-    background-color: black;
+    background-color: #002E5D;
     border: none;
     border-radius: 5px;
     cursor: pointer;
