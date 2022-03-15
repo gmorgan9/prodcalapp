@@ -86,7 +86,6 @@ export default {
 }
 .title {
   padding-top: 1%;
-  margin-bottom: -5.25%;
   margin-left: -8%;
 }
 .event {
@@ -98,7 +97,6 @@ export default {
   color: blue;
   float: right;
   cursor: pointer;
-  margin-top: -1.5%;
 }
 #delete-events {
   text-decoration: none;
@@ -106,7 +104,6 @@ export default {
   float: right;
   cursor: pointer; 
   margin-left: 8px;
-  margin-top: -1.5%;
 }
 #update-events-btn {
   text-decoration: none;
