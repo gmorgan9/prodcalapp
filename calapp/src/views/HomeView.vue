@@ -60,13 +60,8 @@ export default {
   color: rgba(68, 68, 68, 0.685);
   text-decoration: underline;
 }
-#nav-link-route {
+.link {
   text-decoration: none;
-  color: black;
-}
-#nav-link-route:hover {
-  color: rgba(68, 68, 68, 0.685);
-  text-decoration: underline;
 }
 .event-list {
   margin-left: -2.75%;
