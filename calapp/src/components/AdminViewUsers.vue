@@ -2,19 +2,12 @@
   <div>
     <br>
     <h2>Admin page</h2>
-    <b-navbar>
 
-      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-      <b-collapse id="nav-collapse" is-nav>
-        <!-- Right aligned nav items -->
-        <b-navbar-nav class="ml-auto">
-            <b-nav-item><router-link id="nav-link-route" :to="{ path: '/dashboard' }">Dashboard</router-link></b-nav-item>
-          | <b-nav-item><router-link id="nav-link-route" :to="{ path: '/' }">Home</router-link></b-nav-item>
-          | <b-nav-item><router-link id="nav-link-route" :to="{ path: '/logout' }">Logout</router-link></b-nav-item>
-        </b-navbar-nav>
-      </b-collapse>
-    </b-navbar>
-    <br />
+    <nav>
+      <router-link id="nav-link-route" :to="{ path: '/dashboard' }">Dashboard</router-link>
+       | <router-link id="nav-link-route" :to="{ path: '/' }">Home</router-link>
+       | <router-link id="nav-link-route" :to="{ path: '/logout' }">Logout</router-link>
+        </nav>
     <hr />
 
 
