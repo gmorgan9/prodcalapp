@@ -28,7 +28,7 @@
   <div class="message-content">
     <h5>View/Edit Events</h5>
     <p class="card-text">Follow this link to view and edit events within this calendar.</p>
-    <router-link id="car-btn" :to="`/adminevents`"><button class="btn btn-outline-primary">View</button></router-link>
+    <router-link id="car-btn" :to="`/adminevents`"><button class="btn btn-primary">View</button></router-link>
   </div>
 
 
