@@ -14,6 +14,10 @@
 
       <router-link :to="{ path: '/create' }"><button class="btn btn-outline-secondary">+ Create Event</button></router-link>
       <br />
+      <div class="log-header">
+        <h3>Event List</h3>
+      </div>
+      <div class="message-content">
       <ul class="list-group">
         <li class="list-group-item" v-for="event in events" :key="event.event_id">
           <router-link id="events" :to="`/event/${event.event_id}`">{{
@@ -21,6 +25,7 @@
         }}</router-link>
         </li>
       </ul>
+      </div>
     <!-- </ul> -->
 
 
