@@ -4,7 +4,6 @@
     <h2>Home Page</h2>
 
         <nav>
-         <router-link class="link" :to="{ path: '/dashboard' }">Dashboard &nbsp;</router-link>
          <router-link class="link" :to="{ path: '/logout' }">Logout &nbsp;</router-link>
          <router-link class="link" :to="{ path: '/profile' }">Profile</router-link>
         </nav>
