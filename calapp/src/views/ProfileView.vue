@@ -10,7 +10,7 @@ Profile
 
 			<img src="../assets/admin.png">
             <strong>{{ uname }}</strong>
-		
+		<br>
 			<div>
 				
 					<strong></strong>
