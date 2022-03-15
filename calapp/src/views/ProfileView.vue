@@ -49,7 +49,7 @@ export default {
   data: function () {
     return {
       // loading: false,
-    //   isAdmin: true,
+      isAdmin: true,
       events: [],
       users: [],
     };
