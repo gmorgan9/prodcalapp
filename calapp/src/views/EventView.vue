@@ -7,14 +7,14 @@
             <h1 style="text-transform:capitalize;">{{ event.title }}</h1>
             <h3 style="text-transform:capitalize;">{{ event.type }}</h3>
         </div>
-        <div class="content">
+        <div class="message-content">
             <h3 class="display-10">Date</h3> <p> {{ event.date }} </p>
             <h3 class="display-10">Time Of Day</h3> <p> {{ event.time }} </p>
             <h3 class="display-10">Location</h3> <p v-if= "!!event.location"> {{ event.location }}</p> <p v-else>NONE</p>
             <h3 class="display-10">Reminder</h3> <p v-if= "!!event.reminder"> {{ event.reminder }} Minute(s)</p> <p v-else>NONE</p>
             <h3 class="display-10">Description</h3> <p v-if= "!!event.description"> {{ event.description }}</p> <p v-else>NONE</p>
+            <router-link to="/"><button class="btn btn-primary">Back</button></router-link>
         </div>
-        <router-link to="/"><button class="btn btn-primary">Back</button></router-link>
     </div>
   </div>
 </template>
@@ -55,6 +55,15 @@ export default {
     border-bottom: none;
     border-radius: 10px 10px 0px 0px;
     padding: 20px;
+}
+
+.message-content {
+    width: 40%;
+    margin: 0px auto;
+    padding: 20px;
+    border: 1px solid #B0C4DE;
+    background: white;
+    border-radius: 0px 0px 10px 10px;
 }
 
 
